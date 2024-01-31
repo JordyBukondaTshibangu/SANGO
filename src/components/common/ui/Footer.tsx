@@ -4,7 +4,7 @@ import { FaFacebookSquare, FaTwitterSquare, FaYoutube, FaInstagramSquare } from 
 
 const Footer = () => {
   return (
-    <footer className='md:absolute bottom-0 left-0 right-0  bg-black py-10 md:py-20 px-5 xl:px-96 flex flex-col gap-32'>
+    <footer className='md:absolute bottom-0 left-0 right-0 z-5 bg-black py-10 md:py-20 px-5 xl:px-96 flex flex-col gap-32'>
       <div className="flex flex-col gap-10 md:grid md:grid-cols-3 xl:grid-cols-5 xl:gap-20 justify-center">
         <div className='flex flex-col gap-5'>
           <h5 className='text-lg text-white'>Quick Links</h5>

@@ -1,5 +1,5 @@
-import Footer from "@/components/common/Footer"
-import NavBar from "@/components/common/NavBar"
+import Footer from "@/components/common/ui/Footer"
+import NavBar from "@/components/common/ui/NavBar"
 
 export default function SangoAuthenticatedLayout({
   children,
