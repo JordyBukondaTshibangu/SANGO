@@ -12,7 +12,7 @@ const NavBar = () => {
   const [toggleNav, setToggleNav] = useState<Boolean>(false);
 
   return (
-    <div className='lg:sticky w-full flex justify-center items-center h-[87px] shadow-md px-5 xl:px-96 py-5 gap-10' >
+    <div className='bg-darkHeader xl:sticky w-full flex justify-center items-center h-[107px] shadow-md px-5 py-5 xl:px-10 2xl:px-28 3xl:px-96 gap-10' >
       <div className='mr-auto'>
         <Link href='/posts' className='text-lg md:text-3xl font-bold'>SANGO LOGO</Link>
       </div>
@@ -63,7 +63,7 @@ const NavBar = () => {
       <div className='hidden md:flex gap-5 ml-auto'>
         <SearchBar />
       </div>
-      <div className='flex lg:hidden text-lg cursor-pointer'  onClick={ () => setToggleNav(!toggleNav)}>
+      <div className='flex xl:hidden text-lg cursor-pointer'  onClick={ () => setToggleNav(!toggleNav)}>
         <FaBars />
       </div>
       {
