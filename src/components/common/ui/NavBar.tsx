@@ -67,7 +67,7 @@ const NavBar = () => {
         <FaBars />
       </div>
       {
-        toggleNav &&       <div className="absolute lg:hidden top-0 bottom-0 left-0 right-0 overlay bg-black z-10 py-10 flex flex-col gap-14  px-10" onClick={ () => setToggleNav(!toggleNav)}>
+        toggleNav &&       <div className="absolute lg:hidden top-0 bottom-0 left-0 right-0 overlay bg-darkHeader z-10 py-10 flex flex-col gap-14  px-10" onClick={ () => setToggleNav(!toggleNav)}>
         <div className='cursor-pointer flex text-2xl text-white'>
           <FaBars />
         </div>
@@ -89,7 +89,7 @@ const NavBar = () => {
           </Link>
         </div>
         <hr />
-        <ul className='relative bg-black flex flex-col justify-between gap-16' >
+        <ul className='relative  flex flex-col justify-between gap-16' >
           <li>
             <Link href='/posts' className='flex items-center gap-5 text-white'>
               <FaHome className='text-2xl font-bold'/>
