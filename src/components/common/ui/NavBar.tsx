@@ -1,60 +1,63 @@
 'use client'
 import Image from 'next/image';
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import React, { useState } from 'react'
+import SearchBar from '../base/SearchBar';
 import { FaPowerOff, FaMessage } from "react-icons/fa6";
 import ProfilePic from '../../../../public/assets/profile.jpeg'
 import { FaBars, FaHome, FaNewspaper, FaRegCalendarAlt,FaUsers, FaBriefcase, FaBell } from "react-icons/fa";
-import SearchBar from '../base/SearchBar';
 
 const NavBar = () => {
 
   const [toggleNav, setToggleNav] = useState<Boolean>(false);
 
+  const currentPath = usePathname()
+
   return (
-    <div className='bg-darkHeader xl:sticky w-full flex justify-center items-center h-[107px] shadow-md px-5 py-5 xl:px-10 2xl:px-28 3xl:px-96 gap-10' >
+    <div className='bg-darkHeader fixed top-0 left-0 right-0 w-full flex justify-center items-center h-[107px] shadow-md px-5 py-5 xl:px-10 2xl:px-28 3xl:px-96 gap-10' >
       <div className='mr-auto'>
         <Link href='/posts' className='text-lg md:text-3xl font-bold'>SANGO LOGO</Link>
       </div>
       <ul className='hidden xl:flex justify-between gap-16'>
         <li>
-          <Link href='/posts' className='flex flex-col items-center gap-1'>
+          <Link href='/posts' className={currentPath == '/posts' ? 'flex flex-col items-center gap-1 text-primary' : 'flex flex-col items-center gap-1 hover:text-primary'}>
             <FaHome className='text-2xl font-bold'/>
             <span className='text-xs'>Posts</span>
           </Link>
         </li>
         <li>
-          <Link href='/articles' className='flex flex-col items-center gap-1'>
+          <Link href='/articles'  className={currentPath == '/articles' ? 'flex flex-col items-center gap-1 text-primary' : 'flex flex-col items-center gap-1 hover:text-primary'}>
             <FaNewspaper className='text-2xl font-bold'/>
             <span className='text-xs'>Articles</span>
           </Link>
         </li>
         <li>
-          <Link href='/events' className='flex flex-col items-center gap-1'>
+          <Link href='/events'  className={currentPath == '/events' ? 'flex flex-col items-center gap-1 text-primary' : 'flex flex-col items-center gap-1 hover:text-primary'}>
             <FaRegCalendarAlt className='text-2xl font-bold'/>
             <span className='text-xs'>Events</span>
           </Link>
         </li>
         <li>
-          <Link href='/users' className='flex flex-col items-center gap-1'>
+          <Link href='/users'  className={currentPath == '/users' ? 'flex flex-col items-center gap-1 text-primary' : 'flex flex-col items-center gap-1 hover:text-primary'}>
             <FaUsers  className='text-2xl font-bold'/>
             <span className='text-xs'>My Network</span>
           </Link>
         </li>
         <li>
-          <Link href='/jobs' className='flex flex-col items-center gap-1'>
+          <Link href='/jobs'  className={currentPath == '/jobs' ? 'flex flex-col items-center gap-1 text-primary' : 'flex flex-col items-center gap-1 hover:text-primary'}>
             <FaBriefcase className='text-2xl font-bold'/>
             <span className='text-xs'>Jobs</span>
           </Link>
         </li>
         <li>
-          <Link href='/notifications' className='flex flex-col items-center gap-1'>
+          <Link href='/notifications'  className={currentPath == '/notifications' ? 'flex flex-col items-center gap-1 text-primary' : 'flex flex-col items-center gap-1 hover:text-primary'}>
             <FaBell className='text-2xl font-bold'/>
             <span className='text-xs'>Notification</span>
           </Link>
         </li>
         <li>
-          <Link href='/my-profile' className='flex flex-col items-center gap-1'>
+          <Link href='/my-profile'  className={currentPath == '/my-profile' ? 'flex flex-col items-center gap-1 text-primary' : 'flex flex-col items-center gap-1 hover:text-primary'}>
             <span className='w-7 h-7 rounded-full bg-black'></span>
             <span className='text-xs'>Profile</span>
           </Link>

@@ -10,19 +10,19 @@ const Footer = () => {
           <h5 className='text-lg text-fontColor'>Quick Links</h5>
           <ul className='flex flex-col gap-5 text-fontColor'>
             <li>
-              <Link href='/info/about-us'>About us</Link>
+              <Link className='hover:text-primary' href='/info/about-us'>About us</Link>
             </li>
             <li>
-              <Link href='/info/contact-us'>Contact us</Link>
+              <Link className='hover:text-primary' href='/info/contact-us'>Contact us</Link>
             </li>
             <li>
-              <Link href='/info/community-guidelines'>Community Guidelines</Link>
+              <Link className='hover:text-primary' href='/info/community-guidelines'>Community Guidelines</Link>
             </li>
             <li>
-              <Link href='/info/privacy-terms-and-conditions'>Privacy & Terms</Link>
+              <Link className='hover:text-primary' href='/info/privacy-terms-and-conditions'>Privacy & Terms</Link>
             </li>
             <li>
-              <Link href='/info/faqs'>Faqs</Link>
+              <Link className='hover:text-primary' href='/info/faqs'>Faqs</Link>
             </li>
           </ul>
         </div>
@@ -30,16 +30,16 @@ const Footer = () => {
           <h5 className='text-lg text-fontColor'>Accessibity</h5>
           <ul className='flex flex-col gap-5 text-fontColor'>
             <li>
-              <Link href='/posts'>Posts</Link>
+              <Link className='hover:text-primary' href='/posts'>Posts</Link>
             </li>
             <li>
-              <Link href='/users'>Users</Link>
+              <Link className='hover:text-primary' href='/users'>Users</Link>
             </li>
             <li>
-              <Link href='/articles'>Articles</Link>
+              <Link className='hover:text-primary' href='/articles'>Articles</Link>
             </li>
             <li>
-              <Link href='/events'>Events</Link>
+              <Link className='hover:text-primary' href='/events'>Events</Link>
             </li>
 
           </ul>
@@ -48,16 +48,16 @@ const Footer = () => {
           <h5 className='text-lg text-fontColor'>Career</h5>
           <ul className='flex flex-col gap-5 text-fontColor'>
             <li>
-              <Link href='/jobs'>Find a Job</Link>
+              <Link className='hover:text-primary' href='/jobs'>Find a Job</Link>
             </li>
             <li>
-              <Link href='contact-us'>Post a Job</Link>
+              <Link className='hover:text-primary' href='contact-us'>Post a Job</Link>
             </li>
             <li>
-              <Link href='articles'>Browse Candidates</Link>
+              <Link className='hover:text-primary' href='articles'>Browse Candidates</Link>
             </li>
             <li>
-              <Link href='/events'>Saved Jobs</Link>
+              <Link className='hover:text-primary' href='/events'>Saved Jobs</Link>
             </li>
           </ul>
         </div>
@@ -65,21 +65,21 @@ const Footer = () => {
           <h5 className='text-lg text-fontColor'>Sango</h5>
           <ul className='flex flex-col gap-5 text-fontColor'>
             <li>
-              <Link href='/about-us'>About</Link>
+              <Link className='hover:text-primary' href='/about-us'>About</Link>
             </li>
             <li>
-              <Link href='contact-us'>Contact</Link>
+              <Link className='hover:text-primary' href='contact-us'>Contact</Link>
             </li>
             <li>
-              <Link href='articles'>Articles</Link>
+              <Link className='hover:text-primary' href='articles'>Articles</Link>
             </li>
             <li>
-              <Link href='/events'>Events</Link>
+              <Link className='hover:text-primary' href='/events'>Events</Link>
             </li>
           </ul>
         </div>
         <div className='flex flex-col gap-5'>
-          <Link href='/posts' className='text-2xl text-fontColor'>
+          <Link className='hover:text-primary' href='/posts'>
               Sango
           </Link>
           <div className='flex gap-3'>

@@ -26,7 +26,8 @@ const config: Config = {
       dark : '#242535',
       darkHeader: '#181A2A',
       black: '#000',
-      white : '#FFF'
+      white: '#FFF',
+      beige : '#F5F5DC'
     },
     fontFamily: {
       sans: ['Roboto', 'Arial', 'sans-serif'],
