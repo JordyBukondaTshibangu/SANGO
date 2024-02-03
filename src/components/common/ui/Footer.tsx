@@ -4,25 +4,25 @@ import { FaFacebookSquare, FaTwitterSquare, FaYoutube, FaInstagramSquare } from 
 
 const Footer = () => {
   return (
-    <footer className='md:absolute bottom-0 left-0 right-0 z-5 bg-darkHeader py-10 md:py-20 px-5 xl:px-10 2xl:px-28 3xl:px-96 flex flex-col gap-32'>
+    <footer className='bottom-0 left-0 right-0 z-5 bg-darkHeader py-10 md:py-20 px-5 xl:px-10 2xl:px-28 3xl:px-96 flex flex-col gap-32'>
       <div className="flex flex-col gap-10 md:grid md:grid-cols-3 xl:grid-cols-5 xl:gap-20 justify-center">
         <div className='flex flex-col gap-5'>
           <h5 className='text-lg text-fontColor'>Quick Links</h5>
           <ul className='flex flex-col gap-5 text-fontColor'>
             <li>
-              <Link href='/about-us'>About us</Link>
+              <Link href='/info/about-us'>About us</Link>
             </li>
             <li>
-              <Link href='/contact-us'>Contact us</Link>
+              <Link href='/info/contact-us'>Contact us</Link>
             </li>
             <li>
-              <Link href='/community-guidelines'>Community Guidelines</Link>
+              <Link href='/info/community-guidelines'>Community Guidelines</Link>
             </li>
             <li>
-              <Link href='/privacy-terms-and-conditions'>Privacy & Terms</Link>
+              <Link href='/info/privacy-terms-and-conditions'>Privacy & Terms</Link>
             </li>
             <li>
-              <Link href='/faqs'>Faqs</Link>
+              <Link href='/info/faqs'>Faqs</Link>
             </li>
           </ul>
         </div>
