@@ -15,7 +15,7 @@ const NavBar = () => {
   const currentPath = usePathname()
 
   return (
-    <div className='bg-darkHeader fixed top-0 left-0 right-0 w-full flex justify-center items-center h-[107px] shadow-md px-5 py-5 xl:px-10 2xl:px-28 3xl:px-96 gap-10' >
+    <nav className='bg-darkHeader fixed top-0 left-0 right-0 w-full flex justify-center items-center h-[107px] shadow-md px-5 py-5 xl:px-10 2xl:px-28 3xl:px-96 gap-10' >
       <div className='mr-auto'>
         <Link href='/posts' className='text-lg md:text-3xl font-bold'>SANGO LOGO</Link>
       </div>
@@ -144,7 +144,7 @@ const NavBar = () => {
         </ul>
       </div>  
       }
-    </div>
+    </nav>
   )
 }
 
