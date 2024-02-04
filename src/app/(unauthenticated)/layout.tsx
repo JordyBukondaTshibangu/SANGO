@@ -14,12 +14,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className} suppressHydrationWarning={true}>
-        <main className="flex items-center justify center">
-          {children}
-        </main>
-      </body>
-    </html>
+        <section className="lg:bg-dark text-fontColor leading-7 min-h-[110vh] w-full lg:flex items-center justify-center">
+          <div className="lg:w-4/5 2xl:w-1/2 mx-auto bg-white rounded-2xl mt-10 lg:shadow-2xl">
+            {children}
+          </div>
+        </section>
   );
 }
