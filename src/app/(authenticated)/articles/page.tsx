@@ -1,11 +1,13 @@
 import React from 'react'
-
-
-// https://www.figma.com/file/ODASpAN55XMF8pIsjL6iXq/Free-Blog-Template--%7C-Modern-%26-Creative-design-(Community)?node-id=1%3A2&mode=dev
+import ArticleHero from '@/components/articles/container/ArticleHero'
+import ArticleList from '@/components/articles/container/ArticleList'
 
 const ArticlesPage = () => {
   return (
-    <div>ArticlesPage</div>
+    <div className='flex flex-col gap-10'>
+      <ArticleHero />
+      <ArticleList />
+    </div>
   )
 }
 

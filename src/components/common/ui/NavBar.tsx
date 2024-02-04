@@ -1,8 +1,8 @@
 'use client'
+import React, { useState } from 'react'
 import Image from 'next/image';
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import React, { useState } from 'react'
 import SearchBar from '../base/SearchBar';
 import { FaPowerOff, FaMessage } from "react-icons/fa6";
 import ProfilePic from '../../../../public/assets/profile.jpeg'
@@ -15,7 +15,7 @@ const NavBar = () => {
   const currentPath = usePathname()
 
   return (
-    <nav className='bg-darkHeader fixed top-0 left-0 right-0 w-full flex justify-center items-center h-[107px] shadow-md px-5 py-5 xl:px-10 2xl:px-28 3xl:px-96 gap-10' >
+    <nav className='bg-darkHeader fixed z-50 top-0 left-0 right-0 w-full flex justify-center items-center h-[107px] shadow-md px-5 py-5 xl:px-10 2xl:px-28 3xl:px-96 gap-10' >
       <div className='mr-auto'>
         <Link href='/posts' className='text-lg md:text-3xl font-bold'>SANGO LOGO</Link>
       </div>
