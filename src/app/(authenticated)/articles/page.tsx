@@ -3,7 +3,7 @@ import ArticleHero from '@/components/articles/container/ArticleHero'
 import ArticleList from '@/components/articles/container/ArticleList'
 
 async function getArtciles() {
-  const res = await fetch('http://127.0.0.1:8080/article.json');
+  const res = await fetch('http://127.0.0.1:8080/articles.json');
 
   if (!res.ok) {
     throw new Error('Failed to fetch Articles')

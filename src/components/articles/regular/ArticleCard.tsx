@@ -15,9 +15,9 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article }) => {
   console.log(article)
   return (
     // <Link href={`/articles/${article.id}`} className='flex-1 flex flex-col bg-darkHeader lg:min-w-[438px] max-w-[518px] h-[494px] rounded-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all'>
-    <Link href={`/articles/${564216544545}`} className='flex-1 flex flex-col bg-darkHeader lg:min-w-[438px] max-w-[518px] h-[494px] rounded-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all'>
-      <div className='w-full  bg-black h-1/2 rounded-lg'>
-        <Image src={ArticleImg}  alt={article.title} className='overflow-hidden object-cover w-full h-full rounded-tr-lg rounded-tl-lg'/>
+    <Link href={`/articles/${564216544545}`} className='flex-1 flex flex-col bg-darkHeader lg:min-w-[438px] max-w-[518px] h-[494px] rounded-lg shadow-xl hover:shadow-2xl hover:scale-105 transition duration-500 ease-in-out '>
+      <div className='w-full  bg-cloudGray h-1/2 rounded-lg'>
+        <Image src={'/' + article.image} width={200} height={200} alt={article.title} className='overflow-hidden object-cover w-full h-full rounded-tr-lg rounded-tl-lg'/>
       </div>
       <div className="flex flex-col  gap-6 p-5 pb-10 pt-6">
         <div className="flex gap-3">
