@@ -1,5 +1,7 @@
-[
+{
+  "articles" : [
   {
+    "id" : 4564564454,
     "title": "Introduction to JavaScript",
     "author": "John Doe",
     "email": "john.doe@example.com",
@@ -9,6 +11,7 @@
     "tags": ["JavaScript", "Programming"]
   },
   {
+    "id" : 876455465,
     "title": "Web Development Trends in 2022",
     "author": "Alice Smith",
     "email": "alice.smith@example.com",
@@ -18,6 +21,7 @@
     "tags": ["Web Development", "Technology"]
   },
   {
+    "id" : 897546645,
     "title": "The Impact of AI on Society",
     "author": "Michael Johnson",
     "email": "michael.johnson@example.com",
@@ -27,6 +31,7 @@
     "tags": ["Science", "Technology"]
   },
     {
+    "id" : 12332154,
     "title": "Exploring the Universe",
     "author": "Jane Doe",
     "email": "jane.doe@example.com",
@@ -36,6 +41,7 @@
     "tags": ["Space", "Astronomy"]
   },
   {
+    "id" : 3699399636,
     "title": "Healthy Eating Habits",
     "author": "Robert Johnson",
     "email": "robert.johnson@example.com",
@@ -45,6 +51,7 @@
     "tags": ["Nutrition", "Wellness"]
   },
   {
+    "id" : 17147474741,
     "title": "The Art of Photography",
     "author": "Emily White",
     "email": "emily.white@example.com",
@@ -54,6 +61,7 @@
     "tags": ["Photography", "Creativity"]
   },
   {
+    "id" : 2585282588,
     "title": "Programming Paradigms",
     "author": "Daniel Brown",
     "email": "daniel.brown@example.com",
@@ -63,6 +71,7 @@
     "tags": ["Programming", "Software"]
   },
   {
+    "id" : 85258252288,
     "title": "Discovering Ancient History",
     "author": "Sophia Garcia",
     "email": "sophia.garcia@example.com",
@@ -72,6 +81,7 @@
     "tags": ["Archaeology", "Civilizations"]
   },
   {
+    "id" : 3669789897879,
     "title": "The World of Fantasy Literature",
     "author": "William Turner",
     "email": "william.turner@example.com",
@@ -81,6 +91,7 @@
     "tags": ["Fantasy", "Books"]
   },
   {
+    "id" : 321147471213,
     "title": "Green Living Practices",
     "author": "Olivia Martinez",
     "email": "olivia.martinez@example.com",
@@ -90,6 +101,7 @@
     "tags": ["Sustainability", "Environment"]
   },
   {
+    "id" : 8521476936,
     "title": "Mindfulness Meditation",
     "author": "Andrew Taylor",
     "email": "andrew.taylor@example.com",
@@ -99,6 +111,7 @@
     "tags": ["Mindfulness", "Meditation"]
   },
   {
+    "id" : 159951489,
     "title": "Advancements in Robotics",
     "author": "Sophie Brown",
     "email": "sophie.brown@example.com",
@@ -108,6 +121,7 @@
     "tags": ["Robotics", "Artificial Intelligence"]
   },
   {
+    "id" : 2695148873,
     "title": "Creative DIY Crafts",
     "author": "Matthew Miller",
     "email": "matthew.miller@example.com",
@@ -117,6 +131,7 @@
     "tags": ["Crafts", "Creativity"]
   },
   {
+    "id" : 124357869986,
     "title": "Exploring Underwater Wonders",
     "author": "Isabella Carter",
     "email": "isabella.carter@example.com",
@@ -126,6 +141,7 @@
     "tags": ["Oceanography", "Marine Life"]
   },
   {
+    "id" : 968573425112,
     "title": "Innovations in Sustainable Architecture",
     "author": "Nathan Wilson",
     "email": "nathan.wilson@example.com",
@@ -135,6 +151,7 @@
     "tags": ["Sustainability", "Design"]
   },
   {
+    "id" : 654213546548,
     "title": "The Joy of Travel Photography",
     "author": "Emma Lewis",
     "email": "emma.lewis@example.com",
@@ -144,6 +161,7 @@
     "tags": ["Photography", "Adventure"]
   },
   {
+    "id" : 2132154646512,
     "title": "Understanding Quantum Physics",
     "author": "Jacob Thompson",
     "email": "jacob.thompson@example.com",
@@ -153,6 +171,7 @@
     "tags": ["Physics", "Quantum Mechanics"]
   },
   {
+    "id" : 564548695645454,
     "title": "Healthy Mind, Healthy Body",
     "author": "Grace Turner",
     "email": "grace.turner@example.com",
@@ -162,6 +181,7 @@
     "tags": ["Mind-Body Connection", "Well-Being"]
   },
   {
+    "id" : 963852258455,
     "title": "The Art of Culinary Delights",
     "author": "Liam Scott",
     "email": "liam.scott@example.com",
@@ -171,6 +191,7 @@
     "tags": ["Cooking", "Cuisine"]
   },
   {
+    "id" : 987541236985,
     "title": "Space Travel: Future Possibilities",
     "author": "Hannah Bennett",
     "email": "hannah.bennett@example.com",
@@ -180,6 +201,7 @@
     "tags": ["Futurism", "Exploration"]
   },
   {
+    "id" : 954236541254,
     "title": "The World of Digital Art",
     "author": "Leo Martinez",
     "email": "leo.martinez@example.com",
@@ -189,6 +211,7 @@
     "tags": ["Digital Media", "Creativity"]
   },
   {
+    "id" : 987413654788,
     "title": "Unraveling Cryptocurrency",
     "author": "Eva Davis",
     "email": "eva.davis@example.com",
@@ -198,6 +221,7 @@
     "tags": ["Blockchain", "Digital Currency"]
   },
   {
+    "id" : 987412365478,
     "title": "Inspiring Women in STEM",
     "author": "Sophie Turner",
     "email": "sophie.turner@example.com",
@@ -207,3 +231,5 @@
     "tags": ["STEM", "Equality"]
   }
 ]
+
+}
