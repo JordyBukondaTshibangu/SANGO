@@ -1,25 +1,114 @@
 [
-  {
+  {    
+    "id" : 4564564454,
     "name": "Tech Conference",
     "venue": "TechHub",
     "date": "2024-02-15",
     "location": "Convention Center",
     "description": "A conference on the latest tech trends",
     "email": "info@techhub.com",
-    "category": "Tech",
+    "category": "Technology",
+    "image" : "../public/assets/placeholder/tech.jpg",
     "tags": ["conference", "technology"]
   },
   {
-    "name": "Art Exhibition",
-    "venue": "ArtGallery",
-    "date": "2024-03-20",
-    "location": "City Art Center",
-    "description": "Showcasing contemporary art pieces",
-    "email": "info@artgallery.com",
-    "category": "Art",
-    "tags": ["exhibition", "art", "culture"]
+    "id" : 876455465,
+    "name": "Tech Conference",
+    "venue": "Tech Convention Center",
+    "date": "2024-10-18",
+    "location": "Innovation Stage",
+    "description": "Exploring the latest in technology and innovation",
+    "email": "info@techconference.com",
+    "category": "Technology",
+    "image" : "../public/assets/placeholder/techno.jpg",
+    "tags": ["technology", "innovation", "conference"]
   },
-   {
+  {
+        "id" : 897546645,
+    "name": "Science Fair",
+    "venue": "Science Center",
+    "date": "2024-06-15",
+    "location": "Exhibition Hall",
+    "description": "Showcasing scientific innovations",
+    "email": "info@sciencefair.com",
+    "category": "Science",
+    "image" : "../public/assets/placeholder/technology.jpg",
+    "tags": ["science", "innovation", "education"]
+  },
+    {
+    "id" : 12332154,
+    "name": "Virtual Reality Showcase",
+    "venue": "VR Experience Center",
+    "date": "2025-06-07",
+    "location": "Virtual Arena",
+    "description": "Immerse yourself in the world of virtual reality",
+    "email": "info@vrshowcase.com",
+    "category": "Technology",
+    "image" : "../public/assets/placeholder/technic.jpg",
+    "tags": ["virtual reality", "tech", "showcase"]
+  },
+  {
+    "id" : 3699399636,
+      "name": "Art Exhibition",
+      "venue": "ArtGallery",
+      "date": "2024-03-20",
+      "location": "City Art Center",
+      "description": "Showcasing contemporary art pieces",
+      "email": "info@artgallery.com",
+      "category": "Art",
+    "image" : "../public/assets/placeholder/art.jpg",
+      "tags": ["exhibition", "art", "culture"]
+    },   
+  {
+    "id" : 17147474741,
+      "name": "Music Festival",
+      "venue": "City Park",
+      "date": "2024-05-25",
+      "location": "Main Stage",
+      "description": "A celebration of diverse musical genres",
+      "email": "info@musicfest.com",
+      "category": "Music",
+    "image" : "../public/assets/placeholder/music.jpg",
+      "tags": ["festival", "music", "entertainment"]
+    },
+  {
+    "id" : 2585282588,
+      "name": "Art Exhibition",
+      "venue": "Modern Art Gallery",
+      "date": "2024-09-05",
+      "location": "Exhibition Hall",
+      "description": "Discover the beauty of contemporary art",
+      "email": "info@artexhibition.com",
+      "category": "Art",
+    "image" : "../public/assets/placeholder/exhibition.jpg",
+      "tags": ["art", "exhibition", "creativity"]
+    },
+  {
+    "id" : 85258252288,
+      "name": "Film Festival",
+      "venue": "Cinema City",
+      "date": "2024-12-03",
+      "location": "Film Palace",
+      "description": "Celebrating cinematic excellence",
+      "email": "info@filmfestival.com",
+      "category": "Film",
+    "image" : "../public/assets/placeholder/film.jpg",
+      "tags": ["film", "festival", "cinema"]
+    },
+  {
+    "id" : 3669789897879,
+      "name": "Fashion Show",
+      "venue": "Fashion Plaza",
+      "date": "2025-01-20",
+      "location": "Runway Stage",
+      "description": "A showcase of style and trends",
+      "email": "info@fashionshow.com",
+      "category": "Fashion",
+    "image" : "../public/assets/placeholder/fashion.jpg",
+      "tags": ["fashion", "style", "runway"]
+    },
+  {
+    "id" : 321147471213,
     "name": "Startup Summit",
     "venue": "Innovation Hub",
     "date": "2024-04-10",
@@ -29,27 +118,8 @@
     "category": "Business",
     "tags": ["startup", "entrepreneurship", "investing"]
   },
-  {
-    "name": "Music Festival",
-    "venue": "City Park",
-    "date": "2024-05-25",
-    "location": "Main Stage",
-    "description": "A celebration of diverse musical genres",
-    "email": "info@musicfest.com",
-    "category": "Music",
-    "tags": ["festival", "music", "entertainment"]
-  },
-  {
-    "name": "Science Fair",
-    "venue": "Science Center",
-    "date": "2024-06-15",
-    "location": "Exhibition Hall",
-    "description": "Showcasing scientific innovations",
-    "email": "info@sciencefair.com",
-    "category": "Science",
-    "tags": ["science", "innovation", "education"]
-  },
-  {
+  {  
+    "id" : 8521476936,
     "name": "Food Tasting Expo",
     "venue": "Culinary Center",
     "date": "2024-07-08",
@@ -57,9 +127,12 @@
     "description": "Explore culinary delights from around the world",
     "email": "info@foodexpo.com",
     "category": "Food",
+    "image" : "../public/assets/placeholder/food.jpg",
     "tags": ["food", "tasting", "culinary"]
-  },
+  }
+,
   {
+    "id" : 159951489,
     "name": "Fitness Challenge",
     "venue": "Sports Complex",
     "date": "2024-08-20",
@@ -67,90 +140,11 @@
     "description": "Join the ultimate fitness challenge",
     "email": "info@fitnesschallenge.com",
     "category": "Fitness",
+    "image" : "../public/assets/placeholder/fitness.jpg",
     "tags": ["fitness", "health", "wellness"]
   },
-
   {
-    "name": "Art Exhibition",
-    "venue": "Modern Art Gallery",
-    "date": "2024-09-05",
-    "location": "Exhibition Hall",
-    "description": "Discover the beauty of contemporary art",
-    "email": "info@artexhibition.com",
-    "category": "Art",
-    "tags": ["art", "exhibition", "creativity"]
-  },
-  {
-    "name": "Tech Conference",
-    "venue": "Tech Convention Center",
-    "date": "2024-10-18",
-    "location": "Innovation Stage",
-    "description": "Exploring the latest in technology and innovation",
-    "email": "info@techconference.com",
-    "category": "Technology",
-    "tags": ["technology", "innovation", "conference"]
-  },
-  {
-    "name": "Environmental Symposium",
-    "venue": "Nature Conservancy",
-    "date": "2024-11-12",
-    "location": "Green Pavilion",
-    "description": "Addressing environmental challenges and solutions",
-    "email": "info@envirosymposium.com",
-    "category": "Environment",
-    "tags": ["environment", "sustainability", "symposium"]
-  },
-  {
-    "name": "Film Festival",
-    "venue": "Cinema City",
-    "date": "2024-12-03",
-    "location": "Film Palace",
-    "description": "Celebrating cinematic excellence",
-    "email": "info@filmfestival.com",
-    "category": "Film",
-    "tags": ["film", "festival", "cinema"]
-  },
-  {
-    "name": "Fashion Show",
-    "venue": "Fashion Plaza",
-    "date": "2025-01-20",
-    "location": "Runway Stage",
-    "description": "A showcase of style and trends",
-    "email": "info@fashionshow.com",
-    "category": "Fashion",
-    "tags": ["fashion", "style", "runway"]
-  },
-  {
-    "name": "Education Expo",
-    "venue": "Education Center",
-    "date": "2025-02-14",
-    "location": "Learning Hub",
-    "description": "Explore educational opportunities and resources",
-    "email": "info@educationexpo.com",
-    "category": "Education",
-    "tags": ["education", "expo", "learning"]
-  },
-  {
-    "name": "Comedy Night",
-    "venue": "Laugh Lounge",
-    "date": "2025-03-08",
-    "location": "Comedy Club",
-    "description": "An evening of laughter and entertainment",
-    "email": "info@comedynight.com",
-    "category": "Entertainment",
-    "tags": ["comedy", "entertainment", "humor"]
-  },
-  {
-    "name": "Travel Expo",
-    "venue": "Wanderlust Pavilion",
-    "date": "2025-04-02",
-    "location": "Travelers' Corner",
-    "description": "Discover your next adventure",
-    "email": "info@travelexpo.com",
-    "category": "Travel",
-    "tags": ["travel", "expo", "adventure"]
-  },
-  {
+    "id" : 2695148873,
     "name": "Health and Wellness Fair",
     "venue": "Wellness Center",
     "date": "2025-05-15",
@@ -158,16 +152,56 @@
     "description": "Promoting a healthy and balanced lifestyle",
     "email": "info@wellnessfair.com",
     "category": "Health",
+    "image" : "../public/assets/placeholder/health.jpg",
     "tags": ["health", "wellness", "fair"]
+  }
+,
+  {
+    "id" : 124357869986,
+    "name": "Environmental Symposium",
+    "venue": "Nature Conservancy",
+    "date": "2024-11-12",
+    "location": "Green Pavilion",
+    "description": "Addressing environmental challenges and solutions",
+    "email": "info@envirosymposium.com",
+    "category": "Environment",
+    "image" : "../public/assets/placeholder/environment.jpg",
+    "tags": ["environment", "sustainability", "symposium"]
   },
   {
-    "name": "Virtual Reality Showcase",
-    "venue": "VR Experience Center",
-    "date": "2025-06-07",
-    "location": "Virtual Arena",
-    "description": "Immerse yourself in the world of virtual reality",
-    "email": "info@vrshowcase.com",
-    "category": "Technology",
-    "tags": ["virtual reality", "tech", "showcase"]
+    "id" : 968573425112,
+    "name": "Education Expo",
+    "venue": "Education Center",
+    "date": "2025-02-14",
+    "location": "Learning Hub",
+    "description": "Explore educational opportunities and resources",
+    "email": "info@educationexpo.com",
+    "category": "Education",
+    "image" : "../public/assets/placeholder/education.jpg",
+    "tags": ["education", "expo", "learning"]
+  },
+  {
+    "id" : 654213546548,
+    "name": "Comedy Night",
+    "venue": "Laugh Lounge",
+    "date": "2025-03-08",
+    "location": "Comedy Club",
+    "description": "An evening of laughter and entertainment",
+    "email": "info@comedynight.com",
+    "category": "Entertainment",
+    "image" : "../public/assets/placeholder/comedy.jpg",
+    "tags": ["comedy", "entertainment", "humor"]
+  },
+  {
+    "id" : 963852258455,
+    "name": "Travel Expo",
+    "venue": "Wanderlust Pavilion",
+    "date": "2025-04-02",
+    "location": "Travelers' Corner",
+    "description": "Discover your next adventure",
+    "email": "info@travelexpo.com",
+    "category": "Explore",
+    "image" : "../public/assets/placeholder/travel.jpg",
+    "tags": ["travel", "expo", "adventure"]
   }
 ]

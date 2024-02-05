@@ -6,7 +6,7 @@
     "author": "John Doe",
     "email": "john.doe@example.com",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "image": "image1.jpg",
+    "image" : "../public/assets/placeholder/javascript.jpg",
     "category": "Programming",
     "tags": ["JavaScript", "Programming"]
   },
@@ -16,7 +16,7 @@
     "author": "Alice Smith",
     "email": "alice.smith@example.com",
     "content": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "image": "image2.jpg",
+    "image" : "../public/assets/placeholder/web.jpg",
     "category": "Technology",
     "tags": ["Web Development", "Technology"]
   },
@@ -26,7 +26,7 @@
     "author": "Michael Johnson",
     "email": "michael.johnson@example.com",
     "content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "image": "image50.jpg",
+    "image" : "../public/assets/placeholder/ai.jpg",
     "category": "Science",
     "tags": ["Science", "Technology"]
   },
@@ -36,7 +36,7 @@
     "author": "Jane Doe",
     "email": "jane.doe@example.com",
     "content": "A fascinating journey through the cosmos.",
-    "image": "universe.jpg",
+    "image" : "../public/assets/placeholder/univers.jpg",
     "category": "Science",
     "tags": ["Space", "Astronomy"]
   },
@@ -46,7 +46,7 @@
     "author": "Robert Johnson",
     "email": "robert.johnson@example.com",
     "content": "Tips for maintaining a balanced and nutritious diet.",
-    "image": "healthy-eating.jpg",
+    "image" : "../public/assets/placeholder/food.jpg",
     "category": "Health",
     "tags": ["Nutrition", "Wellness"]
   },
@@ -56,7 +56,7 @@
     "author": "Emily White",
     "email": "emily.white@example.com",
     "content": "Capturing moments and expressing creativity through photography.",
-    "image": "photography.jpg",
+    "image" : "../public/assets/placeholder/photo.jpg",
     "category": "Art",
     "tags": ["Photography", "Creativity"]
   },
@@ -66,7 +66,7 @@
     "author": "Daniel Brown",
     "email": "daniel.brown@example.com",
     "content": "An overview of different programming paradigms.",
-    "image": "programming.jpg",
+    "image" : "../public/assets/placeholder/paradigm.jpg",
     "category": "Technology",
     "tags": ["Programming", "Software"]
   },
@@ -76,7 +76,7 @@
     "author": "Sophia Garcia",
     "email": "sophia.garcia@example.com",
     "content": "Unraveling the mysteries of civilizations past.",
-    "image": "ancient-history.jpg",
+    "image" : "../public/assets/placeholder/history.jpg",
     "category": "History",
     "tags": ["Archaeology", "Civilizations"]
   },
@@ -86,7 +86,7 @@
     "author": "William Turner",
     "email": "william.turner@example.com",
     "content": "Immerse yourself in magical realms and fantastical adventures.",
-    "image": "fantasy-literature.jpg",
+    "image" : "../public/assets/placeholder/literature.jpg",
     "category": "Literature",
     "tags": ["Fantasy", "Books"]
   },
@@ -96,7 +96,7 @@
     "author": "Olivia Martinez",
     "email": "olivia.martinez@example.com",
     "content": "Tips for an eco-friendly and sustainable lifestyle.",
-    "image": "green-living.jpg",
+    "image" : "../public/assets/placeholder/green.jpg",
     "category": "Environment",
     "tags": ["Sustainability", "Environment"]
   },
@@ -106,7 +106,7 @@
     "author": "Andrew Taylor",
     "email": "andrew.taylor@example.com",
     "content": "Cultivating peace and focus through mindfulness practices.",
-    "image": "mindfulness.jpg",
+    "image" : "../public/assets/placeholder/mind.jpg",
     "category": "Wellness",
     "tags": ["Mindfulness", "Meditation"]
   },
@@ -116,7 +116,7 @@
     "author": "Sophie Brown",
     "email": "sophie.brown@example.com",
     "content": "Exploring the latest innovations in robotics and AI.",
-    "image": "robotics.jpg",
+    "image" : "../public/assets/placeholder/robot.jpg",
     "category": "Technology",
     "tags": ["Robotics", "Artificial Intelligence"]
   },
@@ -126,7 +126,7 @@
     "author": "Matthew Miller",
     "email": "matthew.miller@example.com",
     "content": "Engage in artistic and fun do-it-yourself craft projects.",
-    "image": "diy-crafts.jpg",
+    "image" : "../public/assets/placeholder/craft.jpg",
     "category": "Art",
     "tags": ["Crafts", "Creativity"]
   },
@@ -136,7 +136,7 @@
     "author": "Isabella Carter",
     "email": "isabella.carter@example.com",
     "content": "Dive into the mesmerizing world beneath the waves.",
-    "image": "underwater.jpg",
+    "image" : "../public/assets/placeholder/underwater.jpg",
     "category": "Nature",
     "tags": ["Oceanography", "Marine Life"]
   },
@@ -146,7 +146,7 @@
     "author": "Nathan Wilson",
     "email": "nathan.wilson@example.com",
     "content": "Examining eco-friendly architectural designs for a greener future.",
-    "image": "sustainable-architecture.jpg",
+    "image" : "../public/assets/placeholder/archi.jpg",
     "category": "Architecture",
     "tags": ["Sustainability", "Design"]
   },
@@ -156,7 +156,7 @@
     "author": "Emma Lewis",
     "email": "emma.lewis@example.com",
     "content": "Capturing moments and cultures from around the globe.",
-    "image": "travel-photography.jpg",
+    "image" : "../public/assets/placeholder/photographic.jpg",
     "category": "Travel",
     "tags": ["Photography", "Adventure"]
   },
@@ -166,7 +166,7 @@
     "author": "Jacob Thompson",
     "email": "jacob.thompson@example.com",
     "content": "Delving into the fascinating and mind-bending world of quantum mechanics.",
-    "image": "quantum-physics.jpg",
+    "image" : "../public/assets/placeholder/quantum.jpg",
     "category": "Science",
     "tags": ["Physics", "Quantum Mechanics"]
   },
@@ -176,7 +176,7 @@
     "author": "Grace Turner",
     "email": "grace.turner@example.com",
     "content": "Exploring the connection between mental well-being and physical health.",
-    "image": "mental-health.jpg",
+    "image" : "../public/assets/placeholder/bodymind.jpg",
     "category": "Wellness",
     "tags": ["Mind-Body Connection", "Well-Being"]
   },
@@ -186,7 +186,7 @@
     "author": "Liam Scott",
     "email": "liam.scott@example.com",
     "content": "Savoring the world of gastronomy and culinary masterpieces.",
-    "image": "culinary-art.jpg",
+    "image" : "../public/assets/placeholder/culunary.jpg",
     "category": "Food",
     "tags": ["Cooking", "Cuisine"]
   },
@@ -196,7 +196,7 @@
     "author": "Hannah Bennett",
     "email": "hannah.bennett@example.com",
     "content": "Exploring the potential of human travel beyond our celestial borders.",
-    "image": "space-travel.jpg",
+    "image" : "../public/assets/placeholder/space.jpg",
     "category": "Space",
     "tags": ["Futurism", "Exploration"]
   },
@@ -206,7 +206,7 @@
     "author": "Leo Martinez",
     "email": "leo.martinez@example.com",
     "content": "A journey through the vibrant and evolving realm of digital creativity.",
-    "image": "digital-art.jpg",
+    "image" : "../public/assets/placeholder/digitalart.jpg",
     "category": "Art",
     "tags": ["Digital Media", "Creativity"]
   },
@@ -216,7 +216,7 @@
     "author": "Eva Davis",
     "email": "eva.davis@example.com",
     "content": "Understanding the concepts and impact of cryptocurrencies on finance.",
-    "image": "cryptocurrency.jpg",
+    "image" : "../public/assets/placeholder/crypto.jpg",
     "category": "Finance",
     "tags": ["Blockchain", "Digital Currency"]
   },
@@ -226,7 +226,7 @@
     "author": "Sophie Turner",
     "email": "sophie.turner@example.com",
     "content": "Celebrating the achievements and contributions of women in STEM fields.",
-    "image": "women-in-stem.jpg",
+    "image" : "../public/assets/placeholder/stem.jpg",
     "category": "Science",
     "tags": ["STEM", "Equality"]
   }
