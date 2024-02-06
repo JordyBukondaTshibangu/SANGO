@@ -3,7 +3,7 @@ import EventHero from '@/components/events/container/EventHero'
 import EventList from '@/components/events/container/EventList'
 
 async function getEvents(){
-  const res = await fetch('http://127.0.0.1:8080/events.json');
+  const res = await fetch('http://127.0.0.1:8080/events.json', { cache : 'no-cache' });
 
   if (!res.ok) {
     throw new Error('Failed to fetch Events')
