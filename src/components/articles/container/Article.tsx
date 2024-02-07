@@ -2,7 +2,6 @@
 import React from 'react'
 import Chip from '@mui/material/Chip';
 import Avatar from '@mui/material/Avatar';
-import ArticleImg from '../../../../public/assets/article.jpg'
 import ArticleSecImg from '../../../../public/assets/globe.jpg'
 import Image from 'next/image';
 
@@ -57,7 +56,7 @@ const Article: React.FC<ArticleProps> = ({ article, content }) => {
         </div>
       </div>
       <div className='w-full bg-black h-[550px] rounded-lg'>
-        <Image src={ArticleImg}  alt={article.title} className='object-cover w-full h-full rounded-lg'/>
+        <Image src={article.image} width={300} height={300} alt={article.title} className='object-cover w-full h-full rounded-lg'/>
       </div>
       <div className="flex flex-col gap-8">
         <p className='text-sm leading-7 lg:text-lg lg:leading-10'>{ paragraph1 }</p>
