@@ -3,7 +3,7 @@ import React from 'react';
 import JobContainer from '@/components/jobs/Jobs'
 
 async function fetchAllJobs() {
-  const res = await fetch('http://127.0.0.1:8080/jobs.json', { cache : 'force-cache' });
+  const res = await fetch('http://127.0.0.1:8080/jobs.json', { cache : 'no-cache' });
 
   if (!res.ok) {
     throw new Error('Failed to fetch Jobs')

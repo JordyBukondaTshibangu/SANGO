@@ -18,7 +18,8 @@ const config: Config = {
     colors: {
       primary: '#FD7401',
       secondary: '',
-      sucess: '',
+      sucess: '#0BA02C',
+      bgSuccess : '#B4FFC5',
       danger: '',
       info: '',
       fontColor: '#BABABF',
