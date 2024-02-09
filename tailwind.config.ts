@@ -29,7 +29,10 @@ const config: Config = {
       white: '#FFF',
       beige: '#F5F5DC',
       lightGray: '#F1F3F6',
-      cloudGray : '#C5C6D0'
+      grayFirst : '#B4B4B8',
+      graySecond: '#C7C8CC',
+      grayThird: 'E3E1D9',
+      grayFour : 'F2EFE5'
     },
     fontFamily: {
       sans: ['Roboto', 'Arial', 'sans-serif'],

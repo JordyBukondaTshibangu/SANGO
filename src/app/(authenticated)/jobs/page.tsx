@@ -1,11 +1,25 @@
-import React from 'react'
 
+import React from 'react';
+import JobContainer from '@/components/jobs/Jobs'
 
-// https://www.figma.com/file/uBqHPT5ltzckbRi0NLY28G/Jobpilot---Job-Portal-Figma-UI-Template-(Community)-(Community)?node-id=4115%3A2844&mode=dev
+async function fetchAllJobs() {
+  const res = await fetch('http://127.0.0.1:8080/jobs.json', { cache : 'force-cache' });
 
-const JobsPage = () => {
+  if (!res.ok) {
+    throw new Error('Failed to fetch Jobs')
+  }
+
+  return res.json()
+  }
+
+const JobsPage = async () => {
+
+  const jobs = await fetchAllJobs() 
+
   return (
-    <div>Jobs Page</div>
+    <div className='flex flex-col gap-8'>
+      <JobContainer jobs={jobs} />
+    </div>
   )
 }
 

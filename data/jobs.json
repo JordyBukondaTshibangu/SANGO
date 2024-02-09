@@ -1,5 +1,6 @@
 [
   {
+    "id" : 4564564454,
     "title": "Frontend Developer",
     "company": "WebTech Solutions",
     "location": "Cityville",
@@ -9,6 +10,7 @@
     "category": "Information Technology"
   },
   {
+    "id" : 897546645,
     "title": "Data Scientist",
     "company": "Data Insights Co.",
     "location": "Techburg",
@@ -18,6 +20,7 @@
     "category": "Data Science"
   },
   {
+    "id" : 12332154,
     "title": "UX/UI Designer",
     "company": "Creative Designs Studio",
     "location": "Design City",
@@ -27,6 +30,7 @@
     "category": "Design"
   },
   {
+    "id" : 5487778767484,
     "title": "Software Engineer",
     "company": "Tech Innovators Ltd.",
     "location": "InnoCity",
@@ -36,6 +40,7 @@
     "category": "Software Development"
   },
   {
+    "id" : 17147474741,
     "title": "Marketing Specialist",
     "company": "Global Marketing Agency",
     "location": "Marketing Square",
@@ -45,6 +50,7 @@
     "category": "Marketing"
   },
   {
+    "id" : 2585282588,
     "title": "Network Administrator",
     "company": "TechNet Solutions",
     "location": "Networkville",
@@ -54,6 +60,7 @@
     "category": "Information Technology"
   },
   {
+    "id" : 85258252288,
     "title": "Financial Analyst",
     "company": "Finance Dynamics Corp.",
     "location": "Finance Street",
@@ -63,6 +70,7 @@
     "category": "Finance"
   },
   {
+    "id" : 321147471213,
     "title": "Customer Support Representative",
     "company": "SupportHub Inc.",
     "location": "Support City",
@@ -72,6 +80,7 @@
     "category": "Customer Service"
   },
   {
+    "id" : 54465454565,
     "title": "UX/UI Designer",
     "company": "Creative Design Studios",
     "location": "Design District",
@@ -81,6 +90,7 @@
     "category": "Design"
   },
   {
+    "id" : 852147693698797,
     "title": "Project Manager",
     "company": "ProjectPro Solutions",
     "location": "Project Avenue",
@@ -90,6 +100,7 @@
     "category": "Project Management"
   },
   {
+    "id" : 159951489963963,
     "title": "Data Scientist",
     "company": "Data Insights Inc.",
     "location": "Data Central",
@@ -99,6 +110,7 @@
     "category": "Data Science"
   },
   {
+    "id" : 26951488737418598,
     "title": "Human Resources Manager",
     "company": "PeopleConnect Ltd.",
     "location": "HR Plaza",
@@ -108,6 +120,7 @@
     "category": "Human Resources"
   },
   {
+    "id" : 124357869986,
     "title": "Sales Representative",
     "company": "SalesPro Solutions",
     "location": "Sales Street",
@@ -117,6 +130,7 @@
     "category": "Sales"
   },
   {
+    "id" : 968573425112,
     "title": "DevOps Engineer",
     "company": "DevOps Dynamics",
     "location": "DevOps Alley",
@@ -126,6 +140,7 @@
     "category": "DevOps"
   },
   {
+    "id" : 654213546548,
     "title": "Quality Assurance Analyst",
     "company": "QualityTech Solutions",
     "location": "Quality Lane",
@@ -135,6 +150,7 @@
     "category": "Quality Assurance"
   },
   {
+    "id" : 2132154646512,
     "title": "Content Writer",
     "company": "ContentCrafters Ltd.",
     "location": "Content Corner",
@@ -144,6 +160,7 @@
     "category": "Content Creation"
   },
   {
+    "id" : 564548695645454,
     "title": "Legal Counsel",
     "company": "Legal Solutions Inc.",
     "location": "Legal Lane",
@@ -153,6 +170,7 @@
     "category": "Legal"
   },
   {
+    "id" : 987541236985,
     "title": "Health and Safety Officer",
     "company": "SafeWorks Corp.",
     "location": "Safety Square",
