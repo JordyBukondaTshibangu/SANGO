@@ -17,6 +17,8 @@ export type JobT = {
   salary: string,
   image : string,
   category: string,
+  desirables: string[],
+  benefits : string[]
 }
 
 type JobContainerProps = {

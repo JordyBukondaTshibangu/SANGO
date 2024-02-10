@@ -17,7 +17,6 @@ async function getSingleArticle(articleId:number) {
   const res = await fetch('http://127.0.0.1:8080/articles.json', { cache: 'force-cache' });
   const data = await res.json();
 
-  console.log(articleId)
   const article = data.articles.filter((item: ArticleT) => item.id === Number(articleId))[0];
   if (!res.ok) {
     throw new Error('Failed to fetch Content')

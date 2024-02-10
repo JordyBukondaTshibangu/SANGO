@@ -10,17 +10,13 @@ async function fetchAllJobs() {
   }
 
   return res.json()
-  }
+}
 
 const JobsPage = async () => {
 
   const jobs = await fetchAllJobs() 
 
-  return (
-    <div className='flex flex-col gap-8'>
-      <JobContainer jobs={jobs} />
-    </div>
-  )
+  return  <JobContainer jobs={jobs} />
 }
 
 export default JobsPage

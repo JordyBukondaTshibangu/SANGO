@@ -20,7 +20,7 @@ const JobCard:React.FC<JobCardProps> = ({job}) => {
         <p className='text-sm'>Salary : { job.salary}</p>
       </div>
       <div className="flex gap-4 items-start">
-        <Image src={job.image} width={35} height={45} alt="" className='object-contain w-auto h-auto' />
+        <Image src={job.image} width={35} height={35} alt="jobimage" className='object-contain w-auto h-auto' />
         <div className="flex flex-col gap-2">
           <p className='text-sm lg:text-md'>{ job.company}</p>
           <p className='flex items-center gap-1'>
