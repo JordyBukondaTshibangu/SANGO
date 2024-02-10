@@ -5,7 +5,7 @@ export type AuthorT = {
     name: string,
     position: string,
     email: string,
-    profile : string,
+    profile: string,
 }
 export type CommentT = {
     author: AuthorT,
@@ -22,7 +22,7 @@ export type PostT = {
     title: string,
     content: string,
     publishedAt : string,
-    author: string,
+    author: AuthorT,
     tags:  string[],
     image: string,
     comments: CommentT[],

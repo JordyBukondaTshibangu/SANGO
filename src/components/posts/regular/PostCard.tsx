@@ -8,8 +8,8 @@ type PostCardProps = {
     post : PostT
 }
 const PostCard: React.FC<PostCardProps> = ({ post }) => {
-    const { publishedAt, content, image, likes , comments } = post;
-    const { profile, name, position } = post.author;
+    const { publishedAt, content, image, likes , comments, author } = post;
+    const { profile, name, position } = author;
     return (
         <div className='w-full bg-darkHeader px-5 py-10 flex flex-col gap-10 rounded-md shadow-md'>
             <div className="flex gap-5 items-center">
