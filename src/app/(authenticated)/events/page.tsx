@@ -1,6 +1,7 @@
 import React from 'react'
 import EventHero from '@/components/events/container/EventHero'
 import EventList from '@/components/events/container/EventList'
+import pickRandomObject from '@/utils/randomItem';
 
 async function getEvents(){
   const res = await fetch('http://127.0.0.1:8080/events.json', { cache : 'no-cache' });
@@ -16,12 +17,11 @@ async function getEvents(){
 const EventsPage = async () => {
 
   const events = await getEvents();
-
-  console.log(events)
+  const event = pickRandomObject(events);
 
   return (
     <div className='flex flex-col gap-10'>
-      <EventHero />
+      <EventHero event={event} />
       <EventList events={events} />
     </div>
   )

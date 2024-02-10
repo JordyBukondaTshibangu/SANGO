@@ -5,11 +5,27 @@
     "venue": "TechHub",
     "date": "2024-02-15",
     "location": "Convention Center",
-    "description": "A conference on the latest tech trends",
+    "description": "A conference on the latest tech trends Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit.",
     "email": "info@techhub.com",
+    "organiser" : "John Taylor",
+    "phone" : "021-565-8552",
     "category": "Technology",
+    "guests" : 352,
     "image" : "/assets/placeholder/tech.jpg",
-    "tags": ["conference", "technology"]
+    "tags": ["conference", "technology"],
+    "gallery" : [
+      "/assets/placeholder/tech.jpg",
+      "/assets/placeholder/venu_one.jpg",
+      "/assets/placeholder/venu_two.jpg",
+      "/assets/placeholder/venu_three.jpg",
+      "/assets/placeholder/venu_four.jpg",
+      "/assets/placeholder/venu_five.jpg",
+      "/assets/placeholder/venu_six.jpg",
+      "/assets/placeholder/venu_seven.jpg",
+      "/assets/placeholder/venu_eight.jpg",      
+      "/assets/placeholder/venu_nine.jpg",
+      "/assets/placeholder/venu_ten.jpg"
+    ]
   },
   {
     "id" : 876455465,
@@ -17,11 +33,27 @@
     "venue": "Tech Convention Center",
     "date": "2024-10-18",
     "location": "Innovation Stage",
-    "description": "Exploring the latest in technology and innovation",
+    "description": "Exploring the latest in technology and innovation Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit.",
     "email": "info@techconference.com",
+    "organiser" : "John Taylor",
+    "phone" : "021-565-8552",
     "category": "Technology",
+    "guests" : 352,
     "image" : "/assets/placeholder/techno.jpg",
-    "tags": ["technology", "innovation", "conference"]
+    "tags": ["technology", "innovation", "conference"],
+    "gallery" : [
+      "/assets/placeholder/tech.jpg",
+      "/assets/placeholder/venu_one.jpg",
+      "/assets/placeholder/venu_two.jpg",
+      "/assets/placeholder/venu_three.jpg",
+      "/assets/placeholder/venu_four.jpg",
+      "/assets/placeholder/venu_five.jpg",
+      "/assets/placeholder/venu_six.jpg",
+      "/assets/placeholder/venu_seven.jpg",
+      "/assets/placeholder/venu_eight.jpg",      
+      "/assets/placeholder/venu_nine.jpg",
+      "/assets/placeholder/venu_ten.jpg"
+    ]
   },
   {
         "id" : 897546645,
@@ -29,11 +61,27 @@
     "venue": "Science Center",
     "date": "2024-06-15",
     "location": "Exhibition Hall",
-    "description": "Showcasing scientific innovations",
+    "description": "Showcasing scientific innovations Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit.",
     "email": "info@sciencefair.com",
+    "organiser" : "John Taylor",
+    "phone" : "021-565-8552",
     "category": "Science",
+    "guests" : 352,
     "image" : "/assets/placeholder/technology.jpg",
-    "tags": ["science", "innovation", "education"]
+    "tags": ["science", "innovation", "education"],
+    "gallery" : [
+      "/assets/placeholder/tech.jpg",
+      "/assets/placeholder/venu_one.jpg",
+      "/assets/placeholder/venu_two.jpg",
+      "/assets/placeholder/venu_three.jpg",
+      "/assets/placeholder/venu_four.jpg",
+      "/assets/placeholder/venu_five.jpg",
+      "/assets/placeholder/venu_six.jpg",
+      "/assets/placeholder/venu_seven.jpg",
+      "/assets/placeholder/venu_eight.jpg",      
+      "/assets/placeholder/venu_nine.jpg",
+      "/assets/placeholder/venu_ten.jpg"
+    ]
   },
     {
     "id" : 12332154,
@@ -41,11 +89,27 @@
     "venue": "VR Experience Center",
     "date": "2025-06-07",
     "location": "Virtual Arena",
-    "description": "Immerse yourself in the world of virtual reality",
+    "description": "Immerse yourself in the world of virtual reality Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit.",
     "email": "info@vrshowcase.com",
+    "organiser" : "John Taylor",
+    "phone" : "021-565-8552",
     "category": "Technology",
+    "guests" : 352,
     "image" : "/assets/placeholder/technic.jpg",
-    "tags": ["virtual reality", "tech", "showcase"]
+    "tags": ["virtual reality", "tech", "showcase"],
+    "gallery" : [
+      "/assets/placeholder/tech.jpg",
+      "/assets/placeholder/venu_one.jpg",
+      "/assets/placeholder/venu_two.jpg",
+      "/assets/placeholder/venu_three.jpg",
+      "/assets/placeholder/venu_four.jpg",
+      "/assets/placeholder/venu_five.jpg",
+      "/assets/placeholder/venu_six.jpg",
+      "/assets/placeholder/venu_seven.jpg",
+      "/assets/placeholder/venu_eight.jpg",      
+      "/assets/placeholder/venu_nine.jpg",
+      "/assets/placeholder/venu_ten.jpg"
+    ]
   },
   {
     "id" : 3699399636,
@@ -53,11 +117,17 @@
       "venue": "ArtGallery",
       "date": "2024-03-20",
       "location": "City Art Center",
-      "description": "Showcasing contemporary art pieces",
+      "description": "Showcasing contemporary art pieces Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit.",
       "email": "info@artgallery.com",
+      "organiser" : "John Taylor",
+      "phone" : "021-565-8552",
       "category": "Art",
+      "guests" : 352,
     "image" : "/assets/placeholder/art.jpg",
-      "tags": ["exhibition", "art", "culture"]
+      "tags": ["exhibition", "art", "culture"],
+      "gallery" : [
+        "/assets/placeholder/tech.jpg"
+      ]
     },   
   {
     "id" : 17147474741,
@@ -65,11 +135,17 @@
       "venue": "City Park",
       "date": "2024-05-25",
       "location": "Main Stage",
-      "description": "A celebration of diverse musical genres",
+      "description": "A celebration of diverse musical genres Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit.",
       "email": "info@musicfest.com",
+      "organiser" : "John Taylor",
+      "phone" : "021-565-8552",
       "category": "Music",
+      "guests" : 352,
     "image" : "/assets/placeholder/music.jpg",
-      "tags": ["festival", "music", "entertainment"]
+      "tags": ["festival", "music", "entertainment"],
+      "gallery" : [
+        "/assets/placeholder/tech.jpg"
+      ]
     },
   {
     "id" : 2585282588,
@@ -77,11 +153,17 @@
       "venue": "Modern Art Gallery",
       "date": "2024-09-05",
       "location": "Exhibition Hall",
-      "description": "Discover the beauty of contemporary art",
+      "description": "Discover the beauty of contemporary art Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit.",
       "email": "info@artexhibition.com",
+      "organiser" : "John Taylor",
+      "phone" : "021-565-8552",
       "category": "Art",
+      "guests" : 352,
     "image" : "/assets/placeholder/exhibition.jpg",
-      "tags": ["art", "exhibition", "creativity"]
+      "tags": ["art", "exhibition", "creativity"],
+      "gallery" : [
+        "/assets/placeholder/tech.jpg"
+      ]
     },
   {
     "id" : 85258252288,
@@ -89,11 +171,17 @@
       "venue": "Cinema City",
       "date": "2024-12-03",
       "location": "Film Palace",
-      "description": "Celebrating cinematic excellence",
+      "description": "Celebrating cinematic excellence Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit.",
       "email": "info@filmfestival.com",
+      "organiser" : "John Taylor",
+      "phone" : "021-565-8552",
       "category": "Film",
+      "guests" : 352,
     "image" : "/assets/placeholder/film.jpg",
-      "tags": ["film", "festival", "cinema"]
+      "tags": ["film", "festival", "cinema"],
+      "gallery" : [
+        "/assets/placeholder/tech.jpg"
+      ]
     },
   {
     "id" : 3669789897879,
@@ -101,11 +189,17 @@
       "venue": "Fashion Plaza",
       "date": "2025-01-20",
       "location": "Runway Stage",
-      "description": "A showcase of style and trends",
+      "description": "A showcase of style and trends Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit.",
       "email": "info@fashionshow.com",
+      "organiser" : "John Taylor",
+      "phone" : "021-565-8552",
       "category": "Fashion",
+      "guests" : 352,
       "image" : "/assets/placeholder/fashion.jpg",
-      "tags": ["fashion", "style", "runway"]
+      "tags": ["fashion", "style", "runway"],
+      "gallery" : [
+        "/assets/placeholder/tech.jpg"
+      ]
     },
   {
     "id" : 321147471213,
@@ -113,11 +207,27 @@
     "venue": "Innovation Hub",
     "date": "2024-04-10",
     "location": "Startup District",
-    "description": "Connecting entrepreneurs and investors",
+    "description": "Connecting entrepreneurs and investors Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit.",
     "email": "info@startupsummit.com",
+    "organiser" : "John Taylor",
+    "phone" : "021-565-8552",
     "category": "Business",
+    "guests" : 352,
     "image" : "/assets/placeholder/summit.jpg",
-    "tags": ["startup", "entrepreneurship", "investing"]
+    "tags": ["startup", "entrepreneurship", "investing"],
+    "gallery" : [
+      "/assets/placeholder/tech.jpg",
+      "/assets/placeholder/venu_one.jpg",
+      "/assets/placeholder/venu_two.jpg",
+      "/assets/placeholder/venu_three.jpg",
+      "/assets/placeholder/venu_four.jpg",
+      "/assets/placeholder/venu_five.jpg",
+      "/assets/placeholder/venu_six.jpg",
+      "/assets/placeholder/venu_seven.jpg",
+      "/assets/placeholder/venu_eight.jpg",      
+      "/assets/placeholder/venu_nine.jpg",
+      "/assets/placeholder/venu_ten.jpg"
+    ]
   },
   {  
     "id" : 8521476936,
@@ -125,11 +235,27 @@
     "venue": "Culinary Center",
     "date": "2024-07-08",
     "location": "Tasting Pavilion",
-    "description": "Explore culinary delights from around the world",
+    "description": "Explore culinary delights from around the world Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit.",
     "email": "info@foodexpo.com",
+    "organiser" : "John Taylor",
+    "phone" : "021-565-8552",
     "category": "Food",
+    "guests" : 352,
     "image" : "/assets/placeholder/food.jpg",
-    "tags": ["food", "tasting", "culinary"]
+    "tags": ["food", "tasting", "culinary"],
+    "gallery" : [
+      "/assets/placeholder/tech.jpg",
+      "/assets/placeholder/venu_one.jpg",
+      "/assets/placeholder/venu_two.jpg",
+      "/assets/placeholder/venu_three.jpg",
+      "/assets/placeholder/venu_four.jpg",
+      "/assets/placeholder/venu_five.jpg",
+      "/assets/placeholder/venu_six.jpg",
+      "/assets/placeholder/venu_seven.jpg",
+      "/assets/placeholder/venu_eight.jpg",      
+      "/assets/placeholder/venu_nine.jpg",
+      "/assets/placeholder/venu_ten.jpg"
+    ]
   }
 ,
   {
@@ -138,11 +264,27 @@
     "venue": "Sports Complex",
     "date": "2024-08-20",
     "location": "Fitness Arena",
-    "description": "Join the ultimate fitness challenge",
+    "description": "Join the ultimate fitness challenge Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit.",
     "email": "info@fitnesschallenge.com",
+    "organiser" : "John Taylor",
+    "phone" : "021-565-8552",
     "category": "Fitness",
+    "guests" : 352,
     "image" : "/assets/placeholder/fitness.jpg",
-    "tags": ["fitness", "health", "wellness"]
+    "tags": ["fitness", "health", "wellness"],
+    "gallery" : [
+      "/assets/placeholder/tech.jpg",
+      "/assets/placeholder/venu_one.jpg",
+      "/assets/placeholder/venu_two.jpg",
+      "/assets/placeholder/venu_three.jpg",
+      "/assets/placeholder/venu_four.jpg",
+      "/assets/placeholder/venu_five.jpg",
+      "/assets/placeholder/venu_six.jpg",
+      "/assets/placeholder/venu_seven.jpg",
+      "/assets/placeholder/venu_eight.jpg",      
+      "/assets/placeholder/venu_nine.jpg",
+      "/assets/placeholder/venu_ten.jpg"
+    ]
   },
   {
     "id" : 2695148873,
@@ -150,11 +292,27 @@
     "venue": "Wellness Center",
     "date": "2025-05-15",
     "location": "Health Pavilion",
-    "description": "Promoting a healthy and balanced lifestyle",
+    "description": "Promoting a healthy and balanced lifestyle Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit.",
     "email": "info@wellnessfair.com",
+    "organiser" : "John Taylor",
+    "phone" : "021-565-8552",
     "category": "Health",
+    "guests" : 352,
     "image" : "/assets/placeholder/health.jpg",
-    "tags": ["health", "wellness", "fair"]
+    "tags": ["health", "wellness", "fair"],
+    "gallery" : [
+      "/assets/placeholder/tech.jpg",
+      "/assets/placeholder/venu_one.jpg",
+      "/assets/placeholder/venu_two.jpg",
+      "/assets/placeholder/venu_three.jpg",
+      "/assets/placeholder/venu_four.jpg",
+      "/assets/placeholder/venu_five.jpg",
+      "/assets/placeholder/venu_six.jpg",
+      "/assets/placeholder/venu_seven.jpg",
+      "/assets/placeholder/venu_eight.jpg",      
+      "/assets/placeholder/venu_nine.jpg",
+      "/assets/placeholder/venu_ten.jpg"
+    ]
   }
 ,
   {
@@ -163,11 +321,27 @@
     "venue": "Nature Conservancy",
     "date": "2024-11-12",
     "location": "Green Pavilion",
-    "description": "Addressing environmental challenges and solutions",
+    "description": "Addressing environmental challenges and solutions Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit.",
     "email": "info@envirosymposium.com",
+    "organiser" : "John Taylor",
+    "phone" : "021-565-8552",
     "category": "Environment",
+    "guests" : 352,
     "image" : "/assets/placeholder/environment.jpg",
-    "tags": ["environment", "sustainability", "symposium"]
+    "tags": ["environment", "sustainability", "symposium"],
+    "gallery" : [
+      "/assets/placeholder/tech.jpg",
+      "/assets/placeholder/venu_one.jpg",
+      "/assets/placeholder/venu_two.jpg",
+      "/assets/placeholder/venu_three.jpg",
+      "/assets/placeholder/venu_four.jpg",
+      "/assets/placeholder/venu_five.jpg",
+      "/assets/placeholder/venu_six.jpg",
+      "/assets/placeholder/venu_seven.jpg",
+      "/assets/placeholder/venu_eight.jpg",      
+      "/assets/placeholder/venu_nine.jpg",
+      "/assets/placeholder/venu_ten.jpg"
+    ]
   },
   {
     "id" : 968573425112,
@@ -175,11 +349,27 @@
     "venue": "Education Center",
     "date": "2025-02-14",
     "location": "Learning Hub",
-    "description": "Explore educational opportunities and resources",
+    "description": "Explore educational opportunities and resources Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit.",
     "email": "info@educationexpo.com",
+    "organiser" : "John Taylor",
+    "phone" : "021-565-8552",
     "category": "Education",
+    "guests" : 352,
     "image" : "/assets/placeholder/education.jpg",
-    "tags": ["education", "expo", "learning"]
+    "tags": ["education", "expo", "learning"],
+    "gallery" : [
+      "/assets/placeholder/tech.jpg",
+      "/assets/placeholder/venu_one.jpg",
+      "/assets/placeholder/venu_two.jpg",
+      "/assets/placeholder/venu_three.jpg",
+      "/assets/placeholder/venu_four.jpg",
+      "/assets/placeholder/venu_five.jpg",
+      "/assets/placeholder/venu_six.jpg",
+      "/assets/placeholder/venu_seven.jpg",
+      "/assets/placeholder/venu_eight.jpg",      
+      "/assets/placeholder/venu_nine.jpg",
+      "/assets/placeholder/venu_ten.jpg"
+    ]
   },
   {
     "id" : 654213546548,
@@ -187,11 +377,27 @@
     "venue": "Laugh Lounge",
     "date": "2025-03-08",
     "location": "Comedy Club",
-    "description": "An evening of laughter and entertainment",
+    "description": "An evening of laughter and entertainment Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit.",
     "email": "info@comedynight.com",
+    "organiser" : "John Taylor",
+    "phone" : "021-565-8552",
     "category": "Entertainment",
+    "guests" : 352,
     "image" : "/assets/placeholder/comedy.jpg",
-    "tags": ["comedy", "entertainment", "humor"]
+    "tags": ["comedy", "entertainment", "humor"],
+    "gallery" : [
+      "/assets/placeholder/tech.jpg",
+      "/assets/placeholder/venu_one.jpg",
+      "/assets/placeholder/venu_two.jpg",
+      "/assets/placeholder/venu_three.jpg",
+      "/assets/placeholder/venu_four.jpg",
+      "/assets/placeholder/venu_five.jpg",
+      "/assets/placeholder/venu_six.jpg",
+      "/assets/placeholder/venu_seven.jpg",
+      "/assets/placeholder/venu_eight.jpg",      
+      "/assets/placeholder/venu_nine.jpg",
+      "/assets/placeholder/venu_ten.jpg"
+    ]
   },
   {
     "id" : 963852258455,
@@ -199,10 +405,26 @@
     "venue": "Wanderlust Pavilion",
     "date": "2025-04-02",
     "location": "Travelers' Corner",
-    "description": "Discover your next adventure",
+    "description": "Discover your next adventure Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit.",
     "email": "info@travelexpo.com",
+    "organiser" : "John Taylor",
+    "phone" : "021-565-8552",
     "category": "Explore",
+    "guests" : 352,
     "image" : "/assets/placeholder/travel.jpg",
-    "tags": ["travel", "expo", "adventure"]
+    "tags": ["travel", "expo", "adventure"],
+    "gallery" : [
+      "/assets/placeholder/tech.jpg",
+      "/assets/placeholder/venu_one.jpg",
+      "/assets/placeholder/venu_two.jpg",
+      "/assets/placeholder/venu_three.jpg",
+      "/assets/placeholder/venu_four.jpg",
+      "/assets/placeholder/venu_five.jpg",
+      "/assets/placeholder/venu_six.jpg",
+      "/assets/placeholder/venu_seven.jpg",
+      "/assets/placeholder/venu_eight.jpg",      
+      "/assets/placeholder/venu_nine.jpg",
+      "/assets/placeholder/venu_ten.jpg"
+    ]
   }
 ]
