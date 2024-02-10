@@ -1,202 +1,202 @@
 [
-  {
-    "id": 2390239032,
-    "username": "jordy_tshibangu",
-    "firstName": "Jordy",
-    "lastName": "Tshibangu",
-    "email": "jordy@example.com",
-    "birthdate": "1990-05-15",
-    "gender": "Male",
-    "address": {
-      "street": "123 Main Street",
-      "city": "Cityville",
-      "state": "State",
-      "zipCode": "12345",
-      "country": "Country"
-    },
-    "phoneNumber": "+1234567890",
-    "avatar": "https://example.com/avatar.jpg",
-    "bio": "Passionate software developer always eager to learn and explore new technologies.",
-    "socialLinks": {
-      "github": "https://github.com/jordy_tshibangu",
-      "linkedin": "https://www.linkedin.com/in/jordy-tshibangu",
-      "twitter": "https://twitter.com/jordy_tshibangu"
-    },
-    "createdAt": "2023-01-01T08:30:00Z"
-  },
-  {
-    "id": 902390323223,
-    "username": "grace_williams",
-    "firstName": "Grace",
-    "lastName": "Williams",
-    "email": "grace@example.com",
-    "birthdate": "1985-08-21",
-    "gender": "Female",
-    "address": {
-      "street": "456 Oak Avenue",
-      "city": "Townsville",
-      "state": "Province",
-      "zipCode": "54321",
-      "country": "Country"
-    },
-    "phoneNumber": "+9876543210",
-    "avatar": "https://example.com/grace_avatar.jpg",
-    "bio": "Experienced front-end developer with a passion for creating beautiful and responsive user interfaces.",
-    "socialLinks": {
-      "github": "https://github.com/grace_williams",
-      "linkedin": "https://www.linkedin.com/in/grace-williams",
-      "twitter": "https://twitter.com/grace_williams"
-    },
-    "createdAt": "2023-01-02T09:15:00Z"
-  },
     {
-    "id": 239329233232,
-    "username": "alex_smith",
-    "firstName": "Alex",
-    "lastName": "Smith",
-    "email": "alex@example.com",
-    "birthdate": "1990-04-15",
-    "gender": "Male",
-    "address": {
-      "street": "789 Pine Street",
-      "city": "Metropolis",
-      "state": "Capital",
-      "zipCode": "67890",
-      "country": "Nation"
+        "id": 2390239032,
+        "username": "jordy_tshibangu",
+        "firstName": "Jordy",
+        "lastName": "Tshibangu",
+        "email": "jordy@example.com",
+        "birthdate": "1990-05-15",
+        "gender": "Male",
+        "address": {
+            "street": "123 Main Street",
+            "city": "Cityville",
+            "state": "State",
+            "zipCode": "12345",
+            "country": "Country"
+        },
+        "phoneNumber": "+1234567890",
+        "avatar": "https://example.com/avatar.jpg",
+        "bio": "Passionate software developer always eager to learn and explore new technologies.",
+        "socialLinks": {
+            "github": "https://github.com/jordy_tshibangu",
+            "linkedin": "https://www.linkedin.com/in/jordy-tshibangu",
+            "twitter": "https://twitter.com/jordy_tshibangu"
+        },
+        "createdAt": "2023-01-01T08:30:00Z"
     },
-    "phoneNumber": "+1234567890",
-    "avatar": "https://example.com/alex_avatar.jpg",
-    "bio": "Passionate software engineer with a knack for problem-solving and efficient code.",
-    "socialLinks": {
-      "github": "https://github.com/alex_smith",
-      "linkedin": "https://www.linkedin.com/in/alex-smith",
-      "twitter": "https://twitter.com/alex_smith"
-    },
-    "createdAt": "2023-01-05T11:30:00Z"
-  },
     {
-    "id": 345454545665,
-    "username": "sara_jones",
-    "firstName": "Sara",
-    "lastName": "Jones",
-    "email": "sara@example.com",
-    "birthdate": "1988-07-22",
-    "gender": "Female",
-    "address": {
-      "street": "456 Oak Avenue",
-      "city": "Villageville",
-      "state": "Territory",
-      "zipCode": "54321",
-      "country": "Land"
+        "id": 902390323223,
+        "username": "grace_williams",
+        "firstName": "Grace",
+        "lastName": "Williams",
+        "email": "grace@example.com",
+        "birthdate": "1985-08-21",
+        "gender": "Female",
+        "address": {
+            "street": "456 Oak Avenue",
+            "city": "Townsville",
+            "state": "Province",
+            "zipCode": "54321",
+            "country": "Country"
+        },
+        "phoneNumber": "+9876543210",
+        "avatar": "https://example.com/grace_avatar.jpg",
+        "bio": "Experienced front-end developer with a passion for creating beautiful and responsive user interfaces.",
+        "socialLinks": {
+            "github": "https://github.com/grace_williams",
+            "linkedin": "https://www.linkedin.com/in/grace-williams",
+            "twitter": "https://twitter.com/grace_williams"
+        },
+        "createdAt": "2023-01-02T09:15:00Z"
     },
-    "phoneNumber": "+9876543210",
-    "avatar": "https://example.com/sara_avatar.jpg",
-    "bio": "Experienced frontend developer with a passion for creating stunning user interfaces.",
-    "socialLinks": {
-      "github": "https://github.com/sara_jones",
-      "linkedin": "https://www.linkedin.com/in/sara-jones",
-      "twitter": "https://twitter.com/sara_jones"
-    },
-    "createdAt": "2023-01-10T14:45:00Z"
-  },
-   {
-    "id": 43945394538,
-    "username": "adam_smith",
-    "firstName": "Adam",
-    "lastName": "Smith",
-    "email": "adam@example.com",
-    "birthdate": "1990-05-15",
-    "gender": "Male",
-    "address": {
-      "street": "789 Pine Street",
-      "city": "Townsville",
-      "state": "Province",
-      "zipCode": "67890",
-      "country": "Country"
-    },
-    "phoneNumber": "+1234567890",
-    "avatar": "https://example.com/adam_avatar.jpg",
-    "bio": "Passionate about backend development and system architecture.",
-    "socialLinks": {
-      "github": "https://github.com/adam_smith",
-      "linkedin": "https://www.linkedin.com/in/adam-smith",
-      "twitter": "https://twitter.com/adam_smith"
-    },
-    "createdAt": "2023-01-11T09:30:00Z"
-  },
     {
-    "id": 348934895445,
-    "username": "emily_jones",
-    "firstName": "Emily",
-    "lastName": "Jones",
-    "email": "emily@example.com",
-    "birthdate": "1988-09-22",
-    "gender": "Female",
-    "address": {
-      "street": "456 Oak Avenue",
-      "city": "Cityville",
-      "state": "State",
-      "zipCode": "54321",
-      "country": "Country"
+        "id": 239329233232,
+        "username": "alex_smith",
+        "firstName": "Alex",
+        "lastName": "Smith",
+        "email": "alex@example.com",
+        "birthdate": "1990-04-15",
+        "gender": "Male",
+        "address": {
+            "street": "789 Pine Street",
+            "city": "Metropolis",
+            "state": "Capital",
+            "zipCode": "67890",
+            "country": "Nation"
+        },
+        "phoneNumber": "+1234567890",
+        "avatar": "https://example.com/alex_avatar.jpg",
+        "bio": "Passionate software engineer with a knack for problem-solving and efficient code.",
+        "socialLinks": {
+            "github": "https://github.com/alex_smith",
+            "linkedin": "https://www.linkedin.com/in/alex-smith",
+            "twitter": "https://twitter.com/alex_smith"
+        },
+        "createdAt": "2023-01-05T11:30:00Z"
     },
-    "phoneNumber": "+9876543210",
-    "avatar": "https://example.com/emily_avatar.jpg",
-    "bio": "Frontend developer with a passion for creating user-friendly interfaces.",
-    "socialLinks": {
-      "github": "https://github.com/emily_jones",
-      "linkedin": "https://www.linkedin.com/in/emily-jones",
-      "twitter": "https://twitter.com/emily_jones"
-    },
-    "createdAt": "2023-01-11T10:45:00Z"
-  },
     {
-    "id": 2983489433434,
-    "username": "michael_smith",
-    "firstName": "Michael",
-    "lastName": "Smith",
-    "email": "michael@example.com",
-    "birthdate": "1990-05-15",
-    "gender": "Male",
-    "address": {
-      "street": "789 Pine Street",
-      "city": "Townsville",
-      "state": "State",
-      "zipCode": "67890",
-      "country": "Country"
+        "id": 345454545665,
+        "username": "sara_jones",
+        "firstName": "Sara",
+        "lastName": "Jones",
+        "email": "sara@example.com",
+        "birthdate": "1988-07-22",
+        "gender": "Female",
+        "address": {
+            "street": "456 Oak Avenue",
+            "city": "Villageville",
+            "state": "Territory",
+            "zipCode": "54321",
+            "country": "Land"
+        },
+        "phoneNumber": "+9876543210",
+        "avatar": "https://example.com/sara_avatar.jpg",
+        "bio": "Experienced frontend developer with a passion for creating stunning user interfaces.",
+        "socialLinks": {
+            "github": "https://github.com/sara_jones",
+            "linkedin": "https://www.linkedin.com/in/sara-jones",
+            "twitter": "https://twitter.com/sara_jones"
+        },
+        "createdAt": "2023-01-10T14:45:00Z"
     },
-    "phoneNumber": "+1234567890",
-    "avatar": "https://example.com/michael_avatar.jpg",
-    "bio": "Full-stack developer passionate about creating scalable and efficient applications.",
-    "socialLinks": {
-      "github": "https://github.com/michael_smith",
-      "linkedin": "https://www.linkedin.com/in/michael-smith",
-      "twitter": "https://twitter.com/michael_smith"
-    },
-    "createdAt": "2023-01-12T09:30:00Z"
-  },
     {
-    "id": 342903490432,
-    "username": "emma_jones",
-    "firstName": "Emma",
-    "lastName": "Jones",
-    "email": "emma@example.com",
-    "birthdate": "1985-08-22",
-    "gender": "Female",
-    "address": {
-      "street": "456 Oak Avenue",
-      "city": "Villagetown",
-      "state": "Region",
-      "zipCode": "54321",
-      "country": "Country"
+        "id": 43945394538,
+        "username": "adam_smith",
+        "firstName": "Adam",
+        "lastName": "Smith",
+        "email": "adam@example.com",
+        "birthdate": "1990-05-15",
+        "gender": "Male",
+        "address": {
+            "street": "789 Pine Street",
+            "city": "Townsville",
+            "state": "Province",
+            "zipCode": "67890",
+            "country": "Country"
+        },
+        "phoneNumber": "+1234567890",
+        "avatar": "https://example.com/adam_avatar.jpg",
+        "bio": "Passionate about backend development and system architecture.",
+        "socialLinks": {
+            "github": "https://github.com/adam_smith",
+            "linkedin": "https://www.linkedin.com/in/adam-smith",
+            "twitter": "https://twitter.com/adam_smith"
+        },
+        "createdAt": "2023-01-11T09:30:00Z"
     },
-    "phoneNumber": "+9876543210",
-    "avatar": "https://example.com/emma_avatar.jpg",
-    "bio": "UX/UI designer with a passion for creating beautiful and user-friendly interfaces.",
-    "socialLinks": {
-      "behance": "https://www.behance.net/emmajones",
-      "dribbble": "https://dribbble.com/emmajones",
-      "instagram": "https://www.instagram.com/emmajones"
+    {
+        "id": 348934895445,
+        "username": "emily_jones",
+        "firstName": "Emily",
+        "lastName": "Jones",
+        "email": "emily@example.com",
+        "birthdate": "1988-09-22",
+        "gender": "Female",
+        "address": {
+            "street": "456 Oak Avenue",
+            "city": "Cityville",
+            "state": "State",
+            "zipCode": "54321",
+            "country": "Country"
+        },
+        "phoneNumber": "+9876543210",
+        "avatar": "https://example.com/emily_avatar.jpg",
+        "bio": "Frontend developer with a passion for creating user-friendly interfaces.",
+        "socialLinks": {
+            "github": "https://github.com/emily_jones",
+            "linkedin": "https://www.linkedin.com/in/emily-jones",
+            "twitter": "https://twitter.com/emily_jones"
+        },
+        "createdAt": "2023-01-11T10:45:00Z"
     },
-    "createdAt": "2023-01-12T10:45:00Z"
-  }
+    {
+        "id": 2983489433434,
+        "username": "michael_smith",
+        "firstName": "Michael",
+        "lastName": "Smith",
+        "email": "michael@example.com",
+        "birthdate": "1990-05-15",
+        "gender": "Male",
+        "address": {
+            "street": "789 Pine Street",
+            "city": "Townsville",
+            "state": "State",
+            "zipCode": "67890",
+            "country": "Country"
+        },
+        "phoneNumber": "+1234567890",
+        "avatar": "https://example.com/michael_avatar.jpg",
+        "bio": "Full-stack developer passionate about creating scalable and efficient applications.",
+        "socialLinks": {
+            "github": "https://github.com/michael_smith",
+            "linkedin": "https://www.linkedin.com/in/michael-smith",
+            "twitter": "https://twitter.com/michael_smith"
+        },
+        "createdAt": "2023-01-12T09:30:00Z"
+    },
+    {
+        "id": 342903490432,
+        "username": "emma_jones",
+        "firstName": "Emma",
+        "lastName": "Jones",
+        "email": "emma@example.com",
+        "birthdate": "1985-08-22",
+        "gender": "Female",
+        "address": {
+            "street": "456 Oak Avenue",
+            "city": "Villagetown",
+            "state": "Region",
+            "zipCode": "54321",
+            "country": "Country"
+        },
+        "phoneNumber": "+9876543210",
+        "avatar": "https://example.com/emma_avatar.jpg",
+        "bio": "UX/UI designer with a passion for creating beautiful and user-friendly interfaces.",
+        "socialLinks": {
+            "behance": "https://www.behance.net/emmajones",
+            "dribbble": "https://dribbble.com/emmajones",
+            "instagram": "https://www.instagram.com/emmajones"
+        },
+        "createdAt": "2023-01-12T10:45:00Z"
+    }
 ]

@@ -13,7 +13,7 @@ type EventProps = {
 const Event: React.FC<EventProps> = ({ event }) => {
     
     const { image, name, description, date, guests, gallery, venue, email, organiser, phone } = event;
-  return (
+    return (
     <div className='flex flex-col gap-10 lg:-mt-20'>
           <div className='w-full h-[600px]'>
               <Image src={image} width={200} height={200} alt='' className='w-full h-full bg-contain' />

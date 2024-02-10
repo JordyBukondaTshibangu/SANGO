@@ -20,7 +20,7 @@ const config: Config = {
       secondary: '',
       sucess: '#0BA02C',
       bgSuccess : '#B4FFC5',
-      danger: '',
+      danger: 'red',
       info: '',
       fontColor: '#BABABF',
       light : '#FD7401',
