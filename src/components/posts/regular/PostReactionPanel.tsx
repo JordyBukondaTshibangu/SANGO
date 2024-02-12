@@ -20,15 +20,15 @@ const PostReactionPanel: React.FC<PostReactionPanelProps> = ({ likes, comments, 
       <div className="flex flex-col gap-5">
         <div className='flex items-center gap-2 xl:gap-20'>
             <div className="flex-1 rounded-xl flex items-center justify-center gap-2 xl:gap-4 cursor-pointer px-2 xl:px-5 py-2 bg-dark xl:bg-inherit xl:hover:bg-dark">
-                <span className='text-sm xl:text-xl min-w-max'>{ likes } Likes </span>
+                <span className='text-sm xl:text-lg min-w-max'>{ likes } Likes </span>
                 <ThumbUpOffAltIcon className='text-sm xl:text-2xl leading-none' />
             </div>
             <div className="flex-1 rounded-xl flex items-center justify-center gap-2 xl:gap-4 cursor-pointer px-2 xl:px-5 py-2 bg-dark xl:bg-inherit xl:hover:bg-dark" onClick={() => setOpenCommentPanel(!openCommentPannel)}>
-                <span className='text-sm xl:text-xl min-w-max'>{ comments.length } Comments </span>
+                <span className='text-sm xl:text-lg min-w-max'>{ comments.length } Comments </span>
                 <CommentIcon className='text-sm xl:text-2xl leading-none' />
             </div>
             <div className="flex-1 rounded-xl flex items-end justify-center gap-2 xl:gap-4 cursor-pointer px-2 xl:px-5 py-2 bg-dark xl:bg-inherit xl:hover:bg-dark">
-                <span className='text-sm xl:text-xl'>Share</span>
+                <span className='text-sm xl:text-lg'>Share</span>
                 <SendIcon className='text-lg xl:text-xl -rotate-45 leading-none' />
             </div>
           </div>

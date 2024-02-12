@@ -1,3 +1,4 @@
+import Sidebar from '@/components/common/ui/Sidebar';
 import NewPost from '@/components/posts/container/NewPost';
 import PostsList from '@/components/posts/container/PostsList';
 import React from 'react'
@@ -17,13 +18,13 @@ const PostsPage = async () => {
   const posts = await getPosts();
 
   return (
-    <div className="flex flex-col lg:flex-row">
-      <div className="hidden lg:flex lg:w-1/4">Test</div>
-      <div className='w-full lg:w-1/2 flex flex-col gap-10'>
+    <div className="flex flex-col lg:flex-row gap-14">
+      <Sidebar />
+      <div className='w-full xl:w-1/2 flex flex-col gap-10'>
         <NewPost />
         <PostsList posts={posts}/>
       </div>
-      <div className="w-1/4">Test</div>
+      <div className="hidden xl:flex w-1/4"></div>
     </div>
   )
 }
