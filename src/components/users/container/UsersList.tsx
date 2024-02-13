@@ -22,7 +22,8 @@ export type UserT =     {
     profile : string,
     bio: string,
     experience: { jobPosition : string, description : string, company : string, year : number}[],
-    socialLinks :  any,
+    socialLinks: any,
+    skills : {skill : string, proficienty : number}[],
     createdAt : string,
 }
     
@@ -32,7 +33,7 @@ type UsersListProps = {
 
 const UsersList:React.FC<UsersListProps> = ({users}) => {
   return (
-      <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
+      <div className='w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10'>
           {
               users.map((user : UserT, index : number) => <UserCard key={index} user={user} />)
           }

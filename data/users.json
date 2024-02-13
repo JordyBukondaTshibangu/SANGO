@@ -49,6 +49,36 @@
             "linkedin": "https://www.linkedin.com/in/jordy-tshibangu",
             "twitter": "https://twitter.com/jordy_tshibangu"
         },
+        "skills": [
+            {
+                "skill" : "JavaScript",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "Python",
+                "proficienty" : 65
+            },
+            {
+                "skill" : "Java",
+                "proficienty" : 56
+            },
+            {
+                "skill" : "HTML",
+                "proficienty" : 90
+            },
+            {
+                "skill" : "CSS",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "React.js",
+                "proficienty" : 75
+            },
+            {
+                "skill" : "Node.js",
+                "proficienty" : 68
+            }
+        ],
         "createdAt": "2023-01-01T08:30:00Z"
     },
     {
@@ -101,6 +131,36 @@
             "linkedin": "https://www.linkedin.com/in/grace-williams",
             "twitter": "https://twitter.com/grace_williams"
         },
+        "skills": [
+            {
+                "skill" : "JavaScript",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "Python",
+                "proficienty" : 65
+            },
+            {
+                "skill" : "Java",
+                "proficienty" : 56
+            },
+            {
+                "skill" : "HTML",
+                "proficienty" : 90
+            },
+            {
+                "skill" : "CSS",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "React.js",
+                "proficienty" : 75
+            },
+            {
+                "skill" : "Node.js",
+                "proficienty" : 68
+            }
+        ],
         "createdAt": "2023-01-02T09:15:00Z"
     },
     {
@@ -141,6 +201,36 @@
             "linkedin": "https://www.linkedin.com/in/alex-smith",
             "twitter": "https://twitter.com/alex_smith"
         },
+        "skills": [
+            {
+                "skill" : "JavaScript",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "Python",
+                "proficienty" : 65
+            },
+            {
+                "skill" : "Java",
+                "proficienty" : 56
+            },
+            {
+                "skill" : "HTML",
+                "proficienty" : 90
+            },
+            {
+                "skill" : "CSS",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "React.js",
+                "proficienty" : 75
+            },
+            {
+                "skill" : "Node.js",
+                "proficienty" : 68
+            }
+        ],
         "createdAt": "2023-01-05T11:30:00Z"
     },
     {
@@ -181,6 +271,36 @@
             "linkedin": "https://www.linkedin.com/in/sara-jones",
             "twitter": "https://twitter.com/sara_jones"
         },
+        "skills": [
+            {
+                "skill" : "JavaScript",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "Python",
+                "proficienty" : 65
+            },
+            {
+                "skill" : "Java",
+                "proficienty" : 56
+            },
+            {
+                "skill" : "HTML",
+                "proficienty" : 90
+            },
+            {
+                "skill" : "CSS",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "React.js",
+                "proficienty" : 75
+            },
+            {
+                "skill" : "Node.js",
+                "proficienty" : 68
+            }
+        ],
         "createdAt": "2023-01-10T14:45:00Z"
     },
     {
@@ -221,6 +341,36 @@
             "linkedin": "https://www.linkedin.com/in/adam-smith",
             "twitter": "https://twitter.com/adam_smith"
         },
+        "skills": [
+            {
+                "skill" : "JavaScript",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "Python",
+                "proficienty" : 65
+            },
+            {
+                "skill" : "Java",
+                "proficienty" : 56
+            },
+            {
+                "skill" : "HTML",
+                "proficienty" : 90
+            },
+            {
+                "skill" : "CSS",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "React.js",
+                "proficienty" : 75
+            },
+            {
+                "skill" : "Node.js",
+                "proficienty" : 68
+            }
+        ],
         "createdAt": "2023-01-11T09:30:00Z"
     },
     {
@@ -261,6 +411,36 @@
             "linkedin": "https://www.linkedin.com/in/emily-jones",
             "twitter": "https://twitter.com/emily_jones"
         },
+        "skills": [
+            {
+                "skill" : "JavaScript",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "Python",
+                "proficienty" : 65
+            },
+            {
+                "skill" : "Java",
+                "proficienty" : 56
+            },
+            {
+                "skill" : "HTML",
+                "proficienty" : 90
+            },
+            {
+                "skill" : "CSS",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "React.js",
+                "proficienty" : 75
+            },
+            {
+                "skill" : "Node.js",
+                "proficienty" : 68
+            }
+        ],
         "createdAt": "2023-01-11T10:45:00Z"
     },
     {
@@ -301,6 +481,36 @@
             "linkedin": "https://www.linkedin.com/in/michael-smith",
             "twitter": "https://twitter.com/michael_smith"
         },
+        "skills": [
+            {
+                "skill" : "JavaScript",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "Python",
+                "proficienty" : 65
+            },
+            {
+                "skill" : "Java",
+                "proficienty" : 56
+            },
+            {
+                "skill" : "HTML",
+                "proficienty" : 90
+            },
+            {
+                "skill" : "CSS",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "React.js",
+                "proficienty" : 75
+            },
+            {
+                "skill" : "Node.js",
+                "proficienty" : 68
+            }
+        ],
         "createdAt": "2023-01-12T09:30:00Z"
     },
     {
@@ -341,6 +551,36 @@
             "dribbble": "https://dribbble.com/emmajones",
             "instagram": "https://www.instagram.com/emmajones"
         },
+        "skills": [
+            {
+                "skill" : "JavaScript",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "Python",
+                "proficienty" : 65
+            },
+            {
+                "skill" : "Java",
+                "proficienty" : 56
+            },
+            {
+                "skill" : "HTML",
+                "proficienty" : 90
+            },
+            {
+                "skill" : "CSS",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "React.js",
+                "proficienty" : 75
+            },
+            {
+                "skill" : "Node.js",
+                "proficienty" : 68
+            }
+        ],
         "createdAt": "2023-01-12T10:45:00Z"
     },
     {
@@ -381,6 +621,36 @@
             "linkedin": "https://www.linkedin.com/in/john-doe",
             "twitter": "https://twitter.com/john_doe"
         },
+        "skills": [
+            {
+                "skill" : "JavaScript",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "Python",
+                "proficienty" : 65
+            },
+            {
+                "skill" : "Java",
+                "proficienty" : 56
+            },
+            {
+                "skill" : "HTML",
+                "proficienty" : 90
+            },
+            {
+                "skill" : "CSS",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "React.js",
+                "proficienty" : 75
+            },
+            {
+                "skill" : "Node.js",
+                "proficienty" : 68
+            }
+        ],
         "createdAt": "2023-02-10T10:30:00Z"
     },
     {
@@ -421,6 +691,36 @@
             "linkedin": "https://www.linkedin.com/in/emily-smith",
             "twitter": "https://twitter.com/emily_smith"
         },
+        "skills": [
+            {
+                "skill" : "JavaScript",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "Python",
+                "proficienty" : 65
+            },
+            {
+                "skill" : "Java",
+                "proficienty" : 56
+            },
+            {
+                "skill" : "HTML",
+                "proficienty" : 90
+            },
+            {
+                "skill" : "CSS",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "React.js",
+                "proficienty" : 75
+            },
+            {
+                "skill" : "Node.js",
+                "proficienty" : 68
+            }
+        ],
         "createdAt": "2023-03-20T11:45:00Z"
     },
     {
@@ -461,6 +761,36 @@
             "linkedin": "https://www.linkedin.com/in/alex-jones",
             "twitter": "https://twitter.com/alex_jones"
         },
+        "skills": [
+            {
+                "skill" : "JavaScript",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "Python",
+                "proficienty" : 65
+            },
+            {
+                "skill" : "Java",
+                "proficienty" : 56
+            },
+            {
+                "skill" : "HTML",
+                "proficienty" : 90
+            },
+            {
+                "skill" : "CSS",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "React.js",
+                "proficienty" : 75
+            },
+            {
+                "skill" : "Node.js",
+                "proficienty" : 68
+            }
+        ],
         "createdAt": "2023-04-15T12:00:00Z"
     },
     {
@@ -501,6 +831,36 @@
             "linkedin": "https://www.linkedin.com/in/sarah-brown",
             "twitter": "https://twitter.com/sarah_brown"
         },
+        "skills": [
+            {
+                "skill" : "JavaScript",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "Python",
+                "proficienty" : 65
+            },
+            {
+                "skill" : "Java",
+                "proficienty" : 56
+            },
+            {
+                "skill" : "HTML",
+                "proficienty" : 90
+            },
+            {
+                "skill" : "CSS",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "React.js",
+                "proficienty" : 75
+            },
+            {
+                "skill" : "Node.js",
+                "proficienty" : 68
+            }
+        ],
         "createdAt": "2023-05-05T13:15:00Z"
     },
     {
@@ -541,6 +901,36 @@
             "linkedin": "https://www.linkedin.com/in/michael-davis",
             "twitter": "https://twitter.com/michael_davis"
         },
+        "skills": [
+            {
+                "skill" : "JavaScript",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "Python",
+                "proficienty" : 65
+            },
+            {
+                "skill" : "Java",
+                "proficienty" : 56
+            },
+            {
+                "skill" : "HTML",
+                "proficienty" : 90
+            },
+            {
+                "skill" : "CSS",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "React.js",
+                "proficienty" : 75
+            },
+            {
+                "skill" : "Node.js",
+                "proficienty" : 68
+            }
+        ],
         "createdAt": "2023-06-25T14:30:00Z"
     },
     {
@@ -581,6 +971,36 @@
             "linkedin": "https://www.linkedin.com/in/olivia-miller",
             "twitter": "https://twitter.com/olivia_miller"
         },
+        "skills": [
+            {
+                "skill" : "JavaScript",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "Python",
+                "proficienty" : 65
+            },
+            {
+                "skill" : "Java",
+                "proficienty" : 56
+            },
+            {
+                "skill" : "HTML",
+                "proficienty" : 90
+            },
+            {
+                "skill" : "CSS",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "React.js",
+                "proficienty" : 75
+            },
+            {
+                "skill" : "Node.js",
+                "proficienty" : 68
+            }
+        ],
         "createdAt": "2023-07-10T15:45:00Z"
     },
     {
@@ -621,6 +1041,36 @@
             "linkedin": "https://www.linkedin.com/in/david-jackson",
             "twitter": "https://twitter.com/david_jackson"
         },
+        "skills": [
+            {
+                "skill" : "JavaScript",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "Python",
+                "proficienty" : 65
+            },
+            {
+                "skill" : "Java",
+                "proficienty" : 56
+            },
+            {
+                "skill" : "HTML",
+                "proficienty" : 90
+            },
+            {
+                "skill" : "CSS",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "React.js",
+                "proficienty" : 75
+            },
+            {
+                "skill" : "Node.js",
+                "proficienty" : 68
+            }
+        ],
         "createdAt": "2023-08-20T16:00:00Z"
     },
     {
@@ -661,6 +1111,36 @@
             "linkedin": "https://www.linkedin.com/in/emma-thompson",
             "twitter": "https://twitter.com/emma_thompson"
         },
+        "skills": [
+            {
+                "skill" : "JavaScript",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "Python",
+                "proficienty" : 65
+            },
+            {
+                "skill" : "Java",
+                "proficienty" : 56
+            },
+            {
+                "skill" : "HTML",
+                "proficienty" : 90
+            },
+            {
+                "skill" : "CSS",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "React.js",
+                "proficienty" : 75
+            },
+            {
+                "skill" : "Node.js",
+                "proficienty" : 68
+            }
+        ],
         "createdAt": "2023-09-05T17:15:00Z"
     },
     {
@@ -701,6 +1181,36 @@
             "linkedin": "https://www.linkedin.com/in/william-johnson",
             "twitter": "https://twitter.com/william_johnson"
         },
+        "skills": [
+            {
+                "skill" : "JavaScript",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "Python",
+                "proficienty" : 65
+            },
+            {
+                "skill" : "Java",
+                "proficienty" : 56
+            },
+            {
+                "skill" : "HTML",
+                "proficienty" : 90
+            },
+            {
+                "skill" : "CSS",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "React.js",
+                "proficienty" : 75
+            },
+            {
+                "skill" : "Node.js",
+                "proficienty" : 68
+            }
+        ],
         "createdAt": "2023-10-30T18:30:00Z"
     },
     {
@@ -741,6 +1251,36 @@
             "linkedin": "https://www.linkedin.com/in/chloe-anderson",
             "twitter": "https://twitter.com/chloe_anderson"
         },
+        "skills": [
+            {
+                "skill" : "JavaScript",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "Python",
+                "proficienty" : 65
+            },
+            {
+                "skill" : "Java",
+                "proficienty" : 56
+            },
+            {
+                "skill" : "HTML",
+                "proficienty" : 90
+            },
+            {
+                "skill" : "CSS",
+                "proficienty" : 85
+            },
+            {
+                "skill" : "React.js",
+                "proficienty" : 75
+            },
+            {
+                "skill" : "Node.js",
+                "proficienty" : 68
+            }
+        ],
         "createdAt": "2023-11-15T19:45:00Z"
     }
 ]

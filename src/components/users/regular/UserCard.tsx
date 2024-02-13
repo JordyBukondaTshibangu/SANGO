@@ -14,6 +14,7 @@ import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import CustomTabPanel from './CustomTabPanel';
 import InfoPanel from './InfoPanel';
 import ExperiencePanel from './ExperiencePanel';
+import SkillPanel from './SkillPanel';
 
 type UserCardProps = {
     user : UserT
@@ -86,7 +87,7 @@ const UserCard: React.FC<UserCardProps> = ({ user }) => {
                   <ExperiencePanel experiences={user.experience} />
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={2}>
-                  Item Three
+                  <SkillPanel skills={user.skills} />
                 </CustomTabPanel>
               </div>
         }
