@@ -1,6 +1,11 @@
+'use client'
 import Link from 'next/link'
-import React from 'react'
-import { FaFacebookSquare, FaTwitterSquare, FaYoutube, FaInstagramSquare } from "react-icons/fa";
+import React from 'react';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+
 
 const Footer = () => {
   return (
@@ -93,20 +98,17 @@ const Footer = () => {
           <div className='py-4 flex flex-col md:flex-row justify-between xl:px-96 gap-10'>
             <p className='text-sm text-gray-300'>2024 Sango - All rights reserved</p>
             <div className='flex flex-col md:flex-row text-fontColor gap-5'>
-                <a className='flex items-center gap-4 text-sm' href="/facebook.com">
-                  <FaFacebookSquare />
-                  Facebook
+                <a className='flex items-center gap-4 text-lg rounded-full' href="/facebook.com">
+                  <FacebookOutlinedIcon />
                 </a>
-                <a className='flex items-center gap-4 text-sm' href="/Youtube.com">
-                  <FaYoutube />
-                  Youtube
+                <a className='flex items-center gap-4 text-lg' href="/instagram.com">
+                  <InstagramIcon/>
                 </a>
-                <a className='flex items-center gap-4 text-sm' href="/instagram.com">
-                  <FaInstagramSquare/>
-                  Instagram
+                <a className='flex items-center gap-4 text-lg' href="/twitter.com">
+                  <TwitterIcon /> 
                 </a>
-                <a className='flex items-center gap-4 text-sm' href="/twitter.com">
-                  <FaTwitterSquare /> X
+                <a className='flex items-center gap-4 text-lg' href="/twitter.com">
+                  <LinkedInIcon /> 
                 </a>
             </div>
         </div>

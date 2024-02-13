@@ -42,7 +42,7 @@ const user = {
 const Sidebar = () => {
     
   return (
-    <div className="w-full flex lg:w-1/4 bg-darkHeader rounded-lg flex-col gap-10 px-5 py-10 items-center h-fit">
+    <div className="lg:sticky top-32 w-full flex lg:w-1/4 bg-darkHeader rounded-lg flex-col gap-10 px-5 py-10 items-center h-fit">
         <div className="flex justify-center items-center rounded-full w-20 h-20">
             <Image src={UserProfile} width={200} height={200} alt='' className='w-full h-full rounded-full object-cover' />
         </div>

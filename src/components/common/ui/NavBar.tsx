@@ -6,7 +6,8 @@ import { usePathname } from 'next/navigation'
 import SearchBar from '../base/SearchBar';
 import { FaPowerOff, FaMessage } from "react-icons/fa6";
 import ProfilePic from '../../../../public/assets/profile.jpeg'
-import { FaBars, FaHome, FaNewspaper, FaRegCalendarAlt,FaUsers, FaBriefcase, FaBell } from "react-icons/fa";
+import { FaBars, FaHome, FaNewspaper, FaRegCalendarAlt, FaUsers, FaBriefcase, FaBell } from "react-icons/fa";
+import MessageOutlinedIcon from '@mui/icons-material/MessageOutlined';
 
 const NavBar = () => {
 
@@ -48,6 +49,12 @@ const NavBar = () => {
           <Link href='/jobs'  className={currentPath == '/jobs' ? 'flex flex-col items-center gap-1 text-primary' : 'flex flex-col items-center gap-1 hover:text-primary'}>
             <FaBriefcase className='text-2xl font-bold'/>
             <span className='text-xs'>Jobs</span>
+          </Link>
+        </li>
+        <li>
+          <Link href='/messages'  className={currentPath == '/my-profile' ? 'flex flex-col items-center gap-1 text-primary' : 'flex flex-col items-center gap-1 hover:text-primary'}>
+            <MessageOutlinedIcon className='text-2xl font-bold'/>
+            <span className='text-xs'>Messages</span>
           </Link>
         </li>
         <li>

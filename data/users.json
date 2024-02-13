@@ -15,8 +15,35 @@
             "country": "Country"
         },
         "phoneNumber": "+1234567890",
-        "avatar": "https://example.com/avatar.jpg",
+        "position": "Product owner",
+        "profile": "/assets/profile.jpeg",
         "bio": "Passionate software developer always eager to learn and explore new technologies.",
+        "experience": [
+            {
+                "jobPosition": "Software Engineer",
+                "description": "Developed scalable web applications using modern technologies like React.js and Node.js. Collaborated with cross-functional teams to deliver high-quality software solutions.",
+                "company": "Fireworkx",
+                "year": 2020
+            },
+            {
+                "jobPosition": "Frontend Developer",
+                "description": "Designed and implemented responsive user interfaces for web applications. Utilized HTML, CSS, and JavaScript frameworks such as Angular and Vue.js to create engaging user experiences.",
+                "company": "Smartsplash360",
+                "year": 2019
+            },
+            {
+                "jobPosition": "Junior Software Engineer",
+                "description": "Developed scalable web applications using modern technologies like React.js and Node.js. Collaborated with cross-functional teams to deliver high-quality software solutions.",
+                "company": "Nona Corporation",
+                "year": 2015
+            },
+            {
+                "jobPosition": "Intern Developer",
+                "description": "Designed and implemented responsive user interfaces for web applications. Utilized HTML, CSS, and JavaScript frameworks such as Angular and Vue.js to create engaging user experiences.",
+                "company": "Codeswop",
+                "year": 2010
+            }
+        ],
         "socialLinks": {
             "github": "https://github.com/jordy_tshibangu",
             "linkedin": "https://www.linkedin.com/in/jordy-tshibangu",
@@ -40,8 +67,35 @@
             "country": "Country"
         },
         "phoneNumber": "+9876543210",
-        "avatar": "https://example.com/grace_avatar.jpg",
+        "position": "Director",
+        "profile": "/assets/profile_four.jpg",
         "bio": "Experienced front-end developer with a passion for creating beautiful and responsive user interfaces.",
+        "experience": [
+            {
+                "jobPosition": "Data Scientist",
+                "description": "Performed data analysis and predictive modeling to extract insights and drive business decisions. Developed machine learning algorithms and statistical models using Python and R.",
+                "company": "Tech Innovations Ltd.",
+                "year": 2021
+            },
+            {
+                "jobPosition": "Data Analyst",
+                "description": "Conducted exploratory data analysis to uncover patterns and trends. Generated actionable insights and visualizations to support data-driven decision-making.",
+                "company": "Global Solutions Inc.",
+                "year": 2018
+            },
+            {
+                "jobPosition": "Data Scientist",
+                "description": "Performed data analysis and predictive modeling to extract insights and drive business decisions. Developed machine learning algorithms and statistical models using Python and R.",
+                "company": "Visio Ltd.",
+                "year": 2017
+            },
+            {
+                "jobPosition": "Data Analyst",
+                "description": "Conducted exploratory data analysis to uncover patterns and trends. Generated actionable insights and visualizations to support data-driven decision-making.",
+                "company": "Global Nova.",
+                "year": 2015
+            }
+        ],
         "socialLinks": {
             "github": "https://github.com/grace_williams",
             "linkedin": "https://www.linkedin.com/in/grace-williams",
@@ -65,8 +119,23 @@
             "country": "Nation"
         },
         "phoneNumber": "+1234567890",
-        "avatar": "https://example.com/alex_avatar.jpg",
+        "position": "Financial Manager",
+        "profile": "/assets/profile_two.jpg",
         "bio": "Passionate software engineer with a knack for problem-solving and efficient code.",
+        "experience": [
+            {
+                "jobPosition": "Project Manager",
+                "description": "Led cross-functional teams in the planning and execution of software development projects. Managed project timelines, budgets, and resources to ensure successful delivery.",
+                "company": "Innovate Tech Co.",
+                "year": 2022
+            },
+            {
+                "jobPosition": "Scrum Master",
+                "description": "Facilitated Agile ceremonies and coached team members on Agile principles and practices. Removed impediments and fostered a collaborative team environment.",
+                "company": "Digital Systems Group",
+                "year": 2017
+            }
+        ],
         "socialLinks": {
             "github": "https://github.com/alex_smith",
             "linkedin": "https://www.linkedin.com/in/alex-smith",
@@ -90,8 +159,23 @@
             "country": "Land"
         },
         "phoneNumber": "+9876543210",
-        "avatar": "https://example.com/sara_avatar.jpg",
+        "position": "Product owner",
+        "profile": "/assets/profile_three.jpg",
         "bio": "Experienced frontend developer with a passion for creating stunning user interfaces.",
+        "experience": [
+            {
+                "jobPosition": "UX/UI Designer",
+                "description": "Created wireframes, mockups, and prototypes to design intuitive and visually appealing user interfaces. Conducted user research and usability testing to iterate on designs.",
+                "company": "Future Enterprises Ltd.",
+                "year": 2023
+            },
+            {
+                "jobPosition": "Graphic Designer",
+                "description": "Developed visual concepts and graphics for digital and print materials. Produced brand identities, marketing collateral, and multimedia presentations.",
+                "company": "Smart Solutions LLC",
+                "year": 2016
+            }
+        ],
         "socialLinks": {
             "github": "https://github.com/sara_jones",
             "linkedin": "https://www.linkedin.com/in/sara-jones",
@@ -115,8 +199,23 @@
             "country": "Country"
         },
         "phoneNumber": "+1234567890",
-        "avatar": "https://example.com/adam_avatar.jpg",
+        "position": "Financial Manager",
+        "profile": "/assets/profile_four.jpg",
         "bio": "Passionate about backend development and system architecture.",
+        "experience": [
+            {
+                "jobPosition": "Software Quality Assurance Engineer",
+                "description": "Performed manual and automated testing of software applications to ensure product quality. Developed test plans, executed test cases, and reported defects.",
+                "company": "TechGenius Solutions",
+                "year": 2024
+            },
+            {
+                "jobPosition": "DevOps Engineer",
+                "description": "Implemented CI/CD pipelines and automated deployment processes. Managed infrastructure as code using tools like Terraform and Ansible.",
+                "company": "Data Experts Inc.",
+                "year": 2015
+            }
+        ],
         "socialLinks": {
             "github": "https://github.com/adam_smith",
             "linkedin": "https://www.linkedin.com/in/adam-smith",
@@ -140,8 +239,23 @@
             "country": "Country"
         },
         "phoneNumber": "+9876543210",
-        "avatar": "https://example.com/emily_avatar.jpg",
+        "position": "Recruiter | Business Developer | Bitcoins",
+        "profile": "/assets/profile.jpeg",
         "bio": "Frontend developer with a passion for creating user-friendly interfaces.",
+        "experience": [
+            {
+                "jobPosition": "Business Analyst",
+                "description": "Gathered and analyzed business requirements to identify opportunities for process improvement. Developed functional specifications and collaborated with stakeholders to implement solutions.",
+                "company": "DataWise Innovations",
+                "year": 2003
+            },
+            {
+                "jobPosition": "Management Consultant",
+                "description": "Provided strategic advice to organizations on business operations, organizational structure, and performance improvement. Conducted research, interviews, and data analysis to deliver actionable recommendations.",
+                "company": "SmartCode Systems",
+                "year": 2002
+            }
+        ],
         "socialLinks": {
             "github": "https://github.com/emily_jones",
             "linkedin": "https://www.linkedin.com/in/emily-jones",
@@ -165,8 +279,23 @@
             "country": "Country"
         },
         "phoneNumber": "+1234567890",
-        "avatar": "https://example.com/michael_avatar.jpg",
+        "position": "Software Engineer | Software Developer",
+        "profile": "/assets/profile.jpeg",
         "bio": "Full-stack developer passionate about creating scalable and efficient applications.",
+        "experience": [
+            {
+                "jobPosition": "Architect",
+                "description": "Designed and managed the construction of residential, commercial, and industrial buildings. Created architectural drawings, blueprints, and specifications.",
+                "company": "InnovateTech Solutions",
+                "year": 2001
+            },
+            {
+                "jobPosition": "Interior Designer",
+                "description": "Planned and designed interior spaces to meet clients' functional and aesthetic needs. Selected furniture, fixtures, and materials to create cohesive design concepts.",
+                "company": "TechMaster Inc.",
+                "year": 2000
+            }
+        ],
         "socialLinks": {
             "github": "https://github.com/michael_smith",
             "linkedin": "https://www.linkedin.com/in/michael-smith",
@@ -190,13 +319,428 @@
             "country": "Country"
         },
         "phoneNumber": "+9876543210",
-        "avatar": "https://example.com/emma_avatar.jpg",
+        "position": "Financial Manager",
+        "profile": "/assets/profile_four.jpg",
         "bio": "UX/UI designer with a passion for creating beautiful and user-friendly interfaces.",
+        "experience": [
+            {
+                "jobPosition": "Full Stack Developer",
+                "description": "Designed and implemented end-to-end solutions, from frontend user interfaces to backend APIs. Worked with technologies such as React.js, Node.js, and MongoDB.",
+                "company": "Innovative Tech Ventures",
+                "year": 2025
+            },
+            {
+                "jobPosition": "Systems Administrator",
+                "description": "Maintained and optimized IT infrastructure, including servers, networks, and databases. Implemented security measures and disaster recovery plans.",
+                "company": "Digital Innovations Group",
+                "year": 2014
+            }
+        ],
         "socialLinks": {
             "behance": "https://www.behance.net/emmajones",
             "dribbble": "https://dribbble.com/emmajones",
             "instagram": "https://www.instagram.com/emmajones"
         },
         "createdAt": "2023-01-12T10:45:00Z"
+    },
+    {
+        "id": 902390323224,
+        "username": "john_doe",
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john@example.com",
+        "birthdate": "1990-05-15",
+        "gender": "Male",
+        "address": {
+            "street": "123 Maple Street",
+            "city": "Springfield",
+            "state": "State",
+            "zipCode": "12345",
+            "country": "Country"
+        },
+        "phoneNumber": "+1234567890",
+        "position": "CEO @Fibonacci | Devops | Scientist",
+        "profile": "/assets/profile_two.jpg",
+        "bio": "Full-stack developer with a passion for problem-solving and creating scalable web applications.",
+        "experience": [
+            {
+                "jobPosition": "Marketing Manager",
+                "description": "Developed and executed marketing strategies to drive brand awareness and customer acquisition. Managed digital marketing campaigns and analyzed performance metrics.",
+                "company": "TechVision Enterprises",
+                "year": 2026
+            },
+            {
+                "jobPosition": "Content Writer",
+                "description": "Produced compelling and SEO-friendly content for websites, blogs, and social media platforms. Conducted research and interviews to create engaging stories and articles.",
+                "company": "FutureTech Solutions",
+                "year": 2013
+            }
+        ],
+        "socialLinks": {
+            "github": "https://github.com/john_doe",
+            "linkedin": "https://www.linkedin.com/in/john-doe",
+            "twitter": "https://twitter.com/john_doe"
+        },
+        "createdAt": "2023-02-10T10:30:00Z"
+    },
+    {
+        "id": 902390323225,
+        "username": "emily_smith",
+        "firstName": "Emily",
+        "lastName": "Smith",
+        "email": "emily@example.com",
+        "birthdate": "1988-12-03",
+        "gender": "Female",
+        "address": {
+            "street": "789 Elm Street",
+            "city": "Riverside",
+            "state": "State",
+            "zipCode": "67890",
+            "country": "Country"
+        },
+        "phoneNumber": "+2345678901",
+        "position": "Java Developer | NodeJS Developer | Software Engineer.",
+        "profile": "/assets/profile.jpeg",
+        "bio": "Passionate UX/UI designer with a focus on creating intuitive and visually appealing user interfaces.",
+        "experience": [
+            {
+                "jobPosition": "Network Engineer",
+                "description": "Designed, implemented, and maintained computer networks, including LANs, WANs, and VPNs. Monitored network performance and troubleshooted issues as needed.",
+                "company": "DataTech Innovations",
+                "year": 2027
+            },
+            {
+                "jobPosition": "Cybersecurity Analyst",
+                "description": "Identified and mitigated security vulnerabilities and threats to protect organizational assets. Conducted security assessments and implemented security controls.",
+                "company": "SmartData Systems",
+                "year": 2012
+            }
+        ],
+        "socialLinks": {
+            "github": "https://github.com/emily_smith",
+            "linkedin": "https://www.linkedin.com/in/emily-smith",
+            "twitter": "https://twitter.com/emily_smith"
+        },
+        "createdAt": "2023-03-20T11:45:00Z"
+    },
+    {
+        "id": 902390323226,
+        "username": "alex_jones",
+        "firstName": "Alex",
+        "lastName": "Jones",
+        "email": "alex@example.com",
+        "birthdate": "1983-09-28",
+        "gender": "Male",
+        "address": {
+            "street": "321 Pine Street",
+            "city": "Woodland",
+            "state": "State",
+            "zipCode": "45678",
+            "country": "Country"
+        },
+        "phoneNumber": "+3456789012",
+        "position": "Librarian Manager",
+        "profile": "/assets/profile.jpeg",
+        "bio": "Backend developer specializing in building robust and scalable APIs for web applications.",
+        "experience": [
+            {
+                "jobPosition": "Sales Representative",
+                "description": "Managed client accounts and negotiated contracts to achieve sales targets. Identified new business opportunities and developed relationships with prospects.",
+                "company": "Innovative Solutions Co.",
+                "year": 2011
+            },
+            {
+                "jobPosition": "Customer Support Specialist",
+                "description": "Provided timely and effective assistance to customers via phone, email, and chat. Resolved product-related issues and escalated complex cases to appropriate teams.",
+                "company": "TechTrends Ltd.",
+                "year": 2010
+            }
+        ],
+        "socialLinks": {
+            "github": "https://github.com/alex_jones",
+            "linkedin": "https://www.linkedin.com/in/alex-jones",
+            "twitter": "https://twitter.com/alex_jones"
+        },
+        "createdAt": "2023-04-15T12:00:00Z"
+    },
+    {
+        "id": 902390323227,
+        "username": "sarah_brown",
+        "firstName": "Sarah",
+        "lastName": "Brown",
+        "email": "sarah@example.com",
+        "birthdate": "1995-02-18",
+        "gender": "Female",
+        "address": {
+            "street": "567 Cedar Street",
+            "city": "Oakville",
+            "state": "State",
+            "zipCode": "56789",
+            "country": "Country"
+        },
+        "phoneNumber": "+4567890123",
+        "position": "Project Manager",
+        "profile": "/assets/profile_two.jpg",
+        "bio": "Front-end developer with a knack for creating engaging and interactive web experiences.",
+        "experience": [
+            {
+                "jobPosition": "Human Resources Manager",
+                "description": "Developed and implemented HR policies and procedures to support organizational objectives. Managed recruitment, onboarding, performance evaluation, and employee relations.",
+                "company": "FutureTech Innovations",
+                "year": 2009
+            },
+            {
+                "jobPosition": "Training Coordinator",
+                "description": "Designed and delivered training programs to enhance employee skills and knowledge. Evaluated training effectiveness and made recommendations for improvement.",
+                "company": "DataDriven Solutions",
+                "year": 2008
+            }
+        ],
+        "socialLinks": {
+            "github": "https://github.com/sarah_brown",
+            "linkedin": "https://www.linkedin.com/in/sarah-brown",
+            "twitter": "https://twitter.com/sarah_brown"
+        },
+        "createdAt": "2023-05-05T13:15:00Z"
+    },
+    {
+        "id": 902390323228,
+        "username": "michael_davis",
+        "firstName": "Michael",
+        "lastName": "Davis",
+        "email": "michael@example.com",
+        "birthdate": "1987-07-09",
+        "gender": "Male",
+        "address": {
+            "street": "876 Birch Street",
+            "city": "Hillcrest",
+            "state": "State",
+            "zipCode": "67890",
+            "country": "Country"
+        },
+        "phoneNumber": "+5678901234",
+        "position": "Librarian",
+        "profile": "/assets/profile_four.jpg",
+        "bio": "Experienced software engineer with expertise in backend development and system architecture.",
+        "experience": [
+            {
+                "jobPosition": "Product Manager",
+                "description": "Led the development and launch of new products, from ideation to market release. Conducted market research, defined product requirements, and prioritized features.",
+                "company": "SmartTech Systems",
+                "year": 2007
+            },
+            {
+                "jobPosition": "Product Designer",
+                "description": "Translated user needs and business requirements into intuitive product designs. Created wireframes, prototypes, and user flows to guide the development process.",
+                "company": "Innovative Minds Inc.",
+                "year": 2006
+            }
+        ],
+        "socialLinks": {
+            "github": "https://github.com/michael_davis",
+            "linkedin": "https://www.linkedin.com/in/michael-davis",
+            "twitter": "https://twitter.com/michael_davis"
+        },
+        "createdAt": "2023-06-25T14:30:00Z"
+    },
+    {
+        "id": 902390323229,
+        "username": "olivia_miller",
+        "firstName": "Olivia",
+        "lastName": "Miller",
+        "email": "olivia@example.com",
+        "birthdate": "1992-11-14",
+        "gender": "Female",
+        "address": {
+            "street": "345 Elmwood Street",
+            "city": "Lakeview",
+            "state": "State",
+            "zipCode": "78901",
+            "country": "Country"
+        },
+        "phoneNumber": "+6789012345",
+        "position": "Librarian|Project Manager",
+        "profile": "/assets/profile.jpeg",
+        "bio": "Passionate front-end developer with a focus on creating accessible and user-friendly web interfaces.",
+        "experience": [
+            {
+                "jobPosition": "Financial Analyst",
+                "description": "Performed financial modeling, forecasting, and analysis to support strategic decision-making. Prepared financial reports and presentations for senior management.",
+                "company": "TechSavvy Solutions",
+                "year": 2005
+            },
+            {
+                "jobPosition": "Investment Banker",
+                "description": "Advised clients on financial transactions such as mergers, acquisitions, and public offerings. Conducted due diligence and financial valuation to assess investment opportunities.",
+                "company": "FutureVision Technologies",
+                "year": 2004
+            }
+        ],
+        "socialLinks": {
+            "github": "https://github.com/olivia_miller",
+            "linkedin": "https://www.linkedin.com/in/olivia-miller",
+            "twitter": "https://twitter.com/olivia_miller"
+        },
+        "createdAt": "2023-07-10T15:45:00Z"
+    },
+    {
+        "id": 902390323230,
+        "username": "david_jackson",
+        "firstName": "David",
+        "lastName": "Jackson",
+        "email": "david@example.com",
+        "birthdate": "1980-04-05",
+        "gender": "Male",
+        "address": {
+            "street": "234 Oakwood Street",
+            "city": "Westwood",
+            "state": "State",
+            "zipCode": "89012",
+            "country": "Country"
+        },
+        "phoneNumber": "+7890123456",
+        "position": "Librarian|Project Manager",
+        "profile": "/assets/profile_two.jpg",
+        "bio": "Software architect with extensive experience in designing and implementing complex systems.",
+        "experience": [
+            {
+                "jobPosition": "Business Analyst",
+                "description": "Gathered and analyzed business requirements to identify opportunities for process improvement. Developed functional specifications and collaborated with stakeholders to implement solutions.",
+                "company": "DataWise Innovations",
+                "year": 2003
+            },
+            {
+                "jobPosition": "Management Consultant",
+                "description": "Provided strategic advice to organizations on business operations, organizational structure, and performance improvement. Conducted research, interviews, and data analysis to deliver actionable recommendations.",
+                "company": "SmartCode Systems",
+                "year": 2002
+            }
+        ],
+        "socialLinks": {
+            "github": "https://github.com/david_jackson",
+            "linkedin": "https://www.linkedin.com/in/david-jackson",
+            "twitter": "https://twitter.com/david_jackson"
+        },
+        "createdAt": "2023-08-20T16:00:00Z"
+    },
+    {
+        "id": 902390323231,
+        "username": "emma_thompson",
+        "firstName": "Emma",
+        "lastName": "Thompson",
+        "email": "emma@example.com",
+        "birthdate": "1986-06-30",
+        "gender": "Female",
+        "address": {
+            "street": "456 Maplewood Street",
+            "city": "Eastwood",
+            "state": "State",
+            "zipCode": "90123",
+            "country": "Country"
+        },
+        "phoneNumber": "+8901234567",
+        "position": "Librarian|Project Manager",
+        "profile": "/assets/profile_four.jpg",
+        "bio": "Creative graphic designer with a passion for crafting visually stunning and impactful designs.",
+        "experience": [
+            {
+                "jobPosition": "Architect",
+                "description": "Designed and managed the construction of residential, commercial, and industrial buildings. Created architectural drawings, blueprints, and specifications.",
+                "company": "InnovateTech Solutions",
+                "year": 2001
+            },
+            {
+                "jobPosition": "Interior Designer",
+                "description": "Planned and designed interior spaces to meet clients' functional and aesthetic needs. Selected furniture, fixtures, and materials to create cohesive design concepts.",
+                "company": "TechMaster Inc.",
+                "year": 2000
+            }
+        ],
+        "socialLinks": {
+            "github": "https://github.com/emma_thompson",
+            "linkedin": "https://www.linkedin.com/in/emma-thompson",
+            "twitter": "https://twitter.com/emma_thompson"
+        },
+        "createdAt": "2023-09-05T17:15:00Z"
+    },
+    {
+        "id": 902390323232,
+        "username": "william_johnson",
+        "firstName": "William",
+        "lastName": "Johnson",
+        "email": "william@example.com",
+        "birthdate": "1984-03-12",
+        "gender": "Male",
+        "address": {
+            "street": "789 Cedarwood Street",
+            "city": "Riverdale",
+            "state": "State",
+            "zipCode": "23456",
+            "country": "Country"
+        },
+        "phoneNumber": "+9012345678",
+        "position": "Librarian, Editor, Project Manager",
+        "profile": "/assets/profile_four.jpg",
+        "bio": "Seasoned full-stack developer with expertise in both frontend and backend technologies.",
+        "experience": [
+            {
+                "jobPosition": "Legal Counsel",
+                "description": "Provided legal advice and representation to clients on various matters including contracts, disputes, and compliance. Drafted legal documents and negotiated agreements.",
+                "company": "FutureForward Enterprises",
+                "year": 1999
+            },
+            {
+                "jobPosition": "Paralegal",
+                "description": "Assisted attorneys with legal research, document preparation, and case management. Maintained case files, organized evidence, and supported trial preparation.",
+                "company": "DataTech Innovations",
+                "year": 1998
+            }
+        ],
+        "socialLinks": {
+            "github": "https://github.com/william_johnson",
+            "linkedin": "https://www.linkedin.com/in/william-johnson",
+            "twitter": "https://twitter.com/william_johnson"
+        },
+        "createdAt": "2023-10-30T18:30:00Z"
+    },
+    {
+        "id": 902390323233,
+        "username": "chloe_anderson",
+        "firstName": "Chloe",
+        "lastName": "Anderson",
+        "email": "chloe@example.com",
+        "birthdate": "1993-08-27",
+        "gender": "Female",
+        "address": {
+            "street": "567 Birchwood Street",
+            "city": "Greenville",
+            "state": "State",
+            "zipCode": "34567",
+            "country": "Country"
+        },
+        "phoneNumber": "+1234567890",
+        "position": "Writer, Fundraiser, Project Manager",
+        "profile": "",
+        "bio": "Passionate software engineer with a focus on developing scalable and efficient backend systems.",
+        "experience": [
+            {
+                "jobPosition": "Teacher",
+                "description": "Planned and delivered engaging lessons to students in accordance with curriculum standards. Provided academic support, assessed student progress, and communicated with parents.",
+                "company": "SmartSolutions Co.",
+                "year": 1997
+            },
+            {
+                "jobPosition": "Educational Administrator",
+                "description": "Managed school operations and implemented policies to support student learning and achievement. Oversaw budgeting, staffing, and facilities management.",
+                "company": "Innovative Tech Systems",
+                "year": 1996
+            }
+        ],
+        "socialLinks": {
+            "github": "https://github.com/chloe_anderson",
+            "linkedin": "https://www.linkedin.com/in/chloe-anderson",
+            "twitter": "https://twitter.com/chloe_anderson"
+        },
+        "createdAt": "2023-11-15T19:45:00Z"
     }
 ]

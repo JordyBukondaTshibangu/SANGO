@@ -18,7 +18,7 @@ const PostsPage = async () => {
   const posts = await getPosts();
 
   return (
-    <div className="flex flex-col lg:flex-row gap-14">
+    <div className="relative flex flex-col lg:flex-row gap-14">
       <Sidebar />
       <div className='w-full xl:w-1/2 flex flex-col gap-10'>
         <NewPost />
