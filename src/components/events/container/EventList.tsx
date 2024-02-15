@@ -22,7 +22,6 @@ type EventListProps = {
     events : EventT[]
 }
 const ArticleList: React.FC<EventListProps> = ({ events }) => {
-  console.log(events)
   return (
     <div className='flex flex-col gap-10'>
       <h4 className='text-xl font-bold'>Latest events</h4>
