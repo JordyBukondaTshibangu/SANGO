@@ -9,7 +9,7 @@ type UserPreviewProps = {
 
 const UserPreview:React.FC<UserPreviewProps>= ({profile, name, position }) => {
   return (
-        <div className="hidden lg:flex gap-5 items-center  border-b border-solid pb-5 lg:pb-10 border-darkHeader lg:border-dark">
+        <div className="flex gap-5 items-center  border-b border-solid pb-5 lg:pb-10 border-darkHeader lg:border-dark">
             <div className="flex justify-center items-center rounded-full w-20 h-20">
                 <Image src={profile} width={200} height={200} alt='' className='w-full h-full rounded-full object-cover' />
             </div>

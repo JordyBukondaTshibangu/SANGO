@@ -6,6 +6,8 @@ type ChatPreviewProps = {
     chat : ChatT
 }
 const ChatPreview: React.FC<ChatPreviewProps> = ({ chat }) => {
+
+    const { profile, sender, text, time } = chat 
     
     function formatDate(dateString: string): string {
         const date = new Date(dateString);
@@ -20,13 +22,14 @@ const ChatPreview: React.FC<ChatPreviewProps> = ({ chat }) => {
   return (
    <div className="cursor-pointer w-full flex gap-5 items-center border-t border-solid lg:px-5 py-3 border-darkHeader lg:border-dark hover:bg-dark rounded-lg">
         <div className="flex justify-center items-center rounded-full w-14 lg:w-20 h-14 lg:h-20">
-            <Image src={chat.profile} width={200} height={200} alt='' className='w-full h-full rounded-full object-cover' />
+            <Image src={profile} width={200} height={200} alt='' className='w-full h-full rounded-full object-cover' />
         </div>
         <div className="flex flex-col gap-1">
-            <h4 className="text-sm font-bold">{chat.sender}</h4>
-            <p className='text-sm leading-5'>{chat.text}</p>
+            <h4 className="text-sm font-bold">{sender}</h4>
+            <p className='text-sm leading-5'>{text}</p>
         </div>
-        <span className='text-xs min-w-max ml-auto self-start'>{ formatDate(chat.time)}</span>
+        <span className='text-xs min-w-max ml-auto self-start'>{formatDate(time)}</span>
+             
     </div>
   )
 }

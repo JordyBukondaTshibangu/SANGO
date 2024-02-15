@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import profileImage from '../../../../public/assets/profile_five.jpg'
+import Link from 'next/link';
 
 
 const SenderDetails = () => {
@@ -13,7 +14,8 @@ const SenderDetails = () => {
                 <h4 className="text-2xl font-bold">Charlotte Matendo</h4>
                 <div className="flex flex-col">
                     <p>Business | Entrepre</p>
-                </div>
+            </div>
+            <Link href={`/users/`} className='bg-dark flex items-center justify-center py-2 px-5 rounded-lg mt-4'>View Profile</Link>
             </div>
         </div>
   )

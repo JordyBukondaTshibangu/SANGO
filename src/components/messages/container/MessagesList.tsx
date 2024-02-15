@@ -30,11 +30,13 @@ const MessagesList: React.FC<MessagesListProps> = ({ chats }) => {
     
     return (
         <div className='lg:sticky top-32 w-full lg:w-[33%] lg:bg-darkHeader lg:rounded-lg lg:px-5 py-10 flex flex-col gap-12 h-fit'>
-            <UserPreview
+            <div className="w-full hidden lg:flex">
+                            <UserPreview
                 name={user.firstName + ' ' + user.lastName}
                 profile={user.profile}
                 position={user.position}
             />
+            </div>
             <input type='text' className='w-full h-12 rounded-full px-5 py-2 text-black' placeholder='Search...' />
             <div className="flex flex-col gap-5 overflow-y-auto max-h-[60vh]">
                 {

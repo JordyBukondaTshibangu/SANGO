@@ -15,9 +15,9 @@
             "country": "Country"
         },
         "phoneNumber": "+1234567890",
-        "position": "Product owner",
+        "position": "Frontend Sofware Developer @Firewrokx | HTML5, ReactJS, Next JS,VueJS, Nuxt3, Express JS, Node.js, Javascript, Python, Django",
         "profile": "/assets/profile.jpeg",
-        "bio": "Passionate software developer always eager to learn and explore new technologies.",
+        "bio": "As a frontend web developer, I build software that allows companies to manage pools for clients, technicians, and potential leads. I use React and Laravel to create user-friendly and responsive interfaces that enhance customer satisfaction and retention.I also work as a software engineer at Fireworkx, a leading digital agency that delivers innovative solutions for various industries. I have contributed to several impactful projects, such as Santam Legal, MandG, RCS, AndyCab, and Pentamotorgroup, using JavaScript, Vue, NextJs, and ExpressJs. I have helped to redesign and rebuild websites, improve performance and functionality, and implement new features and integrations.I am passionate about full-stack development and learning new technologies. I graduated from Cape Peninsula University of Technology with a degree in Computer Science in 2020, where I gained a solid foundation in programming, data structures, algorithms, and web development. I also have experience as an intern at Codeswop, where I maintained and added features to an existing web application using React.I am a creative and detail-oriented engineer who prides myself on delivering high-quality and scalable solutions. I enjoy collaborating with other developers, designers, and clients to create products that meet their needs and expectations. I am always eager to take on new challenges and grow my skills and knowledge.",
         "experience": [
             {
                 "jobPosition": "Software Engineer",

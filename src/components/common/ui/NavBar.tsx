@@ -52,7 +52,7 @@ const NavBar = () => {
           </Link>
         </li>
         <li>
-          <Link href='/messages'  className={currentPath == '/my-profile' ? 'flex flex-col items-center gap-1 text-primary' : 'flex flex-col items-center gap-1 hover:text-primary'}>
+          <Link href='/messages'  className={currentPath == '/messages' ? 'flex flex-col items-center gap-1 text-primary' : 'flex flex-col items-center gap-1 hover:text-primary'}>
             <MessageOutlinedIcon className='text-2xl font-bold'/>
             <span className='text-xs'>Messages</span>
           </Link>

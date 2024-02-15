@@ -32,8 +32,10 @@ const config: Config = {
       lightGray: '#F1F3F6',
       grayFirst : '#B4B4B8',
       graySecond: '#C7C8CC',
-      grayThird: 'E3E1D9',
-      grayFour : 'F2EFE5'
+      grayThird: '#E3E1D9',
+      grayFour: '#F2EFE5',
+      arsenic: '#3B444B',
+      coral : '#54626F'
     },
     fontFamily: {
       sans: ['Roboto', 'Arial', 'sans-serif'],
