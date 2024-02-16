@@ -1,785 +1,752 @@
 [
-    {
-        "id": 4564564454,
-        "title": "Exciting Journey into Space",
-        "content": "Embarking on a thrilling space exploration adventure! Lorem ipsum dolor sit amet. Est sapiente eligendi sit magnam voluptatem aut debitis illum id cumque facere eum molestias possimus. Non facere asperiores et perspiciatis dolor est minima obcaecati ut magnam officiis et amet quis id fuga dolorem. Et laudantium labore sed Quis alias sed voluptatibus neque. 33 consectetur Quis ut ipsam eligendi et consectetur repudiandae ut maxime mollitia ab tempora repellendus ab dolores atque nam dolores voluptas.",
-        "publishedAt": "25 July 2022",
-        "author": {
-            "name": "John Doe",
-            "position": "Financial Manager",
-            "email": "johndoe@business.com",
-            "profile": "/assets/profile_two.jpg"
-        },
-        "tags": [
-            "Space",
-            "Adventure"
-        ],
-        "image": "/assets/placeholder/javascript.jpg",
-        "comments": [
-            {
-                "name": "Emmanuel Tshibss",
-                "position": "Director",
-                "profile": "/assets/profile.jpeg",
-                "author": "Alice Johnson",
-                "email": "alice.j@example.com",
-                "text" : "Lorem ipsum dolor sit amet. Et reiciendis velit ex necessitatibus dignissimos rem expedita animi non voluptate pariatur qui expedita assumenda est voluptatem accusamus et incidunt nostrum. Et perferendis tempora aut ipsa eius sed expedita dolorem.",
-                "createdAt": "2023-01-01T12:30:45Z",
-                "likes" : 48,
-                "authorId": 101,
-                "replies": [
-                    {
-                        "name": "Emmanuel Tshibss",
-                        "position": "Director",
-                        "profile": "/assets/profile_four.jpg",
-                        "author": "Alice Johnson",
-                        "email": "alice.j@example.com",
-                        "text" : "Lorem ipsum dolor sit amet. Et reiciendis velit ex necessitatibus dignissimos rem expedita animi non voluptate pariatur qui expedita assumenda est voluptatem accusamus et incidunt nostrum. Et perferendis tempora aut ipsa eius sed expedita dolorem.",
-                        "createdAt": "2023-03-01T12:30:45Z",
-                        "likes" : 48,
-                        "authorId": 101
-                    },
-                    {
-                        "name": "Thedore Tshibss",
-                        "position": "Director",
-                        "profile": "/assets/profile_three.jpg",
-                        "author": "Alice Johnson",
-                        "email": "alice.j@example.com",
-                        "text": "Amazing journey!",
-                        "createdAt": "2023-03-01T12:30:45Z",
-                        "likes" : 48,
-                        "authorId": 102
-                    }
-                ]
-            },
-            {
-                "name": "Emmanuel Tshibss",
-                "position": "Director",
-                "profile": "/assets/profile_four.jpg",
-                "author": "Bob Anderson",
-                "email": "bob.anderson@example.com",
-                "text": "Can't wait to hear more!",
-                "createdAt": "2023-03-01T12:35:20Z",
-                "likes" : 48,
-                "authorId": 102,
-                "replies": [
-                    {
-                        "name": "Emmanuel Tshibss",
-                        "position": "Director",
-                        "profile": "/assets/profile_four.jpg",
-                        "author": "Alice Johnson",
-                        "email": "alice.j@example.com",
-                        "text": "Amazing journey!",
-                        "createdAt": "2023-03-01T12:30:45Z",
-                        "likes" : 45,
-                        "authorId": 101
-                    }
-                ]
-            },
-            {
-                "name": "Emmanuel Tshibss",
-                "position": "Director",
-                "profile": "/assets/profile.jpeg",
-                "author": "Catherine Smith",
-                "email": "catherine.smith@example.com",
-                "text": "Space is fascinating!",
-                "createdAt": "2023-12-01T12:40:15Z",
-                "likes" : 457,
-                "authorId": 10,
-                "replies": [
-                    {
-                        "name": "Emmanuel Tshibss",
-                        "position": "Director",
-                        "profile": "/assets/profile_three.jpg",
-                        "author": "Alice Johnson",
-                        "email": "alice.j@example.com",
-                        "text": "Amazing journey!",
-                        "createdAt": "2023-03-01T12:30:45Z",
-                        "likes" : 7,
-                        "authorId": 101
-                    }
-                ]
-            }
-        ],
-        "likes": 45
+  {
+    "id": 4564564454,
+    "title": "Exciting Journey into Space",
+    "content": "Embarking on a thrilling space exploration adventure! Lorem ipsum dolor sit amet. Est sapiente eligendi sit magnam voluptatem aut debitis illum id cumque facere eum molestias possimus. Non facere asperiores et perspiciatis dolor est minima obcaecati ut magnam officiis et amet quis id fuga dolorem. Et laudantium labore sed Quis alias sed voluptatibus neque. 33 consectetur Quis ut ipsam eligendi et consectetur repudiandae ut maxime mollitia ab tempora repellendus ab dolores atque nam dolores voluptas.",
+    "publishedAt": "25 July 2022",
+    "author": {
+      "name": "John Doe",
+      "position": "Financial Manager",
+      "email": "johndoe@business.com",
+      "profile": "/assets/profile_two.jpg"
     },
-    {
-        "id": 852963741456,
-        "title": "The Art of Cooking",
-        "content": "Exploring the culinary world and mastering the art of cooking! Lorem ipsum dolor sit amet. Est sapiente eligendi sit magnam voluptatem aut debitis illum id cumque facere eum molestias possimus. Non facere asperiores et perspiciatis dolor est minima obcaecati ut magnam officiis et amet quis id fuga dolorem. Et laudantium labore sed Quis alias sed voluptatibus neque. 33 consectetur Quis ut ipsam eligendi et consectetur repudiandae ut maxime mollitia ab tempora repellendus ab dolores atque nam dolores voluptas.\nEt minima magnam est vero perspiciatis in eaque enim eum quod dolorem ea dolores galisum non consequatur quae sed quos omnis. Eos vero enim sed placeat aspernatur aut autem quia et incidunt quis qui cumque sint et dolores rerum. In eveniet quidem ut porro dolor vel illo quod.\nQuo odit ratione ea iure magni qui architecto corporis et corrupti rerum rem perferendis galisum. Aut sunt perferendis ut magnam accusamus sit expedita eligendi ut iure aspernatur rem galisum repellat ut placeat distinctio. Est repudiandae illo in galisum necessitatibus et deleniti quas et reprehenderit velit eos aspernatur dicta. Ex aperiam deleniti qui internos minima sit sunt ullam sit libero quas et inventore internos vel nisi voluptas.",
-        "publishedAt": "25 July 2022",
-        "author": {
-            "name": "Emily White",
-            "position": "Product owner",
-            "email": "emilie@business.com",
-            "profile": "/assets/profile.jpeg"
-        },
-        "tags": [
-            "Cooking",
-            "Food"
-        ],
-        "image": "/assets/placeholder/univers.jpg",
-        "comments": [
-            {
-                "name": "Emmanuel Tshibss",
-                "position": "Director",
-                "profile": "/assets/profile_three.jpg",
-                "author": "David Johnson",
-                "email": "david.j@example.com",
-                "text": "I love trying new recipes!",
-                "createdAt": "2023-03-02T10:15:30Z",
-                "likes" : 27787,
-                "authorId": 104,
-                "replies": [
-                    {
-                        "name": "Emmanuel Tshibss",
-                        "position": "Director",
-                        "profile": "/assets/profile.jpeg",
-                        "author": "Alice Johnson",
-                        "email": "alice.j@example.com",
-                        "text": "Amazing journey!",
-                        "createdAt": "2023-03-01T12:30:45Z",
-                        "likes" : 207,
-                        "authorId": 101
-                    }
-                ]
-            },
-            {
-                "name": "Emmanuel Tshibss",
-                "position": "Director",
-                "profile": "/assets/profile_four.jpg",
-                "author": "Sophie Turner",
-                "email": "sophie.turner@example.com",
-                "text": "Great tips for cooking enthusiasts!",
-                "createdAt": "2023-03-02T10:20:45Z",
-                "likes" : 741,
-                "authorId": 10,
-                "replies": [
-                    {
-                        "name": "Emmanuel Tshibss",
-                        "position": "Director",
-                        "profile": "/assets/profile_four.jpg",
-                        "author": "Alice Johnson",
-                        "email": "alice.j@example.com",
-                        "text": "Amazing journey!",
-                        "createdAt": "2023-03-01T12:30:45Z",
-                        "likes" : 963,
-                        "authorId": 101
-                    }
-                ]
-            }
-        ],
-        "likes": 32
-    },
-    {
-        "id": 897546645,
-        "title": "Tech Innovations in 2023",
-        "content": "Discovering the latest technological advancements shaping the future! Lorem ipsum dolor sit amet. Est sapiente eligendi sit magnam voluptatem aut debitis illum id cumque facere eum molestias possimus. Non facere asperiores et perspiciatis dolor est minima obcaecati ut magnam officiis et amet quis id fuga dolorem. Et laudantium labore sed Quis alias sed voluptatibus neque. 33 consectetur Quis ut ipsam eligendi et consectetur repudiandae ut maxime mollitia ab tempora repellendus ab dolores atque nam dolores voluptas.",
-        "publishedAt": "25 July 2022",
-        "author": {
-            "name": "Michael Adams",
+    "tags": ["Space", "Adventure"],
+    "image": "/assets/placeholder/javascript.jpg",
+    "comments": [
+      {
+        "name": "Emmanuel Tshibss",
+        "position": "Director",
+        "profile": "/assets/profile.jpeg",
+        "author": "Alice Johnson",
+        "email": "alice.j@example.com",
+        "text": "Lorem ipsum dolor sit amet. Et reiciendis velit ex necessitatibus dignissimos rem expedita animi non voluptate pariatur qui expedita assumenda est voluptatem accusamus et incidunt nostrum. Et perferendis tempora aut ipsa eius sed expedita dolorem.",
+        "createdAt": "2023-01-01T12:30:45Z",
+        "likes": 48,
+        "authorId": 101,
+        "replies": [
+          {
+            "name": "Emmanuel Tshibss",
             "position": "Director",
-            "email": "michaeladams@business.com",
-            "profile": "/assets/profile.jpeg"
-        },
-        "tags": [
-            "Technology",
-            "Innovation"
-        ],
-        "image": "/assets/placeholder/food.jpg",
-        "comments": [
-            {
-                "name": "Emmanuel Tshibss",
-                "position": "Director",
-                "profile": "/assets/profile.jpeg",
-                "author": "Emma Roberts",
-                "email": "emma.r@example.com",
-                "text": "Fascinating insights into tech trends!",
-                "createdAt": "2023-03-02T14:45:10Z",
-                "likes" : 258,
-                "authorId": 106,
-                "replies": [
-                    {
-                        "name": "Emmanuel Tshibss",
-                        "position": "Director",
-                        "profile": "/assets/profile.jpeg",
-                        "author": "Alice Johnson",
-                        "email": "alice.j@example.com",
-                        "text" : "Lorem ipsum dolor sit amet. Et reiciendis velit ex necessitatibus dignissimos rem expedita animi non voluptate pariatur qui expedita assumenda est voluptatem accusamus et incidunt nostrum. Et perferendis tempora aut ipsa eius sed expedita dolorem.",
-                        "createdAt": "2023-03-01T12:30:45Z",
-                        "likes" : 123,
-                        "authorId": 101
-                    }
-                ]
-            },
-            {
-                "name": "Emmanuel Tshibss",
-                "position": "Director",
-                "profile": "/assets/profile.jpeg",
-                "author": "Charlie Brown",
-                "email": "charlie.b@example.com",
-                "text": "The future is now!",
-                "createdAt": "2023-03-02T14:50:25Z",
-                "likes" : 654,
-                "authorId": 10,
-                "replies": [
-                    {
-                        "name": "Emmanuel Tshibss",
-                        "position": "Director",
-                        "profile": "/assets/profile_three.jpg",
-                        "author": "Alice Johnson",
-                        "email": "alice.j@example.com",
-                        "text" : "Lorem ipsum dolor sit amet. Et reiciendis velit ex necessitatibus dignissimos rem expedita animi non voluptate pariatur qui expedita assumenda est voluptatem accusamus et incidunt nostrum. Et perferendis tempora aut ipsa eius sed expedita dolorem.",
-                        "createdAt": "2023-03-01T12:30:45Z",
-                        "likes" : 987,
-                        "authorId": 101
-                    }
-                ]
-            }
-        ],
-        "likes": 50
+            "profile": "/assets/profile_four.jpg",
+            "author": "Alice Johnson",
+            "email": "alice.j@example.com",
+            "text": "Lorem ipsum dolor sit amet. Et reiciendis velit ex necessitatibus dignissimos rem expedita animi non voluptate pariatur qui expedita assumenda est voluptatem accusamus et incidunt nostrum. Et perferendis tempora aut ipsa eius sed expedita dolorem.",
+            "createdAt": "2023-03-01T12:30:45Z",
+            "likes": 48,
+            "authorId": 101
+          },
+          {
+            "name": "Thedore Tshibss",
+            "position": "Director",
+            "profile": "/assets/profile_three.jpg",
+            "author": "Alice Johnson",
+            "email": "alice.j@example.com",
+            "text": "Amazing journey!",
+            "createdAt": "2023-03-01T12:30:45Z",
+            "likes": 48,
+            "authorId": 102
+          }
+        ]
+      },
+      {
+        "name": "Emmanuel Tshibss",
+        "position": "Director",
+        "profile": "/assets/profile_four.jpg",
+        "author": "Bob Anderson",
+        "email": "bob.anderson@example.com",
+        "text": "Can't wait to hear more!",
+        "createdAt": "2023-03-01T12:35:20Z",
+        "likes": 48,
+        "authorId": 102,
+        "replies": [
+          {
+            "name": "Emmanuel Tshibss",
+            "position": "Director",
+            "profile": "/assets/profile_four.jpg",
+            "author": "Alice Johnson",
+            "email": "alice.j@example.com",
+            "text": "Amazing journey!",
+            "createdAt": "2023-03-01T12:30:45Z",
+            "likes": 45,
+            "authorId": 101
+          }
+        ]
+      },
+      {
+        "name": "Emmanuel Tshibss",
+        "position": "Director",
+        "profile": "/assets/profile.jpeg",
+        "author": "Catherine Smith",
+        "email": "catherine.smith@example.com",
+        "text": "Space is fascinating!",
+        "createdAt": "2023-12-01T12:40:15Z",
+        "likes": 457,
+        "authorId": 10,
+        "replies": [
+          {
+            "name": "Emmanuel Tshibss",
+            "position": "Director",
+            "profile": "/assets/profile_three.jpg",
+            "author": "Alice Johnson",
+            "email": "alice.j@example.com",
+            "text": "Amazing journey!",
+            "createdAt": "2023-03-01T12:30:45Z",
+            "likes": 7,
+            "authorId": 101
+          }
+        ]
+      }
+    ],
+    "likes": 45
+  },
+  {
+    "id": 852963741456,
+    "title": "The Art of Cooking",
+    "content": "Exploring the culinary world and mastering the art of cooking! Lorem ipsum dolor sit amet. Est sapiente eligendi sit magnam voluptatem aut debitis illum id cumque facere eum molestias possimus. Non facere asperiores et perspiciatis dolor est minima obcaecati ut magnam officiis et amet quis id fuga dolorem. Et laudantium labore sed Quis alias sed voluptatibus neque. 33 consectetur Quis ut ipsam eligendi et consectetur repudiandae ut maxime mollitia ab tempora repellendus ab dolores atque nam dolores voluptas.\nEt minima magnam est vero perspiciatis in eaque enim eum quod dolorem ea dolores galisum non consequatur quae sed quos omnis. Eos vero enim sed placeat aspernatur aut autem quia et incidunt quis qui cumque sint et dolores rerum. In eveniet quidem ut porro dolor vel illo quod.\nQuo odit ratione ea iure magni qui architecto corporis et corrupti rerum rem perferendis galisum. Aut sunt perferendis ut magnam accusamus sit expedita eligendi ut iure aspernatur rem galisum repellat ut placeat distinctio. Est repudiandae illo in galisum necessitatibus et deleniti quas et reprehenderit velit eos aspernatur dicta. Ex aperiam deleniti qui internos minima sit sunt ullam sit libero quas et inventore internos vel nisi voluptas.",
+    "publishedAt": "25 July 2022",
+    "author": {
+      "name": "Emily White",
+      "position": "Product owner",
+      "email": "emilie@business.com",
+      "profile": "/assets/profile.jpeg"
     },
-    {
-        "id": 12332154,
-        "title": "Exploring Nature's Wonders",
-        "content": "Embarking on a journey to witness the beauty of nature! Lorem ipsum dolor sit amet. Est sapiente eligendi sit magnam voluptatem aut debitis illum id cumque facere eum molestias possimus. Non facere asperiores et perspiciatis dolor est minima obcaecati ut magnam officiis et amet quis id fuga dolorem. Et laudantium labore sed Quis alias sed voluptatibus neque. 33 consectetur Quis ut ipsam eligendi et consectetur repudiandae ut maxime mollitia ab tempora repellendus ab dolores atque nam dolores voluptas.",
-        "publishedAt": "25 July 2022",
-        "author": {
-            "name": "Olivia Moore",
-            "position": "Product owner",
-            "email": "oliviamoore@business.com",
-            "profile": "/assets/profile.jpeg"
-        },
-        "tags": [
-            "Nature",
-            "Travel"
-        ],
-        "image": "/assets/placeholder/photo.jpg",
-        "comments": [
-            {
-                "name": "Emmanuel Tshibss",
-                "position": "Director",
-                "profile": "/assets/profile_four.jpg",
-                "author": "Daniel Wilson",
-                "email": "daniel.w@example.com",
-                "text": "Nature is the best artist!",
-                "createdAt": "2023-03-03T09:30:15Z",
-                "likes" : 159,
-                "authorId": 108,
-                "replies": [
-                    {
-                        "name": "Emmanuel Tshibss",
-                        "position": "Director",
-                        "profile": "/assets/profile.jpeg",
-                        "author": "Alice Johnson",
-                        "email": "alice.j@example.com",
-                        "text": "Amazing journey!",
-                        "createdAt": "2023-03-01T12:30:45Z",
-                        "likes" : 478,
-                        "authorId": 101
-                    }
-                ]
-            },
-            {
-                "name": "Emmanuel Tshibss",
-                "position": "Director",
-                "profile": "/assets/profile.jpeg",
-                "author": "Sophia Garcia",
-                "email": "sophia.g@example.com",
-                "text": "I'd love to visit these places!",
-                "createdAt": "2023-03-03T09:45:30Z",
-                "likes" : 7,
-                "authorId": 10,
-                "replies": [
-                    {
-                        "name": "Emmanuel Tshibss",
-                        "position": "Director",
-                        "profile": "/assets/profile.jpeg",
-                        "author": "Alice Johnson",
-                        "email": "alice.j@example.com",
-                        "text": "Amazing journey!",
-                        "createdAt": "2023-03-01T12:30:45Z",
-                        "likes" : 48,
-                        "authorId": 101
-                    }
-                ]
-            }
-        ],
-        "likes": 45
+    "tags": ["Cooking", "Food"],
+    "image": "/assets/placeholder/univers.jpg",
+    "comments": [
+      {
+        "name": "Emmanuel Tshibss",
+        "position": "Director",
+        "profile": "/assets/profile_three.jpg",
+        "author": "David Johnson",
+        "email": "david.j@example.com",
+        "text": "I love trying new recipes!",
+        "createdAt": "2023-03-02T10:15:30Z",
+        "likes": 27787,
+        "authorId": 104,
+        "replies": [
+          {
+            "name": "Emmanuel Tshibss",
+            "position": "Director",
+            "profile": "/assets/profile.jpeg",
+            "author": "Alice Johnson",
+            "email": "alice.j@example.com",
+            "text": "Amazing journey!",
+            "createdAt": "2023-03-01T12:30:45Z",
+            "likes": 207,
+            "authorId": 101
+          }
+        ]
+      },
+      {
+        "name": "Emmanuel Tshibss",
+        "position": "Director",
+        "profile": "/assets/profile_four.jpg",
+        "author": "Sophie Turner",
+        "email": "sophie.turner@example.com",
+        "text": "Great tips for cooking enthusiasts!",
+        "createdAt": "2023-03-02T10:20:45Z",
+        "likes": 741,
+        "authorId": 10,
+        "replies": [
+          {
+            "name": "Emmanuel Tshibss",
+            "position": "Director",
+            "profile": "/assets/profile_four.jpg",
+            "author": "Alice Johnson",
+            "email": "alice.j@example.com",
+            "text": "Amazing journey!",
+            "createdAt": "2023-03-01T12:30:45Z",
+            "likes": 963,
+            "authorId": 101
+          }
+        ]
+      }
+    ],
+    "likes": 32
+  },
+  {
+    "id": 897546645,
+    "title": "Tech Innovations in 2023",
+    "content": "Discovering the latest technological advancements shaping the future! Lorem ipsum dolor sit amet. Est sapiente eligendi sit magnam voluptatem aut debitis illum id cumque facere eum molestias possimus. Non facere asperiores et perspiciatis dolor est minima obcaecati ut magnam officiis et amet quis id fuga dolorem. Et laudantium labore sed Quis alias sed voluptatibus neque. 33 consectetur Quis ut ipsam eligendi et consectetur repudiandae ut maxime mollitia ab tempora repellendus ab dolores atque nam dolores voluptas.",
+    "publishedAt": "25 July 2022",
+    "author": {
+      "name": "Michael Adams",
+      "position": "Director",
+      "email": "michaeladams@business.com",
+      "profile": "/assets/profile.jpeg"
     },
-    {
-        "id": 5487778767484,
-        "title": "Fitness Journey Chronicles",
-        "content": "Sharing experiences and tips on the road to a healthier lifestyle! Lorem ipsum dolor sit amet. Est sapiente eligendi sit magnam voluptatem aut debitis illum id cumque facere eum molestias possimus. Non facere asperiores et perspiciatis dolor est minima obcaecati ut magnam officiis et amet quis id fuga dolorem. Et laudantium labore sed Quis alias sed voluptatibus neque. 33 consectetur Quis ut ipsam eligendi et consectetur repudiandae ut maxime mollitia ab tempora repellendus ab dolores atque nam dolores voluptas.\nQuo odit ratione ea iure magni qui architecto corporis et corrupti rerum rem perferendis galisum. Aut sunt perferendis ut magnam accusamus sit expedita eligendi ut iure aspernatur rem galisum repellat ut placeat distinctio. Est repudiandae illo in galisum necessitatibus et deleniti quas et reprehenderit velit eos aspernatur dicta. Ex aperiam deleniti qui internos minima sit sunt ullam sit libero quas et inventore internos vel nisi voluptas.",
-        "publishedAt": "25 July 2022",
-        "author": {
-            "name": "Ethan Walker",
-            "position": "Financial Manager",
-            "email": "ethanwalker@business.com",
-            "profile": "/assets/profile.jpeg"
-        },
-        "tags": [
-            "Fitness",
-            "Health"
-        ],
-        "image": "/assets/placeholder/paradigm.jpg",
-        "comments": [
-            {
-                "name": "Emmanuel Tshibss",
-                "position": "Director",
-                "profile": "/assets/profile_four.jpg",
-                "author": "Ava Robinson",
-                "email": "ava.r@example.com",
-                "text": "Your fitness journey inspires me!",
-                "createdAt": "2023-03-03T13:20:10Z",
-                "likes" : 159,
-                "authorId": 110,
-                "replies": [
-                    {
-                        "name": "Emmanuel Tshibss",
-                        "position": "Director",
-                        "profile": "/assets/profile.jpeg",
-                        "author": "Alice Johnson",
-                        "email": "alice.j@example.com",
-                        "text": "Amazing journey!",
-                        "createdAt": "2023-03-01T12:30:45Z",
-                        "likes" : 26,
-                        "authorId": 101
-                    }
-                ]
-            },
-            {
-                "name": "Emmanuel Tshibss",
-                "position": "Director",
-                "profile": "/assets/profile.jpeg",
-                "author": "Noah Martinez",
-                "email": "noah.m@example.com",
-                "text": "Keep up the great work!",
-                "createdAt": "2023-03-03T13:35:25Z",
-                "likes" : 3,
-                "authorId": 11,
-                "replies": [
-                    {
-                        "name": "Emmanuel Tshibss",
-                        "position": "Director",
-                        "profile": "/assets/profile_three.jpg",
-                        "author": "Alice Johnson",
-                        "email": "alice.j@example.com",
-                        "text" : "Lorem ipsum dolor sit amet. Et reiciendis velit ex necessitatibus dignissimos rem expedita animi non voluptate pariatur qui expedita assumenda est voluptatem accusamus et incidunt nostrum. Et perferendis tempora aut ipsa eius sed expedita dolorem.",
-                        "createdAt": "2023-03-01T12:30:45Z",
-                        "likes" : 3,
-                        "authorId": 101
-                    }
-                ]
-            }
-        ],
-        "likes": 38
+    "tags": ["Technology", "Innovation"],
+    "image": "/assets/placeholder/food.jpg",
+    "comments": [
+      {
+        "name": "Emmanuel Tshibss",
+        "position": "Director",
+        "profile": "/assets/profile.jpeg",
+        "author": "Emma Roberts",
+        "email": "emma.r@example.com",
+        "text": "Fascinating insights into tech trends!",
+        "createdAt": "2023-03-02T14:45:10Z",
+        "likes": 258,
+        "authorId": 106,
+        "replies": [
+          {
+            "name": "Emmanuel Tshibss",
+            "position": "Director",
+            "profile": "/assets/profile.jpeg",
+            "author": "Alice Johnson",
+            "email": "alice.j@example.com",
+            "text": "Lorem ipsum dolor sit amet. Et reiciendis velit ex necessitatibus dignissimos rem expedita animi non voluptate pariatur qui expedita assumenda est voluptatem accusamus et incidunt nostrum. Et perferendis tempora aut ipsa eius sed expedita dolorem.",
+            "createdAt": "2023-03-01T12:30:45Z",
+            "likes": 123,
+            "authorId": 101
+          }
+        ]
+      },
+      {
+        "name": "Emmanuel Tshibss",
+        "position": "Director",
+        "profile": "/assets/profile.jpeg",
+        "author": "Charlie Brown",
+        "email": "charlie.b@example.com",
+        "text": "The future is now!",
+        "createdAt": "2023-03-02T14:50:25Z",
+        "likes": 654,
+        "authorId": 10,
+        "replies": [
+          {
+            "name": "Emmanuel Tshibss",
+            "position": "Director",
+            "profile": "/assets/profile_three.jpg",
+            "author": "Alice Johnson",
+            "email": "alice.j@example.com",
+            "text": "Lorem ipsum dolor sit amet. Et reiciendis velit ex necessitatibus dignissimos rem expedita animi non voluptate pariatur qui expedita assumenda est voluptatem accusamus et incidunt nostrum. Et perferendis tempora aut ipsa eius sed expedita dolorem.",
+            "createdAt": "2023-03-01T12:30:45Z",
+            "likes": 987,
+            "authorId": 101
+          }
+        ]
+      }
+    ],
+    "likes": 50
+  },
+  {
+    "id": 12332154,
+    "title": "Exploring Nature's Wonders",
+    "content": "Embarking on a journey to witness the beauty of nature! Lorem ipsum dolor sit amet. Est sapiente eligendi sit magnam voluptatem aut debitis illum id cumque facere eum molestias possimus. Non facere asperiores et perspiciatis dolor est minima obcaecati ut magnam officiis et amet quis id fuga dolorem. Et laudantium labore sed Quis alias sed voluptatibus neque. 33 consectetur Quis ut ipsam eligendi et consectetur repudiandae ut maxime mollitia ab tempora repellendus ab dolores atque nam dolores voluptas.",
+    "publishedAt": "25 July 2022",
+    "author": {
+      "name": "Olivia Moore",
+      "position": "Product owner",
+      "email": "oliviamoore@business.com",
+      "profile": "/assets/profile.jpeg"
     },
-    {
-        "id": 17147474741,
-        "title": "Sunset Bliss",
-        "content": "Capturing the breathtaking beauty of sunsets around the world. Lorem ipsum dolor sit amet. Est sapiente eligendi sit magnam voluptatem aut debitis illum id cumque facere eum molestias possimus. Non facere asperiores et perspiciatis dolor est minima obcaecati ut magnam officiis et amet quis id fuga dolorem. Et laudantium labore sed Quis alias sed voluptatibus neque. 33 consectetur Quis ut ipsam eligendi et consectetur repudiandae ut maxime mollitia ab tempora repellendus ab dolores atque nam dolores voluptas.",
-        "publishedAt": "25 July 2022",
-        "author": {
-            "name": "Liam Baker",
-            "position": "Recruiter | Business Developer | Bitcoins",
-            "email": "liambaker@business.com",
-            "profile": "/assets/profile.jpeg"
-        },
-        "tags": [
-            "Nature",
-            "Photography"
-        ],
-        "image": "/assets/placeholder/history.jpg",
-        "comments": [
-            {
-                "name": "Emmanuel Tshibss",
-                "position": "Director",
-                "profile": "/assets/profile_four.jpg",
-                "author": "Emma Perez",
-                "email": "emma.p@example.com",
-                "text": "Sunsets are my favorite!",
-                "createdAt": "2023-03-05T18:10:45Z",
-                "likes" : 26,
-                "authorId": 112,
-                "replies": [
-                    {
-                        "name": "Emmanuel Tshibss",
-                        "position": "Director",
-                        "profile": "/assets/profile.jpeg",
-                        "author": "Alice Johnson",
-                        "email": "alice.j@example.com",
-                        "text" : "Lorem ipsum dolor sit amet. Et reiciendis velit ex necessitatibus dignissimos rem expedita animi non voluptate pariatur qui expedita assumenda est voluptatem accusamus et incidunt nostrum. Et perferendis tempora aut ipsa eius sed expedita dolorem.",
-                        "createdAt": "2023-03-01T12:30:45Z",
-                        "likes" : 159,
-                        "authorId": 101
-                    }
-                ]
-            },
-            {
-                "name": "Emmanuel Tshibss",
-                "position": "Director",
-                "profile": "/assets/profile.jpeg",
-                "author": "William White",
-                "email": "william.w@example.com",
-                "text": "These photos are stunning!",
-                "createdAt": "2023-03-05T18:30:20Z",
-                "likes" : 785,
-                "authorId": 11,
-                "replies": [
-                    {
-                        "name": "Emmanuel Tshibss",
-                        "position": "Director",
-                        "profile": "/assets/profile_three.jpg",
-                        "author": "Alice Johnson",
-                        "email": "alice.j@example.com",
-                        "text" : "Lorem ipsum dolor sit amet. Et reiciendis velit ex necessitatibus dignissimos rem expedita animi non voluptate pariatur qui expedita assumenda est voluptatem accusamus et incidunt nostrum. Et perferendis tempora aut ipsa eius sed expedita dolorem.",
-                        "createdAt": "2023-03-01T12:30:45Z",
-                        "likes" : 263,
-                        "authorId": 101
-                    }
-                ]
-            }
-        ],
-        "likes": 52
+    "tags": ["Nature", "Travel"],
+    "image": "/assets/placeholder/photo.jpg",
+    "comments": [
+      {
+        "name": "Emmanuel Tshibss",
+        "position": "Director",
+        "profile": "/assets/profile_four.jpg",
+        "author": "Daniel Wilson",
+        "email": "daniel.w@example.com",
+        "text": "Nature is the best artist!",
+        "createdAt": "2023-03-03T09:30:15Z",
+        "likes": 159,
+        "authorId": 108,
+        "replies": [
+          {
+            "name": "Emmanuel Tshibss",
+            "position": "Director",
+            "profile": "/assets/profile.jpeg",
+            "author": "Alice Johnson",
+            "email": "alice.j@example.com",
+            "text": "Amazing journey!",
+            "createdAt": "2023-03-01T12:30:45Z",
+            "likes": 478,
+            "authorId": 101
+          }
+        ]
+      },
+      {
+        "name": "Emmanuel Tshibss",
+        "position": "Director",
+        "profile": "/assets/profile.jpeg",
+        "author": "Sophia Garcia",
+        "email": "sophia.g@example.com",
+        "text": "I'd love to visit these places!",
+        "createdAt": "2023-03-03T09:45:30Z",
+        "likes": 7,
+        "authorId": 10,
+        "replies": [
+          {
+            "name": "Emmanuel Tshibss",
+            "position": "Director",
+            "profile": "/assets/profile.jpeg",
+            "author": "Alice Johnson",
+            "email": "alice.j@example.com",
+            "text": "Amazing journey!",
+            "createdAt": "2023-03-01T12:30:45Z",
+            "likes": 48,
+            "authorId": 101
+          }
+        ]
+      }
+    ],
+    "likes": 45
+  },
+  {
+    "id": 5487778767484,
+    "title": "Fitness Journey Chronicles",
+    "content": "Sharing experiences and tips on the road to a healthier lifestyle! Lorem ipsum dolor sit amet. Est sapiente eligendi sit magnam voluptatem aut debitis illum id cumque facere eum molestias possimus. Non facere asperiores et perspiciatis dolor est minima obcaecati ut magnam officiis et amet quis id fuga dolorem. Et laudantium labore sed Quis alias sed voluptatibus neque. 33 consectetur Quis ut ipsam eligendi et consectetur repudiandae ut maxime mollitia ab tempora repellendus ab dolores atque nam dolores voluptas.\nQuo odit ratione ea iure magni qui architecto corporis et corrupti rerum rem perferendis galisum. Aut sunt perferendis ut magnam accusamus sit expedita eligendi ut iure aspernatur rem galisum repellat ut placeat distinctio. Est repudiandae illo in galisum necessitatibus et deleniti quas et reprehenderit velit eos aspernatur dicta. Ex aperiam deleniti qui internos minima sit sunt ullam sit libero quas et inventore internos vel nisi voluptas.",
+    "publishedAt": "25 July 2022",
+    "author": {
+      "name": "Ethan Walker",
+      "position": "Financial Manager",
+      "email": "ethanwalker@business.com",
+      "profile": "/assets/profile.jpeg"
     },
-    {
-        "id": 2585282588,
-        "title": "Tech Innovations Showcase",
-        "content": "Exploring the latest technological breakthroughs and innovations. Lorem ipsum dolor sit amet. Est sapiente eligendi sit magnam voluptatem aut debitis illum id cumque facere eum molestias possimus. Non facere asperiores et perspiciatis dolor est minima obcaecati ut magnam officiis et amet quis id fuga dolorem. Et laudantium labore sed Quis alias sed voluptatibus neque. 33 consectetur Quis ut ipsam eligendi et consectetur repudiandae ut maxime mollitia ab tempora repellendus ab dolores atque nam dolores voluptas.",
-        "publishedAt": "25 July 2022",
-        "author": {
-            "name": "Aria Foster",
-            "position": "Software Engineer | Software Developer",
-            "email": "ariafoster@business.com",
-            "profile": "/assets/profile.jpeg"
-        },
-        "tags": [
-            "Technology",
-            "Innovation"
-        ],
-        "image": "/assets/placeholder/literature.jpg",
-        "comments": [
-            {
-                "name": "Emmanuel Tshibss",
-                "position": "Director",
-                "profile": "/assets/profile_four.jpg",
-                "author": "Henry Turner",
-                "email": "henry.t@example.com",
-                "text": "Amazing tech discoveries!",
-                "createdAt": "2023-03-06T11:15:30Z",
-                "likes" : 8521,
-                "authorId": 114,
-                "replies": [
-                    {
-                        "name": "Emmanuel Tshibss",
-                        "position": "Director",
-                        "profile": "/assets/profile_four.jpg",
-                        "author": "Alice Johnson",
-                        "email": "alice.j@example.com",
-                        "text": "Amazing journey!",
-                        "createdAt": "2023-03-01T12:30:45Z",
-                        "likes" : 7895,
-                        "authorId": 101
-                    }
-                ]
-            },
-            {
-                "name": "Emmanuel Tshibss",
-                "position": "Director",
-                "profile": "/assets/profile.jpeg",
-                "author": "Grace Reed",
-                "email": "grace.r@example.com",
-                "text": "Can't wait to see more!",
-                "createdAt": "2023-03-06T11:45:15Z",
-                "likes" : 258,
-                "authorId": 11,
-                "replies": [
-                    {
-                        "name": "Emmanuel Tshibss",
-                        "position": "Director",
-                        "profile": "/assets/profile.jpeg",
-                        "author": "Alice Johnson",
-                        "email": "alice.j@example.com",
-                        "text": "Amazing journey!",
-                        "createdAt": "2023-03-01T12:30:45Z",
-                        "likes" : 4521,
-                        "authorId": 101
-                    }
-                ]
-            }
-        ],
-        "likes": 43
+    "tags": ["Fitness", "Health"],
+    "image": "/assets/placeholder/paradigm.jpg",
+    "comments": [
+      {
+        "name": "Emmanuel Tshibss",
+        "position": "Director",
+        "profile": "/assets/profile_four.jpg",
+        "author": "Ava Robinson",
+        "email": "ava.r@example.com",
+        "text": "Your fitness journey inspires me!",
+        "createdAt": "2023-03-03T13:20:10Z",
+        "likes": 159,
+        "authorId": 110,
+        "replies": [
+          {
+            "name": "Emmanuel Tshibss",
+            "position": "Director",
+            "profile": "/assets/profile.jpeg",
+            "author": "Alice Johnson",
+            "email": "alice.j@example.com",
+            "text": "Amazing journey!",
+            "createdAt": "2023-03-01T12:30:45Z",
+            "likes": 26,
+            "authorId": 101
+          }
+        ]
+      },
+      {
+        "name": "Emmanuel Tshibss",
+        "position": "Director",
+        "profile": "/assets/profile.jpeg",
+        "author": "Noah Martinez",
+        "email": "noah.m@example.com",
+        "text": "Keep up the great work!",
+        "createdAt": "2023-03-03T13:35:25Z",
+        "likes": 3,
+        "authorId": 11,
+        "replies": [
+          {
+            "name": "Emmanuel Tshibss",
+            "position": "Director",
+            "profile": "/assets/profile_three.jpg",
+            "author": "Alice Johnson",
+            "email": "alice.j@example.com",
+            "text": "Lorem ipsum dolor sit amet. Et reiciendis velit ex necessitatibus dignissimos rem expedita animi non voluptate pariatur qui expedita assumenda est voluptatem accusamus et incidunt nostrum. Et perferendis tempora aut ipsa eius sed expedita dolorem.",
+            "createdAt": "2023-03-01T12:30:45Z",
+            "likes": 3,
+            "authorId": 101
+          }
+        ]
+      }
+    ],
+    "likes": 38
+  },
+  {
+    "id": 17147474741,
+    "title": "Sunset Bliss",
+    "content": "Capturing the breathtaking beauty of sunsets around the world. Lorem ipsum dolor sit amet. Est sapiente eligendi sit magnam voluptatem aut debitis illum id cumque facere eum molestias possimus. Non facere asperiores et perspiciatis dolor est minima obcaecati ut magnam officiis et amet quis id fuga dolorem. Et laudantium labore sed Quis alias sed voluptatibus neque. 33 consectetur Quis ut ipsam eligendi et consectetur repudiandae ut maxime mollitia ab tempora repellendus ab dolores atque nam dolores voluptas.",
+    "publishedAt": "25 July 2022",
+    "author": {
+      "name": "Liam Baker",
+      "position": "Recruiter | Business Developer | Bitcoins",
+      "email": "liambaker@business.com",
+      "profile": "/assets/profile.jpeg"
     },
-    {
-        "id": 85258252288,
-        "title": "Cityscape Wonders",
-        "content": "Exploring the mesmerizing cityscapes from various urban hubs. Lorem ipsum dolor sit amet. Est sapiente eligendi sit magnam voluptatem aut debitis illum id cumque facere eum molestias possimus. Non facere asperiores et perspiciatis dolor est minima obcaecati ut magnam officiis et amet quis id fuga dolorem. Et laudantium labore sed Quis alias sed voluptatibus neque. 33 consectetur Quis ut ipsam eligendi et consectetur repudiandae ut maxime mollitia ab tempora repellendus ab dolores atque nam dolores voluptas.\nEt minima magnam est vero perspiciatis in eaque enim eum quod dolorem ea dolores galisum non consequatur quae sed quos omnis. Eos vero enim sed placeat aspernatur aut autem quia et incidunt quis qui cumque sint et dolores rerum. In eveniet quidem ut porro dolor vel illo quod.\n\nQuo odit ratione ea iure magni qui architecto corporis et corrupti rerum rem perferendis galisum. Aut sunt perferendis ut magnam accusamus sit expedita eligendi ut iure aspernatur rem galisum repellat ut placeat distinctio. Est repudiandae illo in galisum necessitatibus et deleniti quas et reprehenderit velit eos aspernatur dicta. Ex aperiam deleniti qui internos minima sit sunt ullam sit libero quas et inventore internos vel nisi voluptas.",
-        "publishedAt": "25 July 2022",
-        "author": {
-            "name": "Olivia Nelson",
-            "position": "Financial Manager",
-            "email": "johndoe@business.com",
-            "profile": "/assets/profile.jpeg"
-        },
-        "tags": [
-            "Travel",
-            "Urban"
-        ],
-        "image": "/assets/placeholder/green.jpg",
-        "comments": [
-            {
-                "name": "Emmanuel Tshibss",
-                "position": "Director",
-                "profile": "/assets/profile_four.jpg",
-                "author": "Elijah Evans",
-                "email": "elijah.e@example.com",
-                "text": "City lights are magical!",
-                "createdAt": "2023-03-08T14:20:30Z",
-                "likes" : 9856,
-                "authorId": 116,
-                "replies": [
-                    {
-                        "name": "Emmanuel Tshibss",
-                        "position": "Director",
-                        "profile": "/assets/profile_four.jpg",
-                        "author": "Alice Johnson",
-                        "email": "alice.j@example.com",
-                        "text": "Amazing journey!",
-                        "createdAt": "2023-03-01T12:30:45Z",
-                        "likes" : 58,
-                        "authorId": 101
-                    }
-                ]
-            },
-            {
-                "name": "Emmanuel Tshibss",
-                "position": "Director",
-                "profile": "/assets/profile.jpeg",
-                "author": "Zoe Murphy",
-                "email": "zoe.m@example.com",
-                "text": "I love the diversity in architecture.",
-                "createdAt": "2023-03-08T14:45:15Z",
-                "likes" : 7785,
-                "authorId": 11,
-                "replies": [
-                    {
-                        "name": "Emmanuel Tshibss",
-                        "position": "Director",
-                        "profile": "/assets/profile_four.jpg",
-                        "author": "Alice Johnson",
-                        "email": "alice.j@example.com",
-                        "text": "Amazing journey!",
-                        "createdAt": "2023-03-01T12:30:45Z",
-                        "likes" : 48,
-                        "authorId": 101
-                    }
-                ]
-            }
-        ],
-        "likes": 38
+    "tags": ["Nature", "Photography"],
+    "image": "/assets/placeholder/history.jpg",
+    "comments": [
+      {
+        "name": "Emmanuel Tshibss",
+        "position": "Director",
+        "profile": "/assets/profile_four.jpg",
+        "author": "Emma Perez",
+        "email": "emma.p@example.com",
+        "text": "Sunsets are my favorite!",
+        "createdAt": "2023-03-05T18:10:45Z",
+        "likes": 26,
+        "authorId": 112,
+        "replies": [
+          {
+            "name": "Emmanuel Tshibss",
+            "position": "Director",
+            "profile": "/assets/profile.jpeg",
+            "author": "Alice Johnson",
+            "email": "alice.j@example.com",
+            "text": "Lorem ipsum dolor sit amet. Et reiciendis velit ex necessitatibus dignissimos rem expedita animi non voluptate pariatur qui expedita assumenda est voluptatem accusamus et incidunt nostrum. Et perferendis tempora aut ipsa eius sed expedita dolorem.",
+            "createdAt": "2023-03-01T12:30:45Z",
+            "likes": 159,
+            "authorId": 101
+          }
+        ]
+      },
+      {
+        "name": "Emmanuel Tshibss",
+        "position": "Director",
+        "profile": "/assets/profile.jpeg",
+        "author": "William White",
+        "email": "william.w@example.com",
+        "text": "These photos are stunning!",
+        "createdAt": "2023-03-05T18:30:20Z",
+        "likes": 785,
+        "authorId": 11,
+        "replies": [
+          {
+            "name": "Emmanuel Tshibss",
+            "position": "Director",
+            "profile": "/assets/profile_three.jpg",
+            "author": "Alice Johnson",
+            "email": "alice.j@example.com",
+            "text": "Lorem ipsum dolor sit amet. Et reiciendis velit ex necessitatibus dignissimos rem expedita animi non voluptate pariatur qui expedita assumenda est voluptatem accusamus et incidunt nostrum. Et perferendis tempora aut ipsa eius sed expedita dolorem.",
+            "createdAt": "2023-03-01T12:30:45Z",
+            "likes": 263,
+            "authorId": 101
+          }
+        ]
+      }
+    ],
+    "likes": 52
+  },
+  {
+    "id": 2585282588,
+    "title": "Tech Innovations Showcase",
+    "content": "Exploring the latest technological breakthroughs and innovations. Lorem ipsum dolor sit amet. Est sapiente eligendi sit magnam voluptatem aut debitis illum id cumque facere eum molestias possimus. Non facere asperiores et perspiciatis dolor est minima obcaecati ut magnam officiis et amet quis id fuga dolorem. Et laudantium labore sed Quis alias sed voluptatibus neque. 33 consectetur Quis ut ipsam eligendi et consectetur repudiandae ut maxime mollitia ab tempora repellendus ab dolores atque nam dolores voluptas.",
+    "publishedAt": "25 July 2022",
+    "author": {
+      "name": "Aria Foster",
+      "position": "Software Engineer | Software Developer",
+      "email": "ariafoster@business.com",
+      "profile": "/assets/profile.jpeg"
     },
-    {
-        "id": 321147471213,
-        "title": "Gourmet Delights",
-        "content": "A culinary journey featuring delectable dishes from around the world. Lorem ipsum dolor sit amet. Est sapiente eligendi sit magnam voluptatem aut debitis illum id cumque facere eum molestias possimus. Non facere asperiores et perspiciatis dolor est minima obcaecati ut magnam officiis et amet quis id fuga dolorem. Et laudantium labore sed Quis alias sed voluptatibus neque. 33 consectetur Quis ut ipsam eligendi et consectetur repudiandae ut maxime mollitia ab tempora repellendus ab dolores atque nam dolores voluptas.",
-        "publishedAt": "25 July 2022",
-        "author": {
-            "name": "Gabriel Carter",
-            "position": "CEO @Fibonacci | Devops | Scientist",
-            "email": "gabrielcarter@business.com",
-            "profile": "/assets/profile.jpeg"
-        },
-        "tags": [
-            "Food",
-            "Cuisine"
-        ],
-        "image": "/assets/placeholder/web.jpg",
-        "comments": [
-            {
-                "name": "Emmanuel Tshibss",
-                "position": "Director",
-                "profile": "/assets/profile.jpeg",
-                "author": "Avery Miller",
-                "email": "avery.m@example.com",
-                "text": "I need that recipe!",
-                "createdAt": "2023-03-09T09:30:45Z",
-                "likes" : 48,
-                "authorId": 118,
-                "replies": [
-                    {
-                        "name": "Emmanuel Tshibss",
-                        "position": "Director",
-                        "profile": "/assets/profile_four.jpg",
-                        "author": "Alice Johnson",
-                        "email": "alice.j@example.com",
-                        "text" : "Lorem ipsum dolor sit amet. Et reiciendis velit ex necessitatibus dignissimos rem expedita animi non voluptate pariatur qui expedita assumenda est voluptatem accusamus et incidunt nostrum. Et perferendis tempora aut ipsa eius sed expedita dolorem.",
-                        "createdAt": "2023-03-01T12:30:45Z",
-                        "likes" : 48,
-                        "authorId": 101
-                    }
-                ]
-            },
-            {
-                "name": "Emmanuel Tshibss",
-                "position": "Director",
-                "profile": "/assets/profile.jpeg",
-                "author": "Sofia Turner",
-                "email": "sofia.t@example.com",
-                "text": "Mouthwatering pictures!",
-                "createdAt": "2023-03-09T09:50:20Z",
-                "likes" : 48,
-                "authorId": 11,
-                "replies": [
-                    {
-                        "name": "Emmanuel Tshibss",
-                        "position": "Director",
-                        "profile": "/assets/profile.jpeg",
-                        "author": "Alice Johnson",
-                        "email": "alice.j@example.com",
-                        "text" : "Lorem ipsum dolor sit amet. Et reiciendis velit ex necessitatibus dignissimos rem expedita animi non voluptate pariatur qui expedita assumenda est voluptatem accusamus et incidunt nostrum. Et perferendis tempora aut ipsa eius sed expedita dolorem.",
-                        "createdAt": "2023-03-01T12:30:45Z",
-                        "likes" : 48,
-                        "authorId": 101
-                    }
-                ]
-            }
-        ],
-        "likes": 45
+    "tags": ["Technology", "Innovation"],
+    "image": "/assets/placeholder/literature.jpg",
+    "comments": [
+      {
+        "name": "Emmanuel Tshibss",
+        "position": "Director",
+        "profile": "/assets/profile_four.jpg",
+        "author": "Henry Turner",
+        "email": "henry.t@example.com",
+        "text": "Amazing tech discoveries!",
+        "createdAt": "2023-03-06T11:15:30Z",
+        "likes": 8521,
+        "authorId": 114,
+        "replies": [
+          {
+            "name": "Emmanuel Tshibss",
+            "position": "Director",
+            "profile": "/assets/profile_four.jpg",
+            "author": "Alice Johnson",
+            "email": "alice.j@example.com",
+            "text": "Amazing journey!",
+            "createdAt": "2023-03-01T12:30:45Z",
+            "likes": 7895,
+            "authorId": 101
+          }
+        ]
+      },
+      {
+        "name": "Emmanuel Tshibss",
+        "position": "Director",
+        "profile": "/assets/profile.jpeg",
+        "author": "Grace Reed",
+        "email": "grace.r@example.com",
+        "text": "Can't wait to see more!",
+        "createdAt": "2023-03-06T11:45:15Z",
+        "likes": 258,
+        "authorId": 11,
+        "replies": [
+          {
+            "name": "Emmanuel Tshibss",
+            "position": "Director",
+            "profile": "/assets/profile.jpeg",
+            "author": "Alice Johnson",
+            "email": "alice.j@example.com",
+            "text": "Amazing journey!",
+            "createdAt": "2023-03-01T12:30:45Z",
+            "likes": 4521,
+            "authorId": 101
+          }
+        ]
+      }
+    ],
+    "likes": 43
+  },
+  {
+    "id": 85258252288,
+    "title": "Cityscape Wonders",
+    "content": "Exploring the mesmerizing cityscapes from various urban hubs. Lorem ipsum dolor sit amet. Est sapiente eligendi sit magnam voluptatem aut debitis illum id cumque facere eum molestias possimus. Non facere asperiores et perspiciatis dolor est minima obcaecati ut magnam officiis et amet quis id fuga dolorem. Et laudantium labore sed Quis alias sed voluptatibus neque. 33 consectetur Quis ut ipsam eligendi et consectetur repudiandae ut maxime mollitia ab tempora repellendus ab dolores atque nam dolores voluptas.\nEt minima magnam est vero perspiciatis in eaque enim eum quod dolorem ea dolores galisum non consequatur quae sed quos omnis. Eos vero enim sed placeat aspernatur aut autem quia et incidunt quis qui cumque sint et dolores rerum. In eveniet quidem ut porro dolor vel illo quod.\n\nQuo odit ratione ea iure magni qui architecto corporis et corrupti rerum rem perferendis galisum. Aut sunt perferendis ut magnam accusamus sit expedita eligendi ut iure aspernatur rem galisum repellat ut placeat distinctio. Est repudiandae illo in galisum necessitatibus et deleniti quas et reprehenderit velit eos aspernatur dicta. Ex aperiam deleniti qui internos minima sit sunt ullam sit libero quas et inventore internos vel nisi voluptas.",
+    "publishedAt": "25 July 2022",
+    "author": {
+      "name": "Olivia Nelson",
+      "position": "Financial Manager",
+      "email": "johndoe@business.com",
+      "profile": "/assets/profile.jpeg"
     },
-    {
-        "id": 54465454565,
-        "title": "Sunset Serenity",
-        "content": "Chasing the sunsets and capturing the serene beauty of dusk. Lorem ipsum dolor sit amet. Est sapiente eligendi sit magnam voluptatem aut debitis illum id cumque facere eum molestias possimus. Non facere asperiores et perspiciatis dolor est minima obcaecati ut magnam officiis et amet quis id fuga dolorem. Et laudantium labore sed Quis alias sed voluptatibus neque. 33 consectetur Quis ut ipsam eligendi et consectetur repudiandae ut maxime mollitia ab tempora repellendus ab dolores atque nam dolores voluptas.",
-        "publishedAt": "25 July 2022",
-        "author": {
-            "name": "Isaac Richardson",
-            "position": "Java Developer | NodeJS Developer | Software Engineer.",
-            "email": "isaacrichardson@business.com",
-            "profile": "/assets/profile.jpeg"
-        },
-        "tags": [
-            "Nature",
-            "Photography"
-        ],
-        "image": "/assets/placeholder/mind.jpg",
-        "comments": [
-            {
-                "name": "Emmanuel Tshibss",
-                "position": "Director",
-                "profile": "/assets/profile_four.jpg",
-                "author": "Chloe Anderson",
-                "email": "chloe.a@example.com",
-                "text": "Breathtaking views!",
-                "createdAt": "2023-03-10T18:15:30Z",
-                "likes" : 48,
-                "authorId": 120,
-                "replies": [
-                    {
-                        "name": "Emmanuel Tshibss",
-                        "position": "Director",
-                        "profile": "/assets/profile.jpeg",
-                        "author": "Alice Johnson",
-                        "email": "alice.j@example.com",
-                        "text" : "Lorem ipsum dolor sit amet. Et reiciendis velit ex necessitatibus dignissimos rem expedita animi non voluptate pariatur qui expedita assumenda est voluptatem accusamus et incidunt nostrum. Et perferendis tempora aut ipsa eius sed expedita dolorem.",
-                        "createdAt": "2023-03-01T12:30:45Z",
-                        "likes" : 48,
-                        "authorId": 101
-                    }
-                ]
-            },
-            {
-                "name": "Emmanuel Tshibss",
-                "position": "Director",
-                "profile": "/assets/profile.jpeg",
-                "author": "Ethan Hill",
-                "email": "ethan.h@example.com",
-                "text": "Where was this taken? Amazing!",
-                "createdAt": "2023-03-10T18:40:15Z",
-                "likes" : 48,
-                "authorId": 12,
-                "replies": [
-                    {
-                        "name": "Emmanuel Tshibss",
-                        "position": "Director",
-                        "profile": "/assets/profile_four.jpg",
-                        "author": "Alice Johnson",
-                        "email": "alice.j@example.com",
-                        "text": "Amazing journey!",
-                        "createdAt": "2023-03-01T12:30:45Z",
-                        "likes" : 48,
-                        "authorId": 101
-                    }
-                ]
-            }
-        ],
-        "likes": 56
+    "tags": ["Travel", "Urban"],
+    "image": "/assets/placeholder/green.jpg",
+    "comments": [
+      {
+        "name": "Emmanuel Tshibss",
+        "position": "Director",
+        "profile": "/assets/profile_four.jpg",
+        "author": "Elijah Evans",
+        "email": "elijah.e@example.com",
+        "text": "City lights are magical!",
+        "createdAt": "2023-03-08T14:20:30Z",
+        "likes": 9856,
+        "authorId": 116,
+        "replies": [
+          {
+            "name": "Emmanuel Tshibss",
+            "position": "Director",
+            "profile": "/assets/profile_four.jpg",
+            "author": "Alice Johnson",
+            "email": "alice.j@example.com",
+            "text": "Amazing journey!",
+            "createdAt": "2023-03-01T12:30:45Z",
+            "likes": 58,
+            "authorId": 101
+          }
+        ]
+      },
+      {
+        "name": "Emmanuel Tshibss",
+        "position": "Director",
+        "profile": "/assets/profile.jpeg",
+        "author": "Zoe Murphy",
+        "email": "zoe.m@example.com",
+        "text": "I love the diversity in architecture.",
+        "createdAt": "2023-03-08T14:45:15Z",
+        "likes": 7785,
+        "authorId": 11,
+        "replies": [
+          {
+            "name": "Emmanuel Tshibss",
+            "position": "Director",
+            "profile": "/assets/profile_four.jpg",
+            "author": "Alice Johnson",
+            "email": "alice.j@example.com",
+            "text": "Amazing journey!",
+            "createdAt": "2023-03-01T12:30:45Z",
+            "likes": 48,
+            "authorId": 101
+          }
+        ]
+      }
+    ],
+    "likes": 38
+  },
+  {
+    "id": 321147471213,
+    "title": "Gourmet Delights",
+    "content": "A culinary journey featuring delectable dishes from around the world. Lorem ipsum dolor sit amet. Est sapiente eligendi sit magnam voluptatem aut debitis illum id cumque facere eum molestias possimus. Non facere asperiores et perspiciatis dolor est minima obcaecati ut magnam officiis et amet quis id fuga dolorem. Et laudantium labore sed Quis alias sed voluptatibus neque. 33 consectetur Quis ut ipsam eligendi et consectetur repudiandae ut maxime mollitia ab tempora repellendus ab dolores atque nam dolores voluptas.",
+    "publishedAt": "25 July 2022",
+    "author": {
+      "name": "Gabriel Carter",
+      "position": "CEO @Fibonacci | Devops | Scientist",
+      "email": "gabrielcarter@business.com",
+      "profile": "/assets/profile.jpeg"
     },
-    {
-        "id": 852147693698797,
-        "title": "Tech Trends Unveiled",
-        "content": "Exploring the latest technological trends and innovations. Lorem ipsum dolor sit amet. Est sapiente eligendi sit magnam voluptatem aut debitis illum id cumque facere eum molestias possimus. Non facere asperiores et perspiciatis dolor est minima obcaecati ut magnam officiis et amet quis id fuga dolorem. Et laudantium labore sed Quis alias sed voluptatibus neque. 33 consectetur Quis ut ipsam eligendi et consectetur repudiandae ut maxime mollitia ab tempora repellendus ab dolores atque nam dolores voluptas.\nEt minima magnam est vero perspiciatis in eaque enim eum quod dolorem ea dolores galisum non consequatur quae sed quos omnis. Eos vero enim sed placeat aspernatur aut autem quia et incidunt quis qui cumque sint et dolores rerum. In eveniet quidem ut porro dolor vel illo quod.\nEt minima magnam est vero perspiciatis in eaque enim eum quod dolorem ea dolores galisum non consequatur quae sed quos omnis. Eos vero enim sed placeat aspernatur aut autem quia et incidunt quis qui cumque sint et dolores rerum. In eveniet quidem ut porro dolor vel illo quod.\nEt minima magnam est vero perspiciatis in eaque enim eum quod dolorem ea dolores galisum non consequatur quae sed quos omnis. Eos vero enim sed placeat aspernatur aut autem quia et incidunt quis qui cumque sint et dolores rerum. In eveniet quidem ut porro dolor vel illo quod.nEt minima magnam est vero perspiciatis in eaque enim eum quod dolorem ea dolores galisum non consequatur quae sed quos omnis. Eos vero enim sed placeat aspernatur aut autem quia et incidunt quis qui cumque sint et dolores rerum. In eveniet quidem ut porro dolor vel illo quod.",
-        "publishedAt": "25 July 2022",
-        "author": {
-            "name": "Madison Foster",
-            "position": "Librarian. Writer, Fundraiser, Editor, Project Manager",
-            "email": "madisonfoster@business.com",
-            "profile": "/assets/profile.jpeg"
-        },
-        "tags": [
-            "Technology",
-            "Innovation"
-        ],
-        "image": "/assets/placeholder/robot.jpg",
-        "comments": [
-            {
-                "name": "Emmanuel Tshibss",
-                "position": "Director",
-                "profile": "/assets/profile_four.jpg",
-                "author": "Jackson Coleman",
-                "email": "jackson.c@example.com",
-                "text": "Fascinating discoveries!",
-                "createdAt": "2023-03-11T11:10:45Z",
-                "likes" : 48,
-                "authorId": 122,
-                "replies": [
-                    {
-                        "name": "Emmanuel Tshibss",
-                        "position": "Director",
-                        "profile": "/assets/profile.jpeg",
-                        "author": "Alice Johnson",
-                        "email": "alice.j@example.com",
-                        "text": "Amazing journey!",
-                        "createdAt": "2023-03-01T12:30:45Z",
-                        "likes" : 48,
-                        "authorId": 101
-                    }
-                ]
-            },
-            {
-                "name": "Emmanuel Tshibss",
-                "position": "Director",
-                "profile": "/assets/profile.jpeg",
-                "author": "Scarlett Diaz",
-                "email": "scarlett.d@example.com",
-                "text": "What's next in tech? Exciting!",
-                "createdAt": "2023-03-11T11:30:20Z",
-                "likes" : 48,
-                "authorId": 12,
-                "replies": [
-                    {
-                        "name": "Emmanuel Tshibss",
-                        "position": "Director",
-                        "profile": "/assets/profile_four.jpg",
-                        "author": "Alice Johnson",
-                        "email": "alice.j@example.com",
-                        "text" : "Lorem ipsum dolor sit amet. Et reiciendis velit ex necessitatibus dignissimos rem expedita animi non voluptate pariatur qui expedita assumenda est voluptatem accusamus et incidunt nostrum. Et perferendis tempora aut ipsa eius sed expedita dolorem.",
-                        "createdAt": "2023-03-01T12:30:45Z",
-                        "likes" : 48,
-                        "authorId": 101
-                    }
-                ]
-            }
-        ],
-        "likes": 42
-    }
+    "tags": ["Food", "Cuisine"],
+    "image": "/assets/placeholder/web.jpg",
+    "comments": [
+      {
+        "name": "Emmanuel Tshibss",
+        "position": "Director",
+        "profile": "/assets/profile.jpeg",
+        "author": "Avery Miller",
+        "email": "avery.m@example.com",
+        "text": "I need that recipe!",
+        "createdAt": "2023-03-09T09:30:45Z",
+        "likes": 48,
+        "authorId": 118,
+        "replies": [
+          {
+            "name": "Emmanuel Tshibss",
+            "position": "Director",
+            "profile": "/assets/profile_four.jpg",
+            "author": "Alice Johnson",
+            "email": "alice.j@example.com",
+            "text": "Lorem ipsum dolor sit amet. Et reiciendis velit ex necessitatibus dignissimos rem expedita animi non voluptate pariatur qui expedita assumenda est voluptatem accusamus et incidunt nostrum. Et perferendis tempora aut ipsa eius sed expedita dolorem.",
+            "createdAt": "2023-03-01T12:30:45Z",
+            "likes": 48,
+            "authorId": 101
+          }
+        ]
+      },
+      {
+        "name": "Emmanuel Tshibss",
+        "position": "Director",
+        "profile": "/assets/profile.jpeg",
+        "author": "Sofia Turner",
+        "email": "sofia.t@example.com",
+        "text": "Mouthwatering pictures!",
+        "createdAt": "2023-03-09T09:50:20Z",
+        "likes": 48,
+        "authorId": 11,
+        "replies": [
+          {
+            "name": "Emmanuel Tshibss",
+            "position": "Director",
+            "profile": "/assets/profile.jpeg",
+            "author": "Alice Johnson",
+            "email": "alice.j@example.com",
+            "text": "Lorem ipsum dolor sit amet. Et reiciendis velit ex necessitatibus dignissimos rem expedita animi non voluptate pariatur qui expedita assumenda est voluptatem accusamus et incidunt nostrum. Et perferendis tempora aut ipsa eius sed expedita dolorem.",
+            "createdAt": "2023-03-01T12:30:45Z",
+            "likes": 48,
+            "authorId": 101
+          }
+        ]
+      }
+    ],
+    "likes": 45
+  },
+  {
+    "id": 54465454565,
+    "title": "Sunset Serenity",
+    "content": "Chasing the sunsets and capturing the serene beauty of dusk. Lorem ipsum dolor sit amet. Est sapiente eligendi sit magnam voluptatem aut debitis illum id cumque facere eum molestias possimus. Non facere asperiores et perspiciatis dolor est minima obcaecati ut magnam officiis et amet quis id fuga dolorem. Et laudantium labore sed Quis alias sed voluptatibus neque. 33 consectetur Quis ut ipsam eligendi et consectetur repudiandae ut maxime mollitia ab tempora repellendus ab dolores atque nam dolores voluptas.",
+    "publishedAt": "25 July 2022",
+    "author": {
+      "name": "Isaac Richardson",
+      "position": "Java Developer | NodeJS Developer | Software Engineer.",
+      "email": "isaacrichardson@business.com",
+      "profile": "/assets/profile.jpeg"
+    },
+    "tags": ["Nature", "Photography"],
+    "image": "/assets/placeholder/mind.jpg",
+    "comments": [
+      {
+        "name": "Emmanuel Tshibss",
+        "position": "Director",
+        "profile": "/assets/profile_four.jpg",
+        "author": "Chloe Anderson",
+        "email": "chloe.a@example.com",
+        "text": "Breathtaking views!",
+        "createdAt": "2023-03-10T18:15:30Z",
+        "likes": 48,
+        "authorId": 120,
+        "replies": [
+          {
+            "name": "Emmanuel Tshibss",
+            "position": "Director",
+            "profile": "/assets/profile.jpeg",
+            "author": "Alice Johnson",
+            "email": "alice.j@example.com",
+            "text": "Lorem ipsum dolor sit amet. Et reiciendis velit ex necessitatibus dignissimos rem expedita animi non voluptate pariatur qui expedita assumenda est voluptatem accusamus et incidunt nostrum. Et perferendis tempora aut ipsa eius sed expedita dolorem.",
+            "createdAt": "2023-03-01T12:30:45Z",
+            "likes": 48,
+            "authorId": 101
+          }
+        ]
+      },
+      {
+        "name": "Emmanuel Tshibss",
+        "position": "Director",
+        "profile": "/assets/profile.jpeg",
+        "author": "Ethan Hill",
+        "email": "ethan.h@example.com",
+        "text": "Where was this taken? Amazing!",
+        "createdAt": "2023-03-10T18:40:15Z",
+        "likes": 48,
+        "authorId": 12,
+        "replies": [
+          {
+            "name": "Emmanuel Tshibss",
+            "position": "Director",
+            "profile": "/assets/profile_four.jpg",
+            "author": "Alice Johnson",
+            "email": "alice.j@example.com",
+            "text": "Amazing journey!",
+            "createdAt": "2023-03-01T12:30:45Z",
+            "likes": 48,
+            "authorId": 101
+          }
+        ]
+      }
+    ],
+    "likes": 56
+  },
+  {
+    "id": 852147693698797,
+    "title": "Tech Trends Unveiled",
+    "content": "Exploring the latest technological trends and innovations. Lorem ipsum dolor sit amet. Est sapiente eligendi sit magnam voluptatem aut debitis illum id cumque facere eum molestias possimus. Non facere asperiores et perspiciatis dolor est minima obcaecati ut magnam officiis et amet quis id fuga dolorem. Et laudantium labore sed Quis alias sed voluptatibus neque. 33 consectetur Quis ut ipsam eligendi et consectetur repudiandae ut maxime mollitia ab tempora repellendus ab dolores atque nam dolores voluptas.\nEt minima magnam est vero perspiciatis in eaque enim eum quod dolorem ea dolores galisum non consequatur quae sed quos omnis. Eos vero enim sed placeat aspernatur aut autem quia et incidunt quis qui cumque sint et dolores rerum. In eveniet quidem ut porro dolor vel illo quod.\nEt minima magnam est vero perspiciatis in eaque enim eum quod dolorem ea dolores galisum non consequatur quae sed quos omnis. Eos vero enim sed placeat aspernatur aut autem quia et incidunt quis qui cumque sint et dolores rerum. In eveniet quidem ut porro dolor vel illo quod.\nEt minima magnam est vero perspiciatis in eaque enim eum quod dolorem ea dolores galisum non consequatur quae sed quos omnis. Eos vero enim sed placeat aspernatur aut autem quia et incidunt quis qui cumque sint et dolores rerum. In eveniet quidem ut porro dolor vel illo quod.nEt minima magnam est vero perspiciatis in eaque enim eum quod dolorem ea dolores galisum non consequatur quae sed quos omnis. Eos vero enim sed placeat aspernatur aut autem quia et incidunt quis qui cumque sint et dolores rerum. In eveniet quidem ut porro dolor vel illo quod.",
+    "publishedAt": "25 July 2022",
+    "author": {
+      "name": "Madison Foster",
+      "position": "Librarian. Writer, Fundraiser, Editor, Project Manager",
+      "email": "madisonfoster@business.com",
+      "profile": "/assets/profile.jpeg"
+    },
+    "tags": ["Technology", "Innovation"],
+    "image": "/assets/placeholder/robot.jpg",
+    "comments": [
+      {
+        "name": "Emmanuel Tshibss",
+        "position": "Director",
+        "profile": "/assets/profile_four.jpg",
+        "author": "Jackson Coleman",
+        "email": "jackson.c@example.com",
+        "text": "Fascinating discoveries!",
+        "createdAt": "2023-03-11T11:10:45Z",
+        "likes": 48,
+        "authorId": 122,
+        "replies": [
+          {
+            "name": "Emmanuel Tshibss",
+            "position": "Director",
+            "profile": "/assets/profile.jpeg",
+            "author": "Alice Johnson",
+            "email": "alice.j@example.com",
+            "text": "Amazing journey!",
+            "createdAt": "2023-03-01T12:30:45Z",
+            "likes": 48,
+            "authorId": 101
+          }
+        ]
+      },
+      {
+        "name": "Emmanuel Tshibss",
+        "position": "Director",
+        "profile": "/assets/profile.jpeg",
+        "author": "Scarlett Diaz",
+        "email": "scarlett.d@example.com",
+        "text": "What's next in tech? Exciting!",
+        "createdAt": "2023-03-11T11:30:20Z",
+        "likes": 48,
+        "authorId": 12,
+        "replies": [
+          {
+            "name": "Emmanuel Tshibss",
+            "position": "Director",
+            "profile": "/assets/profile_four.jpg",
+            "author": "Alice Johnson",
+            "email": "alice.j@example.com",
+            "text": "Lorem ipsum dolor sit amet. Et reiciendis velit ex necessitatibus dignissimos rem expedita animi non voluptate pariatur qui expedita assumenda est voluptatem accusamus et incidunt nostrum. Et perferendis tempora aut ipsa eius sed expedita dolorem.",
+            "createdAt": "2023-03-01T12:30:45Z",
+            "likes": 48,
+            "authorId": 101
+          }
+        ]
+      }
+    ],
+    "likes": 42
+  }
 ]

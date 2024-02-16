@@ -1,22 +1,22 @@
-
-import React from 'react';
-import JobContainer from '@/components/jobs/Jobs'
+import React from "react";
+import JobContainer from "@/components/jobs/Jobs";
 
 async function fetchAllJobs() {
-  const res = await fetch('http://127.0.0.1:8080/jobs.json', { cache : 'no-cache' });
+  const res = await fetch("http://127.0.0.1:8080/jobs.json", {
+    cache: "no-cache",
+  });
 
   if (!res.ok) {
-    throw new Error('Failed to fetch Jobs')
+    throw new Error("Failed to fetch Jobs");
   }
 
-  return res.json()
+  return res.json();
 }
 
 const JobsPage = async () => {
+  const jobs = await fetchAllJobs();
 
-  const jobs = await fetchAllJobs() 
+  return <JobContainer jobs={jobs} />;
+};
 
-  return  <JobContainer jobs={jobs} />
-}
-
-export default JobsPage
+export default JobsPage;

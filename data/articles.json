@@ -1,303 +1,234 @@
 {
-    "articles": [
-        {
-            "id": 4564564454,
-            "title": "Introduction to JavaScript",
-            "author": "John Doe",
-            "email": "john.doe@example.com",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "image": "/assets/placeholder/javascript.jpg",
-            "category": "Programming",
-            "tags": [
-                "JavaScript",
-                "Programming"
-            ]
-        },
-        {
-            "id": 897546645,
-            "title": "The Impact of AI on Society",
-            "author": "Michael Johnson",
-            "email": "michael.johnson@example.com",
-            "content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            "image": "/assets/placeholder/ai.jpg",
-            "category": "Science",
-            "tags": [
-                "Science",
-                "Technology"
-            ]
-        },
-        {
-            "id": 12332154,
-            "title": "Exploring the Universe",
-            "author": "Jane Doe",
-            "email": "jane.doe@example.com",
-            "content": "A fascinating journey through the cosmos.",
-            "image": "/assets/placeholder/univers.jpg",
-            "category": "Science",
-            "tags": [
-                "Space",
-                "Astronomy"
-            ]
-        },
-        {
-            "id": 5487778767484,
-            "title": "Healthy Eating Habits",
-            "author": "Robert Johnson",
-            "email": "robert.johnson@example.com",
-            "content": "Tips for maintaining a balanced and nutritious diet.",
-            "image": "/assets/placeholder/food.jpg",
-            "category": "Health",
-            "tags": [
-                "Nutrition",
-                "Wellness"
-            ]
-        },
-        {
-            "id": 17147474741,
-            "title": "The Art of Photography",
-            "author": "Emily White",
-            "email": "emily.white@example.com",
-            "content": "Capturing moments and expressing creativity through photography.",
-            "image": "/assets/placeholder/photo.jpg",
-            "category": "Art",
-            "tags": [
-                "Photography",
-                "Creativity"
-            ]
-        },
-        {
-            "id": 2585282588,
-            "title": "Programming Paradigms",
-            "author": "Daniel Brown",
-            "email": "daniel.brown@example.com",
-            "content": "An overview of different programming paradigms.",
-            "image": "/assets/placeholder/paradigm.jpg",
-            "category": "Technology",
-            "tags": [
-                "Programming",
-                "Software"
-            ]
-        },
-        {
-            "id": 85258252288,
-            "title": "Discovering Ancient History",
-            "author": "Sophia Garcia",
-            "email": "sophia.garcia@example.com",
-            "content": "Unraveling the mysteries of civilizations past.",
-            "image": "/assets/placeholder/history.jpg",
-            "category": "History",
-            "tags": [
-                "Archaeology",
-                "Civilizations"
-            ]
-        },
-        {
-            "id": 3669789897879,
-            "title": "The World of Fantasy Literature",
-            "author": "William Turner",
-            "email": "william.turner@example.com",
-            "content": "Immerse yourself in magical realms and fantastical adventures.",
-            "image": "/assets/placeholder/literature.jpg",
-            "category": "Literature",
-            "tags": [
-                "Fantasy",
-                "Books"
-            ]
-        },
-        {
-            "id": 321147471213,
-            "title": "Green Living Practices",
-            "author": "Olivia Martinez",
-            "email": "olivia.martinez@example.com",
-            "content": "Tips for an eco-friendly and sustainable lifestyle.",
-            "image": "/assets/placeholder/green.jpg",
-            "category": "Environment",
-            "tags": [
-                "Sustainability",
-                "Environment"
-            ]
-        },
-        {
-            "id": 54465454565,
-            "title": "Web Development Trends in 2022",
-            "author": "Alice Smith",
-            "email": "alice.smith@example.com",
-            "content": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "image": "/assets/placeholder/web.jpg",
-            "category": "Technology",
-            "tags": [
-                "Web Development",
-                "Technology"
-            ]
-        },
-        {
-            "id": 852147693698797,
-            "title": "Mindfulness Meditation",
-            "author": "Andrew Taylor",
-            "email": "andrew.taylor@example.com",
-            "content": "Cultivating peace and focus through mindfulness practices.",
-            "image": "/assets/placeholder/mind.jpg",
-            "category": "Wellness",
-            "tags": [
-                "Mindfulness",
-                "Meditation"
-            ]
-        },
-        {
-            "id": 159951489963963,
-            "title": "Advancements in Robotics",
-            "author": "Sophie Brown",
-            "email": "sophie.brown@example.com",
-            "content": "Exploring the latest innovations in robotics and AI.",
-            "image": "/assets/placeholder/robot.jpg",
-            "category": "Technology",
-            "tags": [
-                "Robotics",
-                "Artificial Intelligence"
-            ]
-        },
-        {
-            "id": 26951488737418600,
-            "title": "Creative DIY Crafts",
-            "author": "Matthew Miller",
-            "email": "matthew.miller@example.com",
-            "content": "Engage in artistic and fun do-it-yourself craft projects.",
-            "image": "/assets/placeholder/craft.jpg",
-            "category": "Art",
-            "tags": [
-                "Crafts",
-                "Creativity"
-            ]
-        },
-        {
-            "id": 124357869986,
-            "title": "Exploring Underwater Wonders",
-            "author": "Isabella Carter",
-            "email": "isabella.carter@example.com",
-            "content": "Dive into the mesmerizing world beneath the waves.",
-            "image": "/assets/placeholder/underwater.jpg",
-            "category": "Nature",
-            "tags": [
-                "Oceanography",
-                "Marine Life"
-            ]
-        },
-        {
-            "id": 968573425112,
-            "title": "Innovations in Sustainable Architecture",
-            "author": "Nathan Wilson",
-            "email": "nathan.wilson@example.com",
-            "content": "Examining eco-friendly architectural designs for a greener future.",
-            "image": "/assets/placeholder/archi.jpg",
-            "category": "Architecture",
-            "tags": [
-                "Sustainability",
-                "Design"
-            ]
-        },
-        {
-            "id": 654213546548,
-            "title": "The Joy of Travel Photography",
-            "author": "Emma Lewis",
-            "email": "emma.lewis@example.com",
-            "content": "Capturing moments and cultures from around the globe.",
-            "image": "/assets/placeholder/photographic.jpg",
-            "category": "Travel",
-            "tags": [
-                "Photography",
-                "Adventure"
-            ]
-        },
-        {
-            "id": 2132154646512,
-            "title": "Understanding Quantum Physics",
-            "author": "Jacob Thompson",
-            "email": "jacob.thompson@example.com",
-            "content": "Delving into the fascinating and mind-bending world of quantum mechanics.",
-            "image": "/assets/placeholder/quantam.jpg",
-            "category": "Science",
-            "tags": [
-                "Physics",
-                "Quantum Mechanics"
-            ]
-        },
-        {
-            "id": 564548695645454,
-            "title": "Healthy Mind, Healthy Body",
-            "author": "Grace Turner",
-            "email": "grace.turner@example.com",
-            "content": "Exploring the connection between mental well-being and physical health.",
-            "image": "/assets/placeholder/bodymind.jpg",
-            "category": "Wellness",
-            "tags": [
-                "Mind-Body Connection",
-                "Well-Being"
-            ]
-        },
-        {
-            "id": 963852258455,
-            "title": "The Art of Culinary Delights",
-            "author": "Liam Scott",
-            "email": "liam.scott@example.com",
-            "content": "Savoring the world of gastronomy and culinary masterpieces.",
-            "image": "/assets/placeholder/culunary.jpg",
-            "category": "Food",
-            "tags": [
-                "Cooking",
-                "Cuisine"
-            ]
-        },
-        {
-            "id": 987541236985,
-            "title": "Space Travel: Future Possibilities",
-            "author": "Hannah Bennett",
-            "email": "hannah.bennett@example.com",
-            "content": "Exploring the potential of human travel beyond our celestial borders.",
-            "image": "/assets/placeholder/space.jpg",
-            "category": "Space",
-            "tags": [
-                "Futurism",
-                "Exploration"
-            ]
-        },
-        {
-            "id": 954236541254,
-            "title": "The World of Digital Art",
-            "author": "Leo Martinez",
-            "email": "leo.martinez@example.com",
-            "content": "A journey through the vibrant and evolving realm of digital creativity.",
-            "image": "/assets/placeholder/digitalart.jpg",
-            "category": "Art",
-            "tags": [
-                "Digital Media",
-                "Creativity"
-            ]
-        },
-        {
-            "id": 987413654788,
-            "title": "Unraveling Cryptocurrency",
-            "author": "Eva Davis",
-            "email": "eva.davis@example.com",
-            "content": "Understanding the concepts and impact of cryptocurrencies on finance.",
-            "image": "/assets/placeholder/crypto.jpg",
-            "category": "Finance",
-            "tags": [
-                "Blockchain",
-                "Digital Currency"
-            ]
-        },
-        {
-            "id": 987412365478,
-            "title": "Inspiring Women in STEM",
-            "author": "Sophie Turner",
-            "email": "sophie.turner@example.com",
-            "content": "Celebrating the achievements and contributions of women in STEM fields.",
-            "image": "/assets/placeholder/stem.jpg",
-            "category": "Science",
-            "tags": [
-                "STEM",
-                "Equality"
-            ]
-        }
-    ]
+  "articles": [
+    {
+      "id": 4564564454,
+      "title": "Introduction to JavaScript",
+      "author": "John Doe",
+      "email": "john.doe@example.com",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "image": "/assets/placeholder/javascript.jpg",
+      "category": "Programming",
+      "tags": ["JavaScript", "Programming"]
+    },
+    {
+      "id": 897546645,
+      "title": "The Impact of AI on Society",
+      "author": "Michael Johnson",
+      "email": "michael.johnson@example.com",
+      "content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "image": "/assets/placeholder/ai.jpg",
+      "category": "Science",
+      "tags": ["Science", "Technology"]
+    },
+    {
+      "id": 12332154,
+      "title": "Exploring the Universe",
+      "author": "Jane Doe",
+      "email": "jane.doe@example.com",
+      "content": "A fascinating journey through the cosmos.",
+      "image": "/assets/placeholder/univers.jpg",
+      "category": "Science",
+      "tags": ["Space", "Astronomy"]
+    },
+    {
+      "id": 5487778767484,
+      "title": "Healthy Eating Habits",
+      "author": "Robert Johnson",
+      "email": "robert.johnson@example.com",
+      "content": "Tips for maintaining a balanced and nutritious diet.",
+      "image": "/assets/placeholder/food.jpg",
+      "category": "Health",
+      "tags": ["Nutrition", "Wellness"]
+    },
+    {
+      "id": 17147474741,
+      "title": "The Art of Photography",
+      "author": "Emily White",
+      "email": "emily.white@example.com",
+      "content": "Capturing moments and expressing creativity through photography.",
+      "image": "/assets/placeholder/photo.jpg",
+      "category": "Art",
+      "tags": ["Photography", "Creativity"]
+    },
+    {
+      "id": 2585282588,
+      "title": "Programming Paradigms",
+      "author": "Daniel Brown",
+      "email": "daniel.brown@example.com",
+      "content": "An overview of different programming paradigms.",
+      "image": "/assets/placeholder/paradigm.jpg",
+      "category": "Technology",
+      "tags": ["Programming", "Software"]
+    },
+    {
+      "id": 85258252288,
+      "title": "Discovering Ancient History",
+      "author": "Sophia Garcia",
+      "email": "sophia.garcia@example.com",
+      "content": "Unraveling the mysteries of civilizations past.",
+      "image": "/assets/placeholder/history.jpg",
+      "category": "History",
+      "tags": ["Archaeology", "Civilizations"]
+    },
+    {
+      "id": 3669789897879,
+      "title": "The World of Fantasy Literature",
+      "author": "William Turner",
+      "email": "william.turner@example.com",
+      "content": "Immerse yourself in magical realms and fantastical adventures.",
+      "image": "/assets/placeholder/literature.jpg",
+      "category": "Literature",
+      "tags": ["Fantasy", "Books"]
+    },
+    {
+      "id": 321147471213,
+      "title": "Green Living Practices",
+      "author": "Olivia Martinez",
+      "email": "olivia.martinez@example.com",
+      "content": "Tips for an eco-friendly and sustainable lifestyle.",
+      "image": "/assets/placeholder/green.jpg",
+      "category": "Environment",
+      "tags": ["Sustainability", "Environment"]
+    },
+    {
+      "id": 54465454565,
+      "title": "Web Development Trends in 2022",
+      "author": "Alice Smith",
+      "email": "alice.smith@example.com",
+      "content": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "image": "/assets/placeholder/web.jpg",
+      "category": "Technology",
+      "tags": ["Web Development", "Technology"]
+    },
+    {
+      "id": 852147693698797,
+      "title": "Mindfulness Meditation",
+      "author": "Andrew Taylor",
+      "email": "andrew.taylor@example.com",
+      "content": "Cultivating peace and focus through mindfulness practices.",
+      "image": "/assets/placeholder/mind.jpg",
+      "category": "Wellness",
+      "tags": ["Mindfulness", "Meditation"]
+    },
+    {
+      "id": 159951489963963,
+      "title": "Advancements in Robotics",
+      "author": "Sophie Brown",
+      "email": "sophie.brown@example.com",
+      "content": "Exploring the latest innovations in robotics and AI.",
+      "image": "/assets/placeholder/robot.jpg",
+      "category": "Technology",
+      "tags": ["Robotics", "Artificial Intelligence"]
+    },
+    {
+      "id": 26951488737418600,
+      "title": "Creative DIY Crafts",
+      "author": "Matthew Miller",
+      "email": "matthew.miller@example.com",
+      "content": "Engage in artistic and fun do-it-yourself craft projects.",
+      "image": "/assets/placeholder/craft.jpg",
+      "category": "Art",
+      "tags": ["Crafts", "Creativity"]
+    },
+    {
+      "id": 124357869986,
+      "title": "Exploring Underwater Wonders",
+      "author": "Isabella Carter",
+      "email": "isabella.carter@example.com",
+      "content": "Dive into the mesmerizing world beneath the waves.",
+      "image": "/assets/placeholder/underwater.jpg",
+      "category": "Nature",
+      "tags": ["Oceanography", "Marine Life"]
+    },
+    {
+      "id": 968573425112,
+      "title": "Innovations in Sustainable Architecture",
+      "author": "Nathan Wilson",
+      "email": "nathan.wilson@example.com",
+      "content": "Examining eco-friendly architectural designs for a greener future.",
+      "image": "/assets/placeholder/archi.jpg",
+      "category": "Architecture",
+      "tags": ["Sustainability", "Design"]
+    },
+    {
+      "id": 654213546548,
+      "title": "The Joy of Travel Photography",
+      "author": "Emma Lewis",
+      "email": "emma.lewis@example.com",
+      "content": "Capturing moments and cultures from around the globe.",
+      "image": "/assets/placeholder/photographic.jpg",
+      "category": "Travel",
+      "tags": ["Photography", "Adventure"]
+    },
+    {
+      "id": 2132154646512,
+      "title": "Understanding Quantum Physics",
+      "author": "Jacob Thompson",
+      "email": "jacob.thompson@example.com",
+      "content": "Delving into the fascinating and mind-bending world of quantum mechanics.",
+      "image": "/assets/placeholder/quantam.jpg",
+      "category": "Science",
+      "tags": ["Physics", "Quantum Mechanics"]
+    },
+    {
+      "id": 564548695645454,
+      "title": "Healthy Mind, Healthy Body",
+      "author": "Grace Turner",
+      "email": "grace.turner@example.com",
+      "content": "Exploring the connection between mental well-being and physical health.",
+      "image": "/assets/placeholder/bodymind.jpg",
+      "category": "Wellness",
+      "tags": ["Mind-Body Connection", "Well-Being"]
+    },
+    {
+      "id": 963852258455,
+      "title": "The Art of Culinary Delights",
+      "author": "Liam Scott",
+      "email": "liam.scott@example.com",
+      "content": "Savoring the world of gastronomy and culinary masterpieces.",
+      "image": "/assets/placeholder/culunary.jpg",
+      "category": "Food",
+      "tags": ["Cooking", "Cuisine"]
+    },
+    {
+      "id": 987541236985,
+      "title": "Space Travel: Future Possibilities",
+      "author": "Hannah Bennett",
+      "email": "hannah.bennett@example.com",
+      "content": "Exploring the potential of human travel beyond our celestial borders.",
+      "image": "/assets/placeholder/space.jpg",
+      "category": "Space",
+      "tags": ["Futurism", "Exploration"]
+    },
+    {
+      "id": 954236541254,
+      "title": "The World of Digital Art",
+      "author": "Leo Martinez",
+      "email": "leo.martinez@example.com",
+      "content": "A journey through the vibrant and evolving realm of digital creativity.",
+      "image": "/assets/placeholder/digitalart.jpg",
+      "category": "Art",
+      "tags": ["Digital Media", "Creativity"]
+    },
+    {
+      "id": 987413654788,
+      "title": "Unraveling Cryptocurrency",
+      "author": "Eva Davis",
+      "email": "eva.davis@example.com",
+      "content": "Understanding the concepts and impact of cryptocurrencies on finance.",
+      "image": "/assets/placeholder/crypto.jpg",
+      "category": "Finance",
+      "tags": ["Blockchain", "Digital Currency"]
+    },
+    {
+      "id": 987412365478,
+      "title": "Inspiring Women in STEM",
+      "author": "Sophie Turner",
+      "email": "sophie.turner@example.com",
+      "content": "Celebrating the achievements and contributions of women in STEM fields.",
+      "image": "/assets/placeholder/stem.jpg",
+      "category": "Science",
+      "tags": ["STEM", "Equality"]
+    }
+  ]
 }

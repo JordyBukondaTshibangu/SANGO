@@ -1,7 +1,6 @@
-import React from 'react';
-import { SettingOutlined } from '@ant-design/icons';
-import { Cascader, Input, Select, Space } from 'antd';
-
+import React from "react";
+import { SettingOutlined } from "@ant-design/icons";
+import { Cascader, Input, Select, Space } from "antd";
 
 const InputIcon: React.FC = () => (
   <Space direction="vertical">

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -11,9 +11,9 @@ function CustomTabPanel(props: TabPanelProps) {
 
   return (
     <div role="tabpanel" hidden={value !== index} {...other}>
-      {value === index && ( <div>{ children }</div> )}
+      {value === index && <div>{children}</div>}
     </div>
   );
 }
 
-export default CustomTabPanel
+export default CustomTabPanel;
