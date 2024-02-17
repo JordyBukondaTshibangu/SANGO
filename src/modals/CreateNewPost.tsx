@@ -15,7 +15,6 @@ const user = {
   position: "Business owner | Entrepreneur",
   profile: "/assets/profile_five.jpg",
 };
-const likes: number = 0;
 
 const VisuallyHiddenInput = styled("input")({
   clip: "rect(0 0 0 0)",
@@ -29,7 +28,10 @@ const VisuallyHiddenInput = styled("input")({
   width: 1,
 });
 
-const CreateNewPost = () => {
+type CreateNewPostProps = {
+  onClose : () => void
+}
+const CreateNewPost:React.FC<CreateNewPostProps> = ({onClose}) => {
   const [title, setTitle] = useState<string>("");
   const [content, setContent] = useState<string>("");
   const [file, setFile] = useState<File | null>(null);
@@ -48,7 +50,7 @@ const CreateNewPost = () => {
     const files = event.target.files;
     if (files) setFile(files[0]);
   };
-  const handlePost = (event: React.MouseEvent<HTMLButtonElement>) => {
+  const handlePost = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     const post = {
@@ -57,22 +59,24 @@ const CreateNewPost = () => {
       publishedAt: new Date().toString(),
       author: user,
       tags,
-      image: "",
+      image: file,
       comments: [],
       likes: 0,
     };
 
     console.log(post);
+    onClose()
   };
 
   return (
-    <div className="flex flex-col gap-12 py-4">
+    <form className="flex flex-col gap-12 py-4" onSubmit={handlePost}>
       <div className="flex gap-3 items-center border-b-2 border-solid pb-5 border-dark">
         <PostAddOutlinedIcon className="text-4xl text-grayFirst" />
         <input
           type="text"
           className="bg-darkHeader text-3xl font-medium outline-none text-grayFirst"
           placeholder="Post title"
+          required
           value={title}
           onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
             setTitle(event.target.value)
@@ -80,10 +84,11 @@ const CreateNewPost = () => {
         />
       </div>
       <textarea
-        className="bg-darkHeader border border-solid border-darkHeader outline-none text-white px-5 text-2xl rounded-lg"
+        className="bg-darkHeader border border-solid border-darkHeader outline-none text-white px-5 text-xl rounded-lg"
         cols={5}
-        rows={16}
+        rows={14}
         value={content}
+        required
         placeholder="What's in your mind Jordy?"
         onChange={(event: React.ChangeEvent<HTMLTextAreaElement>) =>
           setContent(event.target.value)
@@ -126,16 +131,16 @@ const CreateNewPost = () => {
               name="tag"
               className="bg-darkHeader text-grayFirst px-2 border border-dark outline-none w-fit h-10"
               value={tag}
-              required
               onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
-                setTag(event.target.value)
+                setTag(event.target.value?.toUpperCase())
               }
             />
             <button
+              type="button"
               className="bg-dark flex items-center justify-center  px-4 py-3 text-sm text-white"
               onClick={handleAddTag}
             >
-              add tag
+              Add tag
             </button>
           </div>
         </div>
@@ -144,13 +149,14 @@ const CreateNewPost = () => {
         <button
           type="submit"
           className="w-56 h-12 bg-darkHeader text-grayFirst border-2 border-dark border-solid rounded-lg text-lg font-medium hover:bg-primary hover:text-white transition duration-300 ease-in-out"
-          onClick={handlePost}
         >
           Post
         </button>
       </div>
-    </div>
+    </form>
   );
 };
 
 export default CreateNewPost;
+
+

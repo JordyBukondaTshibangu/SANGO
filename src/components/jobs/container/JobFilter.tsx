@@ -6,6 +6,7 @@ import Button from "@mui/material/Button";
 import FmdGoodOutlinedIcon from "@mui/icons-material/FmdGoodOutlined";
 import TuneOutlinedIcon from "@mui/icons-material/TuneOutlined";
 import { FaBriefcase } from "react-icons/fa";
+import Link from "next/link";
 
 type JobFilterProps = {
   searchJob: (value: string) => void;
@@ -31,6 +32,15 @@ const JobFilter: React.FC<JobFilterProps> = ({
 
   return (
     <div className="w-full flex flex-col lg:flex-row items-center gap-8 lg:gap-5">
+      <Link
+        href="/jobs/create-job"
+        className="bg-darkHeader w-32 lg:w-48 h-12 lg:h-14 rounded-lg cursor-pointer flex justify-center items-center gap-3 text-xl text-white"
+      >
+        <span className="text-xl font-bold">+</span>
+        <span className="text-sm lg:text-lg font-medium leading-none">
+          Create a Job
+        </span>
+      </Link>
       <span className="w-full flex-1 relative">
         <SearchIcon className="absolute top-4 right-4 text-2xl text-primary" />
         <TextField

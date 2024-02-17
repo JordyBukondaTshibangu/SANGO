@@ -3,13 +3,11 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import CreateNewPost from "@/modals/CreateNewPost";
 import Myprofile from "../../../../public/assets/profile.jpeg";
 import { FaNewspaper, FaRegCalendarAlt } from "react-icons/fa";
-import ImageOutlinedIcon from "@mui/icons-material/ImageOutlined";
-
+import { FaBriefcase } from "react-icons/fa";
 import Backdrop from "@mui/material/Backdrop";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
@@ -85,32 +83,30 @@ const NewPost = () => {
           >
             <Fade in={open}>
               <Box sx={style} className="bg-darkHeader">
-                <CreateNewPost />
+                <CreateNewPost  onClose={handleClose}/>
               </Box>
             </Fade>
           </Modal>
           <div className="flex items-center justify-between mt-4">
-            <Button
-              component="label"
-              className="lg:w-fit flex justify-center items-center"
-              startIcon={
-                <ImageOutlinedIcon className="text-sm lg:text-lg leading-none" />
-              }
+            <Link
+              href="/jobs/create-job"
+              className="flex gap-4 items-center hover:bg-dark px-4 py-3 rounded-xl"
             >
-              <VisuallyHiddenInput type="file" />
-            </Button>
+              <FaBriefcase className="text-lg leading-none" />
+              <span className="hidden xl:flex">Create a Job</span>
+            </Link>
             <Link
               href="/articles/create-article"
               className="flex gap-4 items-center hover:bg-dark px-4 py-3 rounded-xl"
             >
-              <FaNewspaper className="text-lg" />
+              <FaNewspaper className="text-lg leading-none" />
               <span className="hidden xl:flex">Write an Article</span>
             </Link>
             <Link
               href="/events/create-event"
               className="flex gap-4 items-center hover:bg-dark px-4 py-3 rounded-xl"
             >
-              <FaRegCalendarAlt className="text-lg" />
+              <FaRegCalendarAlt className="text-lg leading-none" />
               <span className="hidden xl:flex">Organize an Event</span>
             </Link>
           </div>
