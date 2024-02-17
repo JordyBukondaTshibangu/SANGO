@@ -26,6 +26,7 @@ const config: Config = {
       light: "#FD7401",
       dark: "#242535",
       darkHeader: "#181A2A",
+      darkMirage: "#1b1c28",
       black: "#000",
       white: "#FFF",
       beige: "#F5F5DC",

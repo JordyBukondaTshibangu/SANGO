@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { ChatT } from "../container/MessagesList";
+import Avatar from "../../../../public/assets/Avatar.png";
 
 type ChatPreviewProps = {
   chat: ChatT;
@@ -22,7 +23,7 @@ const ChatPreview: React.FC<ChatPreviewProps> = ({ chat }) => {
     <div className="cursor-pointer w-full flex gap-5 items-center border-t border-solid lg:px-5 py-3 border-darkHeader lg:border-dark hover:bg-dark rounded-lg">
       <div className="flex justify-center items-center rounded-full w-14 lg:w-20 h-14 lg:h-20">
         <Image
-          src={profile}
+          src={profile ? profile : Avatar}
           width={200}
           height={200}
           alt=""

@@ -5,10 +5,10 @@ import Link from "next/link";
 import Image from "next/image";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
+import CreateNewPost from "@/modals/CreateNewPost";
+import Myprofile from "../../../../public/assets/profile.jpeg";
 import { FaNewspaper, FaRegCalendarAlt } from "react-icons/fa";
 import ImageOutlinedIcon from "@mui/icons-material/ImageOutlined";
-import Myprofile from "../../../../public/assets/profile.jpeg";
-import CreateNewPost from "@/app/modals/CreateNewPost";
 
 import Backdrop from "@mui/material/Backdrop";
 import Box from "@mui/material/Box";
@@ -34,9 +34,9 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 400,
-  bgcolor: "background.paper",
-  border: "2px solid #000",
+  width: 900,
+  borderRadius: 2,
+  border: "1px solid #1b1c28",
   boxShadow: 24,
   p: 4,
 };
@@ -84,7 +84,7 @@ const NewPost = () => {
             }}
           >
             <Fade in={open}>
-              <Box sx={style}>
+              <Box sx={style} className="bg-darkHeader">
                 <CreateNewPost />
               </Box>
             </Fade>

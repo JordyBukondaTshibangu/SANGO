@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Avatar from "../../../../public/assets/Avatar.png";
 
 type UserPreviewProps = {
   profile: string;
@@ -16,7 +17,7 @@ const UserPreview: React.FC<UserPreviewProps> = ({
     <div className="flex gap-5 items-center  border-b border-solid pb-5 lg:pb-10 border-darkHeader lg:border-dark">
       <div className="flex justify-center items-center rounded-full w-20 h-20">
         <Image
-          src={profile}
+          src={profile ? profile : Avatar}
           width={200}
           height={200}
           alt=""
