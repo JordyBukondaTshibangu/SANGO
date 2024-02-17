@@ -83,7 +83,7 @@ const NewPost = () => {
           >
             <Fade in={open}>
               <Box sx={style} className="bg-darkHeader">
-                <CreateNewPost  onClose={handleClose}/>
+                <CreateNewPost onClose={handleClose} />
               </Box>
             </Fade>
           </Modal>

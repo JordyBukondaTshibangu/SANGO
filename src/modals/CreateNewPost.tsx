@@ -29,9 +29,9 @@ const VisuallyHiddenInput = styled("input")({
 });
 
 type CreateNewPostProps = {
-  onClose : () => void
-}
-const CreateNewPost:React.FC<CreateNewPostProps> = ({onClose}) => {
+  onClose: () => void;
+};
+const CreateNewPost: React.FC<CreateNewPostProps> = ({ onClose }) => {
   const [title, setTitle] = useState<string>("");
   const [content, setContent] = useState<string>("");
   const [file, setFile] = useState<File | null>(null);
@@ -65,7 +65,7 @@ const CreateNewPost:React.FC<CreateNewPostProps> = ({onClose}) => {
     };
 
     console.log(post);
-    onClose()
+    onClose();
   };
 
   return (
@@ -158,5 +158,3 @@ const CreateNewPost:React.FC<CreateNewPostProps> = ({onClose}) => {
 };
 
 export default CreateNewPost;
-
-

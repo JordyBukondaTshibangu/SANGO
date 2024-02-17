@@ -26,7 +26,7 @@ const NewEventImage = () => {
         // onClick={handleUploadFile}
         startIcon={<ImageOutlinedIcon className="!text-[45px]" />}
       >
-        <VisuallyHiddenInput type="file" />
+        <VisuallyHiddenInput type="file" required />
       </Button>
     </div>
   );

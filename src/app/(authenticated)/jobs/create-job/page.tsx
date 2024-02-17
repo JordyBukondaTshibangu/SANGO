@@ -49,7 +49,7 @@ const CreateJobPage = () => {
           setBenefits(items);
         }}
       />
-      <div className="flex justify-end border-t border-solid border-dark py-4">
+      <div className="flex justify-end">
         <button
           type="submit"
           className="w-56 h-12 bg-darkHeader text-grayFirst border-2 border-dark border-solid rounded-lg text-lg font-medium hover:bg-primary hover:text-white transition duration-300 ease-in-out"
