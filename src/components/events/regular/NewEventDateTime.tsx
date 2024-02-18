@@ -16,17 +16,15 @@ const NewEventDateTime: React.FC<NewEventDateTimeProps> = ({
   addDate,
   addTime,
 }) => {
-  const [startDate, setStartDate] = useState<Dayjs | null>(dayjs("2024-04-17"));
-  const [clearedStartDate, setClearedStartDate] = useState<boolean>(false);
-  const [endDate, setEndDate] = useState<Dayjs | null>(dayjs("2024-04-17"));
-  const [clearedEndDate, setClearedEndDate] = useState<boolean>(false);
+  let date = dayjs("2024-04-17");
+  let time = dayjs("2024-04-17T15:30");
 
-  const [startTime, setStartTime] = useState<Dayjs | null>(
-    dayjs("2024-04-17T15:30"),
-  );
-  const [endTime, setEndTime] = useState<Dayjs | null>(
-    dayjs("2024-04-17T15:30"),
-  );
+  const [startDate, setStartDate] = useState<Dayjs | null>(date);
+  const [clearedStartDate, setClearedStartDate] = useState<boolean>(false);
+  const [endDate, setEndDate] = useState<Dayjs | null>(date);
+  const [clearedEndDate, setClearedEndDate] = useState<boolean>(false);
+  const [startTime, setStartTime] = useState<Dayjs | null>(time);
+  const [endTime, setEndTime] = useState<Dayjs | null>(time);
 
   const today = dayjs();
 

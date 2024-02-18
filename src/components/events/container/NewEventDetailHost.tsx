@@ -1,6 +1,18 @@
-import React from "react";
+import React, { ChangeEvent, useState } from "react";
 
-const NewEventDetailHost = () => {
+
+type NewEventDetailHostProps = {
+  addHostDetails : (organiser : string, email : string, phoneNumber : string) => void
+}
+
+const NewEventDetailHost:React.FC<NewEventDetailHostProps> = ({addHostDetails}) => {
+
+  const [organiser, setOrganiser] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [phoneNumber, setPhoneNumber] = useState<string>("");
+
+  const handleEventDetails = () => addHostDetails(organiser, email, phoneNumber)
+
   return (
     <div className="bg-darkHeader px-5 lg:px-10 py-10 rounded-lg flex flex-col gap-10">
       <h2 className="text-xl font-medium">Host Details </h2>
@@ -10,7 +22,13 @@ const NewEventDetailHost = () => {
           <input
             type="text"
             name="Organiser"
-            className="bg-dark border border-solid border-darkHeader h-10 lg:h-12"
+            className="bg-dark border border-solid border-darkHeader h-10 lg:h-12 px-4"
+            value={organiser}
+            required
+            onChange={(event: ChangeEvent<HTMLInputElement>) => {
+              setOrganiser(event.target.value);
+              handleEventDetails();
+            }}
           />
         </div>
         <div className="flex-1 flex flex-col gap-2">
@@ -18,7 +36,13 @@ const NewEventDetailHost = () => {
           <input
             type="email"
             name="Email"
-            className="bg-dark border border-solid border-darkHeader h-10 lg:h-12"
+            className="bg-dark border border-solid border-darkHeader h-10 lg:h-12 px-4"
+            value={email}
+            required
+            onChange={(event: ChangeEvent<HTMLInputElement>) => {
+              setEmail(event.target.value);
+              handleEventDetails();
+            }}
           />
         </div>
       </div>
@@ -28,7 +52,13 @@ const NewEventDetailHost = () => {
           <input
             type="text"
             name="phone"
-            className="bg-dark border border-solid border-darkHeader h-10 lg:h-12"
+            className="bg-dark border border-solid border-darkHeader h-10 lg:h-12 px-4"
+            value={phoneNumber}
+            required
+            onChange={(event: ChangeEvent<HTMLInputElement>) => {
+              setPhoneNumber(event.target.value);
+              handleEventDetails();
+            }}
           />
         </div>
         <div className="flex-1 flex flex-col gap-2">

@@ -7,8 +7,6 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import { StoreProvider } from "./store/StoreProvider";
 
-
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -24,11 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <StoreProvider>
-          <html lang="en">
+      <html lang="en">
         <body className={inter.className} suppressHydrationWarning={true}>
-            {children}
+          {children}
         </body>
       </html>
-</StoreProvider>
+    </StoreProvider>
   );
 }
