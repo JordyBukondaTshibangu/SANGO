@@ -53,11 +53,15 @@ const CreateEventPage = () => {
     setTags(tags);
   };
 
-  const handleHostDetail = (organiser: string, email: string, phoneNumber: string) => {
+  const handleHostDetail = (
+    organiser: string,
+    email: string,
+    phoneNumber: string,
+  ) => {
     setOrganiser(organiser);
     setEmail(email);
-    setPhoneNumber(phoneNumber)
-  }
+    setPhoneNumber(phoneNumber);
+  };
   const handleCreateEvent = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const newEvent = {
@@ -74,7 +78,7 @@ const CreateEventPage = () => {
       tags,
       organiser,
       email,
-      phoneNumber
+      phoneNumber,
     };
 
     console.log(newEvent);
@@ -90,7 +94,7 @@ const CreateEventPage = () => {
         addTime={handleEventTime}
       />
       <NewEventDetailInfo addEventInfo={handleEventInfo} />
-      <NewEventDetailHost addHostDetails={handleHostDetail}/>
+      <NewEventDetailHost addHostDetails={handleHostDetail} />
       <NewEventDetailVenu />
       <div className="flex justify-end">
         <button

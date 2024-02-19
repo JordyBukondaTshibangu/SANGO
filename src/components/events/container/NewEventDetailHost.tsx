@@ -1,17 +1,22 @@
 import React, { ChangeEvent, useState } from "react";
 
-
 type NewEventDetailHostProps = {
-  addHostDetails : (organiser : string, email : string, phoneNumber : string) => void
-}
+  addHostDetails: (
+    organiser: string,
+    email: string,
+    phoneNumber: string,
+  ) => void;
+};
 
-const NewEventDetailHost:React.FC<NewEventDetailHostProps> = ({addHostDetails}) => {
-
+const NewEventDetailHost: React.FC<NewEventDetailHostProps> = ({
+  addHostDetails,
+}) => {
   const [organiser, setOrganiser] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [phoneNumber, setPhoneNumber] = useState<string>("");
 
-  const handleEventDetails = () => addHostDetails(organiser, email, phoneNumber)
+  const handleEventDetails = () =>
+    addHostDetails(organiser, email, phoneNumber);
 
   return (
     <div className="bg-darkHeader px-5 lg:px-10 py-10 rounded-lg flex flex-col gap-10">

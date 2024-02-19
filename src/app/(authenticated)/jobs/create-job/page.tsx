@@ -20,7 +20,7 @@ const CreateJobPage = () => {
       requirements,
       benefits,
     };
-    console.log(job)
+    console.log(job);
   };
 
   return (

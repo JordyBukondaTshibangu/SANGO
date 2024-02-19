@@ -18,7 +18,6 @@ const NewEventDetailTiming: React.FC<NewEventDetailTimingProps> = ({
   const [name, setName] = useState<string>("");
 
   const handleEventName = () => addName(name);
-  
 
   return (
     <div className="bg-darkHeader px-5 lg:px-10 py-10 rounded-lg flex flex-col">
