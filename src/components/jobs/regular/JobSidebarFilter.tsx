@@ -51,7 +51,7 @@ export default function JobSidebarFilter({
   };
 
   return (
-    <div>
+    <div className="hidden lg:flex">
       <Drawer
         anchor={anchor}
         open={state}

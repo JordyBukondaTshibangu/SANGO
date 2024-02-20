@@ -36,19 +36,22 @@ const ArticleList: React.FC<EventListProps> = ({ events }) => {
     events.forEach((event) => {
       listEvents.push(event.organiser);
     });
-    setOrganisers(listEvents);
+    let listEventSet: Set<string> = new Set(listEvents);
+    setOrganisers([...listEventSet]);
 
     let listCategories: string[] = [];
     events.forEach((event) => {
       listCategories.push(event.category);
     });
-    setCategories(listCategories);
+    let categorySet: Set<string> = new Set(listCategories);
+    setCategories([...categorySet]);
 
     let listDates: string[] = [];
     events.forEach((event) => {
       listDates.push(event.date);
     });
-    setDates(listDates);
+    let dateSet: Set<string> = new Set(listDates);
+    setDates([...dateSet]);
   }, [events, setEventList, setCategories]);
 
   const handleClearFilter = () => {
@@ -85,7 +88,7 @@ const ArticleList: React.FC<EventListProps> = ({ events }) => {
 
   return (
     <div className="flex flex-col gap-10">
-      <div className="flex justify-between items-center gap-5">
+      <div className="flex flex-wrap justify-between items-center gap-5">
         <h4 className="text-xl font-bold">Latest Events</h4>
         <Link
           href="/events/create-event"
@@ -101,7 +104,7 @@ const ArticleList: React.FC<EventListProps> = ({ events }) => {
         </span>
       </div>
       {showFilter && (
-        <div className="flex items-center">
+        <div className="w-full flex flex-col lg:flex-row lg:items-center gap-5">
           <EventFilter
             organisers={organisers}
             categories={categories}
@@ -112,7 +115,7 @@ const ArticleList: React.FC<EventListProps> = ({ events }) => {
             searchDate={searchDate}
           />
           <span
-            className="min-w-max w-fit flex items-center justify-center px-6 py-4 bg-darkHeader rounded-xl text-white cursor-pointer h-full"
+            className="min-w-max w-fit flex items-center justify-center px-6 py-2 lg:py-4 bg-darkHeader rounded-xl text-white cursor-pointer h-full -order-1 lg:order-1"
             onClick={handleClearFilter}
           >
             Clear Filter

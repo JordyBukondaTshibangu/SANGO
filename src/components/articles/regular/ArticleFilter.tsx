@@ -47,8 +47,12 @@ const ArticleFilter: React.FC<ArticleFilterProps> = ({
           onChange={handleSearchArticle}
         />
       </span>
-      <div className="flex-1 flex items-center">
-        <FormControl sx={{ m: 1, minWidth: 150 }} size="medium">
+      <div className="w-full flex-1 flex flex-col lg:flex-row items-center">
+        <FormControl
+          sx={{ m: 1, minWidth: 150 }}
+          size="medium"
+          className="w-full"
+        >
           <InputLabel id="demo-select-large-label">Author</InputLabel>
           <Select
             labelId="demo-select-large-label"
@@ -63,7 +67,11 @@ const ArticleFilter: React.FC<ArticleFilterProps> = ({
             ))}
           </Select>
         </FormControl>
-        <FormControl sx={{ m: 1, minWidth: 150 }} size="medium">
+        <FormControl
+          sx={{ m: 1, minWidth: 150 }}
+          size="medium"
+          className="w-full"
+        >
           <InputLabel id="demo-select-large-label">Category</InputLabel>
           <Select
             labelId="demo-select-large-label"
@@ -78,7 +86,11 @@ const ArticleFilter: React.FC<ArticleFilterProps> = ({
             ))}
           </Select>
         </FormControl>
-        <FormControl sx={{ m: 1, minWidth: 150 }} size="medium">
+        <FormControl
+          sx={{ m: 1, minWidth: 150 }}
+          size="medium"
+          className="w-full"
+        >
           <InputLabel id="demo-select-large-label">Date</InputLabel>
           <Select
             labelId="demo-select-large-label"

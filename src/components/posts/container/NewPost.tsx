@@ -63,11 +63,17 @@ const NewPost = () => {
       <div className="flex flex-col items-start gap-5 lg:gap-3  py-4 px-5 lg:py-10">
         <div className="w-full flex flex-col gap-4">
           <div
-            className="w-full min-h-20 lg:min-h-16 bg-dark rounded-md lg:rounded-3xl cursor-pointer flex items-center px-5 lg:px-10"
+            className="hidden w-full min-h-20 lg:min-h-16 bg-dark rounded-md lg:rounded-3xl cursor-pointer lg:flex items-center px-5 lg:px-10"
             onClick={handleOpen}
           >
             <p>Write a new Post...</p>
           </div>
+          <Link
+            href="/posts/create-post"
+            className="w-full min-h-20 lg:min-h-16 bg-dark rounded-md lg:rounded-3xl cursor-pointer flex items-center px-5 lg:px-10 lg:hidden"
+          >
+            <p>Write a new Post...</p>
+          </Link>
           <Modal
             aria-labelledby="transition-modal-title"
             aria-describedby="transition-modal-description"

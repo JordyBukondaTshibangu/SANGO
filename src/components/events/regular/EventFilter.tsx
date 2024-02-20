@@ -39,7 +39,7 @@ const EventFilter: React.FC<ArticleFilterProps> = ({
     searchEvent(event.target.value);
   };
 
-  const handleSearchDate = (event: ChangeEvent<HTMLInputElement>) => {
+  const handleSearchDate = (event: SelectChangeEvent) => {
     searchDate(event.target.value);
   };
 
@@ -55,8 +55,12 @@ const EventFilter: React.FC<ArticleFilterProps> = ({
           onChange={handleSearchEvent}
         />
       </span>
-      <div className="flex-1 flex items-center">
-        <FormControl sx={{ m: 1, minWidth: 150 }} size="medium">
+      <div className="w-full flex-1 flex flex-col lg:flex-row items-center">
+        <FormControl
+          sx={{ m: 1, minWidth: 150 }}
+          size="medium"
+          className="w-full"
+        >
           <InputLabel>Organiser</InputLabel>
           <Select label="Author" onChange={handleChangeAuthor}>
             {organisers.map((author, index) => (
@@ -66,7 +70,11 @@ const EventFilter: React.FC<ArticleFilterProps> = ({
             ))}
           </Select>
         </FormControl>
-        <FormControl sx={{ m: 1, minWidth: 150 }} size="medium">
+        <FormControl
+          sx={{ m: 1, minWidth: 150 }}
+          size="medium"
+          className="w-full"
+        >
           <InputLabel>Category</InputLabel>
           <Select label="Category" onChange={handleChangeCategory}>
             {categories.map((category, index) => (
@@ -76,7 +84,11 @@ const EventFilter: React.FC<ArticleFilterProps> = ({
             ))}
           </Select>
         </FormControl>
-        <FormControl sx={{ m: 1, minWidth: 150 }} size="medium">
+        <FormControl
+          sx={{ m: 1, minWidth: 150 }}
+          size="medium"
+          className="w-full"
+        >
           <InputLabel>Date</InputLabel>
           <Select label="Date" onChange={handleSearchDate}>
             {dates.map((date, index) => (

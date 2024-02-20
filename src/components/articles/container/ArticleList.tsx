@@ -28,13 +28,15 @@ const ArticleList: React.FC<ArticleListProps> = ({ articles }) => {
     articles.forEach((article) => {
       listAuthors.push(article.author);
     });
-    setAuthors(listAuthors);
+    let authorsSet: Set<string> = new Set(listAuthors);
+    setAuthors([...authorsSet]);
 
     let listCategories: string[] = [];
     articles.forEach((article) => {
       listCategories.push(article.category);
     });
-    setCategories(listCategories);
+    let categorySet: Set<string> = new Set(listCategories);
+    setCategories([...categorySet]);
   }, [articles, setAuthors, setCategories]);
 
   const searchArticle = (search: string) => {
@@ -63,7 +65,7 @@ const ArticleList: React.FC<ArticleListProps> = ({ articles }) => {
   };
   return (
     <div className="flex flex-col gap-10">
-      <div className="flex justify-between items-center gap-5">
+      <div className="flex flex-wrap justify-between items-center gap-5">
         <h4 className="text-xl font-bold">Latest Articles</h4>
         <Link
           href="/articles/create-article"
@@ -79,7 +81,7 @@ const ArticleList: React.FC<ArticleListProps> = ({ articles }) => {
         </span>
       </div>
       {showFilter && (
-        <div className="flex items-center">
+        <div className="flex flex-col lg:flex-row gap-5 lg:items-center">
           <ArticleFilter
             authors={authors}
             categories={categories}
@@ -88,7 +90,7 @@ const ArticleList: React.FC<ArticleListProps> = ({ articles }) => {
             searchCategory={searchCategory}
           />
           <span
-            className="min-w-max w-fit flex items-center justify-center px-6 py-4 bg-darkHeader rounded-xl text-white cursor-pointer h-full"
+            className="min-w-max w-fit flex items-center justify-center px-6 py-2 lg:py-4 bg-darkHeader rounded-xl text-white cursor-pointer h-full -order-1 lg:order-1"
             onClick={handleClearFilter}
           >
             Clear Filter

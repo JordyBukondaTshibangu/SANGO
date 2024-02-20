@@ -1,11 +1,5 @@
 "use client";
-import React, {
-  useState,
-  KeyboardEvent,
-  MouseEvent,
-  Fragment,
-  useEffect,
-} from "react";
+import React, { useState, KeyboardEvent, MouseEvent, useEffect } from "react";
 import JobFilter from "./regular/JobFilter";
 import JobPopularSearch from "./container/JobPopularSearch";
 import JobsList from "./container/JobsList";
@@ -13,6 +7,16 @@ import JobSidebarFilter from "./regular/JobSidebarFilter";
 import Button from "@mui/material/Button";
 import TuneOutlinedIcon from "@mui/icons-material/TuneOutlined";
 import FilterAltOffOutlinedIcon from "@mui/icons-material/FilterAltOffOutlined";
+
+import { Global } from "@emotion/react";
+import { styled } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+import { grey } from "@mui/material/colors";
+import Box from "@mui/material/Box";
+import Skeleton from "@mui/material/Skeleton";
+import Typography from "@mui/material/Typography";
+import SwipeableDrawer from "@mui/material/SwipeableDrawer";
+import JobDrawerFilter from "./regular/JobDrawerFilter";
 
 const popularSearch = [
   "Front-end",
@@ -30,6 +34,37 @@ const popularSearch = [
 ];
 
 export type Anchor = "top" | "left" | "bottom" | "right";
+const drawerBleeding = 56;
+
+interface Props {
+  /**
+   * Injected by the documentation to work in an iframe.
+   * You won't need it on your project.
+   */
+  window?: () => Window;
+}
+
+const Root = styled("div")(({ theme }) => ({
+  height: "100%",
+  backgroundColor:
+    theme.palette.mode === "light"
+      ? grey[100]
+      : theme.palette.background.default,
+}));
+
+const StyledBox = styled("div")(({ theme }) => ({
+  backgroundColor: theme.palette.mode === "light" ? "#fff" : grey[800],
+}));
+
+const Puller = styled("div")(({ theme }) => ({
+  width: 30,
+  height: 6,
+  backgroundColor: theme.palette.mode === "light" ? grey[300] : grey[900],
+  borderRadius: 3,
+  position: "absolute",
+  top: 8,
+  left: "calc(50% - 15px)",
+}));
 
 type JobType = {
   title: string;
@@ -54,17 +89,27 @@ export type JobT = {
 
 type JobContainerProps = {
   jobs: JobT[];
+  window: any;
 };
-const JobContainer: React.FC<JobContainerProps> = ({ jobs }) => {
+
+const JobContainer: React.FC<JobContainerProps> = (props) => {
+  const { jobs } = props;
   const [state, setState] = useState({
     top: false,
     left: false,
     bottom: false,
     right: false,
   });
+
+  const { window } = props;
+  const [open, setOpen] = React.useState(false);
+
   const [jobList, setJobList] = useState<JobT[]>(jobs);
   const [industryList, setIndustryList] = useState<string[]>([]);
   const [rolesList, setRolesList] = useState<string[]>([]);
+
+  const container =
+    window !== undefined ? () => window().document.body : undefined;
 
   useEffect(() => {
     const listIndustry: string[] = [];
@@ -160,19 +205,81 @@ const JobContainer: React.FC<JobContainerProps> = ({ jobs }) => {
     window.location.reload();
   };
 
+  const toggleDrawerMobile = (newOpen: boolean) => () => {
+    setOpen(newOpen);
+  };
+
   return (
     <div className="flex flex-col gap-8">
-      <div className="flex gap-4">
+      <div className="flex flex-wrap gap-10 lg:gap-5">
         <JobFilter searchJob={searchJob} searchLocation={searchLocation} />
         {(["left"] as const).map((anchor) => (
-          <Fragment key={anchor}>
+          <div key={anchor} className="w-full flex gap-5 justify-end">
             <Button
-              className="bg-graySecond w-32 lg:w-48 h-12 lg:h-14 rounded-lg cursor-pointer flex justify-center items-center gap-4 text-xl text-white"
+              className="hidden bg-graySecond w-32 lg:w-48 h-12 lg:h-14 rounded-lg cursor-pointer lg:flex justify-center items-center gap-4 text-xl text-white"
               onClick={toggleDrawer(anchor, true)}
             >
               <TuneOutlinedIcon className="text-xl font-bold" />
               <span className="text-sm lg:text-lg font-medium">Filters</span>
             </Button>
+            <Button
+              className="bg-graySecond w-32 lg:w-48 h-12 lg:h-14 rounded-lg cursor-pointer flex justify-center items-center gap-4 text-xl text-white lg:hidden"
+              onClick={toggleDrawerMobile(true)}
+            >
+              <TuneOutlinedIcon className="text-xl font-bold" />
+              <span className="text-sm lg:text-lg font-medium">Filters</span>
+            </Button>
+            <CssBaseline />
+            <Global
+              styles={{
+                ".MuiDrawer-root > .MuiPaper-root": {
+                  height: `calc(50% - ${drawerBleeding}px)`,
+                  overflow: "visible",
+                },
+              }}
+            />
+            <SwipeableDrawer
+              container={container}
+              anchor="bottom"
+              open={open}
+              onClose={toggleDrawerMobile(false)}
+              onOpen={toggleDrawerMobile(true)}
+              swipeAreaWidth={drawerBleeding}
+              disableSwipeToOpen={false}
+              ModalProps={{
+                keepMounted: true,
+              }}
+            >
+              <StyledBox
+                className="bg-darkHeader"
+                sx={{
+                  position: "absolute",
+                  top: -drawerBleeding,
+                  borderTopLeftRadius: 8,
+                  borderTopRightRadius: 8,
+                  visibility: "visible",
+                  right: 0,
+                  left: 0,
+                }}
+              >
+                <Puller />
+                <div className="w-full flex lg:hidden px-10 gap-4 my-8  items-center">
+                  <TuneOutlinedIcon className="text-white text-xl font-bold" />
+                  <h2 className="text-md font-medium text-white uppercase">
+                    Job Filters
+                  </h2>
+                </div>
+              </StyledBox>
+              <JobDrawerFilter
+                industryList={industryList}
+                rolesList={rolesList}
+                anchor={anchor}
+                state={state[anchor]}
+                toggleDrawer={toggleDrawer}
+                onClose={toggleDrawer(anchor, false)}
+                applyFilter={handleApplyFilter}
+              />
+            </SwipeableDrawer>
             <Button
               className="bg-darkHeader min-w-max py-4 px-4 rounded-lg cursor-pointer flex justify-center items-center gap-4 text-xl text-white"
               onClick={handleClearFilter}
@@ -191,7 +298,7 @@ const JobContainer: React.FC<JobContainerProps> = ({ jobs }) => {
               onClose={toggleDrawer(anchor, false)}
               applyFilter={handleApplyFilter}
             />
-          </Fragment>
+          </div>
         ))}
       </div>
 
