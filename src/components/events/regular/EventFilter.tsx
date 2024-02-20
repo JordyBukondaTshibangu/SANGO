@@ -58,10 +58,7 @@ const EventFilter: React.FC<ArticleFilterProps> = ({
       <div className="flex-1 flex items-center">
         <FormControl sx={{ m: 1, minWidth: 150 }} size="medium">
           <InputLabel>Organiser</InputLabel>
-          <Select
-            label="Author"
-            onChange={handleChangeAuthor}
-          >
+          <Select label="Author" onChange={handleChangeAuthor}>
             {organisers.map((author, index) => (
               <MenuItem key={index} value={author}>
                 {author}
@@ -71,10 +68,7 @@ const EventFilter: React.FC<ArticleFilterProps> = ({
         </FormControl>
         <FormControl sx={{ m: 1, minWidth: 150 }} size="medium">
           <InputLabel>Category</InputLabel>
-          <Select
-            label="Category"
-            onChange={handleChangeCategory}
-          >
+          <Select label="Category" onChange={handleChangeCategory}>
             {categories.map((category, index) => (
               <MenuItem key={index} value={category}>
                 {category}
@@ -84,10 +78,7 @@ const EventFilter: React.FC<ArticleFilterProps> = ({
         </FormControl>
         <FormControl sx={{ m: 1, minWidth: 150 }} size="medium">
           <InputLabel>Date</InputLabel>
-          <Select
-            label="Date"
-            onChange={handleSearchDate}
-          >
+          <Select label="Date" onChange={handleSearchDate}>
             {dates.map((date, index) => (
               <MenuItem key={index} value={date}>
                 {date}

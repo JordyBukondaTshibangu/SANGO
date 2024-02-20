@@ -2,6 +2,7 @@ import React from "react";
 import PostCard from "../regular/PostCard";
 
 export type AuthorT = {
+  id: number;
   name: string;
   position: string;
   email: string;

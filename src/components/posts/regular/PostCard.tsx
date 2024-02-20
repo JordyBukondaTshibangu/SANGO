@@ -3,13 +3,14 @@ import { PostT } from "../container/PostsList";
 import Image from "next/image";
 import PublicIcon from "@mui/icons-material/Public";
 import PostReactionPanel from "./PostReactionPanel";
+import Link from "next/link";
 
 type PostCardProps = {
   post: PostT;
 };
 const PostCard: React.FC<PostCardProps> = ({ post }) => {
   const { title, publishedAt, content, image, likes, comments, author } = post;
-  const { profile, name, position } = author;
+  const { id, profile, name, position } = author;
   return (
     <div className="w-full bg-darkHeader px-5 py-10 flex flex-col gap-10 rounded-md shadow-md">
       <div className="flex gap-5 items-center">
@@ -23,7 +24,12 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
           />
         </div>
         <div className="flex flex-col gap-2">
-          <h4 className="text-xl font-bold">{name}</h4>
+          <Link
+            href={`/users/${id}`}
+            className="text-xl font-bold hover:underline"
+          >
+            {name}
+          </Link>
           <div className="flex flex-col">
             <p>{position}</p>
             <p className="flex items-center gap-2">
