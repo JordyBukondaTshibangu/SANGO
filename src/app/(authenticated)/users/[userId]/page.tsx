@@ -57,8 +57,7 @@ async function UserEvents(userId: number) {
   });
   const events = await res.json();
   const userEvents = events.filter(
-    (event: EventT) =>
-      event.organiser == "John Taylor" 
+    (event: EventT) => event.organiser == "John Taylor",
   );
 
   if (!res.ok) {
@@ -76,15 +75,19 @@ interface UserDetailProps {
 const UserDetailPage: NextPage<UserDetailProps> = async (props: any) => {
   const { userId } = props.params;
   const { user } = await getSingleUser(userId);
-    const userPosts = await UserPosts(userId);
+  const userPosts = await UserPosts(userId);
   const userArticles = await UserArticles(userId);
   const userEvents = await UserEvents(userId);
 
   return (
     <div className="flex gap-10 -mt-10">
-      <Profile user={user} other={true}        posts={userPosts}
+      <Profile
+        user={user}
+        other={true}
+        posts={userPosts}
         articles={userArticles}
-        events={userEvents}/>
+        events={userEvents}
+      />
       <div></div>
     </div>
   );

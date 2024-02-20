@@ -9,7 +9,7 @@ type UserListProps = {
 };
 const UserList: React.FC<UserListProps> = ({ users }) => {
   return (
-    <div className="lg:w-1/3 bg-darkHeader rounded-lg px-5 py-10 flex flex-col gap-14">
+    <div className="lg:w-1/3 h-fit bg-darkHeader rounded-lg px-5 py-10 flex flex-col gap-14">
       <div className="w-full flex gap-4 items-center">
         <GroupsIcon className="text-3xl" />
         <h4 className="text-2xl font-bold">My Network</h4>

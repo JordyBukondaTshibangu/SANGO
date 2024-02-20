@@ -55,10 +55,16 @@ type ProfileProps = {
   other: boolean;
   posts: PostT[];
   articles: ArticleT[];
-  events: EventT[]
+  events: EventT[];
 };
 
-const Profile: React.FC<ProfileProps> = ({ user, other, posts, articles, events }) => {
+const Profile: React.FC<ProfileProps> = ({
+  user,
+  other,
+  posts,
+  articles,
+  events,
+}) => {
   return (
     <div className="w-full flex flex-col gap-10">
       <ProfileHero

@@ -36,13 +36,13 @@ function a11yProps(index: number) {
 type ProfileActivityProps = {
   posts: PostT[];
   articles: ArticleT[];
-  events : EventT[]
+  events: EventT[];
 };
 
 const ProfileActivity: React.FC<ProfileActivityProps> = ({
   posts,
   articles,
-  events
+  events,
 }) => {
   const [value, setValue] = useState(0);
 
