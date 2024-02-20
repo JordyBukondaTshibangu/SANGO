@@ -17,7 +17,7 @@ export type ArticleT = {
 
 type ArticleProps = {
   article: ArticleT;
-  content: any;
+  content: any | null;
 };
 
 const Article: React.FC<ArticleProps> = ({ article, content }) => {

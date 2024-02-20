@@ -18,7 +18,7 @@ type ArticleListProps = {
   articles: Article[];
 };
 const ArticleList: React.FC<ArticleListProps> = ({ articles }) => {
-  const [showFilter, setShowFilter] = useState<boolean>(true);
+  const [showFilter, setShowFilter] = useState<boolean>(false);
   const [articleList, setArticleList] = useState<Article[]>(articles);
   const [authors, setAuthors] = useState<string[]>([]);
   const [categories, setCategories] = useState<string[]>([]);

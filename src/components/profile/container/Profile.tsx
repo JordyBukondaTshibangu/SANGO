@@ -4,6 +4,9 @@ import ProfileAbout from "../regular/ProfileAbout";
 import ProfileActivity from "../regular/ProfileActivity";
 import ProfileSkills from "../regular/ProfileSkills";
 import ProfileExperience from "../regular/ProfileExperience";
+import { PostT } from "@/components/posts/container/PostsList";
+import { ArticleT } from "@/components/articles/container/Article";
+import { EventT } from "@/components/events/container/EventList";
 
 export type UserExperienceT = {
   jobPosition: string;
@@ -50,9 +53,12 @@ export type UserT = {
 type ProfileProps = {
   user: UserT;
   other: boolean;
+  posts: PostT[];
+  articles: ArticleT[];
+  events: EventT[]
 };
 
-const Profile: React.FC<ProfileProps> = ({ user, other }) => {
+const Profile: React.FC<ProfileProps> = ({ user, other, posts, articles, events }) => {
   return (
     <div className="w-full flex flex-col gap-10">
       <ProfileHero
@@ -67,9 +73,9 @@ const Profile: React.FC<ProfileProps> = ({ user, other }) => {
         phoneNumber={user.phoneNumber}
       />
       <ProfileAbout bio={user.bio} other={other} />
-      {!other && <ProfileActivity />}
       <ProfileSkills skills={user.skills} other={other} />
       <ProfileExperience experiences={user.experience} other={other} />
+      <ProfileActivity posts={posts} articles={articles} events={events} />
     </div>
   );
 };

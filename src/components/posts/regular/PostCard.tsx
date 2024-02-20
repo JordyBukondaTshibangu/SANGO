@@ -41,13 +41,13 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
       </div>
       <h4 className="text-2xl font-bold">{title}</h4>
       <p className="text-[16px] leading-8">{content}</p>
-      <div className="w-full max-h-[700px]">
+      <div className="w-full max-h-[500px]">
         <Image
           src={image}
           width={220}
-          height={40}
+          height={220}
           alt="post_image"
-          className="w-full h-full object-cover rounded-md"
+          className="w-full object-cover rounded-md"
         />
       </div>
       <PostReactionPanel likes={likes} comments={comments} post={post} />

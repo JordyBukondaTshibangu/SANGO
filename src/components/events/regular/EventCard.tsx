@@ -1,18 +1,15 @@
 "use client";
 import React from "react";
-import { Event } from "../container/EventList";
-import Avatar from "@mui/material/Avatar";
-import Image from "next/image";
-import ArticleImg from "../../../../public/assets/article.jpg";
+import { EventT } from "../container/EventList";
 import Link from "next/link";
 import RoomIcon from "@mui/icons-material/Room";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 
 type EventCardProps = {
-  event: Event;
+  event: EventT;
 };
 
-const ArticleCard: React.FC<EventCardProps> = ({ event }) => {
+const EventCard: React.FC<EventCardProps> = ({ event }) => {
   return (
     <Link
       href={`events/${event.id}`}
@@ -32,4 +29,4 @@ const ArticleCard: React.FC<EventCardProps> = ({ event }) => {
   );
 };
 
-export default ArticleCard;
+export default EventCard;

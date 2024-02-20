@@ -25,7 +25,7 @@ type EventListProps = {
   events: EventT[];
 };
 const ArticleList: React.FC<EventListProps> = ({ events }) => {
-  const [showFilter, setShowFilter] = useState<boolean>(true);
+  const [showFilter, setShowFilter] = useState<boolean>(false);
   const [eventList, setEventList] = useState<EventT[]>(events);
   const [organisers, setOrganisers] = useState<string[]>([]);
   const [categories, setCategories] = useState<string[]>([]);
