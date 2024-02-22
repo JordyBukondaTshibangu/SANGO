@@ -202,7 +202,7 @@ const JobContainer: React.FC<JobContainerProps> = (props) => {
 
   const handleClearFilter = () => {
     setJobList(jobs);
-    window.location.reload();
+    location.reload();
   };
 
   const toggleDrawerMobile = (newOpen: boolean) => () => {

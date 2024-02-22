@@ -77,7 +77,7 @@ const SignUpPage = () => {
           >
             Register Company
           </Button>
-          <Link href="/signin">
+          <Link href="/sign-in">
             <Button
               variant="outlined"
               className="w-full border-primary text-primary py-3 hover:border-primary"

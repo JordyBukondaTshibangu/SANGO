@@ -45,10 +45,10 @@ const SignUpPage = () => {
 
   return (
     <div className="flex">
-      <div className="w-full flex-1 flex flex-col gap-20 px-5 xl:px-10 py-10">
+      <div className="w-full flex-1 flex flex-col gap-20 px-5 xl:px-10 py-12">
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-2">
-            <h1 className="text-4xl font-light text-black">Sango</h1>
+            <h1 className="text-4xl font-light text-primary">Sango</h1>
             <p>Create an account</p>
           </div>
           <div>
@@ -69,8 +69,8 @@ const SignUpPage = () => {
           </div>
         </div>
       </div>
-      <div className="hidden flex-1 lg:flex items-center justify-center bg-lightGray rounded-tr-2xl rounded-br-2xl">
-        <Image src={SignupImg} width={300} height={300} alt="" />
+      <div className="hidden flex-1 lg:flex items-center justify-center rounded-tr-2xl rounded-br-2xl mt-32">
+        <Image src={SignupImg} width={400} height={400} alt="" />
       </div>
     </div>
   );

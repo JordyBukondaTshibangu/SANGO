@@ -75,9 +75,9 @@ const SignUpPage = () => {
             variant="contained"
             className="bg-primary py-3 hover:bg-primary"
           >
-            Signup now
+            Sign-up now
           </Button>
-          <Link href="/signin">
+          <Link href="/sign-in">
             <Button
               variant="outlined"
               className="w-full border-primary text-primary py-3 hover:border-primary"

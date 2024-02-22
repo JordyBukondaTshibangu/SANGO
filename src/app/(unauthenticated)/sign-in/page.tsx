@@ -12,7 +12,7 @@ const SignInPage = () => {
     <div className="flex">
       <div className="w-full flex-1 flex flex-col gap-20 px-5 xl:px-10 py-10 xl:py-20">
         <div className="flex flex-col gap-4">
-          <h1 className="text-4xl font-light text-black">Sango</h1>
+          <h1 className="text-4xl font-light text-primary">Sango</h1>
           <p>Login into your account</p>
         </div>
         <div className="flex flex-col gap-10">
@@ -23,7 +23,7 @@ const SignInPage = () => {
                 id="outlined-basic"
                 label="Email"
                 variant="outlined"
-                className="w-full rounded-r-0 bg-lightGray"
+                className="w-full rounded-r-0 bg-white text-grayFirst h-full"
               />
               <span className="flex items-center justify-center w-14 h-full bg-primary rounded-tr-md rounded-br-md">
                 <EmailIcon className="text-white" />
@@ -38,7 +38,7 @@ const SignInPage = () => {
                 label="Password"
                 type="password"
                 autoComplete="current-password"
-                className="w-full rounded-r-0 bg-lightGray"
+                className="w-full rounded-r-0 bg-white text-grayFirst"
               />
               <span className="flex items-center justify-center w-14 h-full bg-primary rounded-tr-md rounded-br-md">
                 <LockIcon className="text-white" />
@@ -54,7 +54,7 @@ const SignInPage = () => {
           >
             Login now
           </Button>
-          <Link href="/signup">
+          <Link href="/sign-up">
             <Button
               variant="outlined"
               className="w-full border-primary text-primary py-3 hover:border-primary"
@@ -64,7 +64,7 @@ const SignInPage = () => {
           </Link>
         </div>
       </div>
-      <div className="hidden flex-1 lg:flex items-center justify-center bg-lightGray rounded-tr-2xl rounded-br-2xl">
+      <div className="hidden flex-1 lg:flex items-center justify-center bg-darkHeader rounded-tr-2xl rounded-br-2xl">
         <Image src={LoginImg} width={300} height={300} alt="" />
       </div>
     </div>

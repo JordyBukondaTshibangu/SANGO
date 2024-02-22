@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import AvatarImg from "../../../../public/assets/Avatar.png";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import SearchBar from "../base/SearchBar";
@@ -16,9 +17,25 @@ import {
   FaBell,
 } from "react-icons/fa";
 import MessageOutlinedIcon from "@mui/icons-material/MessageOutlined";
+import Avatar from "@mui/material/Avatar";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import Divider from "@mui/material/Divider";
+import Settings from "@mui/icons-material/Settings";
+import Logout from "@mui/icons-material/Logout";
 
 const NavBar = () => {
   const [toggleNav, setToggleNav] = useState<Boolean>(false);
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+  const open = Boolean(anchorEl);
+
+  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
   const currentPath = usePathname();
 
@@ -121,19 +138,76 @@ const NavBar = () => {
             <span className="text-xs">Notification</span>
           </Link>
         </li>
-        <li>
-          <Link
-            href="/my-profile"
-            className={
-              currentPath == "/my-profile"
-                ? "flex flex-col items-center gap-1 text-primary"
-                : "flex flex-col items-center gap-1 hover:text-primary"
-            }
+        <div
+          className="flex flex-col items-center gap-1 cursor-pointer"
+          onClick={handleClick}
+          aria-controls={open ? "basic-menu" : undefined}
+          aria-haspopup="true"
+          aria-expanded={open ? "true" : undefined}
+        >
+          <span className="w-8 h-8 rounded-full bg-black">
+            <Image
+              src={AvatarImg}
+              width={20}
+              height={20}
+              alt="profile"
+              className="w-full h-full rounded-full"
+            />
+          </span>
+          <span className="text-xs">Profile</span>
+          <Menu
+            anchorEl={anchorEl}
+            id="account-menu"
+            open={open}
+            onClose={handleClose}
+            onClick={handleClose}
+            PaperProps={{
+              elevation: 0,
+              sx: {
+                overflow: "visible",
+                filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32))",
+                mt: 1.5,
+                "& .MuiAvatar-root": {
+                  width: 32,
+                  height: 32,
+                  ml: -0.5,
+                  mr: 1,
+                },
+                "&::before": {
+                  content: '""',
+                  display: "block",
+                  position: "absolute",
+                  top: 0,
+                  right: 14,
+                  width: 10,
+                  height: 10,
+                  bgcolor: "background.paper",
+                  transform: "translateY(-50%) rotate(45deg)",
+                  zIndex: 0,
+                },
+              },
+            }}
+            transformOrigin={{ horizontal: "right", vertical: "top" }}
+            anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
           >
-            <span className="w-7 h-7 rounded-full bg-black"></span>
-            <span className="text-xs">Profile</span>
-          </Link>
-        </li>
+            <MenuItem onClick={handleClose}>
+              <Avatar /> <Link href="/my-profile">Profile</Link>
+            </MenuItem>
+            <Divider />
+            <MenuItem onClick={handleClose}>
+              <ListItemIcon>
+                <Settings fontSize="small" />
+              </ListItemIcon>
+              Settings
+            </MenuItem>
+            <MenuItem onClick={handleClose}>
+              <ListItemIcon>
+                <Logout fontSize="small" />
+              </ListItemIcon>
+              <Link href="/sign-in">Logout</Link>
+            </MenuItem>
+          </Menu>
+        </div>
       </ul>
       <div className="hidden md:flex gap-5 ml-auto">
         <SearchBar />
@@ -237,7 +311,7 @@ const NavBar = () => {
             </li>
             <li>
               <Link
-                href="/signin"
+                href="/sign-in"
                 className="flex items-center gap-5 text-white"
               >
                 <FaPowerOff className="text-2xl font-bold" />

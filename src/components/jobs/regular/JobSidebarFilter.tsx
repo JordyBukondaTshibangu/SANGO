@@ -58,7 +58,7 @@ export default function JobSidebarFilter({
         onClick={toggleDrawer(anchor, false)}
         onKeyDown={toggleDrawer(anchor, false)}
       >
-        <div className="flex flex-col gap-4 lg:w-[480px] bg-darkHeader  py-20 px-10">
+        <div className="flex flex-col gap-4 lg:w-[480px] bg-darkHeader  py-20 px-10 min-h-[100vh] overflow-auto">
           <div
             className="flex flex-col gap-5"
             role="presentation"
