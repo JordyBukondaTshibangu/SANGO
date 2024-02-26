@@ -46,7 +46,7 @@ const SignUpPage = () => {
   return (
     <div className="flex">
       <div className="w-full flex-1 flex flex-col gap-20 px-5 xl:px-10 py-12">
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-2">
             <h1 className="text-4xl font-light text-primary">Sango</h1>
             <p>Create an account</p>
