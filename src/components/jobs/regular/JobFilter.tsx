@@ -35,7 +35,7 @@ const JobFilter: React.FC<JobFilterProps> = ({ searchJob, searchLocation }) => {
         <TextField
           id="outlined-basic"
           variant="outlined"
-          className="w-full h-full"
+          className="w-full h-full border border-solid border-graySecond text-grayFirst"
           placeholder="Search by : Job title, Keyword..."
           onChange={handleSearchJob}
         />

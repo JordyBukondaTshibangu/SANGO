@@ -10,7 +10,10 @@ const SignUpPage = () => {
   return (
     <div className="flex">
       <div className="w-full flex-1 flex flex-col gap-6 py-10">
-        <div className="flex flex-col gap-6">
+        <div
+          className="flex flex-col gap-6
+        "
+        >
           <div className="flex flex-col gap-5">
             <label htmlFor="Email">Company name</label>
             <div className="w-full flex">

@@ -6,6 +6,8 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import { StoreProvider } from "./store/StoreProvider";
+import { MuiThemeProvider } from "./context/MuiTheme";
+import { ThemeProvider } from "./context/Theme";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,11 +24,15 @@ export default function RootLayout({
 }>) {
   return (
     <StoreProvider>
-      <html lang="en" className="bg-darkHeader lg:bg-dark">
-        <body className={inter.className} suppressHydrationWarning={true}>
-          {children}
-        </body>
-      </html>
+      <ThemeProvider>
+        <MuiThemeProvider>
+          <html lang="en" className="bg-darkHeader lg:bg-dark">
+            <body className={inter.className} suppressHydrationWarning={true}>
+              {children}
+            </body>
+          </html>
+        </MuiThemeProvider>
+      </ThemeProvider>
     </StoreProvider>
   );
 }
