@@ -41,13 +41,13 @@ const ProfileHero: React.FC<ProfileHeroProps> = ({
   const heroImg =
     "https://images.unsplash.com/photo-1674027444454-97b822a997b6?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
   return (
-    <div className="bg-darkHeader w-full rounded-lg pb-5">
+    <div className=" bg-white  dark:bg-darkHeader w-full rounded-lg pb-5">
       <div
         className="relative bg-cover bg-no-repeat  flex flex-col  gap-5 md:gap-10 p-5 lg:p-10 justify-end min-h-[300px] rounded-tr-lg rounded-tl-lg"
         style={{ backgroundImage: `url(${profile ? profile : heroImg})` }}
       ></div>
       <div className="relative flex flex-col gap-5 px-5 lg:px-10 pb-5 ">
-        <div className="self-center lg:self-start relative w-48 h-48 rounded-full p-1 bg-darkHeader -mt-24">
+        <div className="self-center lg:self-start relative w-48 h-48 rounded-full p-1  bg-white  dark:bg-darkHeader -mt-24">
           <Image
             src={profile ? profile : Avatar}
             width={200}

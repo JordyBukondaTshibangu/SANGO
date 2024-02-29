@@ -15,7 +15,7 @@ const user = {
 
 const MessageChat = () => {
   return (
-    <div className="sticky top-32 hidden lg:block lg:w-1/2 bg-darkHeader rounded-lg px-5 py-10 max-h-[85vh]">
+    <div className="sticky top-32 hidden lg:block lg:w-1/2  bg-white  dark:bg-darkHeader rounded-lg px-5 py-10 max-h-[85vh]">
       <UserPreview
         name={user.firstName + " " + user.lastName}
         profile={user.profile}

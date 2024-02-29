@@ -11,7 +11,7 @@ type ExperienceProps = {
 const Experince: React.FC<ExperienceProps> = ({ experience }) => {
   const { jobPosition, description, company, year } = experience;
   return (
-    <Accordion className="bg-dark text-graySecond py-2">
+    <Accordion className="bg-light dark:bg-dark text-graySecond py-2">
       <AccordionSummary
         expandIcon={<ExpandMoreIcon />}
         aria-controls="panel1-content"

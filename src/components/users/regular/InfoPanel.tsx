@@ -25,13 +25,13 @@ const InfoPanel: React.FC<InfoPanelProps> = ({
   const userAddress = `${address.street} ${address.city} ${address.state} ${address.country}`;
   return (
     <div className="flex flex-col gap-4 mt-5">
-      <div className="bg-dark p-5 rounded-lg flex flex-col gap-4">
+      <div className="bg-light dark:bg-dark p-5 rounded-lg flex flex-col gap-4">
         <h4 className="text-[16px] font-medium border-b border-primary border-solid w-fit">
           About Me
         </h4>
         <p className="text-sm leading-7">{bio}</p>
       </div>
-      <div className="bg-dark p-5 rounded-lg flex flex-col gap-4">
+      <div className="bg-light dark:bg-dark p-5 rounded-lg flex flex-col gap-4">
         <h4 className="text-[16px] font-medium border-b border-primary border-solid w-fit">
           Contact Me
         </h4>

@@ -97,7 +97,7 @@ const ArticleList: React.FC<EventListProps> = ({ events }) => {
           Organise an event
         </Link>
         <span
-          className="flex items-center justify-center px-5 py-2 bg-darkHeader rounded-xl text-white cursor-pointer"
+          className="flex items-center justify-center px-5 py-2  bg-white  dark:bg-darkHeader rounded-xl text-white cursor-pointer"
           onClick={() => setShowFilter(!showFilter)}
         >
           {!showFilter ? "Show" : "Hide"} Filter
@@ -115,7 +115,7 @@ const ArticleList: React.FC<EventListProps> = ({ events }) => {
             searchDate={searchDate}
           />
           <span
-            className="min-w-max w-fit flex items-center justify-center px-6 py-2 lg:py-4 bg-darkHeader rounded-xl text-white cursor-pointer h-full -order-1 lg:order-1"
+            className="min-w-max w-fit flex items-center justify-center px-6 py-2 lg:py-4  bg-white  dark:bg-darkHeader rounded-xl text-white cursor-pointer h-full -order-1 lg:order-1"
             onClick={handleClearFilter}
           >
             Clear Filter

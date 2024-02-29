@@ -19,7 +19,7 @@ const Notification: React.FC<NotificationProps> = ({ notification }) => {
   }
 
   return (
-    <div className="cursor-pointer w-full flex gap-5 lg:items-center px-5 py-4 bg-darkHeader rounded-lg transition ease-in-out duration-200 hover:shadow-xl">
+    <div className="cursor-pointer w-full flex gap-5 lg:items-center px-5 py-4  bg-white  dark:bg-darkHeader rounded-lg transition ease-in-out duration-200 hover:shadow-xl">
       <div className="flex justify-center items-center rounded-full w-8 md:w-10 lg:w-16 h-8 md:h-10 lg:h-16">
         <Image
           src={profileImage}

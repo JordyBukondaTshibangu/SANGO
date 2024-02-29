@@ -26,7 +26,7 @@ type MessagesListProps = {
 
 const MessagesList: React.FC<MessagesListProps> = ({ chats }) => {
   return (
-    <div className="lg:sticky top-32 w-full lg:w-[33%] lg:bg-darkHeader lg:rounded-lg lg:px-5 py-10 flex flex-col gap-12 h-fit">
+    <div className="lg:sticky top-32 w-full lg:w-[33%] lg: bg-white  dark:bg-darkHeader lg:rounded-lg lg:px-5 py-10 flex flex-col gap-12 h-fit">
       <div className="w-full hidden lg:flex">
         <UserPreview
           name={user.firstName + " " + user.lastName}

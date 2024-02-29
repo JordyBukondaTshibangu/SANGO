@@ -64,7 +64,7 @@ const SignInPage = () => {
           </Link>
         </div>
       </div>
-      <div className="hidden flex-1 lg:flex items-center justify-center bg-darkHeader rounded-tr-2xl rounded-br-2xl">
+      <div className="hidden flex-1 lg:flex items-center justify-center  bg-white  dark:bg-darkHeader rounded-tr-2xl rounded-br-2xl">
         <Image src={LoginImg} width={300} height={300} alt="" />
       </div>
     </div>

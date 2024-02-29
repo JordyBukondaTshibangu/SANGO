@@ -36,7 +36,7 @@ const UserCard: React.FC<UserCardProps> = ({ user }) => {
     setValue(newValue);
 
   return (
-    <div className="w-full bg-darkHeader rounded-lg flex flex-col gap-5 items-center py-10 px-5">
+    <div className="w-full  bg-white  dark:bg-darkHeader rounded-lg flex flex-col gap-5 items-center py-10 px-5">
       <div className="flex justify-center items-center rounded-full w-20 h-20">
         <Image
           src={user.profile ? user.profile : Avatar}
@@ -70,7 +70,7 @@ const UserCard: React.FC<UserCardProps> = ({ user }) => {
       </div>
       <Link
         href={`/users/${user.id}`}
-        className="flex items-center justify-center py-1 px-4 bg-dark rounded-md text-sm hover:bg-primary transition duration-300 hover:text-white"
+        className="flex items-center justify-center py-1 px-4  dark:bg-dark rounded-md text-sm hover:bg-primary transition duration-300 hover:text-white"
       >
         View Profile
       </Link>

@@ -12,7 +12,7 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
   const { title, publishedAt, content, image, likes, comments, author } = post;
   const { id, profile, name, position } = author;
   return (
-    <div className="w-full bg-darkHeader px-5 py-10 flex flex-col gap-10 rounded-md shadow-md">
+    <div className="w-full  bg-white  dark:bg-darkHeader px-5 py-10 flex flex-col gap-10 rounded-md shadow-md">
       <div className="flex gap-5 items-center">
         <div className="flex justify-center items-center rounded-full w-20 h-20">
           <Image

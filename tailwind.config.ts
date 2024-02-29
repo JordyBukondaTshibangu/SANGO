@@ -6,6 +6,7 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "selector",
   theme: {
     screens: {
       sm: "480px",
@@ -23,7 +24,9 @@ const config: Config = {
       danger: "#dc3545",
       info: "#738AFF",
       fontColor: "#BABABF",
-      light: "#FD7401",
+      lightFontColor: "#555",
+      light: "#F4F2EE",
+      // #
       dark: "#242535",
       darkHeader: "#181A2A",
       darkMirage: "#1b1c28",

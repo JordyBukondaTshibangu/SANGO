@@ -14,7 +14,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article }) => {
   return (
     <Link
       href={`/articles/${article.id}`}
-      className="flex-1 flex flex-col bg-darkHeader lg:min-w-[438px] max-w-[518px] h-[494px] rounded-lg shadow-xl hover:shadow-2xl hover:scale-95 transition duration-300 ease-in-out"
+      className="flex-1 flex flex-col  bg-white  dark:bg-darkHeader lg:min-w-[438px] max-w-[518px] h-[494px] rounded-lg shadow-xl hover:shadow-2xl hover:scale-95 transition duration-300 ease-in-out"
     >
       <div className="w-full  bg-cloudGray h-1/2 rounded-lg">
         <Image

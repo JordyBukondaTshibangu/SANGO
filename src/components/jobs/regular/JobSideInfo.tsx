@@ -73,7 +73,7 @@ const JobSideInfo: React.FC<JobSideInfoProps> = ({
       <div className="flex flex-col gap-8 border border-solid p-10 rounded-lg">
         <h4 className="text-xl font-medium">Share this job:</h4>
         <div className="flex gap-5">
-          <div className="bg-success flex gap-2 hover:bg-darkHeader px-2 py-1 cursor-pointer rounded-md">
+          <div className="bg-success flex gap-2 hover: bg-white  dark:bg-darkHeader px-2 py-1 cursor-pointer rounded-md">
             <InsertLinkOutlinedIcon className="-rotate-45" />
             <h4>Copy Links</h4>
           </div>

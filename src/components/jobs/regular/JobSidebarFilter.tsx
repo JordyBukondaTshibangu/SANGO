@@ -58,7 +58,7 @@ export default function JobSidebarFilter({
         onClick={toggleDrawer(anchor, false)}
         onKeyDown={toggleDrawer(anchor, false)}
       >
-        <div className="flex flex-col gap-4 lg:w-[480px] bg-darkHeader  py-20 px-10 min-h-[100vh] overflow-auto">
+        <div className="flex flex-col gap-4 lg:w-[480px]  bg-white  dark:bg-darkHeader  py-20 px-10 min-h-[100vh] overflow-auto">
           <div
             className="flex flex-col gap-5"
             role="presentation"
@@ -70,7 +70,7 @@ export default function JobSidebarFilter({
                 Job Filters
               </h2>
             </div>
-            <FormControl className="flex flex-col gap-6 border border-solid border-dark text-grayFirst rounded-lg px-5 py-5">
+            <FormControl className="flex flex-col gap-6 border border-solidborder-grayFour dark:border-dark text-grayFirst rounded-lg px-5 py-5">
               <FormLabel className="text-grayFirst font-medium">
                 Date Posted
               </FormLabel>
@@ -92,7 +92,7 @@ export default function JobSidebarFilter({
                 ))}
               </RadioGroup>
             </FormControl>
-            <FormControl className="flex flex-col gap-6 border border-solid border-dark text-grayFirst rounded-lg px-5 py-5">
+            <FormControl className="flex flex-col gap-6 border border-solidborder-grayFour dark:border-dark text-grayFirst rounded-lg px-5 py-5">
               <FormLabel className="text-grayFirst font-medium">
                 Job Type
               </FormLabel>
@@ -115,7 +115,7 @@ export default function JobSidebarFilter({
               </RadioGroup>
             </FormControl>
 
-            <FormControl className="flex flex-col gap-6 border border-solid border-dark text-grayFirst rounded-lg px-5 py-5">
+            <FormControl className="flex flex-col gap-6 border border-solidborder-grayFour dark:border-dark text-grayFirst rounded-lg px-5 py-5">
               <FormLabel className="text-grayFirst font-medium">
                 Experience level
               </FormLabel>
@@ -137,7 +137,7 @@ export default function JobSidebarFilter({
                 ))}
               </RadioGroup>
             </FormControl>
-            <FormGroup className="flex flex-col gap-6 border border-solid border-dark text-grayFirst rounded-lg px-5 py-5">
+            <FormGroup className="flex flex-col gap-6 border border-solidborder-grayFour dark:border-dark text-grayFirst rounded-lg px-5 py-5">
               <FormLabel className="text-grayFirst font-medium">Role</FormLabel>
 
               <div className="flex flex-col gap-2">
@@ -160,7 +160,7 @@ export default function JobSidebarFilter({
                 ))}
               </div>
             </FormGroup>
-            <FormControl className="flex flex-col gap-6 border border-solid border-dark text-grayFirst rounded-lg px-5 py-5">
+            <FormControl className="flex flex-col gap-6 border border-solidborder-grayFour dark:border-dark text-grayFirst rounded-lg px-5 py-5">
               <FormLabel className="text-grayFirst font-medium">
                 Industry
               </FormLabel>

@@ -251,7 +251,7 @@ const JobContainer: React.FC<JobContainerProps> = (props) => {
               }}
             >
               <StyledBox
-                className="bg-darkHeader"
+                className=" bg-white  dark:bg-darkHeader"
                 sx={{
                   position: "absolute",
                   top: -drawerBleeding,
@@ -281,7 +281,7 @@ const JobContainer: React.FC<JobContainerProps> = (props) => {
               />
             </SwipeableDrawer>
             <Button
-              className="bg-darkHeader min-w-max py-4 px-4 rounded-lg cursor-pointer flex justify-center items-center gap-4 text-xl text-white"
+              className=" bg-white  dark:bg-darkHeader min-w-max py-4 px-4 rounded-lg cursor-pointer flex justify-center items-center gap-4 text-xl text-white"
               onClick={handleClearFilter}
             >
               <FilterAltOffOutlinedIcon className="text-xl font-bold" />

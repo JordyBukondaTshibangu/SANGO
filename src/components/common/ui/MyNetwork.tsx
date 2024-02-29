@@ -5,7 +5,7 @@ import AutoStoriesOutlinedIcon from "@mui/icons-material/AutoStoriesOutlined";
 
 const MyNetwork = () => {
   return (
-    <div className="lg:sticky top-32 w-full flex lg:w-1/4 bg-darkHeader rounded-lg flex-col gap-10 px-10 py-10 h-fit">
+    <div className="lg:sticky top-32 w-full flex lg:w-1/4  bg-white  dark:bg-darkHeader rounded-lg flex-col gap-10 px-10 py-10 h-fit">
       <h4 className="text-xl font-bold">__My Network__</h4>
       <ul className="flex flex-col gap-10">
         <li className="flex items-start gap-5">

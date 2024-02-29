@@ -25,7 +25,7 @@ const FaqsPages = () => {
         </p>
       </div>
       <div className="flex flex-col gap-4">
-        <Accordion className="bg-darkHeader text-white px-5 py-2">
+        <Accordion className=" bg-white  dark:bg-darkHeader text-white px-5 py-2">
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1-content"
@@ -46,7 +46,7 @@ const FaqsPages = () => {
             </div>
           </AccordionDetails>
         </Accordion>
-        <Accordion className="bg-darkHeader text-white px-5 py-2">
+        <Accordion className=" bg-white  dark:bg-darkHeader text-white px-5 py-2">
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1-content"
@@ -83,7 +83,7 @@ const FaqsPages = () => {
             </div>
           </AccordionDetails>
         </Accordion>
-        <Accordion className="bg-darkHeader text-white px-5 py-2">
+        <Accordion className=" bg-white  dark:bg-darkHeader text-white px-5 py-2">
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1-content"

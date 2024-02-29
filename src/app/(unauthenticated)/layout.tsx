@@ -15,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <section className="bg-darkHeader lg:bg-dark text-fontColor leading-7 min-h-[110vh] w-full lg:flex lg:items-center lg:justify-center">
-      <div className="lg:w-4/5 2xl:w-1/2 mx-auto bg-darkHeader rounded-2xl mt-6 lg:shadow-2xl">
+    <section className=" bg-white  dark:bg-darkHeader lg:bg-light dark:bg-dark text-fontColor leading-7 min-h-[110vh] w-full lg:flex lg:items-center lg:justify-center">
+      <div className="lg:w-4/5 2xl:w-1/2 mx-auto  bg-white  dark:bg-darkHeader rounded-2xl mt-6 lg:shadow-2xl">
         {children}
       </div>
     </section>
