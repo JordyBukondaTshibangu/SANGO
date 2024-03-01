@@ -7,7 +7,7 @@
     "location": "Convention Center",
     "description": "A conference on the latest tech trends Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit. Lorem ipsum dolor sit amet. Est omnis veritatis eos aliquid obcaecati aut quaerat modi eum vero consequatur vel quia illo qui maiores veritatis. Ut accusamus porro ea facilis distinctio eum dolor tempore ut quibusdam optio est deleniti saepe. Qui nesciunt natus sed aliquam sapiente id quia eius et adipisci voluptatibus sed cumque galisum aut aperiam vero rem alias velit.",
     "email": "info@techhub.com",
-    "organiser": "John Taylor",
+    "organizer": "John Taylor",
     "phone": "021-565-8552",
     "category": "Technology",
     "guests": 352,
@@ -15,16 +15,16 @@
     "tags": ["conference", "technology"],
     "gallery": [
       "/assets/placeholder/tech.jpg",
-      "/assets/placeholder/venu_one.jpg",
-      "/assets/placeholder/venu_two.jpg",
-      "/assets/placeholder/venu_three.jpg",
-      "/assets/placeholder/venu_four.jpg",
-      "/assets/placeholder/venu_five.jpg",
-      "/assets/placeholder/venu_six.jpg",
-      "/assets/placeholder/venu_seven.jpg",
-      "/assets/placeholder/venu_eight.jpg",
-      "/assets/placeholder/venu_nine.jpg",
-      "/assets/placeholder/venu_ten.jpg"
+      "/assets/placeholder/venue_one.jpg",
+      "/assets/placeholder/venue_two.jpg",
+      "/assets/placeholder/venue_three.jpg",
+      "/assets/placeholder/venue_four.jpg",
+      "/assets/placeholder/venue_five.jpg",
+      "/assets/placeholder/venue_six.jpg",
+      "/assets/placeholder/venue_seven.jpg",
+      "/assets/placeholder/venue_eight.jpg",
+      "/assets/placeholder/venue_nine.jpg",
+      "/assets/placeholder/venue_ten.jpg"
     ]
   },
   {

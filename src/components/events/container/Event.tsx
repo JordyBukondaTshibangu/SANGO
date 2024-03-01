@@ -20,7 +20,7 @@ const Event: React.FC<EventProps> = ({ event }) => {
     gallery,
     venue,
     email,
-    organiser,
+    organizer: organizer,
     phone,
   } = event;
   return (
@@ -70,7 +70,7 @@ const Event: React.FC<EventProps> = ({ event }) => {
       </div>
       <div className="flex flex-col lg:flex-row justify-between gap-20">
         <div className="flex-1 flex flex-col gap-10">
-          <h4 className="text-xl font-medium">Venu details</h4>
+          <h4 className="text-xl font-medium">Venue details</h4>
           <div className="flex flex-col gap-20">
             <div className="flex flex-col gap-6">
               <div className=" bg-white  dark:bg-darkHeader w-fll min-w-96 h-72 rounded-md"></div>
@@ -82,7 +82,7 @@ const Event: React.FC<EventProps> = ({ event }) => {
             <div className="flex flex-col gap-6">
               <div className="flex gap-4 items-center">
                 <PersonIcon className="text-2xl" />
-                <span className="text-[16px]">{organiser}</span>
+                <span className="text-[16px]">{organizer}</span>
               </div>
               <div className="flex gap-4 items-center">
                 <LocalPhoneIcon className="text-2xl" />

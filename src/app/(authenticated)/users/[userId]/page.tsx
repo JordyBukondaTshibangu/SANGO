@@ -57,7 +57,7 @@ async function UserEvents(userId: number) {
   });
   const events = await res.json();
   const userEvents = events.filter(
-    (event: EventT) => event.organiser == "John Taylor",
+    (event: EventT) => event.organizer == "John Taylor",
   );
 
   if (!res.ok) {
