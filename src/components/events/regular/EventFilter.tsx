@@ -61,7 +61,9 @@ const EventFilter: React.FC<ArticleFilterProps> = ({
           size="medium"
           className="w-full bg-white dark:bg-darkHeader border dark:border-none border-solid border-grayThird"
         >
-          <InputLabel className="text-lightFontColor dark:text-fontColor">Organizer</InputLabel>
+          <InputLabel className="text-lightFontColor dark:text-fontColor">
+            Organizer
+          </InputLabel>
           <Select label="Author" onChange={handleChangeAuthor}>
             {organizers.map((author, index) => (
               <MenuItem key={index} value={author}>
@@ -75,7 +77,9 @@ const EventFilter: React.FC<ArticleFilterProps> = ({
           size="medium"
           className="w-full bg-white dark:bg-darkHeader border dark:border-none border-solid border-grayThird"
         >
-          <InputLabel className="text-lightFontColor dark:text-fontColor">Category</InputLabel>
+          <InputLabel className="text-lightFontColor dark:text-fontColor">
+            Category
+          </InputLabel>
           <Select label="Category" onChange={handleChangeCategory}>
             {categories.map((category, index) => (
               <MenuItem key={index} value={category}>
@@ -89,7 +93,9 @@ const EventFilter: React.FC<ArticleFilterProps> = ({
           size="medium"
           className="w-full bg-white dark:bg-darkHeader border dark:border-none border-solid border-grayThird"
         >
-          <InputLabel className="text-lightFontColor dark:text-fontColor">Date</InputLabel>
+          <InputLabel className="text-lightFontColor dark:text-fontColor">
+            Date
+          </InputLabel>
           <Select label="Date" onChange={handleSearchDate}>
             {dates.map((date, index) => (
               <MenuItem key={index} value={date}>

@@ -90,9 +90,21 @@ const UserCard: React.FC<UserCardProps> = ({ user }) => {
       {showMore && (
         <div>
           <Tabs value={value} onChange={handleChange}>
-            <Tab label="Info" {...a11yProps(0)} className="text-lightFontColor dark:text-grayFirst"/>
-            <Tab label="Experience" {...a11yProps(1)}  className="text-lightFontColor dark:text-grayFirst"/>
-            <Tab label="Skills" {...a11yProps(2)}  className="text-lightFontColor dark:text-grayFirst"/>
+            <Tab
+              label="Info"
+              {...a11yProps(0)}
+              className="text-lightFontColor dark:text-grayFirst"
+            />
+            <Tab
+              label="Experience"
+              {...a11yProps(1)}
+              className="text-lightFontColor dark:text-grayFirst"
+            />
+            <Tab
+              label="Skills"
+              {...a11yProps(2)}
+              className="text-lightFontColor dark:text-grayFirst"
+            />
           </Tabs>
           <CustomTabPanel value={value} index={0}>
             <InfoPanel

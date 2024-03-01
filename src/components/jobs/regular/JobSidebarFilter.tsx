@@ -138,7 +138,9 @@ export default function JobSidebarFilter({
               </RadioGroup>
             </FormControl>
             <FormGroup className="flex flex-col gap-6 border border-solid border-grayFour dark:border-dark text-lightFontColor dark:text-grayFirst rounded-lg px-5 py-5">
-              <FormLabel className="text-lightFontColor dark:text-grayFirst font-medium">Role</FormLabel>
+              <FormLabel className="text-lightFontColor dark:text-grayFirst font-medium">
+                Role
+              </FormLabel>
 
               <div className="flex flex-col gap-2">
                 {rolesList.map((roleItem, index) => (

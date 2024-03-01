@@ -26,7 +26,7 @@ const ProfileSkills: React.FC<ProfileSkillsProps> = ({ skills, other }) => {
               </div>
             </div>
           ),
-        )} 
+        )}
       </div>
     </div>
   );

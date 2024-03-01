@@ -53,7 +53,9 @@ const ArticleFilter: React.FC<ArticleFilterProps> = ({
           size="medium"
           className="w-full bg-white dark:bg-darkHeader border dark:border-none border-solid border-grayThird"
         >
-          <InputLabel className="text-lightFontColor dark:text-fontColor">Author</InputLabel>
+          <InputLabel className="text-lightFontColor dark:text-fontColor">
+            Author
+          </InputLabel>
           <Select
             id="demo-select-small"
             label="Author"
@@ -71,7 +73,9 @@ const ArticleFilter: React.FC<ArticleFilterProps> = ({
           size="medium"
           className="w-full bg-white dark:bg-darkHeader border dark:border-none border-solid border-grayThird"
         >
-          <InputLabel className="text-lightFontColor dark:text-fontColor">Category</InputLabel>
+          <InputLabel className="text-lightFontColor dark:text-fontColor">
+            Category
+          </InputLabel>
           <Select
             id="demo-select-small"
             label="Category"
@@ -89,7 +93,9 @@ const ArticleFilter: React.FC<ArticleFilterProps> = ({
           size="medium"
           className="w-full bg-white dark:bg-darkHeader border dark:border-none border-solid border-grayThird"
         >
-          <InputLabel className="text-lightFontColor dark:text-fontColor">Date</InputLabel>
+          <InputLabel className="text-lightFontColor dark:text-fontColor">
+            Date
+          </InputLabel>
           <Select
             id="demo-select-small"
             label="Category"

@@ -27,7 +27,7 @@ import Settings from "@mui/icons-material/Settings";
 import Logout from "@mui/icons-material/Logout";
 import Brightness4OutlinedIcon from "@mui/icons-material/Brightness4Outlined";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
-import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
+import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 
 const NavBar = () => {
   const { theme, setTheme } = useTheme();
@@ -208,7 +208,7 @@ const NavBar = () => {
           </Menu>
         </div>
       </ul>
-        <SearchBar />
+      <SearchBar />
       <div
         className="flex xl:hidden text-lg cursor-pointer"
         onClick={() => setToggleNav(!toggleNav)}
@@ -245,9 +245,9 @@ const NavBar = () => {
                 </span>
               </p>
             </Link>
-                      <div className="cursor-pointer flex text-2xl">
-            <CloseOutlinedIcon className="text-2xl" />
-          </div>
+            <div className="cursor-pointer flex text-2xl">
+              <CloseOutlinedIcon className="text-2xl" />
+            </div>
           </div>
           <ul className="relative bg-black  dark:bg-darkHeader flex flex-col justify-between gap-16">
             <li>

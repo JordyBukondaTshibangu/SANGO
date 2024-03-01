@@ -114,7 +114,9 @@ const CreateNewPost: React.FC<CreateNewPostProps> = ({ onClose }) => {
       </span>
       {showTags && (
         <div className="flex flex-col gap-3 -mt-8">
-          <h4 className="text-lg font-medium text-lightFontColor dark:text-grayFirst">Tags:</h4>
+          <h4 className="text-lg font-medium text-lightFontColor dark:text-grayFirst">
+            Tags:
+          </h4>
           <ul className="flex gap-2 flex-wrap">
             {tags.map((tag: string, index: number) => (
               <span

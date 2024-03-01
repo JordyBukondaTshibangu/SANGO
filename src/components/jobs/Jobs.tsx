@@ -281,7 +281,7 @@ const JobContainer: React.FC<JobContainerProps> = (props) => {
               />
             </SwipeableDrawer>
             <Button
-            className="min-w-max w-fit flex items-center justify-center px-6 py-2 lg:py-4  bg-white  dark:bg-darkHeader hover:bg-white hover:dark:bg-darkHeader rounded-xl text-lightFontColor dark:text-white cursor-pointer h-full -order-1 lg:order-1"
+              className="min-w-max w-fit flex items-center justify-center px-6 py-2 lg:py-4  bg-white  dark:bg-darkHeader hover:bg-white hover:dark:bg-darkHeader rounded-xl text-lightFontColor dark:text-white cursor-pointer h-full -order-1 lg:order-1"
               onClick={handleClearFilter}
             >
               <FilterAltOffOutlinedIcon className="text-xl font-bold" />

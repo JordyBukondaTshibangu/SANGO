@@ -54,9 +54,21 @@ const ProfileActivity: React.FC<ProfileActivityProps> = ({
     <Box sx={{ width: "100%" }}>
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
         <Tabs value={value} onChange={handleChange}>
-          <Tab label="Posts" {...a11yProps(0)} className="text-lightFontColor dark:text-grayFirst" />
-          <Tab label="Articles" {...a11yProps(1)} className="text-lightFontColor dark:text-grayFirst" />
-          <Tab label="Events" {...a11yProps(2)} className="text-lightFontColor dark:text-grayFirst" />
+          <Tab
+            label="Posts"
+            {...a11yProps(0)}
+            className="text-lightFontColor dark:text-grayFirst"
+          />
+          <Tab
+            label="Articles"
+            {...a11yProps(1)}
+            className="text-lightFontColor dark:text-grayFirst"
+          />
+          <Tab
+            label="Events"
+            {...a11yProps(2)}
+            className="text-lightFontColor dark:text-grayFirst"
+          />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>

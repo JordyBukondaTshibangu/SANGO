@@ -11,7 +11,9 @@ const Footer = () => {
     <footer className="bottom-0 left-0 right-0 z-5  bg-white  dark:bg-darkHeader py-10 md:py-20 px-5 xl:px-10 2xl:px-28 3xl:px-96 flex flex-col gap-32">
       <div className="flex flex-col gap-10 md:grid md:grid-cols-3 xl:grid-cols-5 xl:gap-20 justify-center">
         <div className="flex flex-col gap-5">
-          <h5 className="text-lg text-lightFontColor dark:text-fontColor">Quick Links</h5>
+          <h5 className="text-lg text-lightFontColor dark:text-fontColor">
+            Quick Links
+          </h5>
           <ul className="flex flex-col gap-5 text-lightFontColor dark:text-fontColor">
             <li>
               <Link className="hover:text-primary" href="/info/about-us">
@@ -47,7 +49,9 @@ const Footer = () => {
           </ul>
         </div>
         <div className="flex flex-col gap-5">
-          <h5 className="text-lg text-lightFontColor dark:text-fontColor">Accessibity</h5>
+          <h5 className="text-lg text-lightFontColor dark:text-fontColor">
+            Accessibity
+          </h5>
           <ul className="flex flex-col gap-5 text-lightFontColor dark:text-fontColor">
             <li>
               <Link className="hover:text-primary" href="/posts">
@@ -72,7 +76,9 @@ const Footer = () => {
           </ul>
         </div>
         <div className="flex flex-col gap-5">
-          <h5 className="text-lg text-lightFontColor dark:text-fontColor">Career</h5>
+          <h5 className="text-lg text-lightFontColor dark:text-fontColor">
+            Career
+          </h5>
           <ul className="flex flex-col gap-5 text-lightFontColor dark:text-fontColor">
             <li>
               <Link className="hover:text-primary" href="/jobs">
@@ -97,7 +103,9 @@ const Footer = () => {
           </ul>
         </div>
         <div className="flex flex-col gap-5">
-          <h5 className="text-lg text-lightFontColor dark:text-fontColor">Sango</h5>
+          <h5 className="text-lg text-lightFontColor dark:text-fontColor">
+            Sango
+          </h5>
           <ul className="flex flex-col gap-5 text-lightFontColor dark:text-fontColor">
             <li>
               <Link className="hover:text-primary" href="/about-us">
@@ -126,8 +134,13 @@ const Footer = () => {
             Sango
           </Link>
           <div className="flex gap-3">
-            <p className="text-sm text-lightFontColor dark:text-fontColor">Call now:</p>
-            <a href="/" className="text-sm text-lightFontColor dark:text-fontColor font-medium">
+            <p className="text-sm text-lightFontColor dark:text-fontColor">
+              Call now:
+            </p>
+            <a
+              href="/"
+              className="text-sm text-lightFontColor dark:text-fontColor font-medium"
+            >
               (+27) 68 286 6579
             </a>
           </div>
