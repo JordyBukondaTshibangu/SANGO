@@ -1,7 +1,7 @@
 import React from "react";
 import { UserExperienceT } from "../container/Profile";
 import ViewTimelineIcon from "@mui/icons-material/ViewTimeline";
-import Experince from "./Experince";
+import Experience from "./Experience";
 
 type ProfileExperienceProps = {
   experiences: UserExperienceT[];
@@ -19,7 +19,7 @@ const ProfileExperience: React.FC<ProfileExperienceProps> = ({
       </div>
       <div className="w-full flex flex-col gap-4 ">
         {experiences.map((experience: UserExperienceT, index: number) => (
-          <Experince key={index} experience={experience} />
+          <Experience key={index} experience={experience} />
         ))}
       </div>
     </div>

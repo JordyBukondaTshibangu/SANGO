@@ -1,7 +1,7 @@
 import React from "react";
 
 type SkillPanelProps = {
-  skills: { skill: string; proficienty: number }[];
+  skills: { skill: string; proficiency: number }[];
 };
 
 const SkillPanel: React.FC<SkillPanelProps> = ({ skills }) => {
@@ -12,13 +12,13 @@ const SkillPanel: React.FC<SkillPanelProps> = ({ skills }) => {
           My Skills
         </h4>
         {skills.map(
-          (skill: { skill: string; proficienty: number }, index: number) => (
+          (skill: { skill: string; proficiency: number }, index: number) => (
             <div key={index} className="flex flex-col gap-2">
               <span>{skill.skill}</span>
               <div className=" bg-white  dark:bg-darkHeader h-2 rounded-lg w-[100%]">
                 <div
                   className={`bg-primary h-2 rounded-l-lg`}
-                  style={{ width: `${skill.proficienty}%` }}
+                  style={{ width: `${skill.proficiency}%` }}
                 ></div>
               </div>
             </div>

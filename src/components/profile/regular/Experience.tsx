@@ -8,10 +8,10 @@ import { UserExperienceT } from "../container/Profile";
 type ExperienceProps = {
   experience: UserExperienceT;
 };
-const Experince: React.FC<ExperienceProps> = ({ experience }) => {
+const Experience: React.FC<ExperienceProps> = ({ experience }) => {
   const { jobPosition, description, company, year } = experience;
   return (
-    <Accordion className="bg-light dark:bg-dark text-graySecond py-2">
+    <Accordion className="bg-light dark:bg-dark text-lightFontColor dark:text-graySecond py-2">
       <AccordionSummary
         expandIcon={<ExpandMoreIcon />}
         aria-controls="panel1-content"
@@ -24,4 +24,4 @@ const Experince: React.FC<ExperienceProps> = ({ experience }) => {
   );
 };
 
-export default Experince;
+export default Experience;

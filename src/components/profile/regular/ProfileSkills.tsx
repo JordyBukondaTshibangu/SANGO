@@ -15,18 +15,18 @@ const ProfileSkills: React.FC<ProfileSkillsProps> = ({ skills, other }) => {
       </div>
       <div className="flex flex-col gap-4">
         {skills.map(
-          (skill: { skill: string; proficienty: number }, index: number) => (
+          (skill: { skill: string; proficiency: number }, index: number) => (
             <div key={index} className="flex flex-col gap-4">
               <span>{skill.skill}</span>
               <div className="bg-light dark:bg-dark h-3 rounded-lg w-[100%]">
                 <div
-                  className={`bg-arsenic h-3 rounded-l-lg`}
-                  style={{ width: `${skill.proficienty}%` }}
+                  className={`bg-coral dark:bg-arsenic h-3 rounded-l-lg`}
+                  style={{ width: `${skill.proficiency}%` }}
                 ></div>
               </div>
             </div>
           ),
-        )}
+        )} 
       </div>
     </div>
   );

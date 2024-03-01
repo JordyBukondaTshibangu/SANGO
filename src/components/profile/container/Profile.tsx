@@ -17,7 +17,7 @@ export type UserExperienceT = {
 
 export type UserSkillT = {
   skill: string;
-  proficienty: number;
+  proficiency: number;
 };
 export type UserAddressT = {
   street: string;

@@ -43,7 +43,7 @@ const Event: React.FC<EventProps> = ({ event }) => {
             <span className="cursor-pointer flex items-center justify-center bg-grayFirst rounded-3xl text-white text-sm lg:px-5 lg:py-3 px-4 py-2">
               Unenroll
             </span>
-            <span className="cursor-pointer flex items-center justify-center  bg-white  dark:bg-darkHeader rounded-3xl text-white text-sm lg:px-5 lg:py-3 px-4 py-2">
+            <span className="cursor-pointer flex items-center justify-center  bg-white  dark:bg-darkHeader rounded-3xl dark:text-white text-sm lg:px-5 lg:py-3 px-4 py-2">
               Personalize
             </span>
           </div>
@@ -53,7 +53,7 @@ const Event: React.FC<EventProps> = ({ event }) => {
           </div>
         </div>
       </div>
-      <h2 className="text-4xl font-medium text-white">{name}</h2>
+      <h2 className="text-4xl font-medium dark:text-white">{name}</h2>
       <div className="flex flex-col gap-6">
         <h4 className="text-xl font-medium">Description</h4>
         <p className="text-[16px].leading-8">{description}</p>
