@@ -36,7 +36,7 @@ const MessagesList: React.FC<MessagesListProps> = ({ chats }) => {
       </div>
       <input
         type="text"
-        className="w-full h-12 rounded-full px-5 py-2 text-black"
+        className="w-full h-12 rounded-full px-5 py-2 text-lightFontColor dark:text-fontColor border dark:border-none border-solid border-grayFour bg-light dark:bg-dark outline-none"
         placeholder="Search..."
       />
       <div className="flex flex-col gap-5 overflow-y-auto max-h-[60vh]">

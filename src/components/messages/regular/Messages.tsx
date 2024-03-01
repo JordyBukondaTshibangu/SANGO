@@ -8,7 +8,7 @@ const Messages = () => {
         <input
           type="text"
           placeholder="Write your message..."
-          className="w-full min-h-14 rounded-full px-5"
+          className="w-full min-h-14 rounded-full px-5 bg-light dark:bg-dark"
         />
         <span className="flex items-center justify-center p-5 bg-light dark:bg-dark rounded-full cursor-pointer transition ease-in-out hover:scale-105 hover:shadow-lg">
           <SendIcon className="text-2xl font-bold" />
