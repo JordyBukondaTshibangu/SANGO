@@ -28,7 +28,7 @@ const JobDescription: React.FC<JobDescriptionProps> = ({
         </ul>
       </div>
       <div className="flex flex-col gap-6">
-        <h4 className="text-2xl font-bold">Desirables</h4>
+        <h4 className="text-2xl font-bold">Desirable</h4>
         <ul className="flex flex-col gap-2 list-disc px-4">
           {desirables.map((desirable: string, index: number) => (
             <li key={index}>{desirable}</li>

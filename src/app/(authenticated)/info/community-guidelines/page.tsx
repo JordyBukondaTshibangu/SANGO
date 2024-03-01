@@ -33,7 +33,7 @@ const CommunityGuidelinePage = () => {
           everyone.
         </p>
       </div>
-      <div className="flex gap-14 bg-darkHeader px-5 py-10 rounded-xl">
+      <div className="flex gap-14  bg-white  dark:bg-darkHeader px-5 py-10 rounded-xl">
         <QuestionAnswerIcon className="text-3xl" />
         <div className="flex flex-col gap-10">
           <h4 className="text-2xl font-bold">
@@ -58,7 +58,7 @@ const CommunityGuidelinePage = () => {
           </p>
         </div>
       </div>
-      <div className="flex gap-14 bg-darkHeader px-5 py-10 rounded-xl">
+      <div className="flex gap-14  bg-white  dark:bg-darkHeader px-5 py-10 rounded-xl">
         <QuestionAnswerIcon className="text-3xl" />
         <div className="flex flex-col gap-10">
           <h4 className="text-2xl font-bold">

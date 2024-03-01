@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const SenderDetails = () => {
   return (
-    <div className="hidden lg:flex flex-col items-center w-[33%] gap-5 py-10 px-5 rounded-lg lg:pb-10 bg-darkHeader h-fit">
+    <div className="hidden lg:flex flex-col items-center w-[33%] gap-5 py-10 px-5 rounded-lg lg:pb-10  bg-white  dark:bg-darkHeader h-fit">
       <div className="flex justify-center items-center rounded-full w-20 h-20">
         <Image
           src={profileImage}
@@ -22,7 +22,7 @@ const SenderDetails = () => {
         </div>
         <Link
           href={`/users/`}
-          className="bg-dark flex items-center justify-center py-2 px-5 rounded-lg mt-4"
+          className="bg-light dark:bg-dark flex items-center justify-center py-2 px-5 rounded-lg mt-4"
         >
           View Profile
         </Link>

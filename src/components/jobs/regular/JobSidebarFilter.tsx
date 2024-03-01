@@ -58,20 +58,20 @@ export default function JobSidebarFilter({
         onClick={toggleDrawer(anchor, false)}
         onKeyDown={toggleDrawer(anchor, false)}
       >
-        <div className="flex flex-col gap-4 lg:w-[480px] bg-darkHeader  py-20 px-10 min-h-[100vh] overflow-auto">
+        <div className="flex flex-col gap-4 lg:w-[480px]  bg-white  dark:bg-darkHeader  py-20 px-10 min-h-[100vh] overflow-auto">
           <div
             className="flex flex-col gap-5"
             role="presentation"
             onClick={(event) => event.stopPropagation()}
           >
             <div className="flex gap-4 mb-8 items-center">
-              <TuneOutlinedIcon className="text-white text-4xl font-bold" />
-              <h2 className="text-2xl font-medium text-white uppercase">
+              <TuneOutlinedIcon className="text-lightFontColor dark:text-white text-4xl font-bold" />
+              <h2 className="text-2xl font-medium text-lightFontColor dark:text-white uppercase">
                 Job Filters
               </h2>
             </div>
-            <FormControl className="flex flex-col gap-6 border border-solid border-dark text-grayFirst rounded-lg px-5 py-5">
-              <FormLabel className="text-grayFirst font-medium">
+            <FormControl className="flex flex-col gap-6 border border-solid border-grayFour dark:border-dark text-lightFontColor dark:text-grayFirst rounded-lg px-5 py-5">
+              <FormLabel className="text-lightFontColor dark:text-grayFirst font-medium">
                 Date Posted
               </FormLabel>
               <RadioGroup
@@ -92,8 +92,8 @@ export default function JobSidebarFilter({
                 ))}
               </RadioGroup>
             </FormControl>
-            <FormControl className="flex flex-col gap-6 border border-solid border-dark text-grayFirst rounded-lg px-5 py-5">
-              <FormLabel className="text-grayFirst font-medium">
+            <FormControl className="flex flex-col gap-6 border border-solid border-grayFour dark:border-dark text-lightFontColor dark:text-grayFirst rounded-lg px-5 py-5">
+              <FormLabel className="text-lightFontColor dark:text-grayFirst font-medium">
                 Job Type
               </FormLabel>
               <RadioGroup
@@ -115,8 +115,8 @@ export default function JobSidebarFilter({
               </RadioGroup>
             </FormControl>
 
-            <FormControl className="flex flex-col gap-6 border border-solid border-dark text-grayFirst rounded-lg px-5 py-5">
-              <FormLabel className="text-grayFirst font-medium">
+            <FormControl className="flex flex-col gap-6 border border-solid border-grayFour dark:border-dark text-lightFontColor dark:text-grayFirst rounded-lg px-5 py-5">
+              <FormLabel className="text-lightFontColor dark:text-grayFirst font-medium">
                 Experience level
               </FormLabel>
               <RadioGroup
@@ -137,8 +137,8 @@ export default function JobSidebarFilter({
                 ))}
               </RadioGroup>
             </FormControl>
-            <FormGroup className="flex flex-col gap-6 border border-solid border-dark text-grayFirst rounded-lg px-5 py-5">
-              <FormLabel className="text-grayFirst font-medium">Role</FormLabel>
+            <FormGroup className="flex flex-col gap-6 border border-solid border-grayFour dark:border-dark text-lightFontColor dark:text-grayFirst rounded-lg px-5 py-5">
+              <FormLabel className="text-lightFontColor dark:text-grayFirst font-medium">Role</FormLabel>
 
               <div className="flex flex-col gap-2">
                 {rolesList.map((roleItem, index) => (
@@ -160,8 +160,8 @@ export default function JobSidebarFilter({
                 ))}
               </div>
             </FormGroup>
-            <FormControl className="flex flex-col gap-6 border border-solid border-dark text-grayFirst rounded-lg px-5 py-5">
-              <FormLabel className="text-grayFirst font-medium">
+            <FormControl className="flex flex-col gap-6 border border-solid border-grayFour dark:border-dark text-lightFontColor dark:text-grayFirst rounded-lg px-5 py-5">
+              <FormLabel className="text-lightFontColor dark:text-grayFirst font-medium">
                 Industry
               </FormLabel>
               <RadioGroup

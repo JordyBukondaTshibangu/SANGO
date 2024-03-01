@@ -12,7 +12,7 @@ export type EventT = {
   location: string;
   description: string;
   email: string;
-  organiser: string;
+  organizer: string;
   phone: string;
   category: string;
   image: string;
@@ -27,17 +27,17 @@ type EventListProps = {
 const ArticleList: React.FC<EventListProps> = ({ events }) => {
   const [showFilter, setShowFilter] = useState<boolean>(false);
   const [eventList, setEventList] = useState<EventT[]>(events);
-  const [organisers, setOrganisers] = useState<string[]>([]);
+  const [organizers, setOrganizers] = useState<string[]>([]);
   const [categories, setCategories] = useState<string[]>([]);
   const [dates, setDates] = useState<string[]>([]);
 
   useEffect(() => {
     let listEvents: string[] = [];
     events.forEach((event) => {
-      listEvents.push(event.organiser);
+      listEvents.push(event.organizer);
     });
     let listEventSet: Set<string> = new Set(listEvents);
-    setOrganisers([...listEventSet]);
+    setOrganizers([...listEventSet]);
 
     let listCategories: string[] = [];
     events.forEach((event) => {
@@ -65,9 +65,9 @@ const ArticleList: React.FC<EventListProps> = ({ events }) => {
     setEventList(updatedEvents);
   };
 
-  const searchOrganiser = (author: string) => {
+  const searchOrganizer = (author: string) => {
     let updatedEvents = eventList.filter(
-      (event) => event.organiser.toLowerCase() === author.toLowerCase(),
+      (event) => event.organizer.toLowerCase() === author.toLowerCase(),
     );
     setEventList(updatedEvents);
   };
@@ -94,10 +94,10 @@ const ArticleList: React.FC<EventListProps> = ({ events }) => {
           href="/events/create-event"
           className="ml-auto flex items-center justify-center px-5 py-2 bg-primary rounded-xl text-white cursor-pointer"
         >
-          Organise an event
+          Organize an event
         </Link>
         <span
-          className="flex items-center justify-center px-5 py-2 bg-darkHeader rounded-xl text-white cursor-pointer"
+          className="flex items-center justify-center px-5 py-2  bg-white  dark:bg-darkHeader rounded-xl text-lightFontColor dark:text-white cursor-pointer"
           onClick={() => setShowFilter(!showFilter)}
         >
           {!showFilter ? "Show" : "Hide"} Filter
@@ -106,23 +106,23 @@ const ArticleList: React.FC<EventListProps> = ({ events }) => {
       {showFilter && (
         <div className="w-full flex flex-col lg:flex-row lg:items-center gap-5">
           <EventFilter
-            organisers={organisers}
+            organizers={organizers}
             categories={categories}
             dates={dates}
             searchEvent={searchEvent}
-            searchOrganiser={searchOrganiser}
+            searchOrganizer={searchOrganizer}
             searchCategory={searchCategory}
             searchDate={searchDate}
           />
           <span
-            className="min-w-max w-fit flex items-center justify-center px-6 py-2 lg:py-4 bg-darkHeader rounded-xl text-white cursor-pointer h-full -order-1 lg:order-1"
+            className="min-w-max w-fit flex items-center justify-center px-6 py-2 lg:py-4  bg-white  dark:bg-darkHeader rounded-xl dark:text-white cursor-pointer h-full -order-1 lg:order-1"
             onClick={handleClearFilter}
           >
             Clear Filter
           </span>
         </div>
       )}
-      <div className="flex flex-wrap gap-10">
+      <div className="flex flex-wrap gap-10 items-center justify-center md:justify-start">
         {eventList.map((event: EventT) => (
           <EventCard key={event.id} event={event} />
         ))}

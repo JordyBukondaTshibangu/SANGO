@@ -216,7 +216,7 @@ const JobContainer: React.FC<JobContainerProps> = (props) => {
         {(["left"] as const).map((anchor) => (
           <div key={anchor} className="w-full flex gap-5 justify-end">
             <Button
-              className="hidden bg-graySecond w-32 lg:w-48 h-12 lg:h-14 rounded-lg cursor-pointer lg:flex justify-center items-center gap-4 text-xl text-white"
+              className="hidden bg-grayFirst hover:bg-lightFontColor hover:dark:bg-darkHeader w-32 lg:w-48 h-12 lg:h-14 rounded-lg cursor-pointer lg:flex justify-center items-center gap-4 text-xl text-white"
               onClick={toggleDrawer(anchor, true)}
             >
               <TuneOutlinedIcon className="text-xl font-bold" />
@@ -251,7 +251,7 @@ const JobContainer: React.FC<JobContainerProps> = (props) => {
               }}
             >
               <StyledBox
-                className="bg-darkHeader"
+                className=" bg-white  dark:bg-darkHeader"
                 sx={{
                   position: "absolute",
                   top: -drawerBleeding,
@@ -281,7 +281,7 @@ const JobContainer: React.FC<JobContainerProps> = (props) => {
               />
             </SwipeableDrawer>
             <Button
-              className="bg-darkHeader min-w-max py-4 px-4 rounded-lg cursor-pointer flex justify-center items-center gap-4 text-xl text-white"
+            className="min-w-max w-fit flex items-center justify-center px-6 py-2 lg:py-4  bg-white  dark:bg-darkHeader hover:bg-white hover:dark:bg-darkHeader rounded-xl text-lightFontColor dark:text-white cursor-pointer h-full -order-1 lg:order-1"
               onClick={handleClearFilter}
             >
               <FilterAltOffOutlinedIcon className="text-xl font-bold" />

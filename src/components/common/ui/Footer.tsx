@@ -8,11 +8,11 @@ import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 
 const Footer = () => {
   return (
-    <footer className="bottom-0 left-0 right-0 z-5 bg-darkHeader py-10 md:py-20 px-5 xl:px-10 2xl:px-28 3xl:px-96 flex flex-col gap-32">
+    <footer className="bottom-0 left-0 right-0 z-5  bg-white  dark:bg-darkHeader py-10 md:py-20 px-5 xl:px-10 2xl:px-28 3xl:px-96 flex flex-col gap-32">
       <div className="flex flex-col gap-10 md:grid md:grid-cols-3 xl:grid-cols-5 xl:gap-20 justify-center">
         <div className="flex flex-col gap-5">
-          <h5 className="text-lg text-fontColor">Quick Links</h5>
-          <ul className="flex flex-col gap-5 text-fontColor">
+          <h5 className="text-lg text-lightFontColor dark:text-fontColor">Quick Links</h5>
+          <ul className="flex flex-col gap-5 text-lightFontColor dark:text-fontColor">
             <li>
               <Link className="hover:text-primary" href="/info/about-us">
                 About us
@@ -47,8 +47,8 @@ const Footer = () => {
           </ul>
         </div>
         <div className="flex flex-col gap-5">
-          <h5 className="text-lg text-fontColor">Accessibity</h5>
-          <ul className="flex flex-col gap-5 text-fontColor">
+          <h5 className="text-lg text-lightFontColor dark:text-fontColor">Accessibity</h5>
+          <ul className="flex flex-col gap-5 text-lightFontColor dark:text-fontColor">
             <li>
               <Link className="hover:text-primary" href="/posts">
                 Posts
@@ -72,8 +72,8 @@ const Footer = () => {
           </ul>
         </div>
         <div className="flex flex-col gap-5">
-          <h5 className="text-lg text-fontColor">Career</h5>
-          <ul className="flex flex-col gap-5 text-fontColor">
+          <h5 className="text-lg text-lightFontColor dark:text-fontColor">Career</h5>
+          <ul className="flex flex-col gap-5 text-lightFontColor dark:text-fontColor">
             <li>
               <Link className="hover:text-primary" href="/jobs">
                 Find a Job
@@ -97,8 +97,8 @@ const Footer = () => {
           </ul>
         </div>
         <div className="flex flex-col gap-5">
-          <h5 className="text-lg text-fontColor">Sango</h5>
-          <ul className="flex flex-col gap-5 text-fontColor">
+          <h5 className="text-lg text-lightFontColor dark:text-fontColor">Sango</h5>
+          <ul className="flex flex-col gap-5 text-lightFontColor dark:text-fontColor">
             <li>
               <Link className="hover:text-primary" href="/about-us">
                 About
@@ -126,8 +126,8 @@ const Footer = () => {
             Sango
           </Link>
           <div className="flex gap-3">
-            <p className="text-sm text-fontColor">Call now:</p>
-            <a href="/" className="text-sm text-fontColor font-medium">
+            <p className="text-sm text-lightFontColor dark:text-fontColor">Call now:</p>
+            <a href="/" className="text-sm text-lightFontColor dark:text-fontColor font-medium">
               (+27) 68 286 6579
             </a>
           </div>
@@ -141,7 +141,7 @@ const Footer = () => {
           <p className="text-sm text-gray-300">
             2024 Sango - All rights reserved
           </p>
-          <div className="flex flex-col md:flex-row text-fontColor gap-5">
+          <div className="flex flex-col md:flex-row text-lightFontColor dark:text-fontColor gap-5">
             <a
               className="flex items-center gap-4 text-lg rounded-full"
               href="/facebook.com"

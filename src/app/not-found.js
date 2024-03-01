@@ -9,7 +9,7 @@ export default function NotFound() {
       className="bg-cover bg-no-repeat min-h-[100vh] rounded-xl flex flex-col items-center justify-center gap-5 md:gap-10 p-5 lg:p-10"
       style={{ backgroundImage: `url(${NotFoundImg})` }}
     >
-      <div className="flex bg-darkHeader p-20 rounded-xl">
+      <div className="flex  bg-white  dark:bg-darkHeader p-20 rounded-xl">
         <div className="flex-1 flex flex-col gap-8 text-grayFirst">
           <h1 className="text-4xl font-bold text-white">404 Error </h1>
           <h2 className="text-4xl">Not Found</h2>

@@ -42,7 +42,7 @@ const ArticleFilter: React.FC<ArticleFilterProps> = ({
         <TextField
           id="outlined-basic"
           variant="outlined"
-          className="w-full h-full"
+          className="w-full h-full bg-white dark:bg-darkHeader border dark:border-none border-solid border-grayThird outline-none text-lightFontColor dark:text-fontColor"
           placeholder="Search by : Article title, Keyword..."
           onChange={handleSearchArticle}
         />
@@ -51,11 +51,10 @@ const ArticleFilter: React.FC<ArticleFilterProps> = ({
         <FormControl
           sx={{ m: 1, minWidth: 150 }}
           size="medium"
-          className="w-full"
+          className="w-full bg-white dark:bg-darkHeader border dark:border-none border-solid border-grayThird"
         >
-          <InputLabel id="demo-select-large-label">Author</InputLabel>
+          <InputLabel className="text-lightFontColor dark:text-fontColor">Author</InputLabel>
           <Select
-            labelId="demo-select-large-label"
             id="demo-select-small"
             label="Author"
             onChange={handleChangeAuthor}
@@ -70,11 +69,10 @@ const ArticleFilter: React.FC<ArticleFilterProps> = ({
         <FormControl
           sx={{ m: 1, minWidth: 150 }}
           size="medium"
-          className="w-full"
+          className="w-full bg-white dark:bg-darkHeader border dark:border-none border-solid border-grayThird"
         >
-          <InputLabel id="demo-select-large-label">Category</InputLabel>
+          <InputLabel className="text-lightFontColor dark:text-fontColor">Category</InputLabel>
           <Select
-            labelId="demo-select-large-label"
             id="demo-select-small"
             label="Category"
             onChange={handleChangeCategory}
@@ -89,11 +87,10 @@ const ArticleFilter: React.FC<ArticleFilterProps> = ({
         <FormControl
           sx={{ m: 1, minWidth: 150 }}
           size="medium"
-          className="w-full"
+          className="w-full bg-white dark:bg-darkHeader border dark:border-none border-solid border-grayThird"
         >
-          <InputLabel id="demo-select-large-label">Date</InputLabel>
+          <InputLabel className="text-lightFontColor dark:text-fontColor">Date</InputLabel>
           <Select
-            labelId="demo-select-large-label"
             id="demo-select-small"
             label="Category"
             onChange={handleChangeCategory}

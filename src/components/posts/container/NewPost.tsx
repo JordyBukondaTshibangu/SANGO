@@ -45,7 +45,7 @@ const NewPost = () => {
   const handleClose = () => setOpen(false);
 
   return (
-    <div className="flex flex-col gap-4 bg-darkHeader rounded-lg">
+    <div className="flex flex-col gap-4  bg-white  dark:bg-darkHeader rounded-lg">
       <div className="flex flex-col gap-8  px-5 lg:px-10 py-8">
         <div className="flex justify-center items-center rounded-full w-14 lg:w-20 h-12 lg:h-20">
           <Image
@@ -63,14 +63,14 @@ const NewPost = () => {
       <div className="flex flex-col items-start gap-5 lg:gap-3  py-4 px-5 lg:py-10">
         <div className="w-full flex flex-col gap-4">
           <div
-            className="hidden w-full min-h-20 lg:min-h-16 bg-dark rounded-md lg:rounded-3xl cursor-pointer lg:flex items-center px-5 lg:px-10"
+            className="hidden w-full min-h-20 lg:min-h-16 bg-light  dark:bg-dark rounded-md lg:rounded-3xl cursor-pointer lg:flex items-center px-5 lg:px-10"
             onClick={handleOpen}
           >
             <p>Write a new Post...</p>
           </div>
           <Link
             href="/posts/create-post"
-            className="w-full min-h-20 lg:min-h-16 bg-dark rounded-md lg:rounded-3xl cursor-pointer flex items-center px-5 lg:px-10 lg:hidden"
+            className="w-full min-h-20 lg:min-h-16 bg-light dark:bg-dark rounded-md lg:rounded-3xl cursor-pointer flex items-center px-5 lg:px-10 lg:hidden"
           >
             <p>Write a new Post...</p>
           </Link>
@@ -88,7 +88,7 @@ const NewPost = () => {
             }}
           >
             <Fade in={open}>
-              <Box sx={style} className="bg-darkHeader">
+              <Box sx={style} className=" bg-white  dark:bg-darkHeader">
                 <CreateNewPost onClose={handleClose} />
               </Box>
             </Fade>
@@ -96,21 +96,21 @@ const NewPost = () => {
           <div className="flex items-center justify-between mt-4">
             <Link
               href="/jobs/create-job"
-              className="flex gap-4 items-center hover:bg-dark px-4 py-3 rounded-xl"
+              className="flex gap-4 items-center bg-light hover: dark:bg-dark px-4 py-3 rounded-xl"
             >
               <FaBriefcase className="text-lg leading-none" />
               <span className="hidden xl:flex">Create a Job</span>
             </Link>
             <Link
               href="/articles/create-article"
-              className="flex gap-4 items-center hover:bg-dark px-4 py-3 rounded-xl"
+              className="flex gap-4 items-center bg-light hover: dark:bg-dark px-4 py-3 rounded-xl"
             >
               <FaNewspaper className="text-lg leading-none" />
               <span className="hidden xl:flex">Write an Article</span>
             </Link>
             <Link
               href="/events/create-event"
-              className="flex gap-4 items-center hover:bg-dark px-4 py-3 rounded-xl"
+              className="flex gap-4 items-center bg-light hover: dark:bg-dark px-4 py-3 rounded-xl"
             >
               <FaRegCalendarAlt className="text-lg leading-none" />
               <span className="hidden xl:flex">Organize an Event</span>

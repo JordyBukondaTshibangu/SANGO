@@ -70,11 +70,11 @@ const CreateNewPost: React.FC<CreateNewPostProps> = ({ onClose }) => {
 
   return (
     <form className="flex flex-col gap-12 py-4" onSubmit={handlePost}>
-      <div className="flex gap-3 items-center border-b-2 border-solid pb-5 border-dark">
-        <PostAddOutlinedIcon className="text-4xl text-grayFirst" />
+      <div className="flex gap-3 items-center border-b-2 border-solid pb-5 border-grayFour dark:border-dark">
+        <PostAddOutlinedIcon className="text-4xl text-lightFontColor dark:text-grayFirst" />
         <input
           type="text"
-          className="bg-darkHeader text-3xl font-medium outline-none text-grayFirst"
+          className=" bg-white  dark:bg-darkHeader text-3xl font-medium outline-none text-lightFontColor dark:text-grayFirst"
           placeholder="Post title"
           required
           value={title}
@@ -84,7 +84,7 @@ const CreateNewPost: React.FC<CreateNewPostProps> = ({ onClose }) => {
         />
       </div>
       <textarea
-        className="bg-darkHeader border border-solid border-darkHeader outline-none text-white px-5 text-xl rounded-lg"
+        className=" bg-white  dark:bg-darkHeader dark:border border-solid dark:border-darkHeader outline-none text-lightFontColor dark:text-white px-5 text-xl rounded-lg"
         cols={5}
         rows={14}
         value={content}
@@ -107,19 +107,19 @@ const CreateNewPost: React.FC<CreateNewPostProps> = ({ onClose }) => {
         </Button>
       </Tooltip>
       <span
-        className="text-lg text-grayFirst font-medium cursor-pointer"
+        className="text-lg text-lightFontColor dark:text-grayFirst font-medium cursor-pointer"
         onClick={() => setShowTags(!showTags)}
       >
         Click to add tag for more relevance in your post
       </span>
       {showTags && (
         <div className="flex flex-col gap-3 -mt-8">
-          <h4 className="text-lg font-medium text-grayFirst">Tags:</h4>
+          <h4 className="text-lg font-medium text-lightFontColor dark:text-grayFirst">Tags:</h4>
           <ul className="flex gap-2 flex-wrap">
             {tags.map((tag: string, index: number) => (
               <span
                 key={index}
-                className="bg-dark px-5 py-2 rounded-lg text-grayFirst text-sm min-w-max"
+                className="bg-light dark:bg-dark px-5 py-2 rounded-lg text-lightFontColor dark:text-grayFirst text-sm min-w-max"
               >
                 {tag}
               </span>
@@ -129,7 +129,7 @@ const CreateNewPost: React.FC<CreateNewPostProps> = ({ onClose }) => {
             <input
               type="text"
               name="tag"
-              className="bg-darkHeader text-grayFirst px-2 border border-dark outline-none w-fit h-10"
+              className=" bg-white  dark:bg-darkHeader text-lightFontColor dark:text-grayFirst px-2 border border-grayFour dark:border-dark outline-none w-fit h-10"
               value={tag}
               onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
                 setTag(event.target.value?.toUpperCase())
@@ -137,7 +137,7 @@ const CreateNewPost: React.FC<CreateNewPostProps> = ({ onClose }) => {
             />
             <button
               type="button"
-              className="bg-dark flex items-center justify-center  px-4 py-3 text-sm text-white"
+              className="bg-light border border-grayFour dark:bg-dark flex items-center justify-center  px-4 py-2 rounded-tr-md rounded-br-md h-full text-sm text-lightFontColor dark:text-white hover:bg-secondary"
               onClick={handleAddTag}
             >
               Add tag
@@ -145,10 +145,10 @@ const CreateNewPost: React.FC<CreateNewPostProps> = ({ onClose }) => {
           </div>
         </div>
       )}
-      <div className="flex justify-end border-t border-solid border-dark py-4">
+      <div className="flex justify-end border-t border-solidborder-grayFour dark:border-dark py-4">
         <button
           type="submit"
-          className="w-56 h-12 bg-darkHeader text-grayFirst border-2 border-dark border-solid rounded-lg text-lg font-medium hover:bg-primary hover:text-white transition duration-300 ease-in-out"
+          className="w-56 h-12  bg-primary dark:bg-dark text-white dark:text-lightFontColor dark:text-grayFirst border-2border-grayFour dark:border-dark border-solid rounded-lg text-lg font-medium hover:bg-primary hover:text-white transition duration-300 ease-in-out"
         >
           Post
         </button>

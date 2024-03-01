@@ -41,7 +41,7 @@ const user = {
 };
 const Sidebar = () => {
   return (
-    <div className="lg:sticky top-32 w-full flex lg:w-1/4 bg-darkHeader rounded-lg flex-col gap-10 px-5 py-10 items-center h-fit">
+    <div className="lg:sticky top-32 w-full flex lg:w-1/4 bg-white  dark:bg-darkHeader rounded-lg flex-col gap-10 px-5 py-10 items-center h-fit">
       <div className="flex justify-center items-center rounded-full w-20 h-20">
         <Image
           src={UserProfile}
@@ -51,7 +51,7 @@ const Sidebar = () => {
           className="w-full h-full rounded-full object-cover"
         />
       </div>
-      <div className="flex flex-col gap-6 items-center border-t border-solid py-10 border-dark">
+      <div className="flex flex-col gap-6 items-center border-t border-solid py-10 border-grayFour dark:border-dark ">
         <h4 className="text-xl font-bold text-center">
           {user.firstName} {user.lastName}
         </h4>
@@ -64,22 +64,22 @@ const Sidebar = () => {
             <PublicIcon className="text-sm" />
           </p>
         </div>
-        <div className="border-t border-solid border-dark w-full py-5 flex flex-col gap-2 items-center">
+        <div className="border-t border-solid border-grayFour dark:border-dark  w-full py-5 flex flex-col gap-2 items-center">
           <p>Address</p>
           <p className="text-sm">
             {user.address.street} {user.address.city} {user.address.state}{" "}
             {user.address.country}
           </p>
         </div>
-        <div className="border-t border-solid border-dark w-full py-5 flex flex-col gap-2 items-center">
+        <div className="border-t border-solid border-grayFour dark:border-dark  w-full py-5 flex flex-col gap-2 items-center">
           <p>Contact</p>
           <p className="text-sm">{user.phoneNumber}</p>
         </div>
-        <div className="border-t border-solid border-dark w-full py-5 flex flex-col gap-2 items-center">
+        <div className="border-t border-solid border-grayFour dark:border-dark  w-full py-5 flex flex-col gap-2 items-center">
           <p>Bio</p>
           <p className="text-[15px] text-center">{user.bio}</p>
         </div>
-        <div className="border-t border-solid border-dark w-full py-5 flex flex-col gap-2 items-center">
+        <div className="border-t border-solid border-grayFour dark:border-dark  w-full py-5 flex flex-col gap-2 items-center">
           <p>Social Links</p>
           <ul className="flex flex-col gap-2 list-disc">
             {user.socialLinks.map((link, index) => (

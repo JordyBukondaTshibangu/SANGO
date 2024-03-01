@@ -36,7 +36,7 @@ const UserCard: React.FC<UserCardProps> = ({ user }) => {
     setValue(newValue);
 
   return (
-    <div className="w-full bg-darkHeader rounded-lg flex flex-col gap-5 items-center py-10 px-5">
+    <div className="w-full  bg-white  dark:bg-darkHeader rounded-lg flex flex-col gap-5 items-center py-10 px-5">
       <div className="flex justify-center items-center rounded-full w-20 h-20">
         <Image
           src={user.profile ? user.profile : Avatar}
@@ -52,7 +52,7 @@ const UserCard: React.FC<UserCardProps> = ({ user }) => {
         </h4>
         <div className="flex flex-col items-center gap-4">
           <p className="text-center">{user.position}</p>
-          <div className="flex text-fontColor gap-5">
+          <div className="flex text-lightFontColor dark:text-fontColor gap-5">
             <a href="/facebook.com">
               <FacebookOutlinedIcon className="flex items-center gap-4 text-lg rounded-full" />
             </a>
@@ -70,7 +70,7 @@ const UserCard: React.FC<UserCardProps> = ({ user }) => {
       </div>
       <Link
         href={`/users/${user.id}`}
-        className="flex items-center justify-center py-1 px-4 bg-dark rounded-md text-sm hover:bg-primary transition duration-300 hover:text-white"
+        className="flex items-center justify-center py-1 px-4  bg-light dark:bg-dark rounded-md text-sm hover:bg-primary transition duration-300 hover:text-white"
       >
         View Profile
       </Link>
@@ -90,9 +90,9 @@ const UserCard: React.FC<UserCardProps> = ({ user }) => {
       {showMore && (
         <div>
           <Tabs value={value} onChange={handleChange}>
-            <Tab label="Info" {...a11yProps(0)} />
-            <Tab label="Experience" {...a11yProps(1)} />
-            <Tab label="Skills" {...a11yProps(2)} />
+            <Tab label="Info" {...a11yProps(0)} className="text-lightFontColor dark:text-grayFirst"/>
+            <Tab label="Experience" {...a11yProps(1)}  className="text-lightFontColor dark:text-grayFirst"/>
+            <Tab label="Skills" {...a11yProps(2)}  className="text-lightFontColor dark:text-grayFirst"/>
           </Tabs>
           <CustomTabPanel value={value} index={0}>
             <InfoPanel

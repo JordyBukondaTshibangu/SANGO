@@ -42,7 +42,7 @@ const NewPostComment: React.FC<NewPostCommentProps> = ({ post }) => {
         <input
           type="text"
           placeholder="Add your comment"
-          className="w-full px-2 border-t-0 border-r-0 border-l-0 border-b border-b-grayFirst border-solid bg-darkHeader outline-none  py-1 text-sm lg:text-[16px]"
+          className="w-full px-2 border-t-0 border-r-0 border-l-0 border-b border-b-grayFirst border-solid  bg-white  dark:bg-darkHeader outline-none  py-1 text-sm lg:text-[16px]"
         />
         <Button
           component="label"
@@ -57,7 +57,7 @@ const NewPostComment: React.FC<NewPostCommentProps> = ({ post }) => {
       <IconButton
         aria-label="delete"
         size="large"
-        className="p-0 lg:bg-dark text-danger"
+        className="p-0 lg:bg-light dark:bg-dark text-danger"
       >
         <DeleteIcon className="text-lg" />
       </IconButton>

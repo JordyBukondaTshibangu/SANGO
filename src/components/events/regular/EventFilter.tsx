@@ -10,25 +10,25 @@ import Select, { SelectChangeEvent } from "@mui/material/Select";
 
 type ArticleFilterProps = {
   searchEvent: (value: string) => void;
-  searchOrganiser: (value: string) => void;
+  searchOrganizer: (value: string) => void;
   searchCategory: (value: string) => void;
   searchDate: (value: string) => void;
-  organisers: string[];
+  organizers: string[];
   categories: string[];
   dates: string[];
 };
 
 const EventFilter: React.FC<ArticleFilterProps> = ({
   searchEvent,
-  searchOrganiser,
+  searchOrganizer: searchOrganizer,
   searchCategory,
   searchDate,
-  organisers,
+  organizers: organizers,
   categories,
   dates,
 }) => {
   const handleChangeAuthor = (event: SelectChangeEvent) => {
-    searchOrganiser(event.target.value);
+    searchOrganizer(event.target.value);
   };
 
   const handleChangeCategory = (event: SelectChangeEvent) => {
@@ -50,7 +50,7 @@ const EventFilter: React.FC<ArticleFilterProps> = ({
         <TextField
           id="outlined-basic"
           variant="outlined"
-          className="w-full h-full"
+          className="w-full h-full bg-white dark:bg-darkHeader border dark:border-none border-solid border-grayThird outline-none text-lightFontColor dark:text-fontColor"
           placeholder="Search by : Event name, Keyword..."
           onChange={handleSearchEvent}
         />
@@ -59,11 +59,11 @@ const EventFilter: React.FC<ArticleFilterProps> = ({
         <FormControl
           sx={{ m: 1, minWidth: 150 }}
           size="medium"
-          className="w-full"
+          className="w-full bg-white dark:bg-darkHeader border dark:border-none border-solid border-grayThird"
         >
-          <InputLabel>Organiser</InputLabel>
+          <InputLabel className="text-lightFontColor dark:text-fontColor">Organizer</InputLabel>
           <Select label="Author" onChange={handleChangeAuthor}>
-            {organisers.map((author, index) => (
+            {organizers.map((author, index) => (
               <MenuItem key={index} value={author}>
                 {author}
               </MenuItem>
@@ -73,9 +73,9 @@ const EventFilter: React.FC<ArticleFilterProps> = ({
         <FormControl
           sx={{ m: 1, minWidth: 150 }}
           size="medium"
-          className="w-full"
+          className="w-full bg-white dark:bg-darkHeader border dark:border-none border-solid border-grayThird"
         >
-          <InputLabel>Category</InputLabel>
+          <InputLabel className="text-lightFontColor dark:text-fontColor">Category</InputLabel>
           <Select label="Category" onChange={handleChangeCategory}>
             {categories.map((category, index) => (
               <MenuItem key={index} value={category}>
@@ -87,9 +87,9 @@ const EventFilter: React.FC<ArticleFilterProps> = ({
         <FormControl
           sx={{ m: 1, minWidth: 150 }}
           size="medium"
-          className="w-full"
+          className="w-full bg-white dark:bg-darkHeader border dark:border-none border-solid border-grayThird"
         >
-          <InputLabel>Date</InputLabel>
+          <InputLabel className="text-lightFontColor dark:text-fontColor">Date</InputLabel>
           <Select label="Date" onChange={handleSearchDate}>
             {dates.map((date, index) => (
               <MenuItem key={index} value={date}>

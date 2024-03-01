@@ -5,7 +5,7 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-import { StoreProvider } from "./store/StoreProvider";
+import Providers from "./Providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,12 +21,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <StoreProvider>
-      <html lang="en" className="bg-darkHeader lg:bg-dark">
-        <body className={inter.className} suppressHydrationWarning={true}>
-          {children}
-        </body>
-      </html>
-    </StoreProvider>
+    <html lang="en">
+      <body className={inter.className} suppressHydrationWarning={true}>
+        <Providers>{children}</Providers>
+      </body>
+    </html>
   );
 }

@@ -6,6 +6,7 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "selector",
   theme: {
     screens: {
       sm: "480px",
@@ -17,13 +18,15 @@ const config: Config = {
     },
     colors: {
       primary: "#FD7401",
-      secondary: "",
-      sucess: "#0BA02C",
-      bgSuccess: "#B4FFC5",
-      danger: "red",
-      info: "",
+      secondary: "#FF8755",
+      success: "#0BA02C",
+      bgSuccess: "#00B83E",
+      danger: "#dc3545",
+      info: "#738AFF",
       fontColor: "#BABABF",
-      light: "#FD7401",
+      lightFontColor: "#555",
+      light: "#F4F2EE",
+      // #
       dark: "#242535",
       darkHeader: "#181A2A",
       darkMirage: "#1b1c28",
@@ -32,7 +35,7 @@ const config: Config = {
       beige: "#F5F5DC",
       lightGray: "#F1F3F6",
       grayFirst: "#B4B4B8",
-      graySecond: "#C7C8CC",
+      graySecond: "#B9C0BD",
       grayThird: "#E3E1D9",
       grayFour: "#F2EFE5",
       arsenic: "#3B444B",

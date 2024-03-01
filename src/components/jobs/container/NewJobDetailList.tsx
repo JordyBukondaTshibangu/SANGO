@@ -20,7 +20,7 @@ const NewJobDetailList: React.FC<NewJobDetailListProps> = ({
     }
   };
   return (
-    <div className="bg-darkHeader px-5 lg:px-10 py-10 rounded-lg flex flex-col justify-between gap-5">
+    <div className=" bg-white  dark:bg-darkHeader px-5 lg:px-10 py-10 rounded-lg flex flex-col justify-between gap-5">
       <label htmlFor="guests">{name}</label>
       <ul className="flex flex-col gap-2 list-disc px-5">
         {items.map((item: string, index: number) => (
@@ -31,7 +31,7 @@ const NewJobDetailList: React.FC<NewJobDetailListProps> = ({
         <input
           type="text"
           name="tags"
-          className="bg-dark border border-solid border-darkHeader h-8 lg:h-12 px-4"
+          className="bg-light dark:bg-dark border border-solidborder-grayFour dark:border-darkHeader h-8 lg:h-12 px-4"
           value={item}
           onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
             setItem(event.target.value)
@@ -39,7 +39,7 @@ const NewJobDetailList: React.FC<NewJobDetailListProps> = ({
         />
         <button
           type="button"
-          className="w-fit bg-dark flex items-center justify-center  px-5 py-3 text-sm text-white"
+          className="w-fit bg-light dark:bg-dark flex items-center justify-center  px-5 py-3 text-sm text-white"
           onClick={handleAdditem}
         >
           Add {name}

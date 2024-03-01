@@ -20,7 +20,7 @@ const ChatPreview: React.FC<ChatPreviewProps> = ({ chat }) => {
   }
 
   return (
-    <div className="cursor-pointer w-full flex gap-5 items-center border-t border-solid lg:px-5 py-3 border-darkHeader lg:border-dark hover:bg-dark rounded-lg">
+    <div className="cursor-pointer w-full flex gap-5 items-center px-4 lg:px-5 py-3 bg-white lg:bg-light dark:bg-darkHeader dark:lg:bg-dark rounded-lg">
       <div className="flex justify-center items-center rounded-full w-14 lg:w-20 h-14 lg:h-20">
         <Image
           src={profile ? profile : Avatar}

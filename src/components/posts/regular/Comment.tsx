@@ -19,7 +19,7 @@ const Comment: React.FC<CommentProps> = ({ comment }) => {
           className="w-full h-full rounded-full"
         />
       </div>
-      <div className="bg-dark w-full rounded-md p-4 flex flex-col gap-4">
+      <div className="bg-light dark:bg-dark w-full rounded-md p-4 flex flex-col gap-4">
         <div className="flex items-start justify-between">
           <div className="flex flex-col gap-2">
             <h4 className="text-xs lg:text-sm font-bold">

@@ -16,7 +16,7 @@ const ContactPage = () => {
         <div className="flex flex-col lg:flex-row gap-14">
           <div className=" text-center flex-1">
             <div className="flex flex-col gap-3 items-center">
-              <span className="rounded-full p-5 w-fit bg-darkHeader flex items-center justify-center hover:bg-primary cursor-pointer">
+              <span className="rounded-full p-5 w-fit  bg-white  dark:bg-darkHeader flex items-center justify-center hover:bg-primary cursor-pointer transition duration-500 ease-in-out">
                 <LocationOnIcon className="text-5xl" />
               </span>
               <span className="text-2xl uppercase font-bold my-5">ADDRESS</span>
@@ -25,7 +25,7 @@ const ContactPage = () => {
           </div>
           <div className=" text-center flex-1">
             <div className="flex flex-col gap-3 items-center">
-              <span className="rounded-full p-5 w-fit bg-darkHeader flex items-center justify-center hover:bg-primary cursor-pointer">
+              <span className="rounded-full p-5 w-fit  bg-white  dark:bg-darkHeader flex items-center justify-center hover:bg-primary cursor-pointer transition duration-500 ease-in-out">
                 <LocalPhoneIcon className="text-5xl" />
               </span>
               <span className="text-2xl uppercase font-bold my-5">Home</span>
@@ -34,7 +34,7 @@ const ContactPage = () => {
           </div>
           <div className=" text-center flex-1">
             <div className="flex flex-col gap-3 items-center">
-              <span className="rounded-full p-5 w-fit bg-darkHeader flex items-center justify-center hover:bg-primary cursor-pointer">
+              <span className="rounded-full p-5 w-fit  bg-white  dark:bg-darkHeader flex items-center justify-center hover:bg-primary cursor-pointer transition duration-500 ease-in-out">
                 <EmailIcon className="text-5xl" />
               </span>
               <span className="text-2xl uppercase font-bold my-5">Email</span>
@@ -55,19 +55,20 @@ const ContactPage = () => {
             <Image src={ContactImg} width={400} height={400} alt="" />
           </div>
         </div>
-        <div className="flex-1 px-5 p-10 bg-darkHeader text-white rounded-lg shadow-md">
+        <div className="flex-1 px-5 p-10  bg-white  dark:bg-darkHeader text-white rounded-lg shadow-md">
           <Box
             component="form"
             noValidate
             autoComplete="on"
             className="flex flex-col gap-8 py-2"
           >
+            <h1 className="text-2xl text-grayFirst">Leave us a Message </h1>
             <div className="flex items-center gap-5 !text-white">
               <TextField
                 id="outlined-basic"
                 label="First name"
                 variant="outlined"
-                className="w-full text-white"
+                className="w-full !text-white"
               />
               <TextField
                 id="outlined-basic"
@@ -88,6 +89,7 @@ const ContactPage = () => {
               multiline
               rows={6}
               defaultValue="Default Value"
+              className="text-grayFirst"
             />
           </Box>
         </div>

@@ -27,7 +27,7 @@ export type UserT = {
     year: number;
   }[];
   socialLinks: any;
-  skills: { skill: string; proficienty: number }[];
+  skills: { skill: string; proficiency: number }[];
   createdAt: string;
 };
 

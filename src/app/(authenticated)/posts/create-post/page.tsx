@@ -70,11 +70,11 @@ const CreateNewPost: React.FC<CreateNewPostProps> = ({ onClose }) => {
 
   return (
     <form className="flex flex-col gap-12 py-4" onSubmit={handlePost}>
-      <div className="flex gap-3 items-center border-b-2 border-solid pb-5 border-dark">
+      <div className="flex gap-3 items-center border-b-2 border-solid pb-5border-grayFour dark:border-dark">
         <PostAddOutlinedIcon className="text-4xl text-grayFirst" />
         <input
           type="text"
-          className="bg-dark text-3xl font-medium outline-none text-grayFirst"
+          className="bg-light dark:bg-dark text-3xl font-medium outline-none text-grayFirst"
           placeholder="Post title"
           required
           value={title}
@@ -84,7 +84,7 @@ const CreateNewPost: React.FC<CreateNewPostProps> = ({ onClose }) => {
         />
       </div>
       <textarea
-        className="bg-dark outline-none text-white px-5 text-xl rounded-lg"
+        className="bg-light dark:bg-dark outline-none text-white px-5 text-xl rounded-lg"
         cols={5}
         rows={14}
         value={content}
@@ -119,7 +119,7 @@ const CreateNewPost: React.FC<CreateNewPostProps> = ({ onClose }) => {
             {tags.map((tag: string, index: number) => (
               <span
                 key={index}
-                className="bg-dark px-5 py-2 rounded-lg text-grayFirst text-sm min-w-max"
+                className="bg-light dark:bg-dark px-5 py-2 rounded-lg text-grayFirst text-sm min-w-max"
               >
                 {tag}
               </span>
@@ -129,7 +129,7 @@ const CreateNewPost: React.FC<CreateNewPostProps> = ({ onClose }) => {
             <input
               type="text"
               name="tag"
-              className="bg-darkHeader text-grayFirst px-2 border border-dark outline-none w-fit h-10"
+              className=" bg-white  dark:bg-darkHeader text-grayFirst px-2 borderborder-grayFour dark:border-dark outline-none w-fit h-10"
               value={tag}
               onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
                 setTag(event.target.value?.toUpperCase())
@@ -137,7 +137,7 @@ const CreateNewPost: React.FC<CreateNewPostProps> = ({ onClose }) => {
             />
             <button
               type="button"
-              className="border border-solid border-darkHeader flex items-center justify-center px-4 py-2 text-sm text-white"
+              className="border border-solidborder-grayFour dark:border-darkHeader flex items-center justify-center px-4 py-2 text-sm text-white"
               onClick={handleAddTag}
             >
               Add tag
@@ -145,10 +145,10 @@ const CreateNewPost: React.FC<CreateNewPostProps> = ({ onClose }) => {
           </div>
         </div>
       )}
-      <div className="w-full flex border-t border-solid border-dark py-4">
+      <div className="w-full flex border-t border-solidborder-grayFour dark:border-dark py-4">
         <button
           type="submit"
-          className="w-full py-3 bg-darkHeader text-grayFirst border-2 border-dark border-solid rounded-lg text-lg font-medium hover:bg-primary hover:text-white transition duration-300 ease-in-out"
+          className="w-full py-3  bg-white  dark:bg-darkHeader text-grayFirst border-2border-grayFour dark:border-dark border-solid rounded-lg text-lg font-medium hover:bg-primary hover:text-white transition duration-300 ease-in-out"
         >
           Post
         </button>

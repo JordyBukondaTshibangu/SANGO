@@ -40,7 +40,7 @@ const JobHeader: React.FC<JobHeaderProps> = ({
         </div>
       </div>
       <div className="w-full flex gap-5 md:justify-end">
-        <span className="flex items-center justify-center w-20 bg-darkHeader rounded-lg cursor-pointer">
+        <span className="flex items-center justify-center w-20  bg-white  dark:bg-darkHeader rounded-lg cursor-pointer">
           <BookmarkBorderOutlinedIcon className="text-3xl" />
         </span>
         <Button className="bg-primary w-48 h-12 lg:h-14 rounded-lg cursor-pointer flex justify-center items-center gap-3 text-xl text-white">

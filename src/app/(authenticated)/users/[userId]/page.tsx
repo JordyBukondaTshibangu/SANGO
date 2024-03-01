@@ -57,7 +57,7 @@ async function UserEvents(userId: number) {
   });
   const events = await res.json();
   const userEvents = events.filter(
-    (event: EventT) => event.organiser == "John Taylor",
+    (event: EventT) => event.organizer == "John Taylor",
   );
 
   if (!res.ok) {
@@ -80,7 +80,7 @@ const UserDetailPage: NextPage<UserDetailProps> = async (props: any) => {
   const userEvents = await UserEvents(userId);
 
   return (
-    <div className="flex gap-10 -mt-10">
+    <div className="w-full flex items-center justify-center gap-10 -mt-10">
       <Profile
         user={user}
         other={true}
@@ -88,7 +88,6 @@ const UserDetailPage: NextPage<UserDetailProps> = async (props: any) => {
         articles={userArticles}
         events={userEvents}
       />
-      <div></div>
     </div>
   );
 };
