@@ -26,7 +26,7 @@ type MessagesListProps = {
 
 const MessagesList: React.FC<MessagesListProps> = ({ chats }) => {
   return (
-    <div className="lg:sticky top-32 w-full lg:w-[33%] lg: bg-white  dark:bg-darkHeader lg:rounded-lg lg:px-5 py-10 flex flex-col gap-12 h-fit">
+    <div className="lg:sticky top-32 w-full lg:w-[33%] lg:bg-white  lg:dark:bg-darkHeader lg:rounded-lg lg:px-5 lg:py-10 flex flex-col gap-12 h-fit">
       <div className="w-full hidden lg:flex">
         <UserPreview
           name={user.firstName + " " + user.lastName}
@@ -36,7 +36,7 @@ const MessagesList: React.FC<MessagesListProps> = ({ chats }) => {
       </div>
       <input
         type="text"
-        className="w-full h-12 rounded-full px-5 py-2 text-lightFontColor dark:text-fontColor border dark:border-none border-solid border-grayFour bg-light dark:bg-dark outline-none"
+        className="w-full h-12 rounded-full px-5 py-2 text-lightFontColor dark:text-fontColor border dark:border-none border-solid border-grayFour lg:bg-light dark:bg-darkHeader lg:dark:bg-dark outline-none"
         placeholder="Search..."
       />
       <div className="flex flex-col gap-5 overflow-y-auto max-h-[60vh]">
