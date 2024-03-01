@@ -12,7 +12,7 @@ const JobCard: React.FC<JobCardProps> = ({ job }) => {
   return (
     <Link
       href={`/jobs/${job.id}`}
-      className="flex flex-col gap-5 bg-light dark:bg-dark border-solid border-2border-grayFour dark:border-darkHeader shadow-lg p-5 lg:p-10  lg:h-[280px] cursor-pointer rounded-lg"
+      className="flex flex-col gap-5 bg-white dark:bg-darkHeader border-solid border-2border-grayFour dark:border-darkHeader shadow-lg p-5 lg:p-10  h-[250px] lg:h-[280px] cursor-pointer rounded-lg"
     >
       <div className="flex justify-between">
         <h3 className="text-lg">{job.title}</h3>
@@ -29,7 +29,7 @@ const JobCard: React.FC<JobCardProps> = ({ job }) => {
           src={job.image}
           width={35}
           height={35}
-          alt="jobimage"
+          alt="job-image"
           className="object-contain w-auto h-auto"
         />
         <div className="flex flex-col gap-2">
