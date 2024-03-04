@@ -27,7 +27,7 @@ const NewEventDetailHost: React.FC<NewEventDetailHostProps> = ({
           <input
             type="text"
             name="Organiser"
-            className="bg-light dark:bg-dark border border-solidborder-grayFour dark:border-darkHeader h-10 lg:h-12 px-4"
+            className="bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-10 lg:h-12 px-4"
             value={organiser}
             required
             onChange={(event: ChangeEvent<HTMLInputElement>) => {
@@ -41,7 +41,7 @@ const NewEventDetailHost: React.FC<NewEventDetailHostProps> = ({
           <input
             type="email"
             name="Email"
-            className="bg-light dark:bg-dark border border-solidborder-grayFour dark:border-darkHeader h-10 lg:h-12 px-4"
+            className="bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-10 lg:h-12 px-4"
             value={email}
             required
             onChange={(event: ChangeEvent<HTMLInputElement>) => {
@@ -57,7 +57,7 @@ const NewEventDetailHost: React.FC<NewEventDetailHostProps> = ({
           <input
             type="text"
             name="phone"
-            className="bg-light dark:bg-dark border border-solidborder-grayFour dark:border-darkHeader h-10 lg:h-12 px-4"
+            className="bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-10 lg:h-12 px-4"
             value={phoneNumber}
             required
             onChange={(event: ChangeEvent<HTMLInputElement>) => {
@@ -73,7 +73,7 @@ const NewEventDetailHost: React.FC<NewEventDetailHostProps> = ({
           <input
             type="text"
             name="phone"
-            className="hidden bg-light dark:bg-dark border border-solidborder-grayFour dark:border-darkHeader h-12"
+            className="hidden bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-12"
           />
         </div>
       </div>

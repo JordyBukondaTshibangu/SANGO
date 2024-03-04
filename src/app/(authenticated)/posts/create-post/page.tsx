@@ -137,7 +137,7 @@ const CreateNewPost: React.FC<CreateNewPostProps> = ({ onClose }) => {
             />
             <button
               type="button"
-              className="border border-solidborder-grayFour dark:border-darkHeader flex items-center justify-center px-4 py-2 text-sm text-white"
+              className="border border-solid border-grayFour dark:border-darkHeader flex items-center justify-center px-4 py-2 text-sm text-white"
               onClick={handleAddTag}
             >
               Add tag
@@ -145,7 +145,7 @@ const CreateNewPost: React.FC<CreateNewPostProps> = ({ onClose }) => {
           </div>
         </div>
       )}
-      <div className="w-full flex border-t border-solidborder-grayFour dark:border-dark py-4">
+      <div className="w-full flex border-t border-solid border-grayFour dark:border-dark py-4">
         <button
           type="submit"
           className="w-full py-3  bg-white  dark:bg-darkHeader text-grayFirst border-2border-grayFour dark:border-dark border-solid rounded-lg text-lg font-medium hover:bg-primary hover:text-white transition duration-300 ease-in-out"

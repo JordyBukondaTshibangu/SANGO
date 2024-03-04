@@ -66,7 +66,7 @@ const NewEventDateTime: React.FC<NewEventDateTimeProps> = ({
               disablePast
               label="Start date"
               value={startDate}
-              className="w-full"
+              className="w-full bg-light dark:bg-dark text-lightFontColor dark:text-fontColor"
               slotProps={{
                 field: {
                   clearable: true,
@@ -90,7 +90,7 @@ const NewEventDateTime: React.FC<NewEventDateTimeProps> = ({
               disablePast
               label="End date"
               value={endDate}
-              className="w-full"
+              className="w-full bg-light dark:bg-dark text-lightFontColor dark:text-fontColor"
               slotProps={{
                 field: {
                   clearable: true,
@@ -109,7 +109,7 @@ const NewEventDateTime: React.FC<NewEventDateTimeProps> = ({
             <TimePicker
               label="Controlled picker"
               value={startTime}
-              className="w-full"
+              className="w-full bg-light dark:bg-dark text-lightFontColor dark:text-fontColor"
               onChange={(newValue) => {
                 setStartTime(newValue);
                 handleTimeDateChange();
@@ -120,7 +120,7 @@ const NewEventDateTime: React.FC<NewEventDateTimeProps> = ({
             <TimePicker
               label="Controlled picker"
               value={endTime}
-              className="w-full"
+              className="w-full bg-light dark:bg-dark text-lightFontColor dark:text-fontColor"
               onChange={(newValue) => {
                 setEndTime(newValue);
                 handleTimeDateChange();

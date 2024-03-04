@@ -6,7 +6,7 @@ const SearchBar: React.FC = () => {
   const [showInput, setShowInput] = useState<boolean>(false);
   return (
     <div
-      className="w-80 h-12 cursor-pointer hidden lg:flex items-center justify-center border border-solid border-grayFour dark:border-dark"
+      className="w-80 h-12 cursor-pointer hidden lg:flex items-center justify-center border border-solid border-grayFour dark:border-dark rounded-br-md rounded-tr-md "
       onClick={() => setShowInput(!showInput)}
     >
       <input

@@ -147,7 +147,7 @@ const CreateNewPost: React.FC<CreateNewPostProps> = ({ onClose }) => {
           </div>
         </div>
       )}
-      <div className="flex justify-end border-t border-solidborder-grayFour dark:border-dark py-4">
+      <div className="flex justify-end border-t border-solid border-grayFour dark:border-dark py-4">
         <button
           type="submit"
           className="w-56 h-12  bg-primary dark:bg-dark text-white dark:text-lightFontColor dark:text-grayFirst border-2border-grayFour dark:border-dark border-solid rounded-lg text-lg font-medium hover:bg-primary hover:text-white transition duration-300 ease-in-out"

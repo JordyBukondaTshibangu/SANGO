@@ -41,7 +41,7 @@ const NewEventDetailInfo: React.FC<NewEventDetailInfoProps> = ({
           <input
             type="text"
             name="venue"
-            className="bg-light dark:bg-dark border border-solidborder-grayFour dark:border-darkHeader h-10 lg:h-12 px-4"
+            className="bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-10 lg:h-12 px-4"
             value={venue}
             onChange={(event: ChangeEvent<HTMLInputElement>) => {
               setVenue(event.target.value);
@@ -54,7 +54,7 @@ const NewEventDetailInfo: React.FC<NewEventDetailInfoProps> = ({
           <input
             type="text"
             name="location"
-            className="bg-light dark:bg-dark border border-solidborder-grayFour dark:border-darkHeader h-10 lg:h-12 px-4"
+            className="bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-10 lg:h-12 px-4"
             value={location}
             onChange={(event: ChangeEvent<HTMLInputElement>) => {
               setLocation(event.target.value);
@@ -69,7 +69,7 @@ const NewEventDetailInfo: React.FC<NewEventDetailInfoProps> = ({
           <input
             type="number"
             name="guests"
-            className="bg-light dark:bg-dark border border-solidborder-grayFour dark:border-darkHeader h-10 lg:h-12 px-4"
+            className="bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-10 lg:h-12 px-4"
             value={guests}
             onChange={(event: ChangeEvent<HTMLInputElement>) => {
               setGuests(Number(event.target.value));
@@ -82,7 +82,7 @@ const NewEventDetailInfo: React.FC<NewEventDetailInfoProps> = ({
           <input
             type="text"
             name="category"
-            className="bg-light dark:bg-dark border border-solidborder-grayFour dark:border-darkHeader h-10 lg:h-12 px-4"
+            className="bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-10 lg:h-12 px-4"
             value={category}
             onChange={(event: ChangeEvent<HTMLInputElement>) => {
               setCategory(event.target.value);
@@ -98,7 +98,7 @@ const NewEventDetailInfo: React.FC<NewEventDetailInfoProps> = ({
             name="description"
             rows={5}
             cols={10}
-            className="bg-light dark:bg-dark border border-solidborder-grayFour dark:border-darkHeader px-5 py-2"
+            className="bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader px-5 py-2"
             value={description}
             onChange={(event: ChangeEvent<HTMLTextAreaElement>) => {
               setDescription(event.target.value);

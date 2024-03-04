@@ -60,7 +60,7 @@ const NewJobDetailInfo: React.FC<NewJobDetailInfoProps> = ({
           <input
             type="text"
             name="title"
-            className="bg-light dark:bg-dark border border-solidborder-grayFour dark:border-darkHeader h-10 lg:h-12 px-3"
+            className="bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-10 lg:h-12 px-3"
             value={title}
             required
             onChange={(event: ChangeEvent<HTMLInputElement>) => {
@@ -74,7 +74,7 @@ const NewJobDetailInfo: React.FC<NewJobDetailInfoProps> = ({
           <input
             type="text"
             name="company"
-            className="bg-light dark:bg-dark border border-solidborder-grayFour dark:border-darkHeader h-10 lg:h-12 px-3"
+            className="bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-10 lg:h-12 px-3"
             value={company}
             required
             onChange={(event: ChangeEvent<HTMLInputElement>) => {
@@ -89,7 +89,7 @@ const NewJobDetailInfo: React.FC<NewJobDetailInfoProps> = ({
           <label htmlFor="period">Period</label>
           <select
             name="period"
-            className="bg-light dark:bg-dark border border-solidborder-grayFour dark:border-darkHeader h-12 px-2"
+            className="bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-12 px-2"
             defaultValue={period}
             required
             onChange={(event: ChangeEvent<HTMLSelectElement>) => {
@@ -108,7 +108,7 @@ const NewJobDetailInfo: React.FC<NewJobDetailInfoProps> = ({
           <input
             type="text"
             name="category"
-            className="bg-light dark:bg-dark border border-solidborder-grayFour dark:border-darkHeader h-10 lg:h-12 px-3"
+            className="bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-10 lg:h-12 px-3"
             value={category}
             required
             onChange={(event: ChangeEvent<HTMLInputElement>) => {
@@ -124,7 +124,7 @@ const NewJobDetailInfo: React.FC<NewJobDetailInfoProps> = ({
           <input
             type="text"
             name="salary"
-            className="bg-light dark:bg-dark border border-solidborder-grayFour dark:border-darkHeader h-10 lg:h-12 px-3"
+            className="bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-10 lg:h-12 px-3"
             value={salary}
             required
             onChange={(event: ChangeEvent<HTMLInputElement>) => {
@@ -150,7 +150,7 @@ const NewJobDetailInfo: React.FC<NewJobDetailInfoProps> = ({
           <input
             type="text"
             name="location"
-            className="bg-light dark:bg-dark border border-solidborder-grayFour dark:border-darkHeader h-10 lg:h-12 px-3"
+            className="bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-10 lg:h-12 px-3"
             value={location}
             required
             onChange={(event: ChangeEvent<HTMLInputElement>) => {

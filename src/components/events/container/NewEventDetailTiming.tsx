@@ -22,7 +22,7 @@ const NewEventDetailTiming: React.FC<NewEventDetailTimingProps> = ({
   return (
     <div className=" bg-white  dark:bg-darkHeader px-5 lg:px-10 py-10 rounded-lg flex flex-col">
       <input
-        className="min-w-fit  bg-white  dark:bg-darkHeader text-2xl lg:text-4xl font-medium outline-none"
+        className="min-w-fit bg-white dark:bg-darkHeader text-2xl lg:text-4xl font-medium outline-none"
         required
         placeholder="Event name*"
         value={name}

@@ -12,7 +12,7 @@ const NewJobDetailList: React.FC<NewJobDetailListProps> = ({
   const [items, setItems] = useState<string[]>([]);
   const [item, setItem] = useState<string>("");
 
-  const handleAdditem = (event: React.MouseEvent<HTMLButtonElement>) => {
+  const handleAddItem = (event: React.MouseEvent<HTMLButtonElement>) => {
     if (item) {
       setItems((prevState) => [...prevState, item]);
       addItems(items);
@@ -31,7 +31,7 @@ const NewJobDetailList: React.FC<NewJobDetailListProps> = ({
         <input
           type="text"
           name="tags"
-          className="bg-light dark:bg-dark border border-solidborder-grayFour dark:border-darkHeader h-8 lg:h-12 px-4"
+          className="bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-8 lg:h-12 px-4"
           value={item}
           onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
             setItem(event.target.value)
@@ -39,8 +39,8 @@ const NewJobDetailList: React.FC<NewJobDetailListProps> = ({
         />
         <button
           type="button"
-          className="w-fit bg-light dark:bg-dark flex items-center justify-center  px-5 py-3 text-sm text-white"
-          onClick={handleAdditem}
+          className="w-fit bg-light dark:bg-dark flex items-center justify-center  px-5 py-3 text-sm dark:text-white"
+          onClick={handleAddItem}
         >
           Add {name}
         </button>
