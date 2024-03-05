@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import AvatarImg from "../../../../public/assets/Avatar.png";
@@ -34,7 +34,13 @@ const NavBar = () => {
 
   const [toggleNav, setToggleNav] = useState<Boolean>(false);
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+  const [mounted, setMounded] = useState<boolean>(false);
+
   const open = Boolean(anchorEl);
+
+  useEffect(() => {
+    setMounded(true);
+  }, []);
 
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
@@ -44,6 +50,10 @@ const NavBar = () => {
   };
 
   const currentPath = usePathname();
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <nav className="fixed z-50 top-0 left-0 right-0 bg-white dark:bg-darkHeader w-full flex justify-center items-center h-[107px] shadow-md px-5 py-5 xl:px-10 2xl:px-28 3xl:px-96 gap-10">
