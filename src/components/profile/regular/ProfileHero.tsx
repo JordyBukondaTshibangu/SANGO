@@ -6,7 +6,26 @@ import Avatar from "../../../../public/assets/Avatar.png";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import RoomIcon from "@mui/icons-material/Room";
+import Tooltip from "@mui/material/Tooltip";
+import CreateOutlinedIcon from "@mui/icons-material/CreateOutlined";
 import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
+import Box from "@mui/material/Box";
+import Modal from "@mui/material/Modal";
+import Fade from "@mui/material/Fade";
+import Backdrop from "@mui/material/Backdrop";
+import EditMyDetails from "@/modals/profile/EditMyDetails";
+
+const style = {
+  position: "absolute" as "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 900,
+  borderRadius: 2,
+  border: "1px solid #1b1c28",
+  boxShadow: 24,
+  p: 4,
+};
 
 type ProfileHeroProps = {
   profile: string;
@@ -36,10 +55,15 @@ const ProfileHero: React.FC<ProfileHeroProps> = ({
   address,
   phoneNumber,
 }) => {
+  const [open, setOpen] = useState<boolean>(false);
   const [viewMoreDetails, setViewMore] = useState<boolean>(true);
   const userAddress = `${address.street} ${address.city} ${address.state} ${address.country}`;
   const heroImg =
     "https://images.unsplash.com/photo-1674027444454-97b822a997b6?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <div className=" bg-white  dark:bg-darkHeader w-full rounded-lg pb-5">
       <div
@@ -60,8 +84,37 @@ const ProfileHero: React.FC<ProfileHeroProps> = ({
           <h4 className="text-2xl font-bold">
             {firstname} {lastname}
           </h4>
-          <h5 className="lg:text-lg lg:self-end">500 Network parteners</h5>
+          <div className="flex flex-col gap-6 items-end">
+            <Tooltip title="Edit my details" placement="top">
+              <CreateOutlinedIcon
+                className="cursor-pointer"
+                onClick={handleOpen}
+              />
+            </Tooltip>
+            <h5 className="lg:text-lg lg:self-end">500 Network partners</h5>
+          </div>
         </div>
+
+        <Modal
+          aria-labelledby="transition-modal-title"
+          aria-describedby="transition-modal-description"
+          open={open}
+          onClose={handleClose}
+          closeAfterTransition
+          slots={{ backdrop: Backdrop }}
+          slotProps={{
+            backdrop: {
+              timeout: 500,
+            },
+          }}
+        >
+          <Fade in={open}>
+            <Box sx={style} className=" bg-white  dark:bg-darkHeader">
+              <EditMyDetails onClose={handleClose} />
+            </Box>
+          </Fade>
+        </Modal>
+
         <div className="flex items-center gap-2">
           <EmailIcon className="text-lg lg:text-xl" />
           <h5 className="text-lg lg:text-xl">{email}</h5>

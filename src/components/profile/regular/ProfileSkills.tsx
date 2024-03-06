@@ -1,6 +1,8 @@
 import React from "react";
 import { UserSkillT } from "../container/Profile";
 import DiamondIcon from "@mui/icons-material/Diamond";
+import Tooltip from "@mui/material/Tooltip";
+import CreateOutlinedIcon from "@mui/icons-material/CreateOutlined";
 
 type ProfileSkillsProps = {
   skills: UserSkillT[];
@@ -12,6 +14,9 @@ const ProfileSkills: React.FC<ProfileSkillsProps> = ({ skills, other }) => {
       <div className="w-full flex gap-4 items-center">
         <DiamondIcon className="text-3xl" />
         <h4 className="text-2xl font-bold">{!other && "My"} Skills</h4>
+        <Tooltip title="Edit my skills" placement="top">
+          <CreateOutlinedIcon className="cursor-pointer" />
+        </Tooltip>
       </div>
       <div className="flex flex-col gap-4">
         {skills.map(

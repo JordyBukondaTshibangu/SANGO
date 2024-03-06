@@ -2,30 +2,18 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { styled } from "@mui/material/styles";
-import CreateNewPost from "@/modals/CreateNewPost";
-import Myprofile from "../../../../public/assets/profile.jpeg";
+import CreateNewPost from "@/modals/post/CreateNewPost";
+import MyProfile from "../../../../public/assets/profile.jpeg";
 import { FaNewspaper, FaRegCalendarAlt } from "react-icons/fa";
 import { FaBriefcase } from "react-icons/fa";
 import Backdrop from "@mui/material/Backdrop";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
+import Image from "next/image";
 
 // Logged in User
-
-const VisuallyHiddenInput = styled("input")({
-  clip: "rect(0 0 0 0)",
-  clipPath: "inset(50%)",
-  height: 1,
-  overflow: "hidden",
-  position: "absolute",
-  bottom: 0,
-  left: 0,
-  whiteSpace: "nowrap",
-  width: 1,
-});
 
 const style = {
   position: "absolute" as "absolute",
@@ -49,7 +37,7 @@ const NewPost = () => {
       <div className="flex flex-col gap-8  px-5 lg:px-10 py-8">
         <div className="flex justify-center items-center rounded-full w-14 lg:w-20 h-12 lg:h-20">
           <Image
-            src={Myprofile}
+            src={MyProfile}
             width={200}
             height={200}
             alt=""

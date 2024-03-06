@@ -3,6 +3,7 @@ import Image from "next/image";
 import PublicIcon from "@mui/icons-material/Public";
 import UserProfile from "../../../../public/assets/profile.jpeg";
 import { formatDate } from "@/utils/formatDate";
+import Link from "next/link";
 
 const user = {
   id: 2390239032,
@@ -52,9 +53,12 @@ const Sidebar = () => {
         />
       </div>
       <div className="flex flex-col gap-6 items-center border-t border-solid py-10 border-grayFour dark:border-dark ">
-        <h4 className="text-xl font-bold text-center">
+        <Link
+          href="/my-profile"
+          className="text-xl font-bold text-center hover:underline"
+        >
           {user.firstName} {user.lastName}
-        </h4>
+        </Link>
         <div className="flex flex-col items-center gap-4">
           <p className="text-center">{user.position}</p>
           <p className="flex items-center gap-2">
