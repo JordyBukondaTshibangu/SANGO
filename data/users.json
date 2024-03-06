@@ -16,6 +16,7 @@
     },
     "phoneNumber": "+1234567890",
     "position": "Frontend Sofware Developer @Firewrokx | HTML5, ReactJS, Next JS,VueJS, Nuxt3, Express JS, Node.js, Javascript, Python, Django",
+    "company": "Google",
     "profile": "/assets/profile.jpeg",
     "bio": "As a frontend web developer, I build software that allows companies to manage pools for clients, technicians, and potential leads. I use React and Laravel to create user-friendly and responsive interfaces that enhance customer satisfaction and retention.I also work as a software engineer at Fireworkx, a leading digital agency that delivers innovative solutions for various industries. I have contributed to several impactful projects, such as Santam Legal, MandG, RCS, AndyCab, and Pentamotorgroup, using JavaScript, Vue, NextJs, and ExpressJs. I have helped to redesign and rebuild websites, improve performance and functionality, and implement new features and integrations.I am passionate about full-stack development and learning new technologies. I graduated from Cape Peninsula University of Technology with a degree in Computer Science in 2020, where I gained a solid foundation in programming, data structures, algorithms, and web development. I also have experience as an intern at Codeswop, where I maintained and added features to an existing web application using React.I am a creative and detail-oriented engineer who prides myself on delivering high-quality and scalable solutions. I enjoy collaborating with other developers, designers, and clients to create products that meet their needs and expectations. I am always eager to take on new challenges and grow my skills and knowledge.",
     "experience": [
@@ -98,6 +99,7 @@
     },
     "phoneNumber": "+9876543210",
     "position": "Director",
+    "company": "Google",
     "profile": "/assets/profile_four.jpg",
     "bio": "Experienced front-end developer with a passion for creating beautiful and responsive user interfaces.",
     "experience": [
@@ -180,6 +182,7 @@
     },
     "phoneNumber": "+1234567890",
     "position": "Financial Manager",
+    "company": "Google",
     "profile": "/assets/profile_two.jpg",
     "bio": "Passionate software engineer with a knack for problem-solving and efficient code.",
     "experience": [
@@ -250,6 +253,7 @@
     },
     "phoneNumber": "+9876543210",
     "position": "Product owner",
+    "company": "Google",
     "profile": "/assets/profile_three.jpg",
     "bio": "Experienced frontend developer with a passion for creating stunning user interfaces.",
     "experience": [
@@ -320,6 +324,7 @@
     },
     "phoneNumber": "+1234567890",
     "position": "Financial Manager",
+    "company": "Google",
     "profile": "/assets/profile_four.jpg",
     "bio": "Passionate about backend development and system architecture.",
     "experience": [
@@ -390,6 +395,7 @@
     },
     "phoneNumber": "+9876543210",
     "position": "Recruiter | Business Developer | Bitcoins",
+    "company": "Google",
     "profile": "/assets/profile.jpeg",
     "bio": "Frontend developer with a passion for creating user-friendly interfaces.",
     "experience": [
@@ -460,6 +466,7 @@
     },
     "phoneNumber": "+1234567890",
     "position": "Software Engineer | Software Developer",
+    "company": "Google",
     "profile": "/assets/profile.jpeg",
     "bio": "Full-stack developer passionate about creating scalable and efficient applications.",
     "experience": [
@@ -530,6 +537,7 @@
     },
     "phoneNumber": "+9876543210",
     "position": "Financial Manager",
+    "company": "Google",
     "profile": "/assets/profile_four.jpg",
     "bio": "UX/UI designer with a passion for creating beautiful and user-friendly interfaces.",
     "experience": [
@@ -600,6 +608,7 @@
     },
     "phoneNumber": "+1234567890",
     "position": "CEO @Fibonacci | Devops | Scientist",
+    "company": "Google",
     "profile": "/assets/profile_two.jpg",
     "bio": "Full-stack developer with a passion for problem-solving and creating scalable web applications.",
     "experience": [
@@ -670,6 +679,7 @@
     },
     "phoneNumber": "+2345678901",
     "position": "Java Developer | NodeJS Developer | Software Engineer.",
+    "company": "Google",
     "profile": "/assets/profile.jpeg",
     "bio": "Passionate UX/UI designer with a focus on creating intuitive and visually appealing user interfaces.",
     "experience": [
@@ -740,6 +750,7 @@
     },
     "phoneNumber": "+3456789012",
     "position": "Librarian Manager",
+    "company": "Google",
     "profile": "/assets/profile.jpeg",
     "bio": "Backend developer specializing in building robust and scalable APIs for web applications.",
     "experience": [
@@ -810,6 +821,7 @@
     },
     "phoneNumber": "+4567890123",
     "position": "Project Manager",
+    "company": "Google",
     "profile": "/assets/profile_two.jpg",
     "bio": "Front-end developer with a knack for creating engaging and interactive web experiences.",
     "experience": [
@@ -880,6 +892,7 @@
     },
     "phoneNumber": "+5678901234",
     "position": "Librarian",
+    "company": "Google",
     "profile": "/assets/profile_four.jpg",
     "bio": "Experienced software engineer with expertise in backend development and system architecture.",
     "experience": [
@@ -950,6 +963,7 @@
     },
     "phoneNumber": "+6789012345",
     "position": "Librarian|Project Manager",
+    "company": "Google",
     "profile": "/assets/profile.jpeg",
     "bio": "Passionate front-end developer with a focus on creating accessible and user-friendly web interfaces.",
     "experience": [
@@ -1020,6 +1034,7 @@
     },
     "phoneNumber": "+7890123456",
     "position": "Librarian|Project Manager",
+    "company": "Google",
     "profile": "/assets/profile_two.jpg",
     "bio": "Software architect with extensive experience in designing and implementing complex systems.",
     "experience": [
@@ -1090,6 +1105,7 @@
     },
     "phoneNumber": "+8901234567",
     "position": "Librarian|Project Manager",
+    "company": "Google",
     "profile": "/assets/profile_four.jpg",
     "bio": "Creative graphic designer with a passion for crafting visually stunning and impactful designs.",
     "experience": [
@@ -1160,6 +1176,7 @@
     },
     "phoneNumber": "+9012345678",
     "position": "Librarian, Editor, Project Manager",
+    "company": "Google",
     "profile": "/assets/profile_four.jpg",
     "bio": "Seasoned full-stack developer with expertise in both frontend and backend technologies.",
     "experience": [
@@ -1230,6 +1247,7 @@
     },
     "phoneNumber": "+1234567890",
     "position": "Writer, Fundraiser, Project Manager",
+    "company": "Google",
     "profile": "",
     "bio": "Passionate software engineer with a focus on developing scalable and efficient backend systems.",
     "experience": [

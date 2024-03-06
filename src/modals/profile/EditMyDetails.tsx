@@ -18,14 +18,34 @@ const VisuallyHiddenInput = styled("input")({
 
 type EditMyDetailsProps = {
   onClose: () => void;
+  firstname: string;
+  lastname: string;
+  position: string;
+  company: string;
+  birthday: string;
+  address: {
+    street: string;
+    city: string;
+    state: string;
+    zipCode: string;
+    country: string;
+  };
+  phoneNumber: string;
 };
-const EditMyDetails: React.FC<EditMyDetailsProps> = ({ onClose }) => {
-  const [firstName, setFirstName] = useState<string>("");
-  const [lastName, setLastName] = useState<string>("");
-  const [company, setCompany] = useState<string>("");
-  const [position, setPosition] = useState<string>("");
-  const [phoneNumber, setPhoneNumber] = useState<string>("");
-  const [address, setAddress] = useState<string>("");
+const EditMyDetails: React.FC<EditMyDetailsProps> = ({
+  onClose,
+  firstname,
+  lastname,
+  position,
+  company,
+  phoneNumber,
+}) => {
+  const [updatedFirstName, setFirstName] = useState<string>(firstname);
+  const [updatedLastName, setLastName] = useState<string>(lastname);
+  const [updatedCompany, setCompany] = useState<string>(company);
+  const [updatedPosition, setPosition] = useState<string>(position);
+  const [updatedPhoneNumber, setPhoneNumber] = useState<string>(phoneNumber);
+  const [updatedAddress, setAddress] = useState<string>("");
 
   const handleUpdateMyDetails = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -40,12 +60,12 @@ const EditMyDetails: React.FC<EditMyDetailsProps> = ({ onClose }) => {
       <h2 className="text-xl font-medium">My Details </h2>
       <div className="flex flex-col md:flex-row justify-between gap-10">
         <div className="flex-1 flex flex-col gap-2">
-          <label htmlFor="firstName">First Name*</label>
+          <label htmlFor="updatedFirstName">First Name*</label>
           <input
             type="text"
-            name="firstName"
-            className="bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-10 lg:h-12 px-3"
-            value={firstName}
+            name="updatedFirstName"
+            className="text-lightFontColor dark:text-fontColor bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-10 lg:h-12 px-3"
+            value={updatedFirstName}
             required
             onChange={(event: ChangeEvent<HTMLInputElement>) => {
               setFirstName(event.target.value);
@@ -53,12 +73,12 @@ const EditMyDetails: React.FC<EditMyDetailsProps> = ({ onClose }) => {
           />
         </div>
         <div className="flex-1 flex flex-col gap-2">
-          <label htmlFor="lastName">Last Name*</label>
+          <label htmlFor="updatedLastName">Last Name*</label>
           <input
             type="text"
-            name="lastName"
-            className="bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-10 lg:h-12 px-3"
-            value={lastName}
+            name="updatedLastName"
+            className="text-lightFontColor dark:text-fontColor bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-10 lg:h-12 px-3"
+            value={updatedLastName}
             required
             onChange={(event: ChangeEvent<HTMLInputElement>) => {
               setLastName(event.target.value);
@@ -68,12 +88,12 @@ const EditMyDetails: React.FC<EditMyDetailsProps> = ({ onClose }) => {
       </div>
       <div className="flex flex-col md:flex-row justify-between gap-10">
         <div className="flex-1 flex flex-col gap-2">
-          <label htmlFor="company">Company*</label>
+          <label htmlFor="updatedCompany">Company*</label>
           <input
             type="text"
-            name="company"
-            className="bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-10 lg:h-12 px-3"
-            value={company}
+            name="updatedCompany"
+            className="text-lightFontColor dark:text-fontColor bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-10 lg:h-12 px-3"
+            value={updatedCompany}
             required
             onChange={(event: ChangeEvent<HTMLInputElement>) => {
               setCompany(event.target.value);
@@ -81,12 +101,12 @@ const EditMyDetails: React.FC<EditMyDetailsProps> = ({ onClose }) => {
           />
         </div>
         <div className="flex-1 flex flex-col gap-2">
-          <label htmlFor="position">Position*</label>
+          <label htmlFor="updatedPosition">Position*</label>
           <input
             type="text"
-            name="position"
-            className="bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-10 lg:h-12 px-3"
-            value={position}
+            name="updatedPosition"
+            className="text-lightFontColor dark:text-fontColor bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-10 lg:h-12 px-3"
+            value={updatedPosition}
             required
             onChange={(event: ChangeEvent<HTMLInputElement>) => {
               setPosition(event.target.value);
@@ -96,12 +116,12 @@ const EditMyDetails: React.FC<EditMyDetailsProps> = ({ onClose }) => {
       </div>
       <div className="flex flex-col md:flex-row justify-between gap-10">
         <div className="flex-1 flex flex-col gap-2">
-          <label htmlFor="phoneNumber">Phone Number*</label>
+          <label htmlFor="updatedPhoneNumber">Phone Number*</label>
           <input
             type="text"
-            name="phoneNumber"
-            className="bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-10 lg:h-12 px-3"
-            value={phoneNumber}
+            name="updatedPhoneNumber"
+            className="text-lightFontColor dark:text-fontColor bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-10 lg:h-12 px-3"
+            value={updatedPhoneNumber}
             required
             onChange={(event: ChangeEvent<HTMLInputElement>) => {
               setPhoneNumber(event.target.value);
@@ -112,13 +132,13 @@ const EditMyDetails: React.FC<EditMyDetailsProps> = ({ onClose }) => {
       </div>
       <div className="flex flex-col md:flex-row justify-between gap-10">
         <div className="flex-1 flex flex-col gap-2">
-          <label htmlFor="address">Address*</label>
+          <label htmlFor="updatedAddress">Address*</label>
           <textarea
-            name="address"
+            name="updatedAddress"
             rows={10}
             cols={5}
             className="bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader px-3 py-5"
-            value={address}
+            value={updatedAddress}
             required
           ></textarea>
         </div>

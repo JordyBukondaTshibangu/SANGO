@@ -1,7 +1,5 @@
-// /* eslint-disable @next/next/no-img-element */
-// /* eslint-disable react/no-unescaped-entities */
 "use client";
-import React, { ChangeEvent, useState } from "react";
+import React, { useState } from "react";
 
 type EditMyInfoProps = {
   onClose: () => void;
@@ -26,7 +24,7 @@ const EditMyInfo: React.FC<EditMyInfoProps> = ({ onClose, bio }) => {
           name="aboutMe"
           rows={20}
           cols={10}
-          className="w-full bg-white dark:bg-dark border-none outline-none py-5 text-lg leading-10"
+          className="w-full bg-white text-lightFontColor dark:text-fontColor dark:bg-dark border-none outline-none py-5 text-lg leading-10"
           value={aboutMe}
           onChange={(event) => setAboutMe(event.target.value)}
           required

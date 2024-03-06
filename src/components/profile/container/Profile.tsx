@@ -38,6 +38,7 @@ export type UserT = {
   address: UserAddressT;
   phoneNumber: string;
   position: string;
+  company: string;
   profile: string;
   bio: string;
   experience: UserExperienceT[];
@@ -72,6 +73,7 @@ const Profile: React.FC<ProfileProps> = ({
         firstname={user.firstName}
         lastname={user.lastName}
         position={user.position}
+        company={user.company}
         email={user.email}
         birthday={user.birthdate}
         gender={user.gender}

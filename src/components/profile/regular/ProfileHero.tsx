@@ -32,6 +32,7 @@ type ProfileHeroProps = {
   firstname: string;
   lastname: string;
   position: string;
+  company: string;
   email: string;
   birthday: string;
   gender: string;
@@ -50,6 +51,7 @@ const ProfileHero: React.FC<ProfileHeroProps> = ({
   firstname,
   lastname,
   position,
+  company,
   email,
   birthday,
   address,
@@ -110,7 +112,16 @@ const ProfileHero: React.FC<ProfileHeroProps> = ({
         >
           <Fade in={open}>
             <Box sx={style} className=" bg-white  dark:bg-darkHeader">
-              <EditMyDetails onClose={handleClose} />
+              <EditMyDetails
+                firstname={firstname}
+                lastname={lastname}
+                position={position}
+                company={company}
+                birthday={birthday}
+                address={address}
+                phoneNumber={phoneNumber}
+                onClose={handleClose}
+              />
             </Box>
           </Fade>
         </Modal>
@@ -119,7 +130,9 @@ const ProfileHero: React.FC<ProfileHeroProps> = ({
           <EmailIcon className="text-lg lg:text-xl" />
           <h5 className="text-lg lg:text-xl">{email}</h5>
         </div>
-        <h5 className="lg:text-lg">{position}</h5>
+        <h5 className="lg:text-lg">
+          {position} at {company}
+        </h5>
       </div>
       <div
         className="flex lg:hidden items-center"
