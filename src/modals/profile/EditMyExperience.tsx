@@ -103,7 +103,7 @@ const EditMyExperience: React.FC<EditMyExperienceProps> = ({
           <div className="flex-1 flex flex-col gap-4"></div>
         </div>
         <div className="flex flex-col justify-between gap-4">
-            <label htmlFor="Description">Description*</label>
+          <label htmlFor="Description">Description*</label>
           <textarea
             name="Description"
             rows={5}

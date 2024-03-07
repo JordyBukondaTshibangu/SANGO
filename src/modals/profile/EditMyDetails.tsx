@@ -1,20 +1,8 @@
-// /* eslint-disable @next/next/no-img-element */
-// /* eslint-disable react/no-unescaped-entities */
+
 "use client";
 import React, { ChangeEvent, useState } from "react";
-import { styled } from "@mui/material/styles";
+import CountrySelect from "./CountrySelect";
 
-const VisuallyHiddenInput = styled("input")({
-  clip: "rect(0 0 0 0)",
-  clipPath: "inset(50%)",
-  height: 1,
-  overflow: "hidden",
-  position: "absolute",
-  bottom: 0,
-  left: 0,
-  whiteSpace: "nowrap",
-  width: 1,
-});
 
 type EditMyDetailsProps = {
   onClose: () => void;
@@ -45,7 +33,11 @@ const EditMyDetails: React.FC<EditMyDetailsProps> = ({
   const [updatedCompany, setCompany] = useState<string>(company);
   const [updatedPosition, setPosition] = useState<string>(position);
   const [updatedPhoneNumber, setPhoneNumber] = useState<string>(phoneNumber);
-  const [updatedAddress, setAddress] = useState<string>("");
+  const [updatedStreet, setStreet] = useState<string>("");
+  const [updatedCity, setCity] = useState<string>("");
+  const [updatedState, setState] = useState<string>("");
+  const [updatedZipCode, setZipCode] = useState<string>("");
+  const [updatedCountry, setCountry] = useState<string>("");
 
   const handleUpdateMyDetails = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -59,7 +51,7 @@ const EditMyDetails: React.FC<EditMyDetailsProps> = ({
     >
       <h2 className="text-xl font-medium">My Details </h2>
       <div className="flex flex-col md:flex-row justify-between gap-10">
-        <div className="flex-1 flex flex-col gap-2">
+        <div className="flex-1 flex flex-col gap-4">
           <label htmlFor="updatedFirstName">First Name*</label>
           <input
             type="text"
@@ -72,7 +64,7 @@ const EditMyDetails: React.FC<EditMyDetailsProps> = ({
             }}
           />
         </div>
-        <div className="flex-1 flex flex-col gap-2">
+        <div className="flex-1 flex flex-col gap-4">
           <label htmlFor="updatedLastName">Last Name*</label>
           <input
             type="text"
@@ -87,7 +79,7 @@ const EditMyDetails: React.FC<EditMyDetailsProps> = ({
         </div>
       </div>
       <div className="flex flex-col md:flex-row justify-between gap-10">
-        <div className="flex-1 flex flex-col gap-2">
+        <div className="flex-1 flex flex-col gap-4">
           <label htmlFor="updatedCompany">Company*</label>
           <input
             type="text"
@@ -100,7 +92,7 @@ const EditMyDetails: React.FC<EditMyDetailsProps> = ({
             }}
           />
         </div>
-        <div className="flex-1 flex flex-col gap-2">
+        <div className="flex-1 flex flex-col gap-4">
           <label htmlFor="updatedPosition">Position*</label>
           <input
             type="text"
@@ -115,7 +107,7 @@ const EditMyDetails: React.FC<EditMyDetailsProps> = ({
         </div>
       </div>
       <div className="flex flex-col md:flex-row justify-between gap-10">
-        <div className="flex-1 flex flex-col gap-2">
+        <div className="flex-1 flex flex-col gap-4">
           <label htmlFor="updatedPhoneNumber">Phone Number*</label>
           <input
             type="text"
@@ -128,19 +120,67 @@ const EditMyDetails: React.FC<EditMyDetailsProps> = ({
             }}
           />
         </div>
-        <div className="flex-1 flex flex-col gap-2"></div>
+        <div className="flex-1 flex flex-col gap-4"></div>
       </div>
-      <div className="flex flex-col md:flex-row justify-between gap-10">
-        <div className="flex-1 flex flex-col gap-2">
-          <label htmlFor="updatedAddress">Address*</label>
-          <textarea
-            name="updatedAddress"
-            rows={10}
-            cols={5}
-            className="bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader px-3 py-5"
-            value={updatedAddress}
+      <div className="flex flex-col justify-between gap-10">
+        <div className="flex flex-col md:flex-row justify-between gap-10">
+                    <div className="flex-1 flex flex-col gap-4">
+            <CountrySelect />
+          </div>
+          <div className="flex-1 flex flex-col gap-4">
+            <label htmlFor="updateState">State</label>
+            <input
+              type="text"
+              name="updateState"
+              className="text-lightFontColor dark:text-fontColor bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-10 lg:h-12 px-3"
+              value={updatedState}
+              required
+              onChange={(event: ChangeEvent<HTMLInputElement>) => {
+                setState(event.target.value);
+              }}
+            />
+          </div>
+        </div>
+        <div className="flex flex-col md:flex-row justify-between gap-10">
+          <div className="flex-1 flex flex-col gap-4">
+            <label htmlFor="updateCity">City</label>
+            <input
+              type="text"
+              name="updateCity"
+              className="text-lightFontColor dark:text-fontColor bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-10 lg:h-12 px-3"
+              value={updatedCity}
+              required
+              onChange={(event: ChangeEvent<HTMLInputElement>) => {
+                setCity(event.target.value);
+              }}
+            />
+          </div>
+          <div className="flex-1 flex flex-col gap-4">
+            <label htmlFor="updatedZipCode">Zip code</label>
+            <input
+              type="text"
+              name="updatedZipCode"
+              className="text-lightFontColor dark:text-fontColor bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-10 lg:h-12 px-3"
+              value={updatedZipCode}
+              required
+              onChange={(event: ChangeEvent<HTMLInputElement>) => {
+                setZipCode(event.target.value);
+              }}
+            />
+          </div>
+        </div>
+                <div className="flex-1 flex flex-col gap-4">
+          <label htmlFor="updateStreet">Street</label>
+          <input
+            type="text"
+            name="updateStreet"
+            className="text-lightFontColor dark:text-fontColor bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-10 lg:h-12 px-3"
+            value={updatedStreet}
             required
-          ></textarea>
+            onChange={(event: ChangeEvent<HTMLInputElement>) => {
+              setPhoneNumber(event.target.value);
+            }}
+          />
         </div>
       </div>
       <div className="flex justify-end border-t border-solid border-grayFour dark:border-dark py-4">
