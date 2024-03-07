@@ -57,8 +57,11 @@ const ProfileExperience: React.FC<ProfileExperienceProps> = ({
         }}
       >
         <Fade in={open}>
-          <Box sx={style} className=" bg-white  dark:bg-darkHeader">
-            <EditMyExperience onClose={handleClose} />
+          <Box
+            sx={style}
+            className=" bg-white  dark:bg-darkHeader max-h-[95vh] overflow-auto"
+          >
+            <EditMyExperience experiences={experiences} onClose={handleClose} />
           </Box>
         </Fade>
       </Modal>

@@ -18,9 +18,9 @@ const EditMySkills: React.FC<EditMySkillsProps> = ({ skills, onClose }) => {
         ...prevState,
         { skill: newSkill, proficiency },
       ]);
-      console.log(skillsList)
+      console.log(skillsList);
       const uniqueSkill: Set<UserSkillT> = new Set(skillsList);
-      console.log(uniqueSkill)
+      console.log(uniqueSkill);
       // setSkills([...uniqueSkill])
       setNewSkill("");
       setProficiency(0);

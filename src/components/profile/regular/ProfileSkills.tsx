@@ -55,7 +55,10 @@ const ProfileSkills: React.FC<ProfileSkillsProps> = ({ skills, other }) => {
         }}
       >
         <Fade in={open}>
-          <Box sx={style} className=" bg-white  dark:bg-darkHeader max-h-[90vh]">
+          <Box
+            sx={style}
+            className=" bg-white  dark:bg-darkHeader max-h-[90vh]"
+          >
             <EditMySkills onClose={handleClose} skills={skills} />
           </Box>
         </Fade>
