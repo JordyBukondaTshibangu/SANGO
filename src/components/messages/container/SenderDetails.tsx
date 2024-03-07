@@ -18,10 +18,10 @@ const SenderDetails = () => {
       <div className="flex flex-col gap-2 items-center">
         <h4 className="text-2xl font-bold">Charlotte Matendo</h4>
         <div className="flex flex-col">
-          <p>Business | Entrepre</p>
+          <p>Business | Entrepreneur</p>
         </div>
         <Link
-          href={`/users/`}
+          href={`/users/239329233232`}
           className="bg-light dark:bg-dark flex items-center justify-center py-2 px-5 rounded-lg mt-4"
         >
           View Profile

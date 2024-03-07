@@ -16,6 +16,7 @@ import Backdrop from "@mui/material/Backdrop";
 import EditMyDetails from "@/modals/profile/EditMyDetails";
 import { Button } from "@mui/material";
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
+import AddAPhotoIcon from '@mui/icons-material/AddAPhoto';
 
 const style = {
   position: "absolute" as "absolute",
@@ -75,9 +76,12 @@ const ProfileHero: React.FC<ProfileHeroProps> = ({
       <div
         className="relative bg-cover bg-no-repeat  flex flex-col  gap-5 md:gap-10 p-5 lg:p-10 justify-end min-h-[300px] rounded-tr-lg rounded-tl-lg"
         style={{ backgroundImage: `url(${profile ? profile : heroImg})` }}
-      ></div>
+      >
+      
+          <Tooltip title="Update my cover"><AddAPhotoIcon className="absolute right-5 bottom-3 cursor-pointer text-3xl text-darkHeader"/></Tooltip>
+      </div>
       <div className="relative flex flex-col gap-5 px-5 lg:px-10 pb-5 ">
-        <div className="self-center lg:self-start relative w-48 h-48 rounded-full p-1  bg-white  dark:bg-darkHeader -mt-24">
+        <div className="relative self-center lg:self-start w-48 h-48 rounded-full p-1  bg-white dark:bg-darkHeader -mt-24">
           <Image
             src={profile ? profile : Avatar}
             width={200}
@@ -85,6 +89,9 @@ const ProfileHero: React.FC<ProfileHeroProps> = ({
             alt="profile"
             className="h-full w-full rounded-full"
           />
+          <Tooltip title="Update my profile">
+            <AddAPhotoIcon className="absolute right-1 bottom-7 cursor-pointer text-2xl"/>
+          </Tooltip>
         </div>
         <div className="flex flex-col lg:flex-row gap-2 justify-between">
           <h4 className="text-2xl font-bold">
