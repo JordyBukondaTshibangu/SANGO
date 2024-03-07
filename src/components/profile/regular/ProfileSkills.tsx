@@ -36,9 +36,14 @@ const ProfileSkills: React.FC<ProfileSkillsProps> = ({ skills, other }) => {
       <div className="w-full flex gap-4 items-center">
         <DiamondIcon className="text-3xl" />
         <h4 className="text-2xl font-bold">{!other && "My"} Skills</h4>
-{ !other &&         <Tooltip title="Edit my skills" placement="top">
-          <CreateOutlinedIcon className="cursor-pointer" onClick={handleOpen} />
-        </Tooltip>}
+        {!other && (
+          <Tooltip title="Edit my skills" placement="top">
+            <CreateOutlinedIcon
+              className="cursor-pointer"
+              onClick={handleOpen}
+            />
+          </Tooltip>
+        )}
       </div>
 
       <Modal

@@ -33,8 +33,8 @@ const NavBar = () => {
   const { theme, setTheme } = useTheme();
 
   const [toggleNav, setToggleNav] = useState<Boolean>(false);
-  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [mounted, setMounded] = useState<boolean>(false);
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
   const open = Boolean(anchorEl);
 
@@ -42,7 +42,7 @@ const NavBar = () => {
     setMounded(true);
   }, []);
 
-  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
   };
   const handleClose = () => {
@@ -143,7 +143,6 @@ const NavBar = () => {
         </li>
         <div
           className="flex flex-col items-center gap-2 cursor-pointer"
-          onClick={handleClick}
           aria-controls={open ? "basic-menu" : undefined}
           aria-haspopup="true"
           aria-expanded={open ? "true" : undefined}
@@ -157,7 +156,9 @@ const NavBar = () => {
               className="w-full h-full rounded-full"
             />
           </span>
-          <span className="text-xs lg:text-sm">Profile</span>
+          <span className="text-xs lg:text-sm" onClick={handleClick}>
+            Profile
+          </span>
           <Menu
             anchorEl={anchorEl}
             id="account-menu"

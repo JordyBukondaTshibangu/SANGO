@@ -1,8 +1,6 @@
-
 "use client";
 import React, { ChangeEvent, useState } from "react";
 import CountrySelect from "./CountrySelect";
-
 
 type EditMyDetailsProps = {
   onClose: () => void;
@@ -124,7 +122,7 @@ const EditMyDetails: React.FC<EditMyDetailsProps> = ({
       </div>
       <div className="flex flex-col justify-between gap-10">
         <div className="flex flex-col md:flex-row justify-between gap-10">
-                    <div className="flex-1 flex flex-col gap-4">
+          <div className="flex-1 flex flex-col gap-4">
             <CountrySelect />
           </div>
           <div className="flex-1 flex flex-col gap-4">
@@ -169,7 +167,7 @@ const EditMyDetails: React.FC<EditMyDetailsProps> = ({
             />
           </div>
         </div>
-                <div className="flex-1 flex flex-col gap-4">
+        <div className="flex-1 flex flex-col gap-4">
           <label htmlFor="updateStreet">Street</label>
           <input
             type="text"

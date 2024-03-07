@@ -15,8 +15,8 @@ import Fade from "@mui/material/Fade";
 import Backdrop from "@mui/material/Backdrop";
 import EditMyDetails from "@/modals/profile/EditMyDetails";
 import { Button } from "@mui/material";
-import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
-import AddAPhotoIcon from '@mui/icons-material/AddAPhoto';
+import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
+import AddAPhotoIcon from "@mui/icons-material/AddAPhoto";
 
 const style = {
   position: "absolute" as "absolute",
@@ -60,7 +60,7 @@ const ProfileHero: React.FC<ProfileHeroProps> = ({
   birthday,
   address,
   phoneNumber,
-  other
+  other,
 }) => {
   const [open, setOpen] = useState<boolean>(false);
   const [viewMoreDetails, setViewMore] = useState<boolean>(true);
@@ -77,8 +77,9 @@ const ProfileHero: React.FC<ProfileHeroProps> = ({
         className="relative bg-cover bg-no-repeat  flex flex-col  gap-5 md:gap-10 p-5 lg:p-10 justify-end min-h-[300px] rounded-tr-lg rounded-tl-lg"
         style={{ backgroundImage: `url(${profile ? profile : heroImg})` }}
       >
-      
-          <Tooltip title="Update my cover"><AddAPhotoIcon className="absolute right-5 bottom-3 cursor-pointer text-3xl text-darkHeader"/></Tooltip>
+        <Tooltip title="Update my cover">
+          <AddAPhotoIcon className="absolute right-5 bottom-3 cursor-pointer text-3xl text-darkHeader hover:text-primary transition duration-300 ease-linear" />
+        </Tooltip>
       </div>
       <div className="relative flex flex-col gap-5 px-5 lg:px-10 pb-5 ">
         <div className="relative self-center lg:self-start w-48 h-48 rounded-full p-1  bg-white dark:bg-darkHeader -mt-24">
@@ -90,7 +91,7 @@ const ProfileHero: React.FC<ProfileHeroProps> = ({
             className="h-full w-full rounded-full"
           />
           <Tooltip title="Update my profile">
-            <AddAPhotoIcon className="absolute right-1 bottom-7 cursor-pointer text-2xl"/>
+            <AddAPhotoIcon className="absolute right-1 bottom-7 cursor-pointer text-2xl hover:text-primary transition duration-300 ease-linear" />
           </Tooltip>
         </div>
         <div className="flex flex-col lg:flex-row gap-2 justify-between">
@@ -98,14 +99,22 @@ const ProfileHero: React.FC<ProfileHeroProps> = ({
             {firstname} {lastname}
           </h4>
           <div className="flex flex-col gap-6 items-end">
-{      !other &&        <Tooltip title="Edit my details" placement="top">
-              <CreateOutlinedIcon
-                className="cursor-pointer"
-                onClick={handleOpen}
-              />
-            </Tooltip>}
+            {!other && (
+              <Tooltip title="Edit my details" placement="top">
+                <CreateOutlinedIcon
+                  className="cursor-pointer"
+                  onClick={handleOpen}
+                />
+              </Tooltip>
+            )}
             <h5 className="lg:text-lg lg:self-end">500 Network partners</h5>
-            <Button variant="contained" className="bg-primary px-5 py-3 flex items-start justify-center text-md" endIcon={<AddCircleOutlineIcon />}>Connect 2  {firstname} </Button>
+            {other && <Button
+              variant="contained"
+              className="bg-primary px-5 py-3 flex items-start justify-center text-md"
+              endIcon={<AddCircleOutlineIcon />}
+            >
+              Connect 2 {firstname}
+            </Button>}
           </div>
         </div>
 
@@ -151,7 +160,6 @@ const ProfileHero: React.FC<ProfileHeroProps> = ({
         onClick={() => setViewMore(!viewMoreDetails)}
       >
         <span className="px-5 py-2">
-          {" "}
           {viewMoreDetails ? "View Less" : "View More"}
         </span>
         <RemoveRedEyeOutlinedIcon className="text-lg" />

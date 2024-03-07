@@ -71,7 +71,7 @@ const Sidebar = () => {
         <div className="border-t border-solid border-grayFour dark:border-dark  w-full py-5 flex flex-col gap-2 items-center">
           <p>Address</p>
           <p className="text-sm">
-            {user.address.street} {user.address.city} {user.address.state}{" "}
+            {user.address.street} {user.address.city} {user.address.state}
             {user.address.country}
           </p>
         </div>
