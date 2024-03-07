@@ -79,6 +79,7 @@ const Profile: React.FC<ProfileProps> = ({
         gender={user.gender}
         address={user.address}
         phoneNumber={user.phoneNumber}
+        other={other}
       />
       <ProfileAbout bio={user.bio} other={other} />
       <ProfileSkills skills={user.skills} other={other} />

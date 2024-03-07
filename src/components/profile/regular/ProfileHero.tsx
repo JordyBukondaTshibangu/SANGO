@@ -14,6 +14,8 @@ import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import Backdrop from "@mui/material/Backdrop";
 import EditMyDetails from "@/modals/profile/EditMyDetails";
+import { Button } from "@mui/material";
+import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 
 const style = {
   position: "absolute" as "absolute",
@@ -44,6 +46,7 @@ type ProfileHeroProps = {
     country: string;
   };
   phoneNumber: string;
+  other: boolean;
 };
 
 const ProfileHero: React.FC<ProfileHeroProps> = ({
@@ -56,6 +59,7 @@ const ProfileHero: React.FC<ProfileHeroProps> = ({
   birthday,
   address,
   phoneNumber,
+  other
 }) => {
   const [open, setOpen] = useState<boolean>(false);
   const [viewMoreDetails, setViewMore] = useState<boolean>(true);
@@ -87,13 +91,14 @@ const ProfileHero: React.FC<ProfileHeroProps> = ({
             {firstname} {lastname}
           </h4>
           <div className="flex flex-col gap-6 items-end">
-            <Tooltip title="Edit my details" placement="top">
+{      !other &&        <Tooltip title="Edit my details" placement="top">
               <CreateOutlinedIcon
                 className="cursor-pointer"
                 onClick={handleOpen}
               />
-            </Tooltip>
+            </Tooltip>}
             <h5 className="lg:text-lg lg:self-end">500 Network partners</h5>
+            <Button variant="contained" className="bg-primary px-5 py-3 flex items-start justify-center text-md" endIcon={<AddCircleOutlineIcon />}>Connect 2  {firstname} </Button>
           </div>
         </div>
 

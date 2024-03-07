@@ -35,9 +35,9 @@ const ProfileAbout: React.FC<ProfileAboutProps> = ({ bio, other }) => {
       <div className="w-full flex gap-4 items-center">
         <PersonIcon className="text-3xl" />
         <h4 className="text-2xl font-bold">About {!other && "me"}</h4>
-        <Tooltip title="Edit my info" placement="top">
+{    !other &&   <Tooltip title="Edit my info" placement="top">
           <CreateOutlinedIcon className="cursor-pointer" onClick={handleOpen} />
-        </Tooltip>
+        </Tooltip>}
       </div>
       <Modal
         aria-labelledby="transition-modal-title"

@@ -39,9 +39,9 @@ const ProfileExperience: React.FC<ProfileExperienceProps> = ({
       <div className="w-full flex gap-4 items-center">
         <ViewTimelineIcon className="text-3xl" />
         <h4 className="text-2xl font-bold">{!other && "My"} Experience</h4>
-        <Tooltip title="Edit my info" placement="top">
+        { !other && <Tooltip title="Edit my info" placement="top">
           <CreateOutlinedIcon className="cursor-pointer" onClick={handleOpen} />
-        </Tooltip>
+        </Tooltip>}
       </div>
       <Modal
         aria-labelledby="transition-modal-title"
