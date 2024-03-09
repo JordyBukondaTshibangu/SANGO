@@ -28,6 +28,7 @@ import Logout from "@mui/icons-material/Logout";
 import Brightness4OutlinedIcon from "@mui/icons-material/Brightness4Outlined";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
+import NotificationsIcon from "@mui/icons-material/Notifications";
 
 const NavBar = () => {
   const { theme, setTheme } = useTheme();
@@ -206,7 +207,7 @@ const NavBar = () => {
             </MenuItem>
             <MenuItem>
               <ListItemIcon>
-                <Settings fontSize="small" />
+                <NotificationsIcon fontSize="small" />
               </ListItemIcon>
               <Link href="/notifications">Notification</Link>
             </MenuItem>
