@@ -10,19 +10,19 @@
     {
       "sender": "Bob",
       "text": "I'm good, thank you! How about you?",
-      "profile": "/assets/profile_four.jpg",
+      "profile": "/assets/profile_five.jpg",
       "time": "2024-02-13T09:35:00Z",
       "position" : "Software Engineer | Entrepreneur"
     },
     {
-      "sender": "Alice",
+      "sender": "Joshua",
       "text": "I'm doing well too. Thanks for asking!",
       "profile": "/assets/profile_three.jpg",
       "time": "2024-02-13T09:40:00Z",
       "position" : "Software Engineer | Entrepreneur"
     },
     {
-      "sender": "Bob",
+      "sender": "Jacques",
       "text": "That's great to hear!",
       "profile": "/assets/profile_four.jpg",
       "time": "2024-02-13T09:45:00Z",
@@ -30,42 +30,42 @@
     },
 
     {
-      "sender": "Alice",
+      "sender": "Germain",
       "text": "Have you seen the latest news?",
       "profile": "/assets/profile_three.jpg",
       "time": "2024-02-13T10:00:00Z",
       "position" : "Software Engineer | Entrepreneur"
     },
     {
-      "sender": "Bob",
+      "sender": "Bernadette",
       "text": "No, what's going on?",
       "profile": "/assets/profile.jpeg",
       "time": "2024-02-13T10:05:00Z",
       "position" : "Software Engineer | Entrepreneur"
     },
     {
-      "sender": "Alice",
+      "sender": "Collins",
       "text": "There's been a major breakthrough in technology!",
-      "profile": "/assets/profile_three.jpg",
+      "profile": "/assets/profile_five.jpg",
       "time": "2024-02-13T10:10:00Z",
       "position" : "Software Engineer | Entrepreneur"
     },
     {
-      "sender": "Bob",
+      "sender": "Travis",
       "text": "Wow, that's exciting! Can you share more details?",
       "profile": "/assets/profile_four.jpg",
       "time": "2024-02-13T10:15:00Z",
       "position" : "Software Engineer | Entrepreneur"
     },
     {
-      "sender": "Alice",
+      "sender": "Pedro",
       "text": "Sure, let me find the article and send it to you.",
       "profile": "/assets/profile.jpeg",
       "time": "2024-02-13T10:20:00Z",
       "position" : "Software Engineer | Entrepreneur"
     },
     {
-      "sender": "Alice",
+      "sender": "Lionel",
       "text": "Here's the link: https://example.com/article",
       "profile": "/assets/profile_three.jpg",
 
@@ -73,28 +73,28 @@
       "position" : "Software Engineer | Entrepreneur"
     },
     {
-      "sender": "Bob",
+      "sender": "Craig",
       "text": "Thanks, I'll check it out!",
       "profile": "/assets/profile_four.jpg",
       "time": "2024-02-13T10:30:00Z",
       "position" : "Software Engineer | Entrepreneur"
     },
     {
-      "sender": "Alice",
+      "sender": "Trevor",
       "text": "You're welcome!",
       "profile": "/assets/profile_two.jpg",
       "time": "2024-02-13T10:35:00Z",
       "position" : "Software Engineer | Entrepreneur"
     },
     {
-      "sender": "Bob",
+      "sender": "Miriam",
       "text": "Did you hear about the upcoming conference?",
-      "profile": "/assets/profile_three.jpg",
+      "profile": "/assets/profile_five.jpg",
       "time": "2024-02-13T10:40:00Z",
       "position" : "Software Engineer | Entrepreneur"
     },
     {
-      "sender": "Alice",
+      "sender": "Charlotte",
       "text": "Yes, I did. Are you planning to attend?",
       "profile": "/assets/profile_four.jpg",
       "time": "2024-02-13T10:45:00Z",
