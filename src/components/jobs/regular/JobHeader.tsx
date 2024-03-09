@@ -33,7 +33,7 @@ const JobHeader: React.FC<JobHeaderProps> = ({
           <h3 className="text-4xl font-bold">{title}</h3>
           <div className="flex flex-col lg:flex-row gap-5">
             <h5>at {company}</h5>
-            <p className="w-fit flex justify-center items-center py-2 lg:py-0 px-2 rounded-md uppercase font-medium bg-sucess text-white text-xs lg:text-sm ">
+            <p className="w-fit flex justify-center items-center py-2 lg:py-0 px-2 rounded-md uppercase font-medium text-lightFontColor dark:text-white text-xs lg:text-sm ">
               {period}
             </p>
           </div>

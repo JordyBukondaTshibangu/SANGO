@@ -47,9 +47,9 @@ export default function JobDrawerFilter({
   };
 
   return (
-    <div className="relative pb-2 h-full overflow-auto  bg-white  dark:bg-darkHeader text-black flex flex-col gap-4 py-10 px-10">
-      <FormControl className="flex flex-col gap-6 border border-solid bg-light dark:bg-dark text-grayFirst rounded-lg px-5 py-5">
-        <FormLabel className="text-grayFirst font-medium">
+    <div className="relative pb-2 h-full overflow-auto  bg-white  dark:bg-darkHeader text-black flex flex-col gap-4 py-10 px-5">
+      <FormControl className="flex flex-col gap-6 border border-solid bg-light dark:bg-dark text-lightFontColor dark:text-grayFirst rounded-lg px-5 py-5">
+        <FormLabel className="text-lightFontColor dark:text-grayFirst font-medium">
           Date Posted
         </FormLabel>
         <RadioGroup
@@ -70,8 +70,10 @@ export default function JobDrawerFilter({
           ))}
         </RadioGroup>
       </FormControl>
-      <FormControl className="flex flex-col gap-6 border border-solid bg-light dark:bg-dark text-grayFirst rounded-lg px-5 py-5">
-        <FormLabel className="text-grayFirst font-medium">Job Type</FormLabel>
+      <FormControl className="flex flex-col gap-6 border border-solid bg-light dark:bg-dark text-lightFontColor dark:text-grayFirst rounded-lg px-5 py-5">
+        <FormLabel className="text-lightFontColor dark:text-grayFirst font-medium">
+          Job Type
+        </FormLabel>
         <RadioGroup
           defaultValue={jobType}
           className="grid grid-cols-2"
@@ -91,8 +93,8 @@ export default function JobDrawerFilter({
         </RadioGroup>
       </FormControl>
 
-      <FormControl className="flex flex-col gap-6 border border-solid bg-light dark:bg-dark text-grayFirst rounded-lg px-5 py-5">
-        <FormLabel className="text-grayFirst font-medium">
+      <FormControl className="flex flex-col gap-6 border border-solid bg-light dark:bg-dark text-lightFontColor dark:text-grayFirst rounded-lg px-5 py-5">
+        <FormLabel className="text-lightFontColor dark:text-grayFirst font-medium">
           Experience level
         </FormLabel>
         <RadioGroup
@@ -113,8 +115,10 @@ export default function JobDrawerFilter({
           ))}
         </RadioGroup>
       </FormControl>
-      <FormGroup className="flex flex-col gap-6 border border-solid bg-light dark:bg-dark text-grayFirst rounded-lg px-5 py-5">
-        <FormLabel className="text-grayFirst font-medium">Role</FormLabel>
+      <FormGroup className="flex flex-col gap-6 border border-solid bg-light dark:bg-dark text-lightFontColor dark:text-grayFirst rounded-lg px-5 py-5">
+        <FormLabel className="text-lightFontColor dark:text-grayFirst font-medium">
+          Role
+        </FormLabel>
 
         <div className="flex flex-col gap-2">
           {rolesList.map((roleItem, index) => (
@@ -133,8 +137,10 @@ export default function JobDrawerFilter({
           ))}
         </div>
       </FormGroup>
-      <FormControl className="flex flex-col gap-6 border border-solid bg-light dark:bg-dark text-grayFirst rounded-lg px-5 py-5">
-        <FormLabel className="text-grayFirst font-medium">Industry</FormLabel>
+      <FormControl className="flex flex-col gap-6 border border-solid bg-light dark:bg-dark text-lightFontColor dark:text-grayFirst rounded-lg px-5 py-5">
+        <FormLabel className="text-lightFontColor dark:text-grayFirst font-medium">
+          Industry
+        </FormLabel>
         <RadioGroup
           defaultValue={industry}
           value={industry}
