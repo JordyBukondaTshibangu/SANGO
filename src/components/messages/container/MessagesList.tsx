@@ -18,15 +18,17 @@ export type ChatT = {
   text: string;
   profile: string;
   time: string;
+  position: string;
 };
 
 type MessagesListProps = {
   chats: ChatT[];
+  selectChat: (chat: ChatT) => void;
 };
 
-const MessagesList: React.FC<MessagesListProps> = ({ chats }) => {
+const MessagesList: React.FC<MessagesListProps> = ({ chats, selectChat }) => {
   return (
-    <div className="lg:sticky top-32 w-full lg:w-[33%] lg:bg-white  lg:dark:bg-darkHeader lg:rounded-lg lg:px-5 lg:py-10 flex flex-col gap-12 h-fit">
+    <div className="lg:sticky top-32 w-full lg:w-[40%] lg:bg-white  lg:dark:bg-darkHeader lg:rounded-lg lg:px-5 lg:py-10 flex flex-col gap-12 h-fit">
       <div className="w-full hidden lg:flex">
         <UserPreview
           name={user.firstName + " " + user.lastName}
@@ -41,7 +43,7 @@ const MessagesList: React.FC<MessagesListProps> = ({ chats }) => {
       />
       <div className="flex flex-col gap-5 overflow-y-auto max-h-[60vh]">
         {chats.map((chat: any, index: number) => (
-          <ChatPreview key={index} chat={chat} />
+          <ChatPreview key={index} chat={chat} selectChat={selectChat} />
         ))}
       </div>
     </div>

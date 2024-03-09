@@ -1,27 +1,20 @@
 import React from "react";
 import UserPreview from "../regular/UserPreview";
 import Messages from "../regular/Messages";
+import { ChatT } from "./MessagesList";
 
-const user = {
-  id: 2390239032,
-  username: "jordy_tshibangu",
-  firstName: "Charlotte",
-  lastName: "Matendo",
-  email: "charlotte7@example.com",
-  position: "Business owner | Entrepreneur",
-  birthdate: "1990-05-15",
-  profile: "/assets/profile_five.jpg",
+type MessageChatProps = {
+  chat: ChatT;
 };
-
-const MessageChat = () => {
+const MessageChat: React.FC<MessageChatProps> = ({ chat }) => {
   return (
-    <div className="sticky top-32 hidden lg:block lg:w-1/2  bg-white  dark:bg-darkHeader rounded-lg px-5 py-10 max-h-[85vh]">
+    <div className="block w-full lg:w-2/3  bg-white  dark:bg-darkHeader rounded-lg px-5 py-10 lg:max-h-[90vh]">
       <UserPreview
-        name={user.firstName + " " + user.lastName}
-        profile={user.profile}
-        position={user.position}
+        name={chat.sender}
+        profile={chat.profile}
+        position="Business owner | Entrepreneur"
       />
-      <Messages />
+      <Messages messages={chat.text} />
     </div>
   );
 };
