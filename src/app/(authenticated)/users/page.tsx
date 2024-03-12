@@ -4,7 +4,9 @@ import React from "react";
 
 async function getUsers() {
   const res = await fetch("http://127.0.0.1:8080/users.json", {
-    cache: "no-cache",
+    next: {
+      revalidate: 60,
+    },
   });
 
   if (!res.ok) {

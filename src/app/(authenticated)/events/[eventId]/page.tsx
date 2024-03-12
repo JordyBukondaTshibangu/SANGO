@@ -5,7 +5,9 @@ import React from "react";
 
 async function getSingleEvent(eventId: number) {
   const res = await fetch("http://127.0.0.1:8080/events.json", {
-    cache: "no-cache",
+    next: {
+      revalidate: 60,
+    },
   });
   const data = await res.json();
 
