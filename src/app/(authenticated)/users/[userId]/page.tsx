@@ -3,7 +3,14 @@ import { EventT } from "@/components/events/container/EventList";
 import { PostT } from "@/components/posts/container/PostsList";
 import Profile, { UserT } from "@/components/profile/container/Profile";
 import { NextPage } from "next";
+import { notFound } from "next/navigation";
 
+export async function generateStaticParams() {
+  const res = await fetch("http://127.0.0.1:8080/users.json");
+  const users = await res.json();
+
+  return users.map((user: UserT) => ({ userId: user.id }));
+}
 async function getSingleUser(userId: number) {
   const res = await fetch("http://127.0.0.1:8080/users.json", {
     next: {
@@ -86,6 +93,10 @@ const UserDetailPage: NextPage<UserDetailProps> = async (props: any) => {
   const userPosts = await UserPosts(userId);
   const userArticles = await UserArticles(userId);
   const userEvents = await UserEvents(userId);
+
+  if (!user) {
+    notFound();
+  }
 
   return (
     <div className="w-full flex items-center justify-center gap-10 -mt-10">

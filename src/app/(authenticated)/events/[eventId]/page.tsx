@@ -1,17 +1,26 @@
 import Event from "@/components/events/container/Event";
 import { EventT } from "@/components/events/container/EventList";
 import { NextPage } from "next";
+import { notFound } from "next/navigation";
 import React from "react";
 
+export async function generateStaticParams() {
+  const res = await fetch("http://127.0.0.1:8080/events.json");
+  const events = await res.json();
+
+  return events.map((event: EventT) => ({ id: event.id }));
+}
 async function getSingleEvent(eventId: number) {
   const res = await fetch("http://127.0.0.1:8080/events.json", {
     next: {
       revalidate: 60,
     },
   });
-  const data = await res.json();
+  const events = await res.json();
 
-  const event = data?.filter((item: EventT) => item.id === Number(eventId))[0];
+  const event = events?.filter(
+    (item: EventT) => item.id === Number(eventId),
+  )[0];
 
   if (!res.ok) {
     throw new Error("Failed to fetch Events");
@@ -28,6 +37,10 @@ const EventDetailPage: NextPage<EventDetailPageProps> = async (props: any) => {
   const { eventId } = props.params;
 
   const event = await getSingleEvent(eventId);
+
+  if (!event) {
+    notFound();
+  }
 
   return <Event event={event} />;
 };

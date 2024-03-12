@@ -1,6 +1,15 @@
 import React from "react";
 import Article, { ArticleT } from "@/components/articles/container/Article";
 import { NextPage } from "next";
+import { notFound } from "next/navigation";
+
+export const dynamicParams = true;
+
+export async function generateStaticParams() {
+  const res = await fetch("http://127.0.0.1:8080/articles.json");
+  const articles: ArticleT[] = await res.json();
+  return articles.map((article: ArticleT) => ({ id: article.id }));
+}
 
 async function getContent() {
   const res = await fetch("http://127.0.0.1:8080/article-content.json", {
@@ -24,7 +33,7 @@ async function getSingleArticle(articleId: number) {
   });
   const data = await res.json();
 
-  const article = data.articles.filter(
+  const article = data.filter(
     (item: ArticleT) => item.id === Number(articleId),
   )[0];
   if (!res.ok) {
@@ -44,6 +53,10 @@ const ArticleDetailPage: NextPage<ArticleDetailProps> = async (props: any) => {
 
   const article = await getSingleArticle(articleId);
   const content = await getContent();
+
+  if (!article) {
+    notFound();
+  }
 
   return <Article article={article} content={content} />;
 };
