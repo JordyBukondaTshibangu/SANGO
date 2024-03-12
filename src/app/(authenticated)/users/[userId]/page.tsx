@@ -44,7 +44,7 @@ async function UserArticles(userId: number) {
       revalidate: 60,
     },
   });
-  const { articles } = await res.json();
+  const articles = await res.json();
   const userArticles = articles.filter(
     (article: ArticleT) =>
       article.author == "John Doe" || article.author == "Michael Johnson",
