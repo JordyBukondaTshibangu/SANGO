@@ -6,7 +6,9 @@ import { NextPage } from "next";
 
 async function getSingleUser(userId: number) {
   const res = await fetch("http://127.0.0.1:8080/users.json", {
-    cache: "no-cache",
+    next: {
+      revalidate: 60,
+    },
   });
   const data = await res.json();
 
@@ -22,7 +24,9 @@ async function getSingleUser(userId: number) {
 
 async function UserPosts(userId: number) {
   const res = await fetch("http://127.0.0.1:8080/posts.json", {
-    cache: "no-cache",
+    next: {
+      revalidate: 60,
+    },
   });
   const posts = await res.json();
   const userPosts = posts.filter((post: PostT) => post.author.id == userId);
@@ -36,7 +40,9 @@ async function UserPosts(userId: number) {
 
 async function UserArticles(userId: number) {
   const res = await fetch("http://127.0.0.1:8080/articles.json", {
-    cache: "no-cache",
+    next: {
+      revalidate: 60,
+    },
   });
   const { articles } = await res.json();
   const userArticles = articles.filter(
@@ -53,7 +59,9 @@ async function UserArticles(userId: number) {
 
 async function UserEvents(userId: number) {
   const res = await fetch("http://127.0.0.1:8080/events.json", {
-    cache: "no-cache",
+    next: {
+      revalidate: 60,
+    },
   });
   const events = await res.json();
   const userEvents = events.filter(

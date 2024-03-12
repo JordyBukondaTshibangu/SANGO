@@ -7,7 +7,9 @@ import React from "react";
 
 async function getUsers() {
   const res = await fetch("http://127.0.0.1:8080/users.json", {
-    cache: "no-cache",
+    next: {
+      revalidate: 60,
+    },
   });
   const users = await res.json();
   const user = users[0];
@@ -22,7 +24,9 @@ async function getUsers() {
 
 async function UserPosts() {
   const res = await fetch("http://127.0.0.1:8080/posts.json", {
-    cache: "no-cache",
+    next: {
+      revalidate: 60,
+    },
   });
   const posts = await res.json();
   const userPosts = posts.filter((post: PostT) => post.author.id == 2390239032);
@@ -36,7 +40,9 @@ async function UserPosts() {
 
 async function UserArticles() {
   const res = await fetch("http://127.0.0.1:8080/articles.json", {
-    cache: "no-cache",
+    next: {
+      revalidate: 60,
+    },
   });
   const { articles } = await res.json();
   const userArticles = articles.filter(
@@ -53,7 +59,9 @@ async function UserArticles() {
 
 async function UserEvents() {
   const res = await fetch("http://127.0.0.1:8080/events.json", {
-    cache: "no-cache",
+    next: {
+      revalidate: 60,
+    },
   });
   const events = await res.json();
   const userEvents = events.filter(

@@ -4,7 +4,9 @@ import { NextPage } from "next";
 
 async function getContent() {
   const res = await fetch("http://127.0.0.1:8080/article-content.json", {
-    cache: "no-cache",
+    next: {
+      revalidate: 60,
+    },
   });
 
   if (!res.ok) {
@@ -16,7 +18,9 @@ async function getContent() {
 
 async function getSingleArticle(articleId: number) {
   const res = await fetch("http://127.0.0.1:8080/articles.json", {
-    cache: "no-cache",
+    next: {
+      revalidate: 60,
+    },
   });
   const data = await res.json();
 

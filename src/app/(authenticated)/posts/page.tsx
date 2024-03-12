@@ -5,7 +5,9 @@ import React from "react";
 
 async function getPosts() {
   const res = await fetch("http://127.0.0.1:8080/posts.json", {
-    cache: "no-cache",
+    next: {
+      revalidate: 60,
+    },
   });
 
   if (!res.ok) {

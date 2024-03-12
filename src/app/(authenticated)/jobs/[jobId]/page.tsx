@@ -5,7 +5,9 @@ import React from "react";
 
 async function getSingleJob(jobId: number) {
   const res = await fetch("http://127.0.0.1:8080/jobs.json", {
-    cache: "no-cache",
+    next: {
+      revalidate: 60,
+    },
   });
   const data = await res.json();
 

@@ -3,7 +3,9 @@ import MessageContainer from "@/components/messages/container/MessageContainer";
 
 async function fetchAllChats() {
   const res = await fetch("http://127.0.0.1:8080/messages.json", {
-    cache: "no-cache",
+    next: {
+      revalidate: 60,
+    },
   });
 
   if (!res.ok) {

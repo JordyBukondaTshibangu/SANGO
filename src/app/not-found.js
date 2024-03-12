@@ -15,7 +15,7 @@ export default function NotFound() {
           <h2 className="text-4xl">Not Found</h2>
           <p>Could not find requested resource</p>
           <Link
-            href="/sign-in"
+            href="/posts"
             className="w-fit bg-primary px-6 py-4 text-white font-medium rounded-xl mt-auto"
           >
             Return Home
