@@ -148,7 +148,7 @@ const NavBar = () => {
           aria-haspopup="true"
           aria-expanded={open ? "true" : undefined}
         >
-          <span className="w-8 h-8 rounded-full">
+          <span className="w-8 h-8 rounded-full" onClick={handleClick}>
             <Image
               src={AvatarImg}
               width={16}

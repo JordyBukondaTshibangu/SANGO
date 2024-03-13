@@ -21,6 +21,7 @@ const LoadingArticle = () => {
         <div className="h-2 bg-grayThird rounded-full dark:bg-gray-700 mb-2.5"></div>
         <div className="h-2 bg-grayThird rounded-full dark:bg-gray-700 max-w-[440px] mb-2.5"></div>
         <div className="h-2 bg-grayThird rounded-full dark:bg-gray-700 max-w-[460px] mb-2.5"></div>
+        x
         <div className="h-2 bg-grayThird rounded-full dark:bg-gray-700 max-w-[360px]"></div>
       </div>
       <div className="w-full">
