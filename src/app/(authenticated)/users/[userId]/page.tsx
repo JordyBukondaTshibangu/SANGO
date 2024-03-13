@@ -4,12 +4,14 @@ import { PostT } from "@/components/posts/container/PostsList";
 import Profile, { UserT } from "@/components/profile/container/Profile";
 import { NextPage } from "next";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
+import LoadingUser from "./loading";
 
 export async function generateStaticParams() {
   const res = await fetch("http://127.0.0.1:8080/users.json");
   const users = await res.json();
 
-  return users.map((user: UserT) => ({ userId: user.id }));
+  return users.map((user: UserT) => ({ id: user.id }));
 }
 async function getSingleUser(userId: number) {
   const res = await fetch("http://127.0.0.1:8080/users.json", {
@@ -51,7 +53,7 @@ async function UserArticles(userId: number) {
       revalidate: 60,
     },
   });
-  const { articles } = await res.json();
+  const articles = await res.json();
   const userArticles = articles.filter(
     (article: ArticleT) =>
       article.author == "John Doe" || article.author == "Michael Johnson",
@@ -100,13 +102,15 @@ const UserDetailPage: NextPage<UserDetailProps> = async (props: any) => {
 
   return (
     <div className="w-full flex items-center justify-center gap-10 -mt-10">
-      <Profile
-        user={user}
-        other={true}
-        posts={userPosts}
-        articles={userArticles}
-        events={userEvents}
-      />
+      <Suspense fallback={<LoadingUser />}>
+        <Profile
+          user={user}
+          other={true}
+          posts={userPosts}
+          articles={userArticles}
+          events={userEvents}
+        />
+      </Suspense>
     </div>
   );
 };

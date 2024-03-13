@@ -4,7 +4,7 @@ const LoadingEvent = () => {
   return (
     <div
       role="status"
-      className="w-full mx-auto animate-pulse  md:flex flex-col gap-10"
+      className="w-full mx-auto animate-pulse  flexflex-col gap-10"
     >
       <div className="flex w-full h-96 rounded bg-grayThird"></div>
 

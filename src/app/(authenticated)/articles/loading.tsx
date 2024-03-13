@@ -4,7 +4,7 @@ const LoadingArticles = () => {
   return (
     <div
       role="status"
-      className="w-full mx-auto animate-pulse  md:flex flex-col gap-10"
+      className="w-full mx-auto animate-pulse  flexflex-col gap-10"
     >
       <div className="flex w-full h-32 md:h-[450px] rounded bg-grayThird"></div>
       <div className="w-full flex gap-10 flex-wrap items-center justify-center">
