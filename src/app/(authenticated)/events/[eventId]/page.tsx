@@ -2,7 +2,8 @@ import Event from "@/components/events/container/Event";
 import { EventT } from "@/components/events/container/EventList";
 import { NextPage } from "next";
 import { notFound } from "next/navigation";
-import React from "react";
+import React, { Suspense } from "react";
+import LoadingEvent from "./loading";
 
 export async function generateStaticParams() {
   const res = await fetch("http://127.0.0.1:8080/events.json");
@@ -42,7 +43,11 @@ const EventDetailPage: NextPage<EventDetailPageProps> = async (props: any) => {
     notFound();
   }
 
-  return <Event event={event} />;
+  return (
+    <Suspense fallback={<LoadingEvent />}>
+      <Event event={event} />
+    </Suspense>
+  );
 };
 
 export default EventDetailPage;
