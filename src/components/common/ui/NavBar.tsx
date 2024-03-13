@@ -1,13 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { useTheme } from "next-themes";
-import Image from "next/image";
-import AvatarImg from "../../../../public/assets/Avatar.png";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import Image from "next/image";
+import { useTheme } from "next-themes";
 import SearchBar from "../base/SearchBar";
-import { FaPowerOff, FaMessage } from "react-icons/fa6";
-import ProfilePic from "../../../../public/assets/profile.jpeg";
+import { FaPowerOff } from "react-icons/fa6";
 import {
   FaBars,
   FaHome,
@@ -17,18 +14,21 @@ import {
   FaBriefcase,
   FaBell,
 } from "react-icons/fa";
-import MessageOutlinedIcon from "@mui/icons-material/MessageOutlined";
-import Avatar from "@mui/material/Avatar";
 import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-import ListItemIcon from "@mui/material/ListItemIcon";
+import Avatar from "@mui/material/Avatar";
 import Divider from "@mui/material/Divider";
-import Settings from "@mui/icons-material/Settings";
+import MenuItem from "@mui/material/MenuItem";
 import Logout from "@mui/icons-material/Logout";
-import Brightness4OutlinedIcon from "@mui/icons-material/Brightness4Outlined";
-import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
+import Settings from "@mui/icons-material/Settings";
+import ListItemIcon from "@mui/material/ListItemIcon";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import NotificationsIcon from "@mui/icons-material/Notifications";
+import MessageOutlinedIcon from "@mui/icons-material/MessageOutlined";
+import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
+import Brightness4OutlinedIcon from "@mui/icons-material/Brightness4Outlined";
+import NavLink from "../base/NavLink";
+import AvatarImg from "../../../../public/assets/Avatar.png";
+import ProfilePic from "../../../../public/assets/profile.jpeg";
 
 const NavBar = () => {
   const { theme, setTheme } = useTheme();
@@ -50,8 +50,6 @@ const NavBar = () => {
     setAnchorEl(null);
   };
 
-  const currentPath = usePathname();
-
   if (!mounted) {
     return null;
   }
@@ -64,84 +62,17 @@ const NavBar = () => {
         </Link>
       </div>
       <ul className="hidden xl:flex justify-between gap-16">
-        <li>
-          <Link
-            href="/posts"
-            className={
-              currentPath.startsWith("/posts")
-                ? "flex flex-col items-center gap-2 text-primary"
-                : "flex flex-col items-center gap-2 hover:text-primary"
-            }
-          >
-            <FaHome className="text-2xl font-bold" />
-            <span className="text-xs lg:text-sm">Posts</span>
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/articles"
-            className={
-              currentPath.startsWith("/articles")
-                ? "flex flex-col items-center gap-2 text-primary"
-                : "flex flex-col items-center gap-2 hover:text-primary"
-            }
-          >
-            <FaNewspaper className="text-2xl font-bold" />
-            <span className="text-xs lg:text-sm">Articles</span>
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/events"
-            className={
-              currentPath.startsWith("/events")
-                ? "flex flex-col items-center gap-2 text-primary"
-                : "flex flex-col items-center gap-2 hover:text-primary"
-            }
-          >
-            <FaRegCalendarAlt className="text-2xl font-bold" />
-            <span className="text-xs lg:text-sm">Events</span>
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/users"
-            className={
-              currentPath.startsWith("/users")
-                ? "flex flex-col items-center gap-2 text-primary"
-                : "flex flex-col items-center gap-2 hover:text-primary"
-            }
-          >
-            <FaUsers className="text-2xl font-bold" />
-            <span className="text-xs lg:text-sm">My Network</span>
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/jobs"
-            className={
-              currentPath.startsWith("/jobs")
-                ? "flex flex-col items-center gap-2 text-primary"
-                : "flex flex-col items-center gap-2 hover:text-primary"
-            }
-          >
-            <FaBriefcase className="text-2xl font-bold" />
-            <span className="text-xs lg:text-sm">Jobs</span>
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/messages"
-            className={
-              currentPath.startsWith("/messages")
-                ? "flex flex-col items-center gap-2 text-primary"
-                : "flex flex-col items-center gap-2 hover:text-primary"
-            }
-          >
-            <MessageOutlinedIcon className="text-2xl font-bold" />
-            <span className="text-xs lg:text-sm">Messages</span>
-          </Link>
-        </li>
+        <NavLink link="posts" linkName="Posts" icon={<FaHome />} />
+        <NavLink link="articles" linkName="Articles" icon={<FaNewspaper />} />
+        <NavLink link="events" linkName="Events" icon={<FaRegCalendarAlt />} />
+        <NavLink link="users" linkName="My Network" icon={<FaUsers />} />
+        <NavLink link="jobs" linkName="Jobs" icon={<FaBriefcase />} />
+        <NavLink
+          link="messages"
+          linkName="Messages"
+          icon={<MessageOutlinedIcon />}
+        />
+
         <div
           className="flex flex-col items-center gap-2 cursor-pointer"
           aria-controls={open ? "basic-menu" : undefined}
@@ -261,55 +192,31 @@ const NavBar = () => {
               <CloseOutlinedIcon className="text-2xl" />
             </div>
           </div>
-          <ul className="relative bg-black  dark:bg-darkHeader flex flex-col justify-between gap-16">
-            <li>
-              <Link href="/posts" className="flex items-center gap-5 ">
-                <FaHome className="text-2xl font-bold" />
-                <span className="text-sm">Posts</span>
-              </Link>
-            </li>
-            <li>
-              <Link href="/articles" className="flex items-center gap-5 ">
-                <FaBriefcase className="text-2xl font-bold" />
-                <span className="text-sm">Articles</span>
-              </Link>
-            </li>
-            <li>
-              <Link href="/events" className="flex items-center gap-5 ">
-                <FaRegCalendarAlt className="text-2xl font-bold" />
-                <span className="text-sm">Events</span>
-              </Link>
-            </li>
-            <li>
-              <Link href="/users" className="flex items-center gap-5 ">
-                <FaUsers className="text-2xl font-bold" />
-                <span className="text-sm">My Network</span>
-              </Link>
-            </li>
-            <li>
-              <Link href="/jobs" className="flex items-center gap-5 ">
-                <FaBriefcase className="text-2xl font-bold" />
-                <span className="text-sm">Jobs</span>
-              </Link>
-            </li>
-            <li>
-              <Link href="/messages" className="flex items-center gap-5 ">
-                <FaMessage className="text-2xl font-bold" />
-                <span className="text-sm">Messages</span>
-              </Link>
-            </li>
-            <li>
-              <Link href="/notifications" className="flex items-center gap-5 ">
-                <FaBell className="text-2xl font-bold" />
-                <span className="text-sm">Notification</span>
-              </Link>
-            </li>
-            <li>
-              <Link href="/sign-in" className="flex items-center gap-5 ">
-                <FaPowerOff className="text-2xl font-bold" />
-                <span className="text-sm">Log out</span>
-              </Link>
-            </li>
+          <ul className="relative bg-black  dark:bg-darkHeader flex flex-col justify-between gap-14">
+            <NavLink link="posts" linkName="Posts" icon={<FaHome />} />
+            <NavLink
+              link="articles"
+              linkName="Articles"
+              icon={<FaNewspaper />}
+            />
+            <NavLink
+              link="events"
+              linkName="Events"
+              icon={<FaRegCalendarAlt />}
+            />
+            <NavLink link="users" linkName="My Network" icon={<FaUsers />} />
+            <NavLink link="jobs" linkName="Jobs" icon={<FaBriefcase />} />
+            <NavLink
+              link="messages"
+              linkName="Messages"
+              icon={<MessageOutlinedIcon />}
+            />
+            <NavLink
+              link="notifications"
+              linkName="Notifications"
+              icon={<FaBell />}
+            />
+            <NavLink link="sign-in" linkName="Log out" icon={<FaPowerOff />} />
           </ul>
         </div>
       )}
