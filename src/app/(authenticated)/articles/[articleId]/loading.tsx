@@ -4,7 +4,7 @@ const LoadingArticle = () => {
   return (
     <div
       role="status"
-      className="w-full lg:w-4/5 mx-auto animate-pulse  flexflex-col gap-10"
+      className="w-full lg:w-4/5 mx-auto animate-pulse  flex flex-col gap-10"
     >
       <div className="w-full my-5">
         <div className="h-2.5 bg-grayFour rounded-full dark:bg-gray-700 w-48 mb-4"></div>

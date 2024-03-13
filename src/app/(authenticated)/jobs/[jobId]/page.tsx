@@ -2,7 +2,8 @@ import { JobT } from "@/components/jobs/Jobs";
 import Job from "@/components/jobs/container/Job";
 import { NextPage } from "next";
 import { notFound } from "next/navigation";
-import React from "react";
+import React, { Suspense } from "react";
+import LoadingJob from "./loading";
 
 export async function generateStaticParams() {
   const res = await fetch("http://127.0.0.1:8080/jobs.json");
@@ -47,7 +48,11 @@ const JobDetailPage: NextPage<JobDetailProps> = async (props: any) => {
     notFound();
   }
 
-  return <Job job={job} relatedJobs={relatedJobs} />;
+  return (
+    <Suspense fallback={<LoadingJob />}>
+      <Job job={job} relatedJobs={relatedJobs} />
+    </Suspense>
+  );
 };
 
 export default JobDetailPage;

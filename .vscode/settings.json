@@ -2,6 +2,10 @@
   "editor.formatOnSave": true,
   "notebook.formatOnSave.enabled": true,
   "cSpell.words": [
-    "Fireworkx"
+    "desirables",
+    "Fireworkx",
+    "Laravel",
+    "Nuxt",
+    "Swipeable"
   ]
 }
