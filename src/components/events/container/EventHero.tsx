@@ -1,10 +1,9 @@
-"use client";
 import React from "react";
 import Chip from "@mui/material/Chip";
 import RoomIcon from "@mui/icons-material/Room";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import { EventT } from "./EventList";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 type EventHerProps = {
   event: EventT;
@@ -12,9 +11,6 @@ type EventHerProps = {
 
 const EventHero: React.FC<EventHerProps> = ({ event }) => {
   const { id, name, date, image, venue } = event;
-  const router = useRouter();
-
-  const handleClick = () => router.push(`/events/${id}`);
 
   return (
     <div
@@ -26,11 +22,12 @@ const EventHero: React.FC<EventHerProps> = ({ event }) => {
           label="Upcoming"
           className="bg-primary w-32 flex items-center justify-center py-2 px-3 rounded-2xl text-white text-[16px] hover:bg-black"
         />
-        <Chip
-          label="View"
-          onClick={handleClick}
-          className="bg-primary w-32 flex items-center justify-center py-2 px-3 rounded-2xl text-white text-[16px] hover:bg-black"
-        />
+        <Link href={`/events/${id}`}>
+          <Chip
+            label="View"
+            className="bg-primary w-32 flex items-center justify-center py-2 px-3 rounded-2xl text-white text-[16px] hover:bg-black"
+          />
+        </Link>
       </div>
       <h1 className="mt-auto text-2xl lg:text-5xl font-medium lg:leading-[46px] lg:w-2/3 text-white">
         {name}

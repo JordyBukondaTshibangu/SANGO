@@ -68,7 +68,7 @@ const NavBar = () => {
           <Link
             href="/posts"
             className={
-              currentPath == "/posts"
+              currentPath.startsWith("/posts")
                 ? "flex flex-col items-center gap-2 text-primary"
                 : "flex flex-col items-center gap-2 hover:text-primary"
             }
@@ -81,7 +81,7 @@ const NavBar = () => {
           <Link
             href="/articles"
             className={
-              currentPath == "/articles"
+              currentPath.startsWith("/articles")
                 ? "flex flex-col items-center gap-2 text-primary"
                 : "flex flex-col items-center gap-2 hover:text-primary"
             }
@@ -94,7 +94,7 @@ const NavBar = () => {
           <Link
             href="/events"
             className={
-              currentPath == "/events"
+              currentPath.startsWith("/events")
                 ? "flex flex-col items-center gap-2 text-primary"
                 : "flex flex-col items-center gap-2 hover:text-primary"
             }
@@ -107,7 +107,7 @@ const NavBar = () => {
           <Link
             href="/users"
             className={
-              currentPath == "/users"
+              currentPath.startsWith("/users")
                 ? "flex flex-col items-center gap-2 text-primary"
                 : "flex flex-col items-center gap-2 hover:text-primary"
             }
@@ -120,7 +120,7 @@ const NavBar = () => {
           <Link
             href="/jobs"
             className={
-              currentPath == "/jobs"
+              currentPath.startsWith("/jobs")
                 ? "flex flex-col items-center gap-2 text-primary"
                 : "flex flex-col items-center gap-2 hover:text-primary"
             }
@@ -133,7 +133,7 @@ const NavBar = () => {
           <Link
             href="/messages"
             className={
-              currentPath == "/messages"
+              currentPath.startsWith("/messages")
                 ? "flex flex-col items-center gap-2 text-primary"
                 : "flex flex-col items-center gap-2 hover:text-primary"
             }
