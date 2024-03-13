@@ -1,7 +1,8 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Article, { ArticleT } from "@/components/articles/container/Article";
 import { NextPage } from "next";
 import { notFound } from "next/navigation";
+import LoadingArticle from "./loading";
 
 export const dynamicParams = true;
 
@@ -58,7 +59,11 @@ const ArticleDetailPage: NextPage<ArticleDetailProps> = async (props: any) => {
     notFound();
   }
 
-  return <Article article={article} content={content} />;
+  return (
+    <Suspense fallback={<LoadingArticle />}>
+      <Article article={article} content={content} />
+    </Suspense>
+  );
 };
 
 export default ArticleDetailPage;
