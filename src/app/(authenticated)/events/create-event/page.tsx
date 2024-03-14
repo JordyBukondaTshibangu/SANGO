@@ -99,7 +99,7 @@ const CreateEventPage = () => {
       <div className="flex justify-end">
         <button
           type="submit"
-          className="w-56 h-12  bg-white  dark:bg-darkHeader text-grayFirst border-2border-grayFour dark:border-dark border-solid rounded-lg text-lg font-medium hover:bg-primary hover:text-white transition duration-300 ease-in-out"
+          className="w-56 h-12  bg-primary  dark:bg-darkHeader text-white dark:text-grayFirst border-2border-grayFour dark:border-dark border-solid rounded-lg text-lg font-medium hover:bg-primary hover:text-white transition duration-300 ease-in-out"
         >
           Post
         </button>

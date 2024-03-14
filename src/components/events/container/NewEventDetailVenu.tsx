@@ -1,5 +1,5 @@
 import React from "react";
-import NewEventImage from "../regular/NewEventImage";
+import NewEventImage from "../../common/base/ImageUploader";
 
 const NewEventDetailVenu = () => {
   return (
