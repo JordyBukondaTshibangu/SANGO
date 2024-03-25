@@ -1,10 +1,10 @@
 import React from "react";
 import Chip from "@mui/material/Chip";
 import Avatar from "@mui/material/Avatar";
-import { ArticleT } from "./Article";
+import { IArticle } from "@/interfaces/article";
 
 type ArticleHeroProps = {
-  article: ArticleT;
+  article: IArticle;
 };
 const ArticleHero: React.FC<ArticleHeroProps> = ({ article }) => {
   const { title, image, author } = article;

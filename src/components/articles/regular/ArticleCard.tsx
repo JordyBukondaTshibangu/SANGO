@@ -1,12 +1,12 @@
 import React from "react";
-import { Article } from "../container/ArticleList";
 import Chip from "@mui/material/Chip";
 import Avatar from "@mui/material/Avatar";
 import Image from "next/image";
 import Link from "next/link";
+import { IArticle } from "@/interfaces/article";
 
 type ArticleCardProps = {
-  article: Article;
+  article: IArticle;
 };
 
 const ArticleCard: React.FC<ArticleCardProps> = ({ article }) => {

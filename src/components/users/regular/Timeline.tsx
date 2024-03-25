@@ -4,10 +4,10 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import { UserExperienceT } from "@/components/profile/container/Profile";
+import { IUserExperience } from "@/interfaces/user";
 
 type TimelineItemElementProps = {
-  experience: UserExperienceT;
+  experience: IUserExperience;
 };
 
 const TimelineItemElement: React.FC<TimelineItemElementProps> = ({

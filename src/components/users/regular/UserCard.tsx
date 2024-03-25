@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import { UserT } from "../container/UsersList";
 import Avatar from "../../../../public/assets/Avatar.png";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -16,9 +15,10 @@ import InfoPanel from "./InfoPanel";
 import ExperiencePanel from "./ExperiencePanel";
 import SkillPanel from "./SkillPanel";
 import Link from "next/link";
+import { IUser } from "@/interfaces/user";
 
 type UserCardProps = {
-  user: UserT;
+  user: IUser;
 };
 
 function a11yProps(index: number) {

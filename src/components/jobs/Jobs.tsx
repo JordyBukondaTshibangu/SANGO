@@ -14,6 +14,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { grey } from "@mui/material/colors";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import JobDrawerFilter from "./regular/JobDrawerFilter";
+import { IJob } from "@/interfaces/job";
 
 const popularSearch = [
   "Front-end",
@@ -69,23 +70,8 @@ type JobType = {
   // Add other properties as needed
 };
 
-export type JobT = {
-  id: number;
-  title: string;
-  period: string;
-  company: string;
-  location: string;
-  description: string;
-  requirements: string[];
-  salary: string;
-  image: string;
-  category: string;
-  desirables: string[];
-  benefits: string[];
-};
-
 type JobContainerProps = {
-  jobs: JobT[];
+  jobs: IJob[];
   window: any;
 };
 
@@ -101,7 +87,7 @@ const JobContainer: React.FC<JobContainerProps> = (props) => {
   const { window } = props;
   const [open, setOpen] = React.useState(false);
 
-  const [jobList, setJobList] = useState<JobT[]>(jobs);
+  const [jobList, setJobList] = useState<IJob[]>(jobs);
   const [industryList, setIndustryList] = useState<string[]>([]);
   const [rolesList, setRolesList] = useState<string[]>([]);
 

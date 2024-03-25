@@ -4,59 +4,17 @@ import ProfileAbout from "../regular/ProfileAbout";
 import ProfileActivity from "../regular/ProfileActivity";
 import ProfileSkills from "../regular/ProfileSkills";
 import ProfileExperience from "../regular/ProfileExperience";
-import { PostT } from "@/components/posts/container/PostsList";
-import { ArticleT } from "@/components/articles/container/Article";
-import { EventT } from "@/components/events/container/EventList";
-
-export type UserExperienceT = {
-  jobPosition: string;
-  description: string;
-  company: string;
-  year: number;
-};
-
-export type UserSkillT = {
-  skill: string;
-  proficiency: number;
-};
-export type UserAddressT = {
-  street: string;
-  city: string;
-  state: string;
-  zipCode: string;
-  country: string;
-};
-
-export type UserT = {
-  id: number;
-  username: string;
-  firstName: string;
-  lastName: string;
-  email: string;
-  birthdate: string;
-  gender: string;
-  address: UserAddressT;
-  phoneNumber: string;
-  position: string;
-  company: string;
-  profile: string;
-  bio: string;
-  experience: UserExperienceT[];
-  socialLinks: {
-    github: string;
-    linkedin: string;
-    twitter: string;
-  };
-  skills: UserSkillT[];
-  createdAt: string;
-};
+import { IUser } from "@/interfaces/user";
+import { IArticle } from "@/interfaces/article";
+import { IEvent } from "@/interfaces/event";
+import { IPost } from "@/interfaces/post";
 
 type ProfileProps = {
-  user: UserT;
+  user: IUser;
   other: boolean;
-  posts: PostT[];
-  articles: ArticleT[];
-  events: EventT[];
+  posts: IPost[];
+  articles: IArticle[];
+  events: IEvent[];
 };
 
 const Profile: React.FC<ProfileProps> = ({

@@ -1,15 +1,16 @@
 import React, { Suspense } from "react";
-import Article, { ArticleT } from "@/components/articles/container/Article";
+import Article from "@/components/articles/container/Article";
 import { NextPage } from "next";
 import { notFound } from "next/navigation";
 import LoadingArticle from "./loading";
+import { IArticle } from "@/interfaces/article";
 
 export const dynamicParams = true;
 
 export async function generateStaticParams() {
   const res = await fetch("http://127.0.0.1:8080/articles.json");
-  const articles: ArticleT[] = await res.json();
-  return articles.map((article: ArticleT) => ({ id: article.id }));
+  const articles: IArticle[] = await res.json();
+  return articles.map((article: IArticle) => ({ id: article.id }));
 }
 
 async function getContent() {
@@ -35,7 +36,7 @@ async function getSingleArticle(articleId: number) {
   const data = await res.json();
 
   const article = data.filter(
-    (item: ArticleT) => item.id === Number(articleId),
+    (item: IArticle) => item.id === Number(articleId),
   )[0];
   if (!res.ok) {
     throw new Error("Failed to fetch Content");

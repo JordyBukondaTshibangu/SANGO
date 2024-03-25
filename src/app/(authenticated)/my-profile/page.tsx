@@ -1,10 +1,11 @@
-import { ArticleT } from "@/components/articles/container/Article";
-import { EventT } from "@/components/events/container/EventList";
-import { PostT } from "@/components/posts/container/PostsList";
-import Profile, { UserT } from "@/components/profile/container/Profile";
+import Profile from "@/components/profile/container/Profile";
 import UserList from "@/components/profile/container/UserList";
 import React, { Suspense } from "react";
 import LoadingUser from "../users/[userId]/loading";
+import { IUser } from "@/interfaces/user";
+import { IArticle } from "@/interfaces/article";
+import { IEvent } from "@/interfaces/event";
+import { IPost } from "@/interfaces/post";
 
 async function getUsers() {
   const res = await fetch("http://127.0.0.1:8080/users.json", {
@@ -14,7 +15,7 @@ async function getUsers() {
   });
   const users = await res.json();
   const user = users[0];
-  const usersList = users.filter((us: UserT) => us.id !== 2390239032);
+  const usersList = users.filter((us: IUser) => us.id !== 2390239032);
 
   if (!res.ok) {
     throw new Error("Failed to fetch Users");
@@ -30,7 +31,7 @@ async function UserPosts() {
     },
   });
   const posts = await res.json();
-  const userPosts = posts.filter((post: PostT) => post.author.id == 2390239032);
+  const userPosts = posts.filter((post: IPost) => post.author.id == 2390239032);
 
   if (!res.ok) {
     throw new Error("Failed to fetch Posts");
@@ -47,7 +48,7 @@ async function UserArticles() {
   });
   const articles = await res.json();
   const userArticles = articles.filter(
-    (article: ArticleT) =>
+    (article: IArticle) =>
       article.author == "John Doe" || article.author == "Michael Johnson",
   );
 
@@ -66,7 +67,7 @@ async function UserEvents() {
   });
   const events = await res.json();
   const userEvents = events.filter(
-    (event: EventT) => event.organizer == "John Taylor",
+    (event: IEvent) => event.organizer == "John Taylor",
   );
 
   if (!res.ok) {
