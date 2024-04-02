@@ -3,10 +3,10 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { UserExperienceT } from "../container/Profile";
+import { IUserExperience } from "@/interfaces/user";
 
 type ExperienceProps = {
-  experience: UserExperienceT;
+  experience: IUserExperience;
 };
 const Experience: React.FC<ExperienceProps> = ({ experience }) => {
   const { jobPosition, description, company, year } = experience;

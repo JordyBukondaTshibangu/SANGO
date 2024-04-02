@@ -1,9 +1,19 @@
-import { ArticleT } from "@/components/articles/container/Article";
-import { EventT } from "@/components/events/container/EventList";
-import { PostT } from "@/components/posts/container/PostsList";
-import Profile, { UserT } from "@/components/profile/container/Profile";
+import Profile from "@/components/profile/container/Profile";
 import { NextPage } from "next";
+import { notFound } from "next/navigation";
+import { Suspense } from "react";
+import LoadingUser from "./loading";
+import { IUser } from "@/interfaces/user";
+import { IArticle } from "@/interfaces/article";
+import { IEvent } from "@/interfaces/event";
+import { IPost } from "@/interfaces/post";
 
+export async function generateStaticParams() {
+  const res = await fetch("http://127.0.0.1:8080/users.json");
+  const users = await res.json();
+
+  return users.map((user: IUser) => ({ id: user.id }));
+}
 async function getSingleUser(userId: number) {
   const res = await fetch("http://127.0.0.1:8080/users.json", {
     next: {
@@ -12,8 +22,8 @@ async function getSingleUser(userId: number) {
   });
   const data = await res.json();
 
-  const user = data?.filter((item: UserT) => item.id === Number(userId))[0];
-  const relatedUsers = data.filter((item: UserT) => item.id !== Number(userId));
+  const user = data?.filter((item: IUser) => item.id === Number(userId))[0];
+  const relatedUsers = data.filter((item: IUser) => item.id !== Number(userId));
 
   if (!res.ok) {
     throw new Error("Failed to fetch Users");
@@ -29,7 +39,7 @@ async function UserPosts(userId: number) {
     },
   });
   const posts = await res.json();
-  const userPosts = posts.filter((post: PostT) => post.author.id == userId);
+  const userPosts = posts.filter((post: IPost) => post.author.id == userId);
 
   if (!res.ok) {
     throw new Error("Failed to fetch Posts");
@@ -44,9 +54,9 @@ async function UserArticles(userId: number) {
       revalidate: 60,
     },
   });
-  const { articles } = await res.json();
+  const articles = await res.json();
   const userArticles = articles.filter(
-    (article: ArticleT) =>
+    (article: IArticle) =>
       article.author == "John Doe" || article.author == "Michael Johnson",
   );
 
@@ -65,7 +75,7 @@ async function UserEvents(userId: number) {
   });
   const events = await res.json();
   const userEvents = events.filter(
-    (event: EventT) => event.organizer == "John Taylor",
+    (event: IEvent) => event.organizer == "John Taylor",
   );
 
   if (!res.ok) {
@@ -87,15 +97,21 @@ const UserDetailPage: NextPage<UserDetailProps> = async (props: any) => {
   const userArticles = await UserArticles(userId);
   const userEvents = await UserEvents(userId);
 
+  if (!user) {
+    notFound();
+  }
+
   return (
     <div className="w-full flex items-center justify-center gap-10 -mt-10">
-      <Profile
-        user={user}
-        other={true}
-        posts={userPosts}
-        articles={userArticles}
-        events={userEvents}
-      />
+      <Suspense fallback={<LoadingUser myProfile={false} />}>
+        <Profile
+          user={user}
+          other={true}
+          posts={userPosts}
+          articles={userArticles}
+          events={userEvents}
+        />
+      </Suspense>
     </div>
   );
 };

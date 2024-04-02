@@ -1,10 +1,10 @@
 import React from "react";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItemElement from "@/components/users/regular/Timeline";
-import { UserExperienceT } from "@/components/profile/container/Profile";
+import { IUserExperience } from "@/interfaces/user";
 
 type ExperiencePanelProps = {
-  experiences: UserExperienceT[];
+  experiences: IUserExperience[];
 };
 
 const ExperiencePanel: React.FC<ExperiencePanelProps> = ({ experiences }) => {
@@ -15,7 +15,7 @@ const ExperiencePanel: React.FC<ExperiencePanelProps> = ({ experiences }) => {
           Experience
         </h4>
         <Timeline>
-          {experiences.map((experience: UserExperienceT, index: number) => (
+          {experiences.map((experience: IUserExperience, index: number) => (
             <TimelineItemElement key={index} experience={experience} />
           ))}
         </Timeline>

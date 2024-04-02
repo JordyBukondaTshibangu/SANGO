@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Dayjs } from "dayjs";
-import NewEventImage from "../regular/NewEventImage";
+import NewEventImage from "../../common/base/ImageUploader";
 import NewEventDateTime from "../regular/NewEventDateTime";
 
 type NewEventDetailTimingProps = {

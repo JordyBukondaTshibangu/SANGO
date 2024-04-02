@@ -7,6 +7,7 @@ import PostAddOutlinedIcon from "@mui/icons-material/PostAddOutlined";
 import ImageOutlinedIcon from "@mui/icons-material/ImageOutlined";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
+import ImageUploader from "@/components/common/base/ImageUploader";
 
 const user = {
   id: 2390239032,
@@ -34,11 +35,9 @@ type CreateNewPostProps = {
 const CreateNewPost: React.FC<CreateNewPostProps> = ({ onClose }) => {
   const [title, setTitle] = useState<string>("");
   const [content, setContent] = useState<string>("");
-  const [file, setFile] = useState<File | null>(null);
   const [tag, setTag] = useState<string>("");
   const [tags, setTags] = useState<string[]>([]);
   const [showTags, setShowTags] = useState<boolean>(false);
-  const [showAddImage, setShowAddImage] = useState<boolean>(false);
 
   const handleAddTag = (event: React.MouseEvent<HTMLButtonElement>) => {
     if (tag) {
@@ -46,10 +45,7 @@ const CreateNewPost: React.FC<CreateNewPostProps> = ({ onClose }) => {
       setTag("");
     }
   };
-  const handleUploadFile = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const files = event.target.files;
-    if (files) setFile(files[0]);
-  };
+
   const handlePost = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
@@ -59,7 +55,6 @@ const CreateNewPost: React.FC<CreateNewPostProps> = ({ onClose }) => {
       publishedAt: new Date().toString(),
       author: user,
       tags,
-      image: file,
       comments: [],
       likes: 0,
     };
@@ -69,7 +64,10 @@ const CreateNewPost: React.FC<CreateNewPostProps> = ({ onClose }) => {
   };
 
   return (
-    <form className="flex flex-col gap-12 py-4" onSubmit={handlePost}>
+    <form
+      className="flex flex-col gap-5 py-4 max-h-[90vh]"
+      onSubmit={handlePost}
+    >
       <div className="flex gap-3 items-center border-b-2 border-solid pb-5 border-grayFour dark:border-dark">
         <PostAddOutlinedIcon className="text-4xl text-lightFontColor dark:text-grayFirst" />
         <input
@@ -86,7 +84,7 @@ const CreateNewPost: React.FC<CreateNewPostProps> = ({ onClose }) => {
       <textarea
         className=" bg-white  dark:bg-darkHeader dark:border border-solid dark:border-darkHeader outline-none text-lightFontColor dark:text-white px-5 text-xl rounded-lg"
         cols={5}
-        rows={14}
+        rows={8}
         value={content}
         required
         placeholder="What's in your mind Jordy?"
@@ -95,17 +93,9 @@ const CreateNewPost: React.FC<CreateNewPostProps> = ({ onClose }) => {
         }
       ></textarea>
       <Tooltip title="Add Image" placement="top">
-        <Button
-          component="label"
-          className="lg:w-fit flex justify-center items-cente"
-          // onClick={handleUploadFile}
-          startIcon={
-            <ImageOutlinedIcon className="text-sm lg:text-lg leading-none" />
-          }
-        >
-          <VisuallyHiddenInput type="file" />
-        </Button>
+        <ImageUploader />
       </Tooltip>
+
       <span
         className="text-lg text-lightFontColor dark:text-grayFirst font-medium cursor-pointer"
         onClick={() => setShowTags(!showTags)}

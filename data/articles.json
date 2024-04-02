@@ -1,5 +1,4 @@
-{
-  "articles": [
+[
     {
       "id": 4564564454,
       "title": "Introduction to JavaScript",
@@ -231,4 +230,3 @@
       "tags": ["STEM", "Equality"]
     }
   ]
-}

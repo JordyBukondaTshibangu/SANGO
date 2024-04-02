@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { UserSkillT } from "../container/Profile";
 import DiamondIcon from "@mui/icons-material/Diamond";
 import Tooltip from "@mui/material/Tooltip";
 import CreateOutlinedIcon from "@mui/icons-material/CreateOutlined";
@@ -9,6 +8,7 @@ import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import Backdrop from "@mui/material/Backdrop";
 import EditMySkills from "@/modals/profile/EditMySkills";
+import { IUserSkill } from "@/interfaces/user";
 
 const style = {
   position: "absolute" as "absolute",
@@ -23,7 +23,7 @@ const style = {
 };
 
 type ProfileSkillsProps = {
-  skills: UserSkillT[];
+  skills: IUserSkill[];
   other: boolean;
 };
 const ProfileSkills: React.FC<ProfileSkillsProps> = ({ skills, other }) => {

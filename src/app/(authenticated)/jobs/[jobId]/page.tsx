@@ -1,7 +1,16 @@
-import { JobT } from "@/components/jobs/Jobs";
 import Job from "@/components/jobs/container/Job";
 import { NextPage } from "next";
-import React from "react";
+import { notFound } from "next/navigation";
+import React, { Suspense } from "react";
+import LoadingJob from "./loading";
+import { IJob } from "@/interfaces/job";
+
+export async function generateStaticParams() {
+  const res = await fetch("http://127.0.0.1:8080/jobs.json");
+  const jobs = await res.json();
+
+  return jobs.map((job: IJob) => ({ id: job.id }));
+}
 
 async function getSingleJob(jobId: number) {
   const res = await fetch("http://127.0.0.1:8080/jobs.json", {
@@ -11,10 +20,12 @@ async function getSingleJob(jobId: number) {
   });
   const data = await res.json();
 
-  const job = data?.filter((item: JobT) => item.id === Number(jobId))[0];
-  const relatedJobs = data.filter(
-    (item: JobT) => item.category === job.category,
-  );
+  const job = data?.filter((item: IJob) => item.id === Number(jobId))[0];
+
+  let relatedJobs;
+  if (job) {
+    relatedJobs = data.filter((item: IJob) => item.category === job.category);
+  }
 
   if (!res.ok) {
     throw new Error("Failed to fetch Jobs");
@@ -33,7 +44,15 @@ const JobDetailPage: NextPage<JobDetailProps> = async (props: any) => {
 
   const { job, relatedJobs } = await getSingleJob(jobId);
 
-  return <Job job={job} relatedJobs={relatedJobs} />;
+  if (!job) {
+    notFound();
+  }
+
+  return (
+    <Suspense fallback={<LoadingJob />}>
+      <Job job={job} relatedJobs={relatedJobs} />
+    </Suspense>
+  );
 };
 
 export default JobDetailPage;

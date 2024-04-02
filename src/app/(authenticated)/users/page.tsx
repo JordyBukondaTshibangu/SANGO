@@ -1,6 +1,7 @@
 import MyNetwork from "@/components/common/ui/MyNetwork";
 import UsersList from "@/components/users/container/UsersList";
-import React from "react";
+import React, { Suspense } from "react";
+import LoadingUsers from "./loading";
 
 async function getUsers() {
   const res = await fetch("http://127.0.0.1:8080/users.json", {
@@ -21,7 +22,9 @@ const UsersPage = async () => {
   return (
     <div className="relative flex flex-col lg:flex-row gap-14">
       <MyNetwork />
-      <UsersList users={users} />
+      <Suspense fallback={<LoadingUsers />}>
+        <UsersList users={users} />
+      </Suspense>
     </div>
   );
 };

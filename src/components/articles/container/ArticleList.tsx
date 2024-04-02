@@ -3,23 +3,14 @@ import React, { useEffect, useState } from "react";
 import ArticleCard from "../regular/ArticleCard";
 import ArticleFilter from "../regular/ArticleFilter";
 import Link from "next/link";
+import { IArticle } from "@/interfaces/article";
 
-export type Article = {
-  id: number;
-  title: string;
-  author: string;
-  email: string;
-  content: string;
-  image: string;
-  category: string;
-  tags: string[];
-};
 type ArticleListProps = {
-  articles: Article[];
+  articles: IArticle[];
 };
 const ArticleList: React.FC<ArticleListProps> = ({ articles }) => {
   const [showFilter, setShowFilter] = useState<boolean>(false);
-  const [articleList, setArticleList] = useState<Article[]>(articles);
+  const [articleList, setArticleList] = useState<IArticle[]>(articles);
   const [authors, setAuthors] = useState<string[]>([]);
   const [categories, setCategories] = useState<string[]>([]);
 
@@ -98,7 +89,7 @@ const ArticleList: React.FC<ArticleListProps> = ({ articles }) => {
         </div>
       )}
       <div className="flex flex-wrap gap-10">
-        {articleList.map((article: Article) => (
+        {articleList.map((article: IArticle) => (
           <ArticleCard key={article.id} article={article} />
         ))}
       </div>

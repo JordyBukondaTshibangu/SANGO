@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { UserExperienceT } from "../container/Profile";
 import ViewTimelineIcon from "@mui/icons-material/ViewTimeline";
 import Experience from "./Experience";
 import Tooltip from "@mui/material/Tooltip";
@@ -10,6 +9,7 @@ import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import Backdrop from "@mui/material/Backdrop";
 import EditMyExperience from "@/modals/profile/EditMyExperience";
+import { IUserExperience } from "@/interfaces/user";
 
 const style = {
   position: "absolute" as "absolute",
@@ -24,7 +24,7 @@ const style = {
 };
 
 type ProfileExperienceProps = {
-  experiences: UserExperienceT[];
+  experiences: IUserExperience[];
   other: boolean;
 };
 const ProfileExperience: React.FC<ProfileExperienceProps> = ({
@@ -71,7 +71,7 @@ const ProfileExperience: React.FC<ProfileExperienceProps> = ({
         </Fade>
       </Modal>
       <div className="w-full flex flex-col gap-4 ">
-        {experiences.map((experience: UserExperienceT, index: number) => (
+        {experiences.map((experience: IUserExperience, index: number) => (
           <Experience key={index} experience={experience} />
         ))}
       </div>

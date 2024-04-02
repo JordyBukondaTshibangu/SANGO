@@ -3,30 +3,14 @@ import React, { useEffect, useState } from "react";
 import EventCard from "../regular/EventCard";
 import Link from "next/link";
 import EventFilter from "../regular/EventFilter";
-
-export type EventT = {
-  id: number;
-  name: string;
-  venue: string;
-  date: string;
-  location: string;
-  description: string;
-  email: string;
-  organizer: string;
-  phone: string;
-  category: string;
-  image: string;
-  tags: string[];
-  guests: number;
-  gallery: string[];
-};
+import { IEvent } from "@/interfaces/event";
 
 type EventListProps = {
-  events: EventT[];
+  events: IEvent[];
 };
 const ArticleList: React.FC<EventListProps> = ({ events }) => {
   const [showFilter, setShowFilter] = useState<boolean>(false);
-  const [eventList, setEventList] = useState<EventT[]>(events);
+  const [eventList, setEventList] = useState<IEvent[]>(events);
   const [organizers, setOrganizers] = useState<string[]>([]);
   const [categories, setCategories] = useState<string[]>([]);
   const [dates, setDates] = useState<string[]>([]);
@@ -123,7 +107,7 @@ const ArticleList: React.FC<EventListProps> = ({ events }) => {
         </div>
       )}
       <div className="flex flex-wrap gap-10 items-center justify-center md:justify-start">
-        {eventList.map((event: EventT) => (
+        {eventList.map((event: IEvent) => (
           <EventCard key={event.id} event={event} />
         ))}
       </div>

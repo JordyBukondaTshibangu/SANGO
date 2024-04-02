@@ -1,11 +1,11 @@
 import React from "react";
-import { UserT } from "./Profile";
 import GroupsIcon from "@mui/icons-material/Groups";
 import UserPreview from "@/components/messages/regular/UserPreview";
 import Link from "next/link";
+import { IUser } from "@/interfaces/user";
 
 type UserListProps = {
-  users: UserT[];
+  users: IUser[];
 };
 const UserList: React.FC<UserListProps> = ({ users }) => {
   return (
@@ -17,7 +17,7 @@ const UserList: React.FC<UserListProps> = ({ users }) => {
       <div className="flex lg:flex-col gap-2 h-fit overflow-y-auto">
         {users.map(
           (
-            { firstName, lastName, profile, position, id }: UserT,
+            { firstName, lastName, profile, position, id }: IUser,
             index: number,
           ) => (
             <Link href={`/users/${id}`} key={index} className="min-w-[300px]">

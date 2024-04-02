@@ -2,7 +2,7 @@ import React, { ChangeEvent, useState } from "react";
 
 type NewEventDetailHostProps = {
   addHostDetails: (
-    organiser: string,
+    organizer: string,
     email: string,
     phoneNumber: string,
   ) => void;
@@ -11,27 +11,27 @@ type NewEventDetailHostProps = {
 const NewEventDetailHost: React.FC<NewEventDetailHostProps> = ({
   addHostDetails,
 }) => {
-  const [organiser, setOrganiser] = useState<string>("");
+  const [organizer, setOrganizer] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [phoneNumber, setPhoneNumber] = useState<string>("");
 
   const handleEventDetails = () =>
-    addHostDetails(organiser, email, phoneNumber);
+    addHostDetails(organizer, email, phoneNumber);
 
   return (
     <div className=" bg-white  dark:bg-darkHeader px-5 lg:px-10 py-10 rounded-lg flex flex-col gap-10">
       <h2 className="text-xl font-medium">Host Details </h2>
       <div className="flex flex-col md:flex-row justify-between gap-10">
         <div className="flex-1 flex flex-col gap-2">
-          <label htmlFor="Organiser">Organiser*</label>
+          <label htmlFor="Organizer">Organizer*</label>
           <input
             type="text"
-            name="Organiser"
+            name="Organizer"
             className="bg-light dark:bg-dark border border-solid border-grayFour dark:border-darkHeader h-10 lg:h-12 px-4"
-            value={organiser}
+            value={organizer}
             required
             onChange={(event: ChangeEvent<HTMLInputElement>) => {
-              setOrganiser(event.target.value);
+              setOrganizer(event.target.value);
               handleEventDetails();
             }}
           />

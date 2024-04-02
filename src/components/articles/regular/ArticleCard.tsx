@@ -1,13 +1,12 @@
-"use client";
 import React from "react";
-import { Article } from "../container/ArticleList";
 import Chip from "@mui/material/Chip";
 import Avatar from "@mui/material/Avatar";
 import Image from "next/image";
 import Link from "next/link";
+import { IArticle } from "@/interfaces/article";
 
 type ArticleCardProps = {
-  article: Article;
+  article: IArticle;
 };
 
 const ArticleCard: React.FC<ArticleCardProps> = ({ article }) => {
@@ -37,7 +36,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article }) => {
         </div>
         <h1 className="lg:text-xl font-medium">{article.title}</h1>
         <div className="flex items-center gap-5 mt-4">
-          <Avatar alt="Remy Sharp" src="" />
+          <Avatar alt="Rems Sharp" src="" />
           <h5 className="text-lg font-bold">{article.author}</h5>
           <h6 className="text-xs">August 20,2024</h6>
         </div>

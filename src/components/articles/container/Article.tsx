@@ -3,20 +3,10 @@ import Chip from "@mui/material/Chip";
 import Avatar from "@mui/material/Avatar";
 import ArticleSecImg from "../../../../public/assets/globe.jpg";
 import Image from "next/image";
-
-export type ArticleT = {
-  id: number;
-  title: string;
-  author: string;
-  email: string;
-  content: string;
-  image: string;
-  category: string;
-  tags: string[];
-};
+import { IArticle } from "@/interfaces/article";
 
 type ArticleProps = {
-  article: ArticleT;
+  article: IArticle;
   content: any | null;
 };
 

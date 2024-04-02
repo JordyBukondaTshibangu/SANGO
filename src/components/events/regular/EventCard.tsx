@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { EventT } from "../container/EventList";
 import Link from "next/link";

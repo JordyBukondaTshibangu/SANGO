@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Suspense } from "react";
 import JobContainer from "@/components/jobs/Jobs";
+import LoadingJobs from "./loading";
 
 async function fetchAllJobs() {
   const res = await fetch("http://127.0.0.1:8080/jobs.json", {
@@ -18,7 +19,11 @@ async function fetchAllJobs() {
 const JobsPage = async () => {
   const jobs = await fetchAllJobs();
 
-  return <JobContainer jobs={jobs} />;
+  return (
+    <Suspense fallback={<LoadingJobs />}>
+      <JobContainer jobs={jobs} window={undefined} />
+    </Suspense>
+  );
 };
 
 export default JobsPage;

@@ -124,7 +124,7 @@ const NewEventDetailInfo: React.FC<NewEventDetailInfoProps> = ({
             <input
               type="text"
               name="tag"
-              className=" bg-white  dark:bg-darkHeader text-grayFirst px-2 borderborder-grayFour dark:border-dark outline-none w-fit h-10"
+              className=" bg-white  dark:bg-darkHeader text-grayFirst px-2 border border-grayFour dark:border-dark outline-none w-fit h-full"
               value={tag}
               onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
                 setTag(event.target.value?.toUpperCase())
@@ -132,7 +132,7 @@ const NewEventDetailInfo: React.FC<NewEventDetailInfoProps> = ({
             />
             <button
               type="button"
-              className="bg-light dark:bg-dark flex items-center justify-center  px-4 py-3 text-sm text-white"
+              className="bg-light dark:bg-dark flex items-center justify-center  px-4 py-3 text-sm text-lightFontColor dark:text-fontColor"
               onClick={handleAddTag}
             >
               Add tag

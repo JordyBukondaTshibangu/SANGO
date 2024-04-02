@@ -1,7 +1,8 @@
 import Sidebar from "@/components/common/ui/Sidebar";
 import NewPost from "@/components/posts/container/NewPost";
 import PostsList from "@/components/posts/container/PostsList";
-import React from "react";
+import React, { Suspense } from "react";
+import LoadingPost from "./loading";
 
 async function getPosts() {
   const res = await fetch("http://127.0.0.1:8080/posts.json", {
@@ -25,7 +26,9 @@ const PostsPage = async () => {
       <Sidebar />
       <div className="w-full xl:w-1/2 flex flex-col gap-10">
         <NewPost />
-        <PostsList posts={posts} />
+        <Suspense fallback={<LoadingPost />}>
+          <PostsList posts={posts} />
+        </Suspense>
       </div>
       <div className="hidden xl:flex w-1/4"></div>
     </div>
